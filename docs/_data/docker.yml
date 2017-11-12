@@ -1,0 +1,5 @@
+bigheader: "Docker"
+abstract: "Instructions for setting up Docker images."
+toc:
+- docs/docker/index.md
+- docs/docker/spitifre.md

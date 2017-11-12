@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /legacy/
+Disallow: /404/
+Disallow: 404.html
+
+# NOTE: site renders /topic.md into /topic/index.html, effectively /topic/
+
+SITEMAP: http://datalayer.io/sitemap.xml

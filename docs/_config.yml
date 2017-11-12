@@ -1,0 +1,59 @@
+name: Datalayer
+title: Datalayer
+url: http://datalayer.io
+description: Documentation
+markdown: kramdown
+# theme: jekyll-theme-minimal
+kramdown:
+  input: GFM
+  html_to_native: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+incremental: true
+
+safe: false
+lsi: false
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      fullversion: "v1.0.0"
+      version: "v1.0"
+      githubbranch: "master"
+      docsbranch: "master"
+      deprecated: false
+      currentUrl: http://datalayer.io
+      nextUrl: http://datalayer-io-vnext-staging.netlify.com/
+  -
+    scope:
+      path: "docs"
+    values:
+      layout: docwithnav
+      showedit: true
+
+permalink: pretty
+
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+#  - jekyll-seo-tag
+  - jekyll-include-cache
+# disabled gems
+#  - jekyll-redirect-from
+
+include: [_redirects,_headers]
+
+# SEO
+logo: /images/favicon.png
+twitter:
+  username: datalayerio
+
+# empty array for tabs
+emptyArray: []
+
+# Tables of contents, stored in the _data folder, that control the sidebar nav
+tocs:
+  - home
+

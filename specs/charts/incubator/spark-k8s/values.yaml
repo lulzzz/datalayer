@@ -1,0 +1,14 @@
+spark:
+  image: datalayer/spark-k8s:2.2.0-0.5.0
+  resources:
+    limits:
+      memory: "4096Mi"
+      cpu: "2000m"
+hadoop:
+  useConfigMap: false
+  configMapName: hadoop-k8s-hadoop-k8s
+  configPath: /usr/hadoop-2.7.3/etc/hadoop
+spark:
+  driverMemory: 1g
+  executorMemory: 1g
+  numExecutors: 2
