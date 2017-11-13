@@ -1,36 +1,38 @@
-# Licensed to the Apache Software Foundation (ASF) under one or more
-# contributor license agreements.  See the NOTICE file distributed with
-# this work for additional information regarding copyright ownership.
-# The ASF licenses this file to You under the Apache License, Version 2.0
-# (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
 #
-#    http://www.apache.org/licenses/LICENSE-2.0
+#   http://www.apache.org/licenses/LICENSE-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
 
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: spark-resource-staging-server
+  name: spark-k8s-resource-staging-server
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        resource-staging-server-instance: default
+        spark-k8s-resource-staging-server-instance: default
     spec:
       volumes:
-        - name: resource-staging-server-properties
+        - name: spark-k8s-resource-staging-server-config
           configMap:
-            name: spark-resource-staging-server-config
+            name: spark-k8s-resource-staging-server-config
       containers:
-        - name: spark-resource-staging-server
-          image: datalayer/spark-resource-staging-server:2.2.0-0.5.0
+        - name: spark-k8s-resource-staging-server
+          image: datalayer/spark-k8s-resource-staging-server:2.2.0-0.5.0
           resources:
             requests:
               cpu: 100m
@@ -39,17 +41,17 @@ spec:
               cpu: 100m
               memory: 1Gi
           volumeMounts:
-            - name: resource-staging-server-properties
-              mountPath: '/etc/spark-resource-staging-server'
+            - name: spark-k8s-resource-staging-server-config
+              mountPath: '/etc/spark-k8s-resource-staging-server'
           args:
-            - '/etc/spark-resource-staging-server/resource-staging-server.properties'
+            - '/etc/spark-k8s-resource-staging-server/spark-k8s-resource-staging-server.properties'
 ---
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: spark-resource-staging-server-config
+  name: spark-k8s-resource-staging-server-config
 data:
-  resource-staging-server.properties: |
+  spark-k8s-resource-staging-server.properties: |
     spark.kubernetes.resourceStagingServer.port=10000
     spark.ssl.kubernetes.resourceStagingServer.enabled=false
 # Other possible properties are listed below, primarily for setting up TLS. The paths given by KeyStore, password, and PEM files here should correspond to
@@ -65,11 +67,11 @@ data:
 apiVersion: v1
 kind: Service
 metadata:
-  name: spark-resource-staging-service
+  name: spark-k8s-resource-staging-service
 spec:
   type: NodePort
   selector:
-    resource-staging-server-instance: default
+    spark-k8s-resource-staging-server-instance: default
   ports:
     - protocol: TCP
       port: 10000

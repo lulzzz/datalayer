@@ -12,6 +12,8 @@
 
 *.jar
 
+__tmp
+
 bower_components
 coverage
 dist
@@ -22,6 +24,5 @@ target
 temp
 yarn.lock
 
-docs/__tmp
 docs/_site
 docs/Gemfile.lock

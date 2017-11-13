@@ -321,17 +321,17 @@
         },
         "spark.kubernetes.initcontainer.docker.image": {
           "name": "spark.kubernetes.initcontainer.docker.image",
-          "value": "datalayer/spark-init:2.2.0-0.5.0",
+          "value": "datalayer/spark-k8s-init:2.2.0-0.5.0",
           "type": "textarea"
         },
         "spark.kubernetes.driver.docker.image": {
           "name": "spark.kubernetes.driver.docker.image",
-          "value": "datalayer/spark-driver:2.2.0-0.5.0",
+          "value": "datalayer/spark-k8s-driver:2.2.0-0.5.0",
           "type": "textarea"
         },
         "spark.kubernetes.executor.docker.image": {
           "name": "spark.kubernetes.executor.docker.image",
-          "value": "datalayer/spark-executor:2.2.0-0.5.0",
+          "value": "datalayer/spark-k8s-executor:2.2.0-0.5.0",
           "type": "textarea"
         },
         "spark.shuffle.service.enabled": {
