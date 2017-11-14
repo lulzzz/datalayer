@@ -4,34 +4,30 @@ title: Docker images
 
 # Deploy with Helm on a Kubernetes cluster
 
-Clone the `datalayer` repository
-
-```
-git clone https://github.com/datalayer/datalayer.git
-```
-
 Install the Apache Hadoop chart.
 
 ```
-helm install $(datalayer/specs/charts/incubator/hadoop-k8s/tools/calc_resources.sh 50) \
+helm install --repo http://helm.datalayer.io \
+  $(hadoop-k8s/tools/calc_resources.sh 50) \
   --set persistence.nameNode.enabled=false \
   --set persistence.dataNode.enabled=false \
-  datalayer/specs/charts/incubator/hadoop-k8s \
+  hadoop-k8s \
   -n hadoop-k8s
 ```
 
 Install the Apache Spark chart.
 
 ```
-helm install datalayer/specs/charts/incubator/spark-k8s -n spark-k8s
+helm install --repo http://helm.datalayer.io spark-k8s -n spark-k8s
 ```
 
 Install the Apache Zeppelin chart.
 
 ```
 helm install \
+  --repo http://helm.datalayer.io \
   --set hadoop.useConfigMap=true,hadoop.configMapName=hadoop-k8s-hadoop-k8s \
-  datalayer/specs/charts/incubator/zeppelin-k8s \
+  zeppelin-k8s \
   -n zeppelin-k8s
 ```
 
