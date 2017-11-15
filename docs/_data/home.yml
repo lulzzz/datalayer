@@ -5,4 +5,5 @@ toc:
 - title: Docker Images
   section:
   - docs/docker/index.md
+  - docs/docker/zeppelin-on-k8s.md
   - docs/docker/spitfire.md
