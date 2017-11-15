@@ -8,7 +8,6 @@ Install the Apache Hadoop chart.
 
 ```
 helm install --repo http://helm.datalayer.io \
-  $(hadoop-k8s/tools/calc_resources.sh 50) \
   --set persistence.nameNode.enabled=false \
   --set persistence.dataNode.enabled=false \
   hadoop-k8s \
