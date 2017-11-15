@@ -17,13 +17,18 @@
 
 FROM datalayer/spark-k8s-driver:2.2.0-0.5.0
 
+# ADD https://storage.googleapis.com/kubernetes-release/release/v1.8.2/bin/linux/amd64/kubectl /usr/local/bin
+ADD dist/kubectl /usr/local/bin
+
+RUN chmod +x /usr/local/bin/kubectl
+
 ADD dist/zeppelin-0.8.0-SNAPSHOT.tar.gz /opt
+
+ADD conf/zeppelin-site.xml /opt/zeppelin-0.8.0-SNAPSHOT/conf
 ADD conf/interpreter.json /opt/zeppelin-0.8.0-SNAPSHOT/conf
+
 ADD conf/log4j.properties /opt/zeppelin-0.8.0-SNAPSHOT/conf
-
-ADD https://storage.googleapis.com/kubernetes-release/release/v1.8.2/bin/linux/amd64/kubectl /usr/local/bin
-
-RUN chmod +x /usr/local/bin/kubectl && sed -i s/INFO/DEBUG/ /opt/zeppelin-0.8.0-SNAPSHOT/conf/log4j.properties
+RUN sed -i s/INFO/DEBUG/ /opt/zeppelin-0.8.0-SNAPSHOT/conf/log4j.properties
 
 WORKDIR /opt/zeppelin-0.8.0-SNAPSHOT
 
