@@ -16,8 +16,8 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="zeppelin_in-cluster_spark-cluster.svg"
    inkscape:export-filename="/src/k8s/spark-k8s-docs/src/jekyll/img/zeppelin_in-cluster_spark-cluster.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:export-xdpi="126"
+   inkscape:export-ydpi="126">
   <defs
      id="defs4">
     <filter
@@ -164,9 +164,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4389845"
-     inkscape:cx="232.61756"
-     inkscape:cy="56.298153"
+     inkscape:zoom="1.034408"
+     inkscape:cx="76.055144"
+     inkscape:cy="66.588615"
      inkscape:document-units="px"
      inkscape:current-layer="g4298"
      showgrid="false"
