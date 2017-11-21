@@ -17,7 +17,10 @@
 # specific language governing permissions and limitations
 # under the License.
 
-POD_NAME=$HOSTNAME"-spark-driver"
+
+export HADOOP_CONF_DIR=/etc/hdfs-k8s/conf
+
+POD_NAME=$HOSTNAME
 sed -e "s|SPARK_KUBERNETES_DRIVER_POD_NAME|$POD_NAME|g" /opt/zeppelin/conf/interpreter.json.template > /tmp/interpreter-tmp.json
 
 RESOURCESTAGINGSERVER_IP=$(kubectl get svc spark-k8s-resource-staging-service -o jsonpath='{.spec.clusterIP}')

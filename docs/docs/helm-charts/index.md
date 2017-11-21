@@ -120,7 +120,7 @@ Of course, depending on your cluster resources, you might also update the `spark
 If you want to run manual Spark jobs or debug the logs, open a shell in the pod:
 
 ```
-kubectl exec -n default -it $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") -- bash
+kubectl exec -n default -it $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") -c zeppelin -- bash
 ```
 
 ![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")

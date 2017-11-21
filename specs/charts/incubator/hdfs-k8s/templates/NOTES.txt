@@ -1,10 +1,13 @@
 
-1. You can check the status of HDFS by running this command:
+1. You can check the status of HDFS by running this command (make sure to update the values.yaml if you want to make this permanent):
 
-   kubectl exec -n {{ .Release.Namespace }} -it {{ template "hdfs-k8s.fullname" . }}-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfsadmin -report
+  kubectl exec -n {{ .Release.Namespace }} -it {{ template "hdfs-k8s.fullname" . }}-hdfs-nn-0 -- hdfs dfsadmin -report
+  kubectl exec -n {{ .Release.Namespace }} -it {{ template "hdfs-k8s.fullname" . }}-hdfs-nn-0 -- hdfs dfs -ls /
 
-2. This chart can also be used with the zeppelin chart
+2. This chart can also be used with the Zeppelin chart:
    
-   helm install --namespace {{ .Release.Namespace }} --set hdfs-k8s.useConfigMap=true,hdfs-k8s.configMapName={{ template "hdfs-k8s.fullname" . }} stable/zeppelin
+  helm upgrade -n {{ .Release.Namespace }} --set hdfs.dataNode.replicas=6 {{ template "hdfs-k8s.fullname" . }} {{ template "hdfs-k8s.fullname" . }}
 
-   Make sure to update the values.yaml if you want to make this permanent.
+2. This chart can also be used with the Zeppelin K8s chart:
+   
+  helm install -n {{ .Release.Namespace }} --set hdfs-k8s.useConfigMap=true,hdfs-k8s.configMapName={{ template "hdfs-k8s.fullname" . }} zeppelin-k8s -n zeppelin-k8s

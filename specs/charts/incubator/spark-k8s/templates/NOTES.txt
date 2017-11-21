@@ -1,6 +1,4 @@
 
-1. Create a port-forward to the spark pod:
+1. If you want to run a Spark job or debug the logs, network..., launch a shell in the resource staging server pod:
 
-   kubectl port-forward -n {{ .Release.Namespace }} $(kubectl get pod -n {{ .Release.Namespace }} --selector=app={{ template "spark.name" . }} -o jsonpath='{.items...metadata.name}') 8080:8080
-
-   Open browser to the UI: open http://localhost:8080
+  kubectl exec -n {{ .Release.Namespace }} -it $(kubectl get pod -n {{ .Release.Namespace }} --selector=spark-k8s-resource-staging-server-instance=default -o jsonpath='{.items...metadata.name}') -- bash

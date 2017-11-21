@@ -274,6 +274,16 @@
       "name": "spark",
       "group": "spark",
       "properties": {
+        "HADOOP_CONF_DIR": {
+          "name": "HADOOP_CONF_DIR",
+          "value": "/etc/hdfs-k8s/conf",
+          "type": "textarea"
+        },
+        "SPARK_HOME": {
+          "name": "SPARK_HOME",
+          "value": "/opt/spark",
+          "type": "textarea"
+        },
         "master": {
           "name": "master",
           "value": "k8s://https://kubernetes:443",
@@ -402,11 +412,6 @@
         "zeppelin.dep.localrepo": {
           "name": "zeppelin.dep.localrepo",
           "value": "local-repo",
-          "type": "textarea"
-        },
-        "SPARK_HOME": {
-          "name": "SPARK_HOME",
-          "value": "/opt/spark",
           "type": "textarea"
         },
         "zeppelin.spark.sql.stacktrace": {

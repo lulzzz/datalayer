@@ -8,7 +8,7 @@ zeppelin:
 hdfsK8s:
   useConfigMap: false
   configMapName: hdfs-k8s-hdfs-k8s
-  configPath: /usr/hadoop/etc/hadoop
+  configPath: /etc/hdfs-k8s/conf
 spark:
   driverMemory: 1g
   executorMemory: 1g
