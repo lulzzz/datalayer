@@ -18,51 +18,51 @@ git clone https://github.com/datalayer/datalayer.git datalayer
 cd datalayer/specs/charts/incubator
 ```
 
-## Install the Apache Hadoop chart
+## Install the Apache HDFS chart
 
 ```
 helm install \
-  -n hadoop-k8s \
+  -n hdfs-k8s \
   --set persistence.nameNode.enabled=false \
   --set persistence.dataNode.enabled=false \
   --set hdfs.dataNode.replicas=3 \
-  hadoop-k8s
+  hdfs-k8s
 ```
 
-This will launch one Hadoop Namenode and one Hadoop Datanode. If you list the pods with `kubectl get pods -l app=hadoop-k8s`, you should see two running Hadoop pods:
+This will launch one Hadoop Namenode and one Hadoop Datanode. If you list the pods with `kubectl get pods -l app=hdfs-k8s`, you should see two running Hadoop pods:
 
 ```
 NAME                              READY     STATUS    RESTARTS   AGE
-hadoop-k8s-hadoop-k8s-hdfs-nn-0   1/1       Running   0          5s
-hadoop-k8s-hadoop-k8s-hdfs-dn-0   1/1       Running   0          5s
-hadoop-k8s-hadoop-k8s-hdfs-dn-1   1/1       Running   0          5s
-hadoop-k8s-hadoop-k8s-hdfs-dn-2   1/1       Running   0          5s
+hdfs-k8s-hdfs-k8s-hdfs-nn-0   1/1       Running   0          5s
+hdfs-k8s-hdfs-k8s-hdfs-dn-0   1/1       Running   0          5s
+hdfs-k8s-hdfs-k8s-hdfs-dn-1   1/1       Running   0          5s
+hdfs-k8s-hdfs-k8s-hdfs-dn-2   1/1       Running   0          5s
 ```
 
-Helm should also list the chart you have just deployed. Type `helm ls hadoop-k8s` which will return:
+Helm should also list the chart you have just deployed. Type `helm ls hdfs-k8s` which will return:
 
 ```
 NAME         	REVISION	UPDATED                 	STATUS  	CHART                     	NAMESPACE
-hadoop-k8s   	1       	Mon Nov 20 14:23:52 2017	DEPLOYED	hadoop-k8s-1.0.0          	default  
+hdfs-k8s   	1       	Mon Nov 20 14:23:52 2017	DEPLOYED	hdfs-k8s-1.0.0          	default  
 ```
 
 Check the sanity of your cluster:
 
 ```
-kubectl exec -n default -it hadoop-k8s-hadoop-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfsadmin -report
-kubectl exec -n default -it hadoop-k8s-hadoop-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfs -mkdir /tmp
-kubectl exec -n default -it hadoop-k8s-hadoop-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfs -ls /
+kubectl exec -n default -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfsadmin -report
+kubectl exec -n default -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfs -mkdir /tmp
+kubectl exec -n default -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfs -ls /
 ```
 
-To access the Namenode user interface: `kubectl port-forward hadoop-k8s-hadoop-k8s-hdfs-nn-0 50070:50070` and open in your browser `http://localhost:50070`.
+To access the Namenode user interface: `kubectl port-forward hdfs-k8s-hdfs-k8s-hdfs-nn-0 50070:50070` and open in your browser `http://localhost:50070`.
 
 If you want to scale the number of Datanodes, you just need to upgrade with:
 
 ```
 helm upgrade \
   --set hdfs.dataNode.replicas=6 \
-  hadoop-k8s \
-  hadoop-k8s
+  hdfs-k8s \
+  hdfs-k8s
 ```
 
 ## Install the Apache Spark chart
@@ -79,7 +79,7 @@ Install the `Zeppelin on K8s` chart:
 
 ```
 helm install \
-  --set hadoop.useConfigMap=true,hadoop.configMapName=hadoop-k8s-hadoop-k8s \
+  --set hdfsK8s.useConfigMap=true,hdfsK8s.configMapName=hdfs-k8s-hdfs-k8s \
   zeppelin-k8s \
   -n zeppelin-k8s
 ```
@@ -98,7 +98,7 @@ This should print the Hadoop `core-site.xml` configuration file:
 <configuration>
   <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://hadoop-k8s-hadoop-k8s-hdfs-nn:9000/</value>
+        <value>hdfs://hdfs-k8s-hdfs-k8s-hdfs-nn:9000/</value>
         <description>NameNode URI</description>
     </property>
 </configuration>

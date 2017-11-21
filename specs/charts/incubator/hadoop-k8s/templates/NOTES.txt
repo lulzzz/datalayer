@@ -1,7 +1,0 @@
-1. You can check the status of HDFS by running this command:
-   kubectl exec -n {{ .Release.Namespace }} -it {{ template "hadoop.fullname" . }}-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfsadmin -report
-
-2. This chart can also be used with the zeppelin chart
-    helm install --namespace {{ .Release.Namespace }} --set hadoop.useConfigMap=true,hadoop.configMapName={{ template "hadoop.fullname" . }} stable/zeppelin
-
-   Make sure to update the values.yaml if you want to make this permanent.

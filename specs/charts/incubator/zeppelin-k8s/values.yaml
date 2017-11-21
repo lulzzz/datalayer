@@ -4,10 +4,10 @@ zeppelin:
     limits:
       memory: "4096Mi"
       cpu: "2000m"
-hadoop:
+hdfsK8s:
   useConfigMap: false
-  configMapName: hadoop-k8s-hadoop-k8s
-  configPath: /usr/hadoop-2.7.3/etc/hadoop
+  configMapName: hdfs-k8s-hdfs-k8s
+  configPath: /usr/hadoop/etc/hadoop
 spark:
   driverMemory: 1g
   executorMemory: 1g

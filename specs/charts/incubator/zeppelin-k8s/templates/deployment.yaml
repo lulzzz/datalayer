@@ -33,7 +33,7 @@ spec:
 #              value: >-
 #                -Dspark.driver.memory={{ .Values.spark.driverMemory }}
 #                -Dspark.executor.memory={{ .Values.spark.executorMemory }}
-#{{- if .Values.hadoop.useConfigMap }}
+#{{- if .Values.hdfsK8s.useConfigMap }}
 #            - name: MASTER
 #              value: "k8s://https://kubernetes:443"
 #            - name: SPARK_SUBMIT_OPTIONS
@@ -42,9 +42,9 @@ spec:
 #                --num-executors {{ .Values.spark.numExecutors }}
 #{{- end }}
           volumeMounts:
-{{- if .Values.hadoop.useConfigMap }}
-            - mountPath: {{ .Values.hadoop.configPath }}
-              name: hadoop-config
+{{- if .Values.hdfsK8s.useConfigMap }}
+            - mountPath: {{ .Values.hdfsK8s.configPath }}
+              name: hdfs-k8s-config
 {{- end }}
           resources:
 {{ toYaml .Values.zeppelin.resources | indent 12 }} 
@@ -54,13 +54,13 @@ spec:
               port: 8080
             initialDelaySeconds: 20
             timeoutSeconds: 1
-{{- if .Values.hadoop.useConfigMap }}
+{{- if .Values.hdfsK8s.useConfigMap }}
         - name: zeppelin-sidecar
           image: gcr.io/google_containers/kubectl:v0.18.0-120-gaeb4ac55ad12b1-dirty
           imagePullPolicy: IfNotPresent
           args: ["proxy", "-p", "8001"]
       volumes:
-        - name: hadoop-config
+        - name: hdfs-k8s-config
           configMap:
-            name: {{ .Values.hadoop.configMapName }}
+            name: {{ .Values.hdfsK8s.configMapName }}
 {{- end }}
