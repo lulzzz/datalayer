@@ -1,5 +1,5 @@
 ---
-title: Docker images
+title: Helm Charts
 ---
 
 # Deploy with Helm Charts on a Kubernetes cluster

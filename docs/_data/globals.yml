@@ -1,3 +1,4 @@
 tocs:
 - home
-- docker
+- helm-charts
+- spitfire
