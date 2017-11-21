@@ -17,10 +17,10 @@
 # specific language governing permissions and limitations
 # under the License.
 
-POD_NAME=$HOSTNAME"-spark-driver"
-sed -e "s|SPARK_KUBERNETES_DRIVER_POD_NAME|$POD_NAME|g" /opt/zeppelin/conf/interpreter.json.template > /tmp/interpreter-tmp.json
+docker build \
+  -t datalayer/zeppelin-k8s:2.2.0-0.5.0 \
+  --squash \
+  --compress \
+  .
 
-RESOURCESTAGINGSERVER_IP=$(kubectl get svc spark-k8s-resource-staging-service -o jsonpath='{.spec.clusterIP}')
-sed -e "s|SPARK_KUBERNETES_RESOURCESTAGINGSERVER_URI|$RESOURCESTAGINGSERVER_IP|g" /tmp/interpreter-tmp.json > /opt/zeppelin/conf/interpreter.json
-
-/opt/zeppelin/bin/zeppelin.sh "$@"
+docker push datalayer/zeppelin-k8s:2.2.0-0.5.0

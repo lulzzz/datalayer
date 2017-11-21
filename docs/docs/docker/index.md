@@ -49,9 +49,9 @@ hdfs-k8s   	1       	Mon Nov 20 14:23:52 2017	DEPLOYED	hdfs-k8s-1.0.0          	
 Check the sanity of your cluster:
 
 ```
-kubectl exec -n default -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfsadmin -report
-kubectl exec -n default -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfs -mkdir /tmp
-kubectl exec -n default -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- /usr/local/hadoop/bin/hdfs dfs -ls /
+kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfsadmin -report
+kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfs -mkdir /tmp
+kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfs -ls /
 ```
 
 To access the Namenode user interface: `kubectl port-forward hdfs-k8s-hdfs-k8s-hdfs-nn-0 50070:50070` and open in your browser `http://localhost:50070`.
@@ -113,23 +113,16 @@ kubectl port-forward $(kubectl get pods -n default -l "app=zeppelin-k8s" -o json
 xdg-open http://localhost:8080
 ```
 
-The Spark interpreter is set to launch the Spark Driver in `cluster` mode (for now, do not set `spark.app.name` nor `spark.kubernetes.driver.pod.name` properties for this to work).
+The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
 
-If you want to run in `client` mode, you have to change the set the `spark.submit.deployMode` property with `client` value, `spark.kubernetes.driver.pod.name` with the name of the pod where Zeppelin is running, and finally restart the Spark interpreter (see [Zeppelin documentation](https://zeppelin.apache.org/docs/latest/manual/interpreters.html) for more information on interpreters).
+If you want to run in `cluster` mode, you have to change the set the `spark.submit.deployMode` property with `cluster` value, remove the `spark.app.name` and `spark.kubernetes.driver.pod.name` properties (delete, not set to blank), and finally restart the Spark interpreter (see [Zeppelin documentation](https://zeppelin.apache.org/docs/latest/manual/interpreters.html) for more information on interpreters, see also screenshot below).
 
-You will get the pod name with the following kubectl command and you will update the zeppelin interpeter page via the top right side menu `Interpeter` (see screenshot below - Depending on your resources, you might also update the `spark.executor.instances`, `spark.executor.memory`... properties).
-
-```
-$ k get pods | grep zeppelin
-zeppelin-k8s-zeppelin-798d74cfc5-tb4vp                1/1       Running   0          15m
-```
-
-![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
-
-In the `client` mode, you are free to set `spark.app.name` with a name you like.
+Of course, depending on your cluster resources, you might also update the `spark.executor.instances`, `spark.executor.memory`... properties.
 
 If you want to run manual Spark jobs or debug the logs, open a shell in the pod:
 
 ```
 kubectl exec -n default -it $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") -- bash
 ```
+
+![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")

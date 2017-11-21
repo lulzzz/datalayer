@@ -17,10 +17,13 @@
 
 FROM datalayer/spark-k8s-driver:2.2.0-0.5.0
 
+# Kubectl
+
 # ADD https://storage.googleapis.com/kubernetes-release/release/v1.8.2/bin/linux/amd64/kubectl /usr/local/bin
 ADD dist/kubectl /usr/local/bin
-
 RUN chmod +x /usr/local/bin/kubectl
+
+# Zeppelin Distribution
 
 ADD dist/zeppelin-0.8.0-SNAPSHOT.tar.gz /opt
 RUN mv /opt/zeppelin-0.8.0-SNAPSHOT /opt/zeppelin
@@ -34,11 +37,21 @@ ADD conf/log4j.properties /opt/zeppelin/conf
 RUN sed -i s/INFO/DEBUG/ /opt/zeppelin/conf/log4j.properties
 
 RUN rm -fr /opt/zeppelin/notebook
-ADD notebook /opt/zeppelin
+COPY notebook /opt/zeppelin/notebook
 
 ADD shell/datalayer-zeppelin.sh /opt/zeppelin/bin
 
+# Benchmarks
+
 ADD dist/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar /opt
+
+# Hadoop Distribution
+
+ADD dist/hadoop-2.7.3.tar.gz /opt
+RUN mv /opt/hadoop-2.7.3 /opt/hadoop
+ENV PATH=${PATH}:/opt/hadoop/bin
+
+# 
 
 WORKDIR /opt/zeppelin
 

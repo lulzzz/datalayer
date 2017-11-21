@@ -22,7 +22,7 @@ spec:
       containers:
         - name: zeppelin
           image: {{ .Values.zeppelin.image }}
-          imagePullPolicy: Always
+          imagePullPolicy: {{ .Values.zeppelin.imagePullPolicy }}
           ports:
             - containerPort: 8080
               name: web

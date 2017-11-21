@@ -284,9 +284,29 @@
           "value": "k8s://https://kubernetes:443",
           "type": "textarea"
         },
+        "spark.app.name": {
+          "name": "spark.app.name",
+          "value": "zeppelin-k8s-spark",
+          "type": "textarea"
+        },
         "spark.submit.deployMode": {
           "name": "spark.submit.deployMode",
-          "value": "cluster",
+          "value": "client",
+          "type": "textarea"
+        },
+        "spark.executor.instances": {
+          "name": "spark.executor.instances",
+          "value": "3",
+          "type": "textarea"
+        },
+        "spark.cores.max": {
+          "name": "spark.cores.max",
+          "value": "1",
+          "type": "textarea"
+        },
+        "spark.executor.memory": {
+          "name": "spark.executor.memory",
+          "value": "1g",
           "type": "textarea"
         },
         "spark.kubernetes.namespace": {
@@ -294,14 +314,9 @@
           "value": "default",
           "type": "textarea"
         },
-        "spark.executor.instances": {
-          "name": "spark.executor.instances",
-          "value": "1",
-          "type": "textarea"
-        },
-        "spark.sql.catalogImplementation": {
-          "name": "spark.sql.catalogImplementation",
-          "value": "in-memory",
+        "spark.kubernetes.driver.pod.name": {
+          "name": "spark.kubernetes.driver.pod.name",
+          "value": "SPARK_KUBERNETES_DRIVER_POD_NAME",
           "type": "textarea"
         },
         "spark.kubernetes.resourceStagingServer.uri": {
@@ -329,14 +344,9 @@
           "value": "false",
           "type": "textarea"
         },
-        "spark.cores.max": {
-          "name": "spark.cores.max",
-          "value": "1",
-          "type": "textarea"
-        },
-        "spark.executor.memory": {
-          "name": "spark.executor.memory",
-          "value": "1g",
+        "spark.sql.catalogImplementation": {
+          "name": "spark.sql.catalogImplementation",
+          "value": "in-memory",
           "type": "textarea"
         },
         "zeppelin.spark.concurrentSQL": {
@@ -407,7 +417,7 @@
         "zeppelin.spark.useHiveContext": {
           "name": "zeppelin.spark.useHiveContext",
           "value": "false",
-          "type": "textarea"
+          "type": "checkbox"
         },
         "zeppelin.spark.unSupportedVersionCheck": {
           "name": "zeppelin.spark.unSupportedVersionCheck",
@@ -422,7 +432,7 @@
         "zeppelin.spark.printREPLOutput": {
           "name": "zeppelin.spark.printREPLOutput",
           "value": "true",
-          "type": "textarea"
+          "type": "checkbox"
         },
         "zeppelin.interpreter.localRepo": {
           "name": "zeppelin.interpreter.localRepo",
@@ -483,6 +493,10 @@
         }
       ],
       "dependencies": [
+        {
+          "groupArtifactVersion": "/opt/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar",
+          "local": true
+        }
       ],
       "option": {
         "remote": false,
