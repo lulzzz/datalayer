@@ -23,13 +23,20 @@ ADD dist/kubectl /usr/local/bin
 RUN chmod +x /usr/local/bin/kubectl
 
 ADD dist/zeppelin-0.8.0-SNAPSHOT.tar.gz /opt
+RUN mv /opt/zeppelin-0.8.0-SNAPSHOT /opt/zeppelin
 
-ADD conf/zeppelin-site.xml /opt/zeppelin-0.8.0-SNAPSHOT/conf
-ADD conf/interpreter.json /opt/zeppelin-0.8.0-SNAPSHOT/conf
+ADD dist/local-repo.tar.gz /opt/zeppelin
 
-ADD conf/log4j.properties /opt/zeppelin-0.8.0-SNAPSHOT/conf
-RUN sed -i s/INFO/DEBUG/ /opt/zeppelin-0.8.0-SNAPSHOT/conf/log4j.properties
+ADD conf/zeppelin-site.xml /opt/zeppelin/conf
+ADD conf/interpreter.json.template /opt/zeppelin/conf
 
-WORKDIR /opt/zeppelin-0.8.0-SNAPSHOT
+ADD conf/log4j.properties /opt/zeppelin/conf
+RUN sed -i s/INFO/DEBUG/ /opt/zeppelin/conf/log4j.properties
 
-ENTRYPOINT bin/zeppelin.sh
+ADD shell/datalayer-zeppelin.sh /opt/zeppelin/bin
+
+ADD dist/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar /opt
+
+WORKDIR /opt/zeppelin
+
+ENTRYPOINT bin/datalayer-zeppelin.sh

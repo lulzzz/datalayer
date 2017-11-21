@@ -43,4 +43,4 @@
 
 cd zeppelin-k8s
 docker build -t datalayer/zeppelin-k8s:2.2.0-0.5.0 .
-# docker push datalayer/zeppelin-k8s:2.2.0-0.5.0
+docker push datalayer/zeppelin-k8s:2.2.0-0.5.0
