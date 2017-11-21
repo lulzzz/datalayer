@@ -21,4 +21,4 @@ docker \
     datalayer/spitfire:latest
 ```
 
-Open <a href="http://localhost:1618">http://localhost:1618</a> in your favorite browser.
+Open [http://localhost:1618](http://localhost:1618) in your favorite browser.

@@ -33,6 +33,9 @@ ADD conf/interpreter.json.template /opt/zeppelin/conf
 ADD conf/log4j.properties /opt/zeppelin/conf
 RUN sed -i s/INFO/DEBUG/ /opt/zeppelin/conf/log4j.properties
 
+RUN rm -fr /opt/zeppelin/notebook
+ADD notebook /opt/zeppelin
+
 ADD shell/datalayer-zeppelin.sh /opt/zeppelin/bin
 
 ADD dist/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar /opt
