@@ -6,10 +6,6 @@ ARG HADOOP_VERSION=
 ADD hadoop-${HADOOP_VERSION}.tar.gz /usr/local
 ADD hadoop-native-${HADOOP_VERSION}.tar /usr/local/hadoop-${HADOOP_VERSION}/lib/native
 
-# Add topology plugin
-
-ADD lib/pod-cidr-namenode-topology-plugin-0.1-SNAPSHOT.jar $HADOOP_PREFIX/share/hadoop/hdfs/lib
-
 # 
 
 ENV HADOOP_PREFIX=/usr/local/hadoop \
@@ -23,6 +19,10 @@ RUN \
   rm -f ${HADOOP_PREFIX}/logs/*
 
 WORKDIR $HADOOP_PREFIX
+
+# Add Topology plugin
+
+ADD lib/pod-cidr-namenode-topology-plugin-0.1-SNAPSHOT-jar-with-dependencies.jar $HADOOP_PREFIX/share/hadoop/hdfs/lib
 
 # HDFS ports
 

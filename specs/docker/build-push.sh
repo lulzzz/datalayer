@@ -42,5 +42,9 @@
 # docker push datalayer/spark-k8s-shuffle-service:2.2.0-0.5.0
 
 cd zeppelin-k8s
-docker build -t datalayer/zeppelin-k8s:2.2.0-0.5.0 .
+docker build \
+  -t datalayer/zeppelin-k8s:2.2.0-0.5.0 \
+  --squash \
+  --compress \
+  .
 docker push datalayer/zeppelin-k8s:2.2.0-0.5.0

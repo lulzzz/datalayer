@@ -100,6 +100,22 @@ data:
         <name>dfs.namenode.datanode.registration.ip-hostname-check</name>
         <value>false</value>
       </property>
+      <property>
+        <name>net.topology.node.switch.mapping.impl</name>
+        <value>org.apache.hadoop.net.PodCIDRToNodeMapping</value>
+      </property>
+      <property>
+        <name>net.topology.impl</name>
+        <value>org.apache.hadoop.net.NetworkTopologyWithNodeGroup</value>
+      </property>
+      <property>
+        <name>net.topology.nodegroup.aware</name>
+        <value>true</value>
+      </property>
+      <property>
+        <name>dfs.block.replicator.classname</name>
+        <value>org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyWithNodeGroup</value>
+      </property>
     </configuration>
 
   slaves: |

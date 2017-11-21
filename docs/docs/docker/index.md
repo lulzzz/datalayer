@@ -89,7 +89,7 @@ This will take some take to start as we are pulling `Always` the docker image to
 Test the correct configuration of Hadoop:
 
 ```
-kubectl exec -it $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") -- cat /usr/hadoop-2.7.3/etc/hadoop/core-site.xml
+kubectl exec -it $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") -- cat /usr/hadoop/etc/hadoop/core-site.xml
 ```
 
 This should print the Hadoop `core-site.xml` configuration file:

@@ -1,5 +1,5 @@
 image: datalayer/hdfs-k8s:2.7.3
-imagePullPolicy: IfNotPresent
+imagePullPolicy: Always
 hdfs-k8sVersion: 2.7.3
 # Select anitAffinity as either hard or soft, default is hard
 antiAffinity: "soft"
