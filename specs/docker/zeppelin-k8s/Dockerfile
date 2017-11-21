@@ -43,7 +43,8 @@ ADD shell/datalayer-zeppelin.sh /opt/zeppelin/bin
 
 # Benchmarks
 
-ADD dist/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar /opt
+ADD lib/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar /lib
+ADD lib/pod-cidr-namenode-topology-plugin-0.1-SNAPSHOT-jar-with-dependencies.jar /lib
 
 # Hadoop Distribution
 

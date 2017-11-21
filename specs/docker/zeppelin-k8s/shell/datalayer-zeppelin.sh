@@ -17,7 +17,6 @@
 # specific language governing permissions and limitations
 # under the License.
 
-
 export HADOOP_CONF_DIR=/etc/hdfs-k8s/conf
 
 POD_NAME=$HOSTNAME

@@ -499,7 +499,11 @@
       ],
       "dependencies": [
         {
-          "groupArtifactVersion": "/opt/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar",
+          "groupArtifactVersion": "/lib/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar",
+          "local": true
+        },
+        {
+          "groupArtifactVersion": "/lib/pod-cidr-namenode-topology-plugin-0.1-SNAPSHOT-jar-with-dependencies.jar",
           "local": true
         }
       ],

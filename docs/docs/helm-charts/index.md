@@ -68,7 +68,8 @@ helm upgrade \
 You need the `Spark resource staging server` and the `Spark shuffle service`.
 
 ```
-helm install spark-k8s -n spark-k8s
+helm install spark-k8s \
+  -n spark-k8s
 ```
 
 ## Install the Apache Zeppelin chart
