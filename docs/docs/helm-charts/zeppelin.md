@@ -1,5 +1,5 @@
 ---
-title: Zeppelin on K8S
+title: Zeppelin Helm Charts
 ---
 
 This page a ongoing effort to describe how to run Apache Zeppelin with Spark on Kubernetes

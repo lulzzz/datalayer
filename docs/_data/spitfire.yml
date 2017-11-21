@@ -2,3 +2,6 @@ bigheader: "Datalayer Spitfire"
 abstract: "Instructions for setting Datalayer Spitfire."
 toc:
 - docs/spitfire/index.md
+- title: Spitfire
+  section:
+  - docs/spitfire/index.md

@@ -1,5 +1,5 @@
 ---
-title: Spitfire
+title: Spitfire Standalone
 ---
 
 Run on a linux machine with this shell command:

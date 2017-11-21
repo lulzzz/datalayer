@@ -1,8 +1,6 @@
 ---
-title: Helm Charts
+title: Deploy with Helm Charts on K8S
 ---
-
-# Deploy with Helm Charts on a Kubernetes cluster
 
 ## Prerequisite
 
@@ -79,12 +77,12 @@ Install the `Zeppelin on K8s` chart:
 
 ```
 helm install \
-  --set hdfsK8s.useConfigMap=true,hdfsK8s.configMapName=hdfs-k8s-hdfs-k8s \
+  --set hdfsK8s.useConfigMap=true,hdfsK8s.configMapName=hdfs-k8s-hdfs-k8s,zeppelin.imagePullPolicy=IfNotPresent \
   zeppelin-k8s \
   -n zeppelin-k8s
 ```
 
-This will take some take to start as we are pulling `Always` the docker image to ensure you have the latest fresh version.
+You can set `zeppelin.imagePullPolicy=Always`, to ensure you have the latest fresh version (this may take time as a complete new Docker image will be pulled).
 
 Test the correct configuration of Hadoop:
 

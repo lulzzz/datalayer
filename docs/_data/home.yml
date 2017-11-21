@@ -1,8 +1,7 @@
 bigheader: "Documentation"
 abstract: "Documentation for using and learning about Datalayer."
 toc:
-- docs/index.md
-- title: Introduction
+- docs/home/index.md
+- title: Setup
   section:
-  - docs/helm-charts/index.md
-  - docs/spitfire/index.md
+  - docs/home/index.md
