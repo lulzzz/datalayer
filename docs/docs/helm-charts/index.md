@@ -166,3 +166,15 @@ kubectl exec -n default -it $(kubectl get pods -n default -l "app=zeppelin-k8s" 
 ```
 
 ![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
+
+**Very Experimental Option - Use the HDFS Locality chart**
+
+Install Zeppelin connecting to a HDS with locality enabled:
+
+```
+helm install \
+  --set hdfsK8s.useConfigMap=false \
+  --set zeppelin.imagePullPolicy=IfNotPresent \
+  zeppelin-k8s-hdfs-locality \
+  -n zeppelin-k8s-hdfs-locality
+```
