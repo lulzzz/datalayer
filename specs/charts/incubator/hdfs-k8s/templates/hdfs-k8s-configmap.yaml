@@ -66,22 +66,6 @@ data:
         <value>hdfs://{{ template "hdfs-k8s.fullname" . }}-hdfs-nn:9000/</value>
         <description>NameNode URI</description>
       </property>
-      <property>
-        <name>net.topology.node.switch.mapping.impl</name>
-        <value>org.apache.hadoop.net.PodCIDRToNodeMapping</value>
-      </property>
-      <property>
-        <name>net.topology.impl</name>
-        <value>org.apache.hadoop.net.NetworkTopologyWithNodeGroup</value>
-      </property>
-      <property>
-        <name>net.topology.nodegroup.aware</name>
-        <value>true</value>
-      </property>
-      <property>
-        <name>dfs.block.replicator.classname</name>
-        <value>org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyWithNodeGroup</value>
-      </property>
     </configuration>
 
   hdfs-site.xml: |

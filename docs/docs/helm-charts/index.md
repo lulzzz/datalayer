@@ -64,7 +64,7 @@ helm upgrade \
   hdfs-k8s
 ```
 
-**Very Experimental Option - Use the HDFS Locality chart**
+**Very Experimental Option - Use HDFS with Locality**
 
 Steps to be taken (adapt the ip addresses in function of your environement).
 
@@ -167,7 +167,7 @@ kubectl exec -n default -it $(kubectl get pods -n default -l "app=zeppelin-k8s" 
 
 ![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
 
-**Very Experimental Option - Use the HDFS Locality chart**
+**Very Experimental Option - Use HDFS with Locality**
 
 Install Zeppelin connecting to a HDS with locality enabled:
 

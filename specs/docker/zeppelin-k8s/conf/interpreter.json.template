@@ -490,11 +490,7 @@
       "dependencies": [
         {
           "groupArtifactVersion": "org.apache.hadoop:hadoop-aws:2.7.3",
-          "local": true
-        },
-        {
-          "groupArtifactVersion": "/lib/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar",
-          "local": true
+          "local": false
         }
       ],
       "option": {
