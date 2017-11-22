@@ -1,5 +1,5 @@
 ---
-title: Spitfire Standalone
+title: Datalayer Spitfire
 ---
 
 Run on a linux machine with this shell command:

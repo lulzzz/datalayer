@@ -1,5 +1,5 @@
 ---
-title: Deploy with Helm Charts on K8S
+title: Setup on K8S
 ---
 
 ## Prerequisite
@@ -88,7 +88,9 @@ You can set `zeppelin.imagePullPolicy=Always`, to ensure you have the latest fre
 Test the correct configuration of Hadoop:
 
 ```
-kubectl exec -it $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") -- cat /usr/hadoop/etc/hadoop/core-site.xml
+kubectl exec -it $(kubectl get pods -n default \
+  -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") \
+  -- cat /usr/hadoop/etc/hadoop/core-site.xml
 ```
 
 This should print the Hadoop `core-site.xml` configuration file:
@@ -105,11 +107,10 @@ This should print the Hadoop `core-site.xml` configuration file:
 </configuration>
 ```
 
-Open the Apache Zeppelin home page in your favorite browser.
+Forward the 8080 port and open the Apache Zeppelin home page on `http://localhost:8080` in your favorite browser.
 
 ```
 kubectl port-forward $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") 8080:8080
-xdg-open http://localhost:8080
 ```
 
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.

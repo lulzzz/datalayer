@@ -5,3 +5,4 @@ toc:
 - title: Helm Charts
   section:
   - docs/helm-charts/index.md
+  - docs/helm-charts/zeppelin.md
