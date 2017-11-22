@@ -274,16 +274,6 @@
       "name": "spark",
       "group": "spark",
       "properties": {
-        "HADOOP_CONF_DIR": {
-          "name": "HADOOP_CONF_DIR",
-          "value": "/etc/hdfs-k8s/conf",
-          "type": "textarea"
-        },
-        "SPARK_HOME": {
-          "name": "SPARK_HOME",
-          "value": "/opt/spark",
-          "type": "textarea"
-        },
         "master": {
           "name": "master",
           "value": "k8s://https://kubernetes:443",
@@ -499,11 +489,11 @@
       ],
       "dependencies": [
         {
-          "groupArtifactVersion": "/lib/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar",
+          "groupArtifactVersion": "org.apache.hadoop:hadoop-aws:2.7.3",
           "local": true
         },
         {
-          "groupArtifactVersion": "/lib/pod-cidr-namenode-topology-plugin-0.1-SNAPSHOT-jar-with-dependencies.jar",
+          "groupArtifactVersion": "/lib/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar",
           "local": true
         }
       ],

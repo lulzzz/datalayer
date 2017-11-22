@@ -54,12 +54,14 @@ spec:
 {{ toYaml .Values.hdfs.nameNode.resources | indent 10 }}
         readinessProbe:
           httpGet:
+            host: 127.0.0.1
             path: /
             port: 50070
           initialDelaySeconds: 5
           timeoutSeconds: 2
         livenessProbe:
           httpGet:
+            host: 127.0.0.1
             path: /
             port: 50070
           initialDelaySeconds: 10

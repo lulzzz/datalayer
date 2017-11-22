@@ -20,6 +20,8 @@ RUN \
 
 WORKDIR $HADOOP_PREFIX
 
+RUN mkdir $HADOOP_PREFIX/logs
+
 # Add Topology plugin
 
 ADD lib/pod-cidr-namenode-topology-plugin-0.1-SNAPSHOT-jar-with-dependencies.jar $HADOOP_PREFIX/share/hadoop/hdfs/lib

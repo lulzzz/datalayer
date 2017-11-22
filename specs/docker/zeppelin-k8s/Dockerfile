@@ -19,7 +19,6 @@ FROM datalayer/spark-k8s-driver:2.2.0-0.5.0
 
 # Kubectl
 
-# ADD https://storage.googleapis.com/kubernetes-release/release/v1.8.2/bin/linux/amd64/kubectl /usr/local/bin
 ADD dist/kubectl /usr/local/bin
 RUN chmod +x /usr/local/bin/kubectl
 
@@ -44,13 +43,17 @@ ADD shell/datalayer-zeppelin.sh /opt/zeppelin/bin
 # Benchmarks
 
 ADD lib/spark-benchmarks-dfsio-0.1.0-with-dependencies.jar /lib
-ADD lib/pod-cidr-namenode-topology-plugin-0.1-SNAPSHOT-jar-with-dependencies.jar /lib
 
 # Hadoop Distribution
 
 ADD dist/hadoop-2.7.3.tar.gz /opt
 RUN mv /opt/hadoop-2.7.3 /opt/hadoop
 ENV PATH=${PATH}:/opt/hadoop/bin
+
+# HDFS Locality
+
+ADD lib/pod-cidr-namenode-topology-plugin-0.1-SNAPSHOT-jar-with-dependencies.jar /lib
+COPY hdfs-k8s-locality /etc/hdfs-k8s-locality
 
 # 
 

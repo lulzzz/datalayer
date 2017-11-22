@@ -16,7 +16,7 @@ git clone https://github.com/datalayer/datalayer.git datalayer
 cd datalayer/specs/charts/incubator
 ```
 
-## Install the Apache HDFS chart
+## Install the HDFS chart
 
 ```
 helm install \
@@ -24,10 +24,11 @@ helm install \
   --set persistence.nameNode.enabled=false \
   --set persistence.dataNode.enabled=false \
   --set hdfs.dataNode.replicas=3 \
+  --set imagePullPolicy=IfNotPresent \
   hdfs-k8s
 ```
 
-This will launch one Hadoop Namenode and one Hadoop Datanode. If you list the pods with `kubectl get pods -l app=hdfs-k8s`, you should see two running Hadoop pods:
+This will launch one Hadoop Namenode and three Hadoop Datanodes. If you list the pods with `kubectl get pods -l app=hdfs-k8s`, you should see two running Hadoop pods:
 
 ```
 NAME                              READY     STATUS    RESTARTS   AGE
@@ -44,7 +45,7 @@ NAME         	REVISION	UPDATED                 	STATUS  	CHART                  
 hdfs-k8s   	1       	Mon Nov 20 14:23:52 2017	DEPLOYED	hdfs-k8s-1.0.0          	default  
 ```
 
-Check the sanity of your cluster:
+Check the sanity of your cluster and create a `/tmp` folder:
 
 ```
 kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfsadmin -report
@@ -63,6 +64,43 @@ helm upgrade \
   hdfs-k8s
 ```
 
+**Very Experimental Option - Use the HDFS Locality chart**
+
+Steps to be taken (adapt the ip addresses in function of your environement).
+
+```
+kubectl label nodes ip-10-0-0-131.us-west-2.compute.internal hdfs-namenode-selector=hdfs-namenode-0
+kubectl label nodes ip-10-0-0-131.us-west-2.compute.internal hdfs-datanode-exclude=yes
+```
+
+```
+helm install \
+  hdfs-nn-k8s \
+  -n hdfs-namenode
+```
+
+```
+helm install \
+  hdfs-dn-k8s \
+  -n hdfs-datanode
+```
+
+```
+kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfsadmin -report
+kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfs -mkdir /tmp
+kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfs -ls /
+kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfs -cat /hosts
+kubectl exec -n default -it hdfs-namenode-0 -- bash
+```
+
+```
+helm install \
+  --set hdfsK8s.useConfigMap=false \
+  --set zeppelin.imagePullPolicy=Always \
+  zeppelin-k8s-hdfs-locality \
+  -n zeppelin-k8s-hdfs-locality
+```
+
 ## Install the Apache Spark chart
 
 You need the `Spark resource staging server` and the `Spark shuffle service`.
@@ -78,7 +116,9 @@ Install the `Zeppelin on K8s` chart:
 
 ```
 helm install \
-  --set hdfsK8s.useConfigMap=true,hdfsK8s.configMapName=hdfs-k8s-hdfs-k8s,zeppelin.imagePullPolicy=IfNotPresent \
+  --set hdfsK8s.useConfigMap=true \
+  --set hdfsK8s.configMapName=hdfs-k8s-hdfs-k8s \
+  --set zeppelin.imagePullPolicy=IfNotPresent \
   zeppelin-k8s \
   -n zeppelin-k8s
 ```
