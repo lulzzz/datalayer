@@ -1,6 +1,6 @@
 [![Datalayer](http://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
 
-# Collaborative Data Science Platform
+We are building a Simple, Collaborative and Multi Cloud platform for Big Data Scientists.
 
-Analyse data and share reuslts with Spark, Python and R on a WEB Notebook on Kubernetes cluster.
+You will analyse data and share reuslts with Spark, Python and R on a WEB Notebook on Kubernetes cluster.
 
