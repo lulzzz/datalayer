@@ -9,11 +9,11 @@ You must have an operational Kubernetes cluster with Helm available.
 > PS: We have and outdated helm repo we need to update...
 > If you still want to use this outdated repo, add --repo http://helm.datalayer.io to the kubectl command given here.
 
-Just clone the `datalayer` repository and change to the `specs/charts/incubator` folder.
+Just clone the Datalayer `helm-charts` repository and change to the `incubator` folder.
 
 ```
-git clone https://github.com/datalayer/datalayer.git datalayer
-cd datalayer/specs/charts/incubator
+git clone https://github.com/datalayer/helm-charts.git helm-charts
+cd helm-charts/incubator
 ```
 
 ## Install the HDFS chart
@@ -66,7 +66,7 @@ helm upgrade \
 
 **Very Experimental Option - Use HDFS with Locality**
 
-Steps to be taken (adapt the ip addresses in function of your environement).
+Steps to be taken (adapt the ip addresses in function of your environment).
 
 ```
 kubectl label nodes ip-10-0-0-131.us-west-2.compute.internal hdfs-namenode-selector=hdfs-namenode-0
@@ -75,13 +75,13 @@ kubectl label nodes ip-10-0-0-131.us-west-2.compute.internal hdfs-datanode-exclu
 
 ```
 helm install \
-  hdfs-nn-k8s \
+  hdfs-k8s-locality-nn \
   -n hdfs-namenode
 ```
 
 ```
 helm install \
-  hdfs-dn-k8s \
+  hdfs-k8s-locality-dn \
   -n hdfs-datanode
 ```
 
@@ -96,7 +96,7 @@ kubectl exec -n default -it hdfs-namenode-0 -- bash
 ```
 helm install \
   --set hdfsK8s.useConfigMap=false \
-  --set zeppelin.imagePullPolicy=Always \
+  --set zeppelin.imagePullPolicy=IfNotPresent \
   zeppelin-k8s-hdfs-locality \
   -n zeppelin-k8s-hdfs-locality
 ```
@@ -123,9 +123,9 @@ helm install \
   -n zeppelin-k8s
 ```
 
-You can set `zeppelin.imagePullPolicy=Always`, to ensure you have the latest fresh version (this may take time as a complete new Docker image will be pulled).
+You can set `zeppelin.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take time as a complete new Docker image will be pulled).
 
-Test the correct configuration of Hadoop:
+Test the presence of the Hadoop configuration:
 
 ```
 kubectl exec -it $(kubectl get pods -n default \
