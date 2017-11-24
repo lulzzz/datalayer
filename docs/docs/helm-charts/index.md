@@ -9,11 +9,18 @@ You must have an operational Kubernetes cluster with Helm available.
 > PS: We have and outdated helm repo we need to update...
 > If you still want to use this outdated repo, add --repo http://helm.datalayer.io to the kubectl command given here.
 
-Just clone the Datalayer `helm-charts` repository and change to the `incubator` folder.
+Just clone the Datalayer `helm-charts` repository and go to the `incubator` folder.
 
 ```
 git clone https://github.com/datalayer/helm-charts.git helm-charts
 cd helm-charts/incubator
+```
+
+To ease the management, it may be interesting to install the standard Kubernetes Dashboard with these commands and check http://localhost:9090 in your browser
+
+```
+helm install k8s-dashboard -n k8s-dashboard
+kubectl port-forward $(kubectl get pods -n default -l "app=kubernetes-dashboard" -o jsonpath="{.items[0].metadata.name}") 9090:9090 &
 ```
 
 ## Install the HDFS chart
@@ -45,7 +52,7 @@ NAME         	REVISION	UPDATED                 	STATUS  	CHART                  
 hdfs-k8s   	1       	Mon Nov 20 14:23:52 2017	DEPLOYED	hdfs-k8s-1.0.0          	default  
 ```
 
-Check the sanity of your cluster and create a `/tmp` folder:
+Check the sanity of your cluster and create a `/tmp` folder.
 
 ```
 kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfsadmin -report
@@ -55,7 +62,7 @@ kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfs -ls /
 
 To access the Namenode user interface: `kubectl port-forward hdfs-k8s-hdfs-k8s-hdfs-nn-0 50070:50070` and open in your browser `http://localhost:50070`.
 
-If you want to scale the number of Datanodes, you just need to upgrade with:
+If you want to scale the number of Datanodes, you just need to upgrade.
 
 ```
 helm upgrade \
@@ -69,8 +76,8 @@ helm upgrade \
 Steps to be taken (adapt the ip addresses in function of your environment).
 
 ```
-kubectl label nodes ip-10-0-0-131.us-west-2.compute.internal hdfs-namenode-selector=hdfs-namenode-0
-kubectl label nodes ip-10-0-0-131.us-west-2.compute.internal hdfs-datanode-exclude=yes
+kubectl label nodes ip-10-0-3-74.us-west-2.compute.internal hdfs-namenode-selector=hdfs-namenode-0
+kubectl label nodes ip-10-0-3-74.us-west-2.compute.internal hdfs-datanode-exclude=yes
 ```
 
 ```
@@ -112,7 +119,7 @@ helm install spark-k8s \
 
 ## Install the Apache Zeppelin chart
 
-Install the `Zeppelin on K8s` chart:
+Install the `Zeppelin on K8s` chart.
 
 ```
 helm install \
@@ -125,7 +132,7 @@ helm install \
 
 You can set `zeppelin.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take time as a complete new Docker image will be pulled).
 
-Test the presence of the Hadoop configuration:
+Test the presence of the Hadoop configuration.
 
 ```
 kubectl exec -it $(kubectl get pods -n default \
@@ -150,7 +157,7 @@ This should print the Hadoop `core-site.xml` configuration file:
 Forward the 8080 port and open the Apache Zeppelin home page on `http://localhost:8080` in your favorite browser.
 
 ```
-kubectl port-forward $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") 8080:8080
+kubectl port-forward $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") 8080:8080 &
 ```
 
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
