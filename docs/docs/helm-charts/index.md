@@ -76,8 +76,8 @@ helm upgrade \
 Steps to be taken (adapt the ip addresses in function of your environment).
 
 ```
-kubectl label nodes ip-10-0-3-74.us-west-2.compute.internal hdfs-namenode-selector=hdfs-namenode-0
-kubectl label nodes ip-10-0-3-74.us-west-2.compute.internal hdfs-datanode-exclude=yes
+kubectl label nodes ip-10-0-0-41.us-west-2.compute.internal hdfs-namenode-selector=hdfs-namenode-0
+kubectl label nodes ip-10-0-0-41.us-west-2.compute.internal hdfs-datanode-exclude=yes
 ```
 
 ```
@@ -96,16 +96,7 @@ helm install \
 kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfsadmin -report
 kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfs -mkdir /tmp
 kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfs -ls /
-kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfs -cat /hosts
 kubectl exec -n default -it hdfs-namenode-0 -- bash
-```
-
-```
-helm install \
-  --set hdfsK8s.useConfigMap=false \
-  --set zeppelin.imagePullPolicy=IfNotPresent \
-  zeppelin-k8s-hdfs-locality \
-  -n zeppelin-k8s-hdfs-locality
 ```
 
 ## Install the Apache Spark chart
@@ -180,8 +171,9 @@ Install Zeppelin connecting to a HDS with locality enabled:
 
 ```
 helm install \
-  --set hdfsK8s.useConfigMap=false \
   --set zeppelin.imagePullPolicy=IfNotPresent \
+  --set hdfsK8s.useConfigMap=true \
+  --set hdfsK8s.nameNodeUri=hdfs://hdfs-namenode-0.hdfs-namenode.default.svc.cluster.local:8020 \
   zeppelin-k8s-hdfs-locality \
   -n zeppelin-k8s-hdfs-locality
 ```
