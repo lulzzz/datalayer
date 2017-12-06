@@ -14,6 +14,7 @@ docker \
  --shm-size=2g \
  -e DATALAYER_NODE_TYPE=f+m+s \
  -itP \
+ -p 80:80 \
  -p 1618:1618 \
  -p 4040:4040 \
  -p 8088:8088 \
