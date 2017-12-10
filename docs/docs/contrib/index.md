@@ -24,6 +24,17 @@ While the `contrib` path is the place to hack before being released in the Datla
     <td style="text-align: center;"><b>STATUS</b></td> 
   </tr> 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+| Disable ssl test for staging server if current classpath contains the jetty shaded classes 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --> 
+  <tr class="a"> 
+    <td>Disable ssl test for staging server if current classpath contains the jetty shaded classes </td> 
+    <td></td> 
+    <td><a href="https://github.com/datalayer-contrib/spark-k8s/tree/jetty-sslcontext">spark-k8s/jetty-sslcontext</a></td> 
+    <td><a href=""></a></td> 
+    <td><a href="https://github.com/apache-spark-on-k8s/spark/pull/573">#573</a></td> 
+    <td>OPEN</td> 
+  </tr> 
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 | Develop and build Kubernetes modules in isolation without the other Spark modules
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --> 
   <tr class="a"> 
