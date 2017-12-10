@@ -6,7 +6,7 @@ Datalayer contributes to open-source projects via the [Datalayer Contrib](https:
 
 While the `contrib` path is the place to hack before being released in the Datlayer solutions, this is also an opportunity for developers to test those new functionalities as soon as possible.
 
-## Apache Spark PR
+## Apache Spark Contrib
 
 <table class="bodyTable table table-striped table-hover" border="1"> 
   <tbody> 
@@ -59,7 +59,7 @@ While the `contrib` path is the place to hack before being released in the Datla
   </tbody> 
 </table> 
 
-## Apache HDFS PR
+## Apache HDFS Contrib
 
 <table class="bodyTable table table-striped table-hover" border="1"> 
   <tbody> 
@@ -90,7 +90,7 @@ While the `contrib` path is the place to hack before being released in the Datla
   </tbody> 
 </table> 
 
-## Apache Zeppelin PR
+## Apache Zeppelin Contrib
 
 <table class="bodyTable table table-striped table-hover" border="1"> 
   <tbody> 
@@ -150,26 +150,6 @@ While the `contrib` path is the place to hack before being released in the Datla
     <td><a href=""></a></td> 
     <td><a href="https://github.com/apache/incubator-zeppelin/pull/1385">#1385</a></td> 
     <td>OPEN</td> 
-  </tr> 
-  </tbody>
-</table> 
-
-## Merged PR
-
-<table class="bodyTable table table-striped table-hover" border="1"> 
-  <tbody> 
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-|                             HEADERS
-| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --> 
-  <tr class="a"> 
-    <td style="text-align: center;"><b>DESCRIPTION</b></td> 
-    <td style="text-align: center;"><b>JIRA</b></td> 
-    <td style="text-align: center;"><b>REPOSITORY</b></td> 
-    <td style="text-align: center;"><b>DOC</b></td> 
-    <td style="text-align: center;"><b>PR</b></td> 
-    <td style="text-align: center;"><b>STATUS</b></td> 
   </tr> 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 | Jersey2 instead of CXF for better JSON REST
@@ -273,7 +253,7 @@ While the `contrib` path is the place to hack before being released in the Datla
   </tbody> 
 </table> 
 
-## Upcoming PR
+## Backlog Contrib
 
 <table class="bodyTable table table-striped table-hover" border="1"> 
   <tbody> 
