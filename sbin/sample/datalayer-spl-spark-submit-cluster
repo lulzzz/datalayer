@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+/opt/spark/bin/spark-submit \
+  --conf spark.master=k8s://https://52.88.44.52:433 \
+  --conf spark.kubernetes.resourceStagingServer.uri=http://52.88.44.52:10000 \
+  --conf spark.submit.deployMode=cluster \
+  --conf spark.kubernetes.namespace=default \
+  --conf spark.app.name=spark-pi \
+  --conf spark.sql.catalogImplementation=in-memory \
+  --conf spark.executor.instances=1 \
+  --conf spark.kubernetes.initcontainer.docker.image=datalayer/spark-k8s-init:2.2.0-0.5.0 \
+  --conf spark.kubernetes.driver.docker.image=datalayer/spark-k8s-driver:2.2.0-0.5.0 \
+  --conf spark.kubernetes.executor.docker.image=datalayer/spark-k8s-executor:2.2.0-0.5.0 \
+  --conf spark.dynamicAllocation.enabled=true \
+  --conf spark.shuffle.service.enabled=true \
+  --conf spark.kubernetes.shuffle.namespace=default \
+  --conf spark.kubernetes.shuffle.labels="app=spark-k8s-shuffle-service,spark-version=2.2.0" \
+  --conf spark.local.dir=/tmp/spark-local \
+  --class org.apache.spark.examples.SparkPi \
+  local:///opt/spark/examples/jars/spark-examples_2.11-2.2.0-k8s-0.5.0.jar \
+  10

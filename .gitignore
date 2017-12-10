@@ -26,3 +26,5 @@ yarn.lock
 
 docs/_site
 docs/Gemfile.lock
+
+contrib
