@@ -24,6 +24,17 @@ While the `contrib` path is the place to hack before being released in the Datla
     <td style="text-align: center;"><b>STATUS</b></td> 
   </tr> 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+| Develop and build Kubernetes modules in isolation without the other Spark modules
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --> 
+  <tr class="a"> 
+    <td>Develop and build Kubernetes modules in isolation without the other Spark modules</td> 
+    <td></td> 
+    <td><a href="https://github.com/datalayer-contrib/spark-k8s/tree/kubernetes-parent">spark-k8s/kubernetes-parent</a></td> 
+    <td><a href=""></a></td> 
+    <td><a href="https://github.com/apache-spark-on-k8s/spark/pull/570">#570</a></td> 
+    <td>OPEN</td> 
+  </tr> 
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 | Add libc6-compat in spark-bash to allow parquet
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --> 
   <tr class="a"> 
@@ -42,7 +53,7 @@ While the `contrib` path is the place to hack before being released in the Datla
     <td></td> 
     <td><a href="https://github.com/datalayer-contrib/spark-k8s-docs/tree/zeppelin">spark-k8s-docs/zeppelin</a></td> 
     <td><a href=""></a></td> 
-    <td><a href="https://github.com/apache-spark-on-k8s/userdocs/pull/21">#550</a></td> 
+    <td><a href="https://github.com/apache-spark-on-k8s/userdocs/pull/21">#21</a></td> 
     <td>OPEN</td> 
   </tr> 
   </tbody> 
@@ -122,7 +133,7 @@ While the `contrib` path is the place to hack before being released in the Datla
 | Multiple simultaneous users on a single WEB server
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --> 
   <tr class="a"> 
-    <td>Multiple-users on a single WEB server</td> 
+    <td>Multiple simultaneous on a single WEB server</td> 
     <td><a href="https://issues.apache.org/jira/browse/ZEPPELIN-1000">ZEPPELIN-1000</a></td> 
     <td><a href="https://github.com/datalayer-contrib/zeppelin-k8s/tree/multiuser">zeppelin-k8s/multiuser</a></td> 
     <td><a href=""></a></td> 
@@ -280,7 +291,7 @@ While the `contrib` path is the place to hack before being released in the Datla
     <td style="text-align: center;"><b>STATUS</b></td> 
   </tr> 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-| MULTI-USER
+| Multi User
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 This are JIRA tickets about multi-user
