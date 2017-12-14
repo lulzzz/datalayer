@@ -31,10 +31,10 @@ Our Data Science Platform is designed to be `Simple` as `Collaborative` and to s
 | 5 |                  INTERPRETER-REST                |  I  |  R  |  O  |
 |   |        Spark | TensorFlow | ... | Markdown       |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 4 |                       TOOLS                      |  A  |  B  |  P  |
-|   |                  Kubeless | Batch                |     |     |     |
+| 4 |                       UTILS                      |  A  |  B  |  P  |
+|   |            Kubeless | Batch | Kafka              |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 3 |                        STORE                     |  M  |  A  |  S  |
+| 3 |                       STORE                      |  M  |  A  |  S  |
 |   |   Hadoop | HBase | Solr | JanusGraph | MongoDB   |     |     |     |
 +---+--------------------------------------------------+     +     +     |
 | 2 |                     FILE-SYSTEM                  |     |  C  |     |
@@ -59,13 +59,13 @@ The distributed file systems running on Kubernetes.
 
 Various store to fit common storage patterns.
 
-### Layer 4 - Tools
+### Layer 4 - Utils
 
-Tools to complement common use case such as functions, scheduled batch.
+Utility toolings to complement common use case such as `Functions`, `Scheduled Batch`, `Queuing`...
 
 ### Layer 5 - Interpreter Rest
 
-REST endpoints to invoke and interpeter commands from clients/
+REST endpoints to invoke and interpeter commands from upper layers.
 
 ### Layer 6 - Kuber
 
@@ -73,4 +73,4 @@ Kuber is the Datalayer offering to manage the stack on a technical point-of-vude
 
 ### Layer 7
 
-The studio that Big Data Scientists will use to Collect, Explore, Model and Serve.
+The collaborative studio that Big Data Scientists will use to `Collect`, `Explore`, `Model` and `Serve`.
