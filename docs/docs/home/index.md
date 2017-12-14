@@ -31,11 +31,11 @@ Our Data Science Platform is designed to be `Simple` as `Collaborative` and to s
 | 5 |                  INTERPRETER-REST                |  I  |  R  |  O  |
 |   |        Spark | TensorFlow | ... | Markdown       |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 4 |                       UTILS                      |  A  |  B  |  P  |
+| 4 |                     MIDDLEWARE                   |  A  |  B  |  P  |
 |   |            Kubeless | Batch | Kafka              |     |     |     |
 +---+--------------------------------------------------+     +     +     |
 | 3 |                       STORE                      |  M  |  A  |  S  |
-|   |   Hadoop | HBase | Solr | JanusGraph | MongoDB   |     |     |     |
+|   |       HBase | Solr | JanusGraph | MongoDB        |     |     |     |
 +---+--------------------------------------------------+     +     +     |
 | 2 |                     FILE-SYSTEM                  |     |  C  |     |
 |   |                     HDFS | IFPS                  |     |     |     |
@@ -59,9 +59,9 @@ The distributed file systems running on Kubernetes.
 
 Various store to fit common storage patterns.
 
-### Layer 4 - Utils
+### Layer 4 - Middelware
 
-Utility toolings to complement common use case such as `Functions`, `Scheduled Batch`, `Queuing`...
+Middelware toolings to complement common use case such as `Functions`, `Scheduled Batch`, `Queuing`...
 
 ### Layer 5 - Interpreter Rest
 
