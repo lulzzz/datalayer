@@ -6,7 +6,7 @@ You can run Datalayer on Kubernetes with the provided and [Helm charts](/docs/he
 
 You will get an Apache Zeppelin notebook running natively on Spark Kubernetes.
 
-# Datalayer Platform
+## Datalayer Platform
 
 The Apache Zeppelin on K8S is just a start. We are building a new complete platform for Big Data Scientists.
 
@@ -47,30 +47,30 @@ Our Data Science Platform is designed to be `Simple` as `Collaborative` and to s
 
 Like building a house, we need strong foundations and well organized layers that are secured (`IAM`, `RBAC`) and managed (`OPS`).
 
-## Layer 1 - Cluster
+### Layer 1 - Cluster
 
 The Kubernetes cluster infrastructure.
 
-## Layer 2 - File System
+### Layer 2 - File System
 
 The distributed file systems running on Kubernetes.
 
-## Layer 3 - Store
+### Layer 3 - Store
 
 Various store to fit common storage patterns.
 
-## Layer 4 - Tools
+### Layer 4 - Tools
 
 Tools to complement common use case such as functions, scheduled batch.
 
-## Layer 5 - Interpreter Rest
+### Layer 5 - Interpreter Rest
 
 REST endpoints to invoke and interpeter commands from clients/
 
-## Layer 6 - Kuber
+### Layer 6 - Kuber
 
 Kuber is the Datalayer offering to manage the stack on a technical point-of-vude
 
-## Layer 7
+### Layer 7
 
 The studio that Big Data Scientists will use to Collect, Explore, Model and Serve.
