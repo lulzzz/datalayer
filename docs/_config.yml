@@ -57,5 +57,4 @@ emptyArray: []
 tocs:
   - home
   - helm-charts
-  - spitfire
   - contrib
