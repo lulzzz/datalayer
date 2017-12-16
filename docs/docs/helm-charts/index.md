@@ -58,6 +58,7 @@ Check the sanity of your cluster and create a `/tmp` folder.
 kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfsadmin -report
 kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfs -mkdir /tmp
 kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfs -ls /
+kubectl exec -n default -it hdfs-namenode-0 -- bash
 ```
 
 To access the Namenode user interface: `kubectl port-forward hdfs-k8s-hdfs-k8s-hdfs-nn-0 50070:50070` and open in your browser `http://localhost:50070`.
@@ -69,34 +70,6 @@ helm upgrade \
   --set hdfs.dataNode.replicas=6 \
   hdfs-k8s \
   hdfs-k8s
-```
-
-**Very Experimental Option - Use HDFS with Locality**
-
-Steps to be taken (adapt the ip addresses in function of your environment).
-
-```
-kubectl label nodes ip-10-0-0-41.us-west-2.compute.internal hdfs-namenode-selector=hdfs-namenode-0
-kubectl label nodes ip-10-0-0-41.us-west-2.compute.internal hdfs-datanode-exclude=yes
-```
-
-```
-helm install \
-  hdfs-k8s-locality-nn \
-  -n hdfs-namenode
-```
-
-```
-helm install \
-  hdfs-k8s-locality-dn \
-  -n hdfs-datanode
-```
-
-```
-kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfsadmin -report
-kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfs -mkdir /tmp
-kubectl exec -n default -it hdfs-namenode-0 -- hdfs dfs -ls /
-kubectl exec -n default -it hdfs-namenode-0 -- bash
 ```
 
 ## Install the Apache Spark chart
@@ -164,16 +137,3 @@ kubectl exec -n default -it $(kubectl get pods -n default -l "app=zeppelin-k8s" 
 ```
 
 ![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
-
-**Very Experimental Option - Use HDFS with Locality**
-
-Install Zeppelin connecting to a HDS with locality enabled:
-
-```
-helm install \
-  --set zeppelin.imagePullPolicy=IfNotPresent \
-  --set hdfsK8s.useConfigMap=true \
-  --set hdfsK8s.nameNodeUri=hdfs://hdfs-namenode-0.hdfs-namenode.default.svc.cluster.local:8020 \
-  zeppelin-k8s-hdfs-locality \
-  -n zeppelin-k8s-hdfs-locality
-```
