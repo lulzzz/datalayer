@@ -19,30 +19,30 @@ We then assemble all those `contribs` with our open solutions to build an awesom
 Our Data Science Platform is designed to be `Simple` as `Collaborative` and to support `Multi Cloud`.
 
 ```
-+---+--------------------------------------------------+-------+
-|   |        DATALAYER BIG DATA SCIENCE PLATFORM       |       |
-+---+--------------------------------------------------+-------+
-| 7 |                        STUDIO                    |       |
-|   |                  UI | CLI | JS-Apps              |       |
-+---+--------------------------------------------------+       |
-| 6 |                        KUBER                     |       |
-|   |               UI | CLI | SDK | Widget            |       |
-+---+--------------------------------------------------+       |
-| 5 |                  INTERPRETER-REST                |  OPS  |
-|   |         Spark | TensorFlow | ... | Markdown      |       |
-+---+--------------------------------------------------+       |
-| 4 |                   CLUSTER-APPS                   |  RBAC |
-|   |       Kubeless | Batch | Kafka | Kubeflow        |       |
-+---+--------------------------------------------------+       |
-| 3 |                      STORE                       |  IAM  |
-|   |       HBase | Solr | JanusGraph | MongoDB        |       |
-+---+--------------------------------------------------+       |
-| 2 |                    FILE-SYSTEM                   |       |
-|   |                    HDFS | IFPS                   |       |
-+---+--------------------------------------------------+       |
-| 1 |                      CLUSTER                     |       |
-|   |        Kubeadm | Kubicorn | Prometheus | ARK     |       |
-+---+--------------------------------------------------+-------+
++---+--------------------------------------------------+---------+
+|   |        DATALAYER BIG DATA SCIENCE PLATFORM       |         |
++---+--------------------------------------------------+---------+
+| 7 |                        STUDIO                    |         |
+|   |                  UI | CLI | JS-Apps              |         |
++---+--------------------------------------------------+         |
+| 6 |                        KUBER                     |         |
+|   |               UI | CLI | SDK | Widget            |         |
++---+--------------------------------------------------+         |
+| 5 |                  INTERPRETER-REST                |  OPS    |
+|   |         Spark | TensorFlow | ... | Markdown      |  Monit  |
++---+--------------------------------------------------+  Backup |
+| 4 |                   CLUSTER-APPS                   |  Diag   |
+|   |       Kubeless | Batch | Kafka | Kubeflow        |         |
++---+--------------------------------------------------+         |
+| 3 |                      STORE                       |  IAM    |
+|   |       HBase | Solr | JanusGraph | MongoDB        |  RBAC   |
++---+--------------------------------------------------+         |
+| 2 |                    FILE-SYSTEM                   |         |
+|   |                    HDFS | IFPS                   |         |
++---+--------------------------------------------------+         |
+| 1 |                      CLUSTER                     |         |
+|   |                  Kubeadm | Kubicorn              |         |
++---+--------------------------------------------------+---------+
 ```
 
 Like building a house, we need strong foundations and well organized layers that are secured (`IAM`, `RBAC`) and managed (`OPS`).

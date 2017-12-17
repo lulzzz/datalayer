@@ -4,9 +4,9 @@ title: Kuber
 
 Kuber is plain Kubernetes, simple.
 
-It will help you to create and manage your cluster.
+It will help you create and manage your K8S cluster.
 
-## Kuber an Amazon AWS
+## Kuber on Amazon AWS
 
 This are the steps to deploy your development (unsecure) Kubernetes cluster on Amazon with AWS EC2.
 
@@ -57,7 +57,7 @@ chmod +x /usr/local/bin/kuber-aws-join
 kuber-aws-join
 ```
 
-## Minimum IAM Profile
+**Minimum IAM Profile**
 
 ```
 {
