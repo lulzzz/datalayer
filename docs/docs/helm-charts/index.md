@@ -23,7 +23,7 @@ helm install k8s-dashboard -n k8s-dashboard
 kubectl port-forward $(kubectl get pods -n default -l "app=kubernetes-dashboard" -o jsonpath="{.items[0].metadata.name}") 9090:9090 &
 ```
 
-## Install the HDFS chart
+## HDFS
 
 ```
 helm install \
@@ -72,7 +72,7 @@ helm upgrade \
   hdfs-k8s
 ```
 
-## Install the Apache Spark chart
+## Spark
 
 You need the `Spark resource staging server` and the `Spark shuffle service`.
 
@@ -81,14 +81,12 @@ helm install spark-k8s \
   -n spark-k8s
 ```
 
-## Install the Apache Zeppelin chart
+## Zeppelin
 
 Install the `Zeppelin on K8s` chart.
 
 ```
 helm install \
-  --set hdfsK8s.useConfigMap=true \
-  --set hdfsK8s.configMapName=hdfs-k8s-hdfs-k8s \
   --set zeppelin.imagePullPolicy=IfNotPresent \
   zeppelin-k8s \
   -n zeppelin-k8s
