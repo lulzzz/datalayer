@@ -55,6 +55,7 @@ emptyArray: []
 
 # Tables of contents, stored in the _data folder, that control the sidebar nav
 tocs:
-  - home
-  - helm-charts
-  - contrib
+ - home
+ - kuber
+ - helm-charts
+ - contrib
