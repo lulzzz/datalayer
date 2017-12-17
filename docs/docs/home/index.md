@@ -26,10 +26,10 @@ Our Data Science Platform is designed to be `Simple` as `Collaborative` and to s
 |   |                  UI | CLI | JS-Apps              |       |
 +---+--------------------------------------------------+       |
 | 6 |                        KUBER                     |       |
-|   |                UI | CLI | SDK | Widget           |       |
+|   |               UI | CLI | SDK | Widget            |       |
 +---+--------------------------------------------------+       |
 | 5 |                  INTERPRETER-REST                |  OPS  |
-|   |        Spark | TensorFlow | ... | Markdown       |       |
+|   |         Spark | TensorFlow | ... | Markdown      |       |
 +---+--------------------------------------------------+       |
 | 4 |                   CLUSTER-APPS                   |  RBAC |
 |   |       Kubeless | Batch | Kafka | Kubeflow        |       |
@@ -37,8 +37,8 @@ Our Data Science Platform is designed to be `Simple` as `Collaborative` and to s
 | 3 |                      STORE                       |  IAM  |
 |   |       HBase | Solr | JanusGraph | MongoDB        |       |
 +---+--------------------------------------------------+       |
-| 2 |                     FILE-SYSTEM                  |       |
-|   |                     HDFS | IFPS                  |       |
+| 2 |                    FILE-SYSTEM                   |       |
+|   |                    HDFS | IFPS                   |       |
 +---+--------------------------------------------------+       |
 | 1 |                      CLUSTER                     |       |
 |   |        Kubeadm | Kubicorn | Prometheus | ARK     |       |
