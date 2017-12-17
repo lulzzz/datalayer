@@ -20,28 +20,28 @@ Our Data Science Platform is designed to be `Simple` as `Collaborative` and to s
 
 ```
 +---+--------------------------------------------------+-----+-----+-----+
-|   |        DATALAYER BIG DATA SCIENCE PLATFORM       +     |     |     |
+|   |        DATALAYER BIG DATA SCIENCE PLATFORM       |     |     |     |
 +---+--------------------------------------------------+-----+-----+-----+
-| 7 |                        STUDIO                    +     |     |     |
-|   |                  UI | CLI | JS-Apps              +     |     |     |
+| 7 |                        STUDIO                    |     |     |     |
+|   |                  UI | CLI | JS-Apps              |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 6 |                        KUBER                     +     |     |     |
-|   |                UI | CLI | SDK | Widget           +     |     |     |
+| 6 |                        KUBER                     |     |     |     |
+|   |                UI | CLI | SDK | Widget           |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 5 |                  INTERPRETER-REST                +  I  |  R  |  O  |
-|   |        Spark | TensorFlow | ... | Markdown       +     |     |     |
+| 5 |                  INTERPRETER-REST                |  I  |  R  |  O  |
+|   |        Spark | TensorFlow | ... | Markdown       |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 4 |                   CLUSTER-APPS                   +  A  |  B  |  P  |
-|   |   Kubeless | Batch | Kafka | Airflow Pipeline    +     |     |     |
+| 4 |                   CLUSTER-APPS                   |  A  |  B  |  P  |
+|   |       Kubeless | Batch | Kafka | Kubeflow        |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 3 |                      STORE                       +  M  |  A  |  S  |
-|   |       HBase | Solr | JanusGraph | MongoDB        +     |     |     |
+| 3 |                      STORE                       |  M  |  A  |  S  |
+|   |       HBase | Solr | JanusGraph | MongoDB        |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 2 |                     FILE-SYSTEM                  +     |  C  |     |
-|   |                     HDFS | IFPS                  +     |     |     |
+| 2 |                     FILE-SYSTEM                  |     |  C  |     |
+|   |                     HDFS | IFPS                  |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 1 |                      CLUSTER                     +     |     |     |
-|   |        Kubeadm | Kubicorn | Prometheus | ARK     +     |     |     |
+| 1 |                      CLUSTER                     |     |     |     |
+|   |        Kubeadm | Kubicorn | Prometheus | ARK     |     |     |     |
 +---+--------------------------------------------------+-----+-----+-----+
 ```
 
