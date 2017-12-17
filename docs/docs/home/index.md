@@ -31,7 +31,7 @@ Our Data Science Platform is designed to be `Simple` as `Collaborative` and to s
 | 5 |                  INTERPRETER-REST                |  I  |  R  |  O  |
 |   |        Spark | TensorFlow | ... | Markdown       |     |     |     |
 +---+--------------------------------------------------+     +     +     |
-| 4 |                   CLUSTER APPS                   |  A  |  B  |  P  |
+| 4 |                   CLUSTER-APPS                   |  A  |  B  |  P  |
 |   |            Kubeless | Batch | Kafka              |     |     |     |
 +---+--------------------------------------------------+     +     +     |
 | 3 |                       STORE                      |  M  |  A  |  S  |
