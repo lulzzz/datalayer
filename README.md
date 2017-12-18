@@ -2,5 +2,5 @@
 
 We are building a `Simple`, `Collaborative` and `Multi Cloud` platform for Big Data Scientists.
 
-You will analyse data and share results with `Spark`, `Python` and `R` on a `WEB Notebook`, a.k.a. `Datalayer Studio` on a `Kubernetes` cluster.
+You will analyse data and share results with `Spark`, `Python` and `R` on a `WEB Notebook` a.k.a. `Datalayer Studio` on a `Kubernetes` cluster.
 
