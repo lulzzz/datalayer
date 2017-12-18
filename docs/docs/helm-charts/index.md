@@ -88,8 +88,8 @@ Install the `Spitfire on K8s` chart.
 ```
 helm install \
   --set spitfire.imagePullPolicy=IfNotPresent \
-  spitfire-k8s \
-  -n spitfire-k8s
+  spitfire \
+  -n spitfire
 ```
 
 You can set `spitfire.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take time as a complete new Docker image will be pulled).
@@ -98,7 +98,7 @@ Test the presence of the Hadoop configuration.
 
 ```
 kubectl exec -it $(kubectl get pods -n default \
-  -l "app=spitfire-k8s" -o jsonpath="{.items[0].metadata.name}") \
+  -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") \
   -- cat /usr/hadoop/etc/hadoop/core-site.xml
 ```
 
@@ -119,7 +119,7 @@ This should print the Hadoop `core-site.xml` configuration file:
 Forward the 8080 port and open the Spitfire home page on `http://localhost:8080` in your favorite browser.
 
 ```
-kubectl port-forward $(kubectl get pods -n default -l "app=spitfire-k8s" -o jsonpath="{.items[0].metadata.name}") 8080:8080 &
+kubectl port-forward $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") 8080:8080 &
 ```
 
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
@@ -131,7 +131,7 @@ Of course, depending on your cluster resources, you might also update the `spark
 If you want to run manual Spark jobs or debug the logs, open a shell in the pod:
 
 ```
-kubectl exec -n default -it $(kubectl get pods -n default -l "app=spitfire-k8s" -o jsonpath="{.items[0].metadata.name}") -c spitfire -- bash
+kubectl exec -n default -it $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") -c spitfire -- bash
 ```
 
 ![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
