@@ -2,7 +2,7 @@
 title: Datalayer Spitfire
 ---
 
-Run `spitfire-scrap` (which Apache Zeppelin with python and firefox for WEB Scraping) on a linux machine with this shell command:
+Run `spitfire-scrap` (contains Apache Zeppelin with python and firefox for WEB Scraping) on a linux machine with this shell command:
 
 ```
 docker \

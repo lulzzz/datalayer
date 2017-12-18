@@ -4,11 +4,11 @@ title: Welcome
 
 You can run Datalayer on Kubernetes with the provided and [Helm charts](/docs/helm-charts).
 
-You will get an Apache Zeppelin notebook running natively on Spark Kubernetes.
+You will get the Datalayer Studio running natively on Spark Kubernetes.
 
 ## Datalayer Platform
 
-The Apache Zeppelin on K8S is just a start. We are building a new complete platform for Big Data Scientists.
+Our first Datalayer Studio on K8S is just a start. We are building a new complete platform for Big Data Scientists.
 
 Datalayer relies on open-source for this and contributes back via the [Datalayer Contrib](https://github.com/datalayer-contrib) Github repositories.
 

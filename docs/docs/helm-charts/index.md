@@ -81,24 +81,24 @@ helm install spark-k8s \
   -n spark-k8s
 ```
 
-## Zeppelin
+## Spitfire
 
-Install the `Zeppelin on K8s` chart.
+Install the `Spitfire on K8s` chart.
 
 ```
 helm install \
-  --set zeppelin.imagePullPolicy=IfNotPresent \
-  zeppelin-k8s \
-  -n zeppelin-k8s
+  --set spitfire.imagePullPolicy=IfNotPresent \
+  spitfire-k8s \
+  -n spitfire-k8s
 ```
 
-You can set `zeppelin.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take time as a complete new Docker image will be pulled).
+You can set `spitfire.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take time as a complete new Docker image will be pulled).
 
 Test the presence of the Hadoop configuration.
 
 ```
 kubectl exec -it $(kubectl get pods -n default \
-  -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") \
+  -l "app=spitfire-k8s" -o jsonpath="{.items[0].metadata.name}") \
   -- cat /usr/hadoop/etc/hadoop/core-site.xml
 ```
 
@@ -116,22 +116,22 @@ This should print the Hadoop `core-site.xml` configuration file:
 </configuration>
 ```
 
-Forward the 8080 port and open the Apache Zeppelin home page on `http://localhost:8080` in your favorite browser.
+Forward the 8080 port and open the Spitfire home page on `http://localhost:8080` in your favorite browser.
 
 ```
-kubectl port-forward $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") 8080:8080 &
+kubectl port-forward $(kubectl get pods -n default -l "app=spitfire-k8s" -o jsonpath="{.items[0].metadata.name}") 8080:8080 &
 ```
 
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
 
-If you want to run in `cluster` mode, you have to change the set the `spark.submit.deployMode` property with `cluster` value, remove the `spark.app.name` and `spark.kubernetes.driver.pod.name` properties (delete, not set to blank), and finally restart the Spark interpreter (see [Zeppelin documentation](https://zeppelin.apache.org/docs/latest/manual/interpreters.html) for more information on interpreters, see also screenshot below).
+If you want to run in `cluster` mode, you have to change the set the `spark.submit.deployMode` property with `cluster` value, remove the `spark.app.name` and `spark.kubernetes.driver.pod.name` properties (delete, not set to blank), and finally restart the Spark interpreter (see also screenshot below).
 
 Of course, depending on your cluster resources, you might also update the `spark.executor.instances`, `spark.executor.memory`... properties.
 
 If you want to run manual Spark jobs or debug the logs, open a shell in the pod:
 
 ```
-kubectl exec -n default -it $(kubectl get pods -n default -l "app=zeppelin-k8s" -o jsonpath="{.items[0].metadata.name}") -c zeppelin -- bash
+kubectl exec -n default -it $(kubectl get pods -n default -l "app=spitfire-k8s" -o jsonpath="{.items[0].metadata.name}") -c spitfire -- bash
 ```
 
 ![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
