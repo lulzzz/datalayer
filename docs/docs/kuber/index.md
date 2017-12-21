@@ -25,7 +25,7 @@ Connect with `ssh` to the machine and run the following commands.
 ```
 sudo su
 cd
-curl https://raw.githubusercontent.com/datalayer/kuber/master/specs/aws/kuber-aws-master -o /usr/local/bin/kuber-aws-master
+curl https://raw.githubusercontent.com/datalayer/kuber-rest/master/_specs/aws/kuber-aws-master -o /usr/local/bin/kuber-aws-master
 chmod +x /usr/local/bin/kuber-aws-master
 kuber-aws-master
 ```
@@ -119,4 +119,25 @@ kuber-aws-join
     }
 }
 
+```
+
+## Kuber REST
+
+The [](datalayer/kuber-rest) repository contains the source code to run the REST server endpoints for Kuber.
+
+Before running it, setup your enviorment with the needed AWS credentials in the `~/.aws/config` and ~/.aws/credentials, for example:
+
+~/.aws/config
+
+```
+[default]
+region = us-west-2
+```
+
+~/.aws/credentials
+
+```
+[kuber-rest]
+aws_access_key_id=...
+aws_secret_access_key=...
 ```
