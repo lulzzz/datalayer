@@ -25,7 +25,7 @@ Connect with `ssh` to the machine and run the following commands.
 ```
 sudo su
 cd
-curl https://raw.githubusercontent.com/datalayer/kuber-rest/master/_specs/aws/kuber-aws-master -o /usr/local/bin/kuber-aws-master
+curl https://raw.githubusercontent.com/datalayer/kuber/master/_specs/aws/kuber-aws-master -o /usr/local/bin/kuber-aws-master
 chmod +x /usr/local/bin/kuber-aws-master
 kuber-aws-master
 ```
@@ -36,7 +36,7 @@ Take note of the printed kubeadm command, e.g:
 kubeadm join --token ed5ef9.6c35783ca6cb8994 52.88.44.52:433 --discovery-token-ca-cert-hash sha256:927f1dbe79dac89514ada952a5d283af45e695ddaf5d2c9020d52fa28edb36cb
 ```
 
-**Join Wokers**
+**Join Workers**
 
 Create workers based on the image `ami-4f0ad337` with size `c3.4xlarge`.
 
@@ -121,11 +121,11 @@ kuber-aws-join
 
 ```
 
-## Kuber REST
+## Kuber Server
 
-The [](datalayer/kuber-rest) repository contains the source code to run the REST server endpoints for Kuber.
+The [datalayer/kuber](https://github.com/datalayer/kuber) repository contains the source code to run the REST server endpoints for `Kuber`.
 
-Before running it, setup your enviorment with the needed AWS credentials in the `~/.aws/config` and ~/.aws/credentials, for example:
+Before running it, setup your environment with the needed AWS credentials in the `~/.aws/config` and `~/.aws/credentials`, for example:
 
 ~/.aws/config
 
