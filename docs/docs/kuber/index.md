@@ -25,7 +25,7 @@ Connect with `ssh` to the machine and run the following commands.
 ```
 sudo su
 cd
-curl https://raw.githubusercontent.com/datalayer/kuber/master/_specs/aws/kuber-aws-master -o /usr/local/bin/kuber-aws-master
+curl https://raw.githubusercontent.com/datalayer/kuber/master/specs/aws/kuber-aws-master -o /usr/local/bin/kuber-aws-master
 chmod +x /usr/local/bin/kuber-aws-master
 kuber-aws-master
 ```

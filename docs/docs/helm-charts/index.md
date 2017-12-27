@@ -16,14 +16,48 @@ git clone https://github.com/datalayer/helm-charts.git helm-charts
 cd helm-charts/incubator
 ```
 
-To ease the management, it may be interesting to install the standard Kubernetes Dashboard with these commands and check http://localhost:9090 in your browser
+## Dashboard
+
+To ease the management, it is interesting to install the standard Kubernetes Dashboard with Heapster as monitoring tool.
 
 ```
-helm install k8s-dashboard -n k8s-dashboard
-kubectl port-forward $(kubectl get pods -n default -l "app=kubernetes-dashboard" -o jsonpath="{.items[0].metadata.name}") 9090:9090 &
+# Temp workaround to relax roles...
+kubectl create clusterrolebinding add-on-cluster-admin \
+  --clusterrole=cluster-admin \
+  --serviceaccount=kube-system:default
+helm install -n heapster \
+  --namespace kube-system \
+  stable/heapster
+```
+
+Check Heapster is running.
+
+```
+export POD_NAME=$(kubectl get pods --namespace kube-system -l "app=heapster-heapster" -o jsonpath="{.items[0].metadata.name}")
+echo http://127.0.0.1:8082
+kubectl --namespace kube-system port-forward $POD_NAME 8082
+```
+
+Now you can install the Dashboard.
+
+```
+helm install stable/kubernetes-dashboard \
+  --namespace kube-system \
+  --set=httpPort=3000,resources.limits.cpu=200m,rbac.create=true \
+  -n k8s-dashboard
+```
+
+Browse the Dashboard UI.
+
+```
+export POD_NAME=$(kubectl get pods -n kube-system -l "app=kubernetes-dashboard,release=k8s-dashboard" -o jsonpath="{.items[0].metadata.name}")
+echo http://127.0.0.1:9090
+kubectl -n kube-system port-forward $POD_NAME 9090:9090
 ```
 
 ## HDFS
+
+Install the HDFS Helm chart.
 
 ```
 helm install \
@@ -35,7 +69,7 @@ helm install \
   hdfs-k8s
 ```
 
-This will launch one Hadoop Namenode and three Hadoop Datanodes. If you list the pods with `kubectl get pods -l app=hdfs-k8s`, you should see two running Hadoop pods:
+This will launch one Hadoop Namenode and three Hadoop Datanodes. If you list the pods with `kubectl get pods -l app=hdfs-k8s`, you should see the running Hadoop pods.
 
 ```
 NAME                              READY     STATUS    RESTARTS   AGE
@@ -52,13 +86,13 @@ NAME         	REVISION	UPDATED                 	STATUS  	CHART                  
 hdfs-k8s   	1       	Mon Nov 20 14:23:52 2017	DEPLOYED	hdfs-k8s-1.0.0          	default  
 ```
 
-Check the sanity of your cluster and create a `/tmp` folder.
+Check the sanity of your cluster with `dfsadmin` and create a `/tmp` folder.
 
 ```
 kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfsadmin -report
 kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfs -mkdir /tmp
 kubectl exec -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- hdfs dfs -ls /
-kubectl exec -n default -it hdfs-namenode-0 -- bash
+kubectl exec -n default -it hdfs-k8s-hdfs-k8s-hdfs-nn-0 -- bash
 ```
 
 To access the Namenode user interface: `kubectl port-forward hdfs-k8s-hdfs-k8s-hdfs-nn-0 50070:50070` and open in your browser `http://localhost:50070`.
@@ -74,16 +108,26 @@ helm upgrade \
 
 ## Spark
 
-You need the `Spark resource staging server` and the `Spark shuffle service`.
+You need to install the Spark `Resource Staging Server` and the Spark `Shuffle Service`.
 
 ```
 helm install spark-k8s \
   -n spark-k8s
 ```
 
+If you list the pods with `kubectl get pods -l kuber=spark-k8s`, you should see the running Spark pods:
+
+```
+NAME                                                READY     STATUS    RESTARTS   AGE
+spark-k8s-resource-staging-server-c5db88df9-n42gw   1/1       Running   0          15s
+spark-k8s-shuffle-service-5r2h7                     1/1       Running   0          15s
+spark-k8s-shuffle-service-9pxxc                     1/1       Running   0          15s
+spark-k8s-shuffle-service-s2vk8                     1/1       Running   0          15s
+```
+
 ## Spitfire
 
-Install the `Spitfire on K8s` chart.
+Install `Spitfire` chart.
 
 ```
 helm install \
@@ -92,7 +136,7 @@ helm install \
   -n spitfire
 ```
 
-You can set `spitfire.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take time as a complete new Docker image will be pulled).
+You can set `spitfire.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take some time as a complete new Docker image will be pulled).
 
 Test the presence of the Hadoop configuration.
 
@@ -102,7 +146,7 @@ kubectl exec -it $(kubectl get pods -n default \
   -- cat /usr/hadoop/etc/hadoop/core-site.xml
 ```
 
-This should print the Hadoop `core-site.xml` configuration file:
+This should print the Hadoop `core-site.xml` configuration file.
 
 ```
 <?xml version="1.0"?>
