@@ -1,5 +1,6 @@
 tocs:
 - home
 - kuber
+- docker-files
 - helm-charts
 - contrib

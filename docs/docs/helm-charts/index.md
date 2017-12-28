@@ -163,7 +163,8 @@ This should print the Hadoop `core-site.xml` configuration file.
 Forward the 8080 port and open the Spitfire home page on `http://localhost:8080` in your favorite browser.
 
 ```
-kubectl port-forward $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") 8080:8080 &
+echo http://localhost:8080
+kubectl port-forward $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") 8080:8080
 ```
 
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
