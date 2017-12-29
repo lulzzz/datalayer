@@ -18,19 +18,22 @@ cd helm-charts/incubator
 
 ## Dashboard
 
-To ease the management, it is interesting to install the standard Kubernetes Dashboard with Heapster as monitoring tool.
+To ease the management, it is interesting to install the standard `Kubernetes Dashboard` with `Heapster` as monitoring tool.
 
 ```
 # Temp workaround to relax roles...
 kubectl create clusterrolebinding add-on-cluster-admin \
   --clusterrole=cluster-admin \
   --serviceaccount=kube-system:default
+```
+
+```
 helm install -n heapster \
   --namespace kube-system \
   stable/heapster
 ```
 
-Check Heapster is running.
+Check `Heapster` is running.
 
 ```
 export POD_NAME=$(kubectl get pods --namespace kube-system -l "app=heapster-heapster" -o jsonpath="{.items[0].metadata.name}")
@@ -38,7 +41,7 @@ echo http://127.0.0.1:8082
 kubectl --namespace kube-system port-forward $POD_NAME 8082
 ```
 
-Now you can install the Dashboard.
+Now you can install the `Dashboard`.
 
 ```
 helm install stable/kubernetes-dashboard \
@@ -47,7 +50,7 @@ helm install stable/kubernetes-dashboard \
   -n k8s-dashboard
 ```
 
-Browse the Dashboard UI.
+Browse the Dashboard UI with a proxy to the HTTP port.
 
 ```
 export POD_NAME=$(kubectl get pods -n kube-system -l "app=kubernetes-dashboard,release=k8s-dashboard" -o jsonpath="{.items[0].metadata.name}")
@@ -55,6 +58,83 @@ echo http://127.0.0.1:9090
 kubectl -n kube-system port-forward $POD_NAME 9090:9090
 ```
 
+Or if you prefer, you can activate a full running proxy.
+
+```
+kubectl proxy
+echo http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashboard-kubernetes-dashboard:/proxy/#!/overview?namespace=_all
+```
+
+## Etcd
+
+```
+helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
+```
+
+```
+helm install incubator/etcd \
+  --set StorageClass=gp2 \
+  -n kuber-etcd
+```
+
+Test the health of your etcd cluster (following examaple for a 3 nodes cluster)
+
+```
+for i in {0..2}; do kubectl exec kuber-etcd-etcd-$i --namespace=default -- sh -c 'etcdctl cluster-health'; done
+```
+
+The above command should give you output like this one.
+
+```
+member 9e4964f31e4a910b is healthy: got healthy result from http://kuber-etcd-etcd-0.kuber-etcd-etcd:2379
+member d7388f72617bd4e8 is healthy: got healthy result from http://kuber-etcd-etcd-1.kuber-etcd-etcd:2379
+member eec49009934c162b is healthy: got healthy result from http://kuber-etcd-etcd-2.kuber-etcd-etcd:2379
+cluster is healthy
+member 9e4964f31e4a910b is healthy: got healthy result from http://kuber-etcd-etcd-0.kuber-etcd-etcd:2379
+member d7388f72617bd4e8 is healthy: got healthy result from http://kuber-etcd-etcd-1.kuber-etcd-etcd:2379
+member eec49009934c162b is healthy: got healthy result from http://kuber-etcd-etcd-2.kuber-etcd-etcd:2379
+cluster is healthy
+member 9e4964f31e4a910b is healthy: got healthy result from http://kuber-etcd-etcd-0.kuber-etcd-etcd:2379
+member d7388f72617bd4e8 is healthy: got healthy result from http://kuber-etcd-etcd-1.kuber-etcd-etcd:2379
+member eec49009934c162b is healthy: got healthy result from http://kuber-etcd-etcd-2.kuber-etcd-etcd:2379
+cluster is healthy
+```
+<!--
+Deploy the `etcd-operator`.
+
+```
+helm install stable/etcd-operator \
+  --set cluster.enabled=true \
+  --set deployments.etcdOperator=true \
+  --set deployments.backupOperator=false \
+  --set deployments.restoreOperator=false \
+  --set customResources.createEtcdClusterCRD=true \
+  --set customResources.createBackupCRD=false \
+  --set customResources.createRestoreCRD=false \
+  -n etcd-operator
+```
+
+Check the `etcd-operator` log for any error.
+
+```
+export POD=$(kubectl get pods -l app=etcd-operator-etcd-operator --namespace default --output name)
+kubectl logs $POD --namespace=default -f
+```
+
+Create a 3 pods `etcd` cluster.
+
+```
+cat << EOF | kubectl apply -f -
+apiVersion: "etcd.database.coreos.com/v1beta2"
+kind: "EtcdCluster"
+metadata:
+  name: "example-etcd-cluster"
+spec:
+  size: 3
+version: "3.2.11"
+EOF
+```
+-->
 ## HDFS
 
 Install the HDFS Helm chart.
@@ -69,7 +149,9 @@ helm install \
   hdfs-k8s
 ```
 
-This will launch one Hadoop Namenode and three Hadoop Datanodes. If you list the pods with `kubectl get pods -l app=hdfs-k8s`, you should see the running Hadoop pods.
+This will launch one Hadoop Namenode and 3 Hadoop Datanodes.
+
+If you list the pods with `kubectl get pods -l app=hdfs-k8s`, you should see the running Hadoop pods.
 
 ```
 NAME                              READY     STATUS    RESTARTS   AGE
@@ -160,13 +242,19 @@ This should print the Hadoop `core-site.xml` configuration file.
 </configuration>
 ```
 
-Forward the 8080 port and open the Spitfire home page on `http://localhost:8080` in your favorite browser.
+Forward the 8081 port and open the Spitfire home page on `http://localhost:8081` in your favorite browser.
 
 ```
 echo http://localhost:8080
 kubectl port-forward $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") 8080:8080
 ```
+<!--
+Or if you already run `kubectl proxy`
 
+```
+echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:/proxy
+```
+-->
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
 
 If you want to run in `cluster` mode, you have to change the set the `spark.submit.deployMode` property with `cluster` value, remove the `spark.app.name` and `spark.kubernetes.driver.pod.name` properties (delete, not set to blank), and finally restart the Spark interpreter (see also screenshot below).
