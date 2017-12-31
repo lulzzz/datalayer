@@ -44,7 +44,7 @@ kubectl --namespace kube-system port-forward $POD_NAME 8082
 Now you can install the `Dashboard`.
 
 ```
-helm install stable/kubernetes-dashboard \
+helm install k8s-dashboard \
   --namespace kube-system \
   --set=httpPort=3000,resources.limits.cpu=200m,rbac.create=true \
   -n k8s-dashboard
@@ -68,11 +68,7 @@ echo http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashb
 ## Etcd
 
 ```
-helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-```
-
-```
-helm install incubator/etcd \
+helm install etcd \
   --set StorageClass=gp2 \
   -n kuber-etcd
 ```
@@ -141,12 +137,13 @@ Install the HDFS Helm chart.
 
 ```
 helm install \
-  -n hdfs-k8s \
-  --set persistence.nameNode.enabled=false \
-  --set persistence.dataNode.enabled=false \
+  --set persistence.nameNode.enabled=true \
+  --set persistence.nameNode.storageClass=gp2 \
+  --set persistence.dataNode.enabled=true \
+  --set persistence.dataNode.storageClass=gp2 \
   --set hdfs.dataNode.replicas=3 \
-  --set imagePullPolicy=IfNotPresent \
-  hdfs-k8s
+  hdfs-k8s \
+  -n hdfs-k8s
 ```
 
 This will launch one Hadoop Namenode and 3 Hadoop Datanodes.
