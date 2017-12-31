@@ -95,42 +95,7 @@ member d7388f72617bd4e8 is healthy: got healthy result from http://kuber-etcd-et
 member eec49009934c162b is healthy: got healthy result from http://kuber-etcd-etcd-2.kuber-etcd-etcd:2379
 cluster is healthy
 ```
-<!--
-Deploy the `etcd-operator`.
 
-```
-helm install stable/etcd-operator \
-  --set cluster.enabled=true \
-  --set deployments.etcdOperator=true \
-  --set deployments.backupOperator=false \
-  --set deployments.restoreOperator=false \
-  --set customResources.createEtcdClusterCRD=true \
-  --set customResources.createBackupCRD=false \
-  --set customResources.createRestoreCRD=false \
-  -n etcd-operator
-```
-
-Check the `etcd-operator` log for any error.
-
-```
-export POD=$(kubectl get pods -l app=etcd-operator-etcd-operator --namespace default --output name)
-kubectl logs $POD --namespace=default -f
-```
-
-Create a 3 pods `etcd` cluster.
-
-```
-cat << EOF | kubectl apply -f -
-apiVersion: "etcd.database.coreos.com/v1beta2"
-kind: "EtcdCluster"
-metadata:
-  name: "example-etcd-cluster"
-spec:
-  size: 3
-version: "3.2.11"
-EOF
-```
--->
 ## HDFS
 
 Install the HDFS Helm chart.
@@ -222,7 +187,7 @@ Test the presence of the Hadoop configuration.
 ```
 kubectl exec -it $(kubectl get pods -n default \
   -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") \
-  -- cat /usr/hadoop/etc/hadoop/core-site.xml
+  -- cat /etc/hdfs-k8s/conf/core-site.xml
 ```
 
 This should print the Hadoop `core-site.xml` configuration file.
