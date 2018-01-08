@@ -213,7 +213,13 @@ kubectl port-forward $(kubectl get pods -n default -l "app=spitfire" -o jsonpath
 Or if you already run `kubectl proxy`
 
 ```
-echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy/
+echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy
+```
+
+Browse the Spark UI.
+
+```
+echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:4040/proxy
 ```
 
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
