@@ -228,15 +228,32 @@ If you want to run in `cluster` mode, you have to change the set the `spark.subm
 
 Of course, depending on your cluster resources, you might also update the `spark.executor.instances`, `spark.executor.memory`... properties.
 
+![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
+
 If you want to run manual Spark jobs or debug the logs, open a shell in the pod:
 
 ```
-kubectl exec -n default -it $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") -c spitfire -- bash
+export SPITFIRE_POD=$(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}")
+kubectl exec -n default -it $SPITFIRE_POD -c spitfire -- bash
 ```
 
-![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
+To backup your notes.
 
-Expose via a Load Balancer on AWS.
+```
+export SPITFIRE_POD=$(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}")
+kubectl cp -n default -c spitfire $SPITFIRE_POD:/opt/spitfire/notebook .
+```
+
+To backup your the configuration.
+
+```
+export SPITFIRE_POD=$(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}")
+kubectl cp -n default -c spitfire $SPITFIRE_POD:/opt/spitfire/conf .
+```
+
+## AWS
+
+Additionaly, you can expose the endpoint via a Load Balancer on AWS.
 
 ```
 cat << EOF | kubectl apply -f -
