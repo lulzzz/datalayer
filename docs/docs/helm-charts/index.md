@@ -216,12 +216,6 @@ Or if you already run `kubectl proxy`
 echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy
 ```
 
-Browse the Spark UI.
-
-```
-echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:4040/proxy
-```
-
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
 
 If you want to run in `cluster` mode, you have to change the set the `spark.submit.deployMode` property with `cluster` value, remove the `spark.app.name` and `spark.kubernetes.driver.pod.name` properties (delete, not set to blank), and finally restart the Spark interpreter (see also screenshot below).
