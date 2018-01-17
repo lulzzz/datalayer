@@ -1,6 +1,104 @@
 ---
-title: Zeppelin Configuration
+title: Spitfire
 ---
+
+Install the `spitfire` chart.
+
+```shell
+helm install \
+  --set spitfire.imagePullPolicy=IfNotPresent \
+  spitfire \
+  -n spitfire
+```
+
+You can set `spitfire.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take some time as a complete new Docker image will be pulled).
+
+Test the presence of the Hadoop configuration.
+
+```shell
+kubectl exec -it $(kubectl get pods -n default \
+  -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") \
+  -- cat /etc/hdfs-k8s/conf/core-site.xml
+```
+
+This should print the Hadoop `core-site.xml` configuration file.
+
+```xml
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://hdfs-k8s-hdfs-k8s-hdfs-nn:9000/</value>
+    <description>NameNode URI</description>
+  </property>
+</configuration>
+```
+
+Forward the 8081 port and open the Spitfire home page on `http://localhost:8081` in your favorite browser.
+
+```shell
+echo http://localhost:8080
+kubectl port-forward $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") 8080:8080
+```
+Or if you already run `kubectl proxy`
+
+```shell
+echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy
+```
+
+The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
+
+If you want to run in `cluster` mode, you have to change the set the `spark.submit.deployMode` property with `cluster` value, remove the `spark.app.name` and `spark.kubernetes.driver.pod.name` properties (delete, not set to blank), and finally restart the Spark interpreter (see also screenshot below).
+
+Of course, depending on your cluster resources, you might also update the `spark.executor.instances`, `spark.executor.memory`... properties.
+
+![spark-interpreter-config](/images/docker/spark-interpreter-config.png "spark-interpreter-config")
+
+If you want to run manual Spark jobs or debug the logs, open a shell in the pod:
+
+```
+export SPITFIRE_POD=$(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}")
+kubectl exec -n default -it $SPITFIRE_POD -c spitfire -- bash
+```
+
+To backup your notes.
+
+```
+export SPITFIRE_POD=$(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}")
+kubectl cp -n default -c spitfire $SPITFIRE_POD:/opt/spitfire/notebook .
+```
+
+To backup your the configuration.
+
+```
+export SPITFIRE_POD=$(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}")
+kubectl cp -n default -c spitfire $SPITFIRE_POD:/opt/spitfire/conf .
+```
+
+## AWS
+
+Additionaly, you can expose the endpoint via a Load Balancer on AWS.
+
+```
+cat << EOF | kubectl apply -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: spitfire-lb
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: tcp
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: spitfire
+EOF
+```
+
+# Additional Documentation
 
 > At the time being, the needed code is not integrated in the `master` branches of `apache-zeppelin` nor the `apache-spark-on-k8s/spark` repositories.
 > You are welcome to already ty it out and send any feedback and question.

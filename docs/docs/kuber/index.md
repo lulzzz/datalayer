@@ -2,11 +2,51 @@
 title: Kuber
 ---
 
-Kuber is plain Kubernetes, simple.
+Kuber is plain Kubernetes, simple. It will help you create and manage your K8S cluster in the cloud and deploy applications for your Big Data Science projects.
 
-It will help you create and manage your K8S cluster.
+We support for now [https://aws.amazon.com](Amazon Cloud). Read our [Release Plan](/docs/releases) to know more on other cloud support.
 
-## Kuber on Amazon AWS
+The [Kuber](https://github.com/datalayer/kuber) repository contains the source code to run the REST server endpoints.
+
+Before using Kuber, setup your AWS environment with the needed AWS credentials via environement variables.
+
+```shell
+export AWS_ACCESS_KEY_ID=<your-aws-key-id>
+export AWS_SECRET_ACCESS_KEY=<your-aws-key-secret>
+```
+
+Optionaly, you can persist those credentials in your home folder (`~/.aws/credentials` and `~/.aws/config`).
+
+```console
+# ~/.aws/credentials
+[kuber-rest]
+aws_access_key_id=<your-aws-key-id>
+aws_secret_access_key=<your-aws-key-secret>
+```
+
+```console
+# ~/.aws/config
+[default]
+region = us-west-2
+```
+
+From your Linux laptop (with [Git](https://git-scm.com/downloads), [Golang](https://golang.org/dl), [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl) and [Helm](https://github.com/kubernetes/helm/releases) available), run the following.
+
+```shell
+git clone https://github.com/datalayer/kuber
+cd kuber
+go build
+kuber create kuber -p aws
+kuber apply kuber -v 4
+```
+
+Check the cluster is running.
+
+```shell
+watch kubectl get nodes; watch kubectl get pods --all-namespaces;
+```
+<!--
+## Deprecated
 
 This are the steps to deploy your development (unsecure) Kubernetes cluster on Amazon with AWS EC2.
 
@@ -120,24 +160,4 @@ kuber-aws-join
 }
 
 ```
-
-## Kuber Server
-
-The [datalayer/kuber](https://github.com/datalayer/kuber) repository contains the source code to run the REST server endpoints for `Kuber`.
-
-Before running it, setup your environment with the needed AWS credentials in the `~/.aws/config` and `~/.aws/credentials`, for example:
-
-~/.aws/config
-
-```
-[default]
-region = us-west-2
-```
-
-~/.aws/credentials
-
-```
-[kuber-rest]
-aws_access_key_id=...
-aws_secret_access_key=...
-```
+-->

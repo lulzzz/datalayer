@@ -56,7 +56,9 @@ emptyArray: []
 # Tables of contents, stored in the _data folder, that control the sidebar nav
 tocs:
  - home
- - kuber
+ - quick-start
  - docker-files
  - helm-charts
+ - releases
+ - kuber
  - contrib

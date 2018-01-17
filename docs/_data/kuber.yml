@@ -2,6 +2,3 @@ bigheader: "Kuber"
 abstract: "Kubernetes, simple."
 toc:
 - docs/kuber/index.md
-- title: Kuber
-  section:
-  - docs/kuber/index.md

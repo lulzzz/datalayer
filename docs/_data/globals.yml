@@ -1,6 +1,8 @@
 tocs:
 - home
-- kuber
+- quick-start
 - docker-files
 - helm-charts
+- releases
+- kuber
 - contrib

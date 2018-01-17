@@ -1,76 +1,17 @@
 ---
-title: Welcome
+title: Datalayer Science Platform
 ---
 
-You can run Datalayer on Kubernetes with the provided and [Helm charts](/docs/helm-charts).
+Datalayer is building a disrupting solution for Big Data Scientists designed to be `Simple`, `Collaborative` and `Multi Cloud`.
 
-You will get the Datalayer Studio running natively on Spark Kubernetes.
+The `Datalayer Science Platform` platform is particulary suited for Data Science exploration teams and is open source under the [Apache License](https://www.apache.org/licenses/LICENSE-2.0) (source code available in our [Github repositories](https://github.com/datalayer/)). [Version 0.0.1](/docs/releases/v-0.0.1) is released and fully supported on AWS Amazon Cloud. Today, you can create Kubernetes cluster on the AWS Amazon cloud and deploy as many as you want Apache Zeppelin based Notebooks with Apache Spark (data analytics) and Apache Hadoop (distributed file system) running natively on K8S. You will also get a K8S Dashboard with Heapster to monitor resources usage.
 
-## Datalayer Platform
+Last but not least, we also ship the premises of `Kuber Plane`, a nice user interface to control your cluster which also acts as a collaborative Data Science Notebook to share datasets analysis with authentication via Twitter OAuth.
 
-Our first Datalayer Studio on K8S is just a start. We are building a new complete platform for Big Data Scientists.
+Test it with the provided [quick start guide](/docs/quick-start). We are looking forward to your feedbacks on the current version and inputs on our [release plan](/docs/releases) to fit your needs, especially in terms of Applications (Jupyter Notebooks..), Storage, Cloud... you want to use.
 
-Datalayer relies on open-source for this and contributes back via the [Datalayer Contrib](https://github.com/datalayer-contrib) Github repositories.
+**You are welcome to contribute on this project as a User or as a Developer hacking on the base source code available in our [Github repositories](https://github.com/datalayer).**
 
-While the `contrib` path is the place to hack before being released in the Datalayer solutions, this is also an opportunity for developers to test those new functionalities as soon as possible.
+**Send feedback or question to our Twitter account [@datalayerio](https://twitter.com/datalayerio).**
 
-We then assemble all those `contribs` with our open solutions to build an awesome Big Data Sicence platform.
-
-Our Data Science Platform is designed to be `Simple` as `Collaborative` and to support `Multi Cloud`.
-
-```
-+----------------------------------------------------------------+
-|             DATALAYER BIG DATA SCIENCE PLATFORM                |
-|----------------------------------------------------------------|
-|         | 7 |                      STUDIO                      |
-|         |   |                  UI | CLI | JS-Apps              |
-|         |------------------------------------------------------|
-|         | 6 |                      KUBER                       |
-|         |   |               UI | CLI | SDK | Widget            |
-|         |------------------------------------------------------|
-|  OPS    | 5 |                INTERPRETER-REST                  |
-|  MONIT  |   |         Spark | TensorFlow | ... | Markdown      |
-|  BACKUP |------------------------------------------------------|
-|  DIAG   | 4 |                 CLUSTER-APPS                     |
-|         |   |       Kubeless | Batch | Kafka | Kubeflow        |
-|         |------------------------------------------------------|
-|  IAM    | 3 |                    STORE                         |
-|  RBAC   |   |       HBase | Solr | JanusGraph | MongoDB        |
-|         |------------------------------------------------------|
-|         | 2 |                    FILE-SYSTEM                   |
-|         |   |                    HDFS | IFPS                   |
-|         |------------------------------------------------------|
-|         | 1 |                     CLUSTER                      |
-|         |   |                 Kubeadm | Kubicorn               |
-+----------------------------------------------------------------+
-```
-
-Like building a house, we need strong foundations and well organized layers that are secured (`IAM`, `RBAC`) and managed (`OPS`).
-
-### Layer 1 - Cluster
-
-The Kubernetes cluster infrastructure.
-
-### Layer 2 - File System
-
-The distributed file systems running on Kubernetes.
-
-### Layer 3 - Store
-
-Various store to fit common storage patterns.
-
-### Layer 4 - Middelware
-
-Middelware toolings to complement common use case such as `Functions`, `Scheduled Batch`, `Queuing`...
-
-### Layer 5 - Interpreter Rest
-
-REST endpoints to invoke and interpeter commands from upper layers.
-
-### Layer 6 - Kuber
-
-Kuber is the Datalayer offering to manage the stack on a technical point-of-vude
-
-### Layer 7
-
-The collaborative studio that Big Data Scientists will use to `Collect`, `Explore`, `Model` and `Serve`.
+![Kuber Plane](/images/kuber-plane/kuber-plane.png "Kuber Plane")

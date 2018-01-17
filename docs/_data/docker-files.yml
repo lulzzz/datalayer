@@ -3,3 +3,5 @@ abstract: "Instructions to build the Dockerfiles needed for the Datalayer Platfo
 toc:
 - docs/docker-files/index.md
 - title: Docker Files
+  section:
+  - docs/docker-files/sidecar.md

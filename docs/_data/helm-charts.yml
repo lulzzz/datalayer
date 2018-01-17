@@ -4,5 +4,8 @@ toc:
 - docs/helm-charts/index.md
 - title: Helm Charts
   section:
-  - docs/helm-charts/index.md
-  - docs/helm-charts/zeppelin.md
+  - docs/helm-charts/dashboard.md
+  - docs/helm-charts/hdfs.md
+  - docs/helm-charts/spark.md
+  - docs/helm-charts/spitfire.md
+  - docs/helm-charts/kuber-plane.md
