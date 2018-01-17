@@ -2,7 +2,7 @@
 title: Datalayer Science Platform
 ---
 
-Datalayer is building a disrupting solution for Big Data Scientists designed to be `Simple`, `Collaborative` and `Multi Cloud`.
+Datalayer is building a solution for Big Data Scientists designed to be `Simple`, `Collaborative` and `Multi Cloud`.
 
 The `Datalayer Science Platform` platform is particulary suited for Data Science exploration teams and is open source under the [Apache License](https://www.apache.org/licenses/LICENSE-2.0) (source code available in our [Github repositories](https://github.com/datalayer/)). [Version 0.0.1](/docs/releases/v-0.0.1) is released and fully supported on AWS Amazon Cloud. Today, you can create Kubernetes cluster on the AWS Amazon cloud and deploy as many as you want Apache Zeppelin based Notebooks with Apache Spark (data analytics) and Apache Hadoop (distributed file system) running natively on K8S. You will also get a K8S Dashboard with Heapster to monitor resources usage.
 
