@@ -54,10 +54,10 @@ Browse the Notebook.
 open http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy
 ```
 
-...or get the URL from the AWS Load Balancer
+...or get the URL from the AWS Load Balancer.
 
 ```shell
-URL=$(kubectl describe services spitfire-lb | grep Ingress)
+kubectl describe services spitfire-lb | grep Ingress
 ```
 
 Delete the cluster.
