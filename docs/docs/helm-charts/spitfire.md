@@ -41,7 +41,7 @@ Forward the 8081 port and open the Spitfire home page on `http://localhost:8081`
 echo http://localhost:8080
 kubectl port-forward $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") 8080:8080
 ```
-Or if you already run `kubectl proxy`
+Or if you already run `kubectl proxy`.
 
 ```shell
 echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy
@@ -50,6 +50,20 @@ echo http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spit
 The Spark interpreter is set to launch the Spark Driver in `client` mode . In the `client` mode, you are free to set `spark.app.name` with the name you like but do not change `spark.kubernetes.driver.pod.name` propertiy.
 
 If you want to run in `cluster` mode, you have to change the set the `spark.submit.deployMode` property with `cluster` value, remove the `spark.app.name` and `spark.kubernetes.driver.pod.name` properties (delete, not set to blank), and finally restart the Spark interpreter (see also screenshot below).
+
+An service is created for the Spark UI but going via the proxy will not work.
+
+```shell
+# Fails as the Spark UI redirects to http://localhost:8001/jobs
+http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire-spark-ui:4040/proxy
+```
+
+You have to use a port forward to browse the Spark UI.
+
+```shell
+export DRIVER_POD=<you-driver-pod-name>
+kubectl port-forward $DRIVER_POD 4040:4040 &
+```
 
 Of course, depending on your cluster resources, you might also update the `spark.executor.instances`, `spark.executor.memory`... properties.
 
