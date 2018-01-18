@@ -4,10 +4,12 @@ title: Releases
 
 The lastest official release is [Version 0.0.1](/docs/releases/v-0.0.1)
 
-Here after our release plan which may evolve at any time (no commitment).
+Here after our `Release Plan` which may evolve at any time (no commitment... just track the features on the Github issue page).
 
 ## 0.0.2 Mystic
 
++ Twitter Profile page
++ settings/config and settings/k8s always fetch http://localhost:9091/... (+ check if it works on aws)
 + Jupyter App
 + Ensure fixed IP address for K8S Master
 + Manage Spot Instances Status (Terminated...)

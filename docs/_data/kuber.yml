@@ -1,4 +1,5 @@
 bigheader: "Kuber"
-abstract: "Kubernetes, simple."
+abstract: "Kubernetes, made Simple."
 toc:
 - docs/kuber/index.md
+- docs/kuber/s3-access.md
