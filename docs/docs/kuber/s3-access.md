@@ -2,7 +2,7 @@
 title: S3 Access
 ---
 
-To access S3 from the Driver or Executor, you have to give additional properties to Spark when you submit your Job or launch your REPL.
+To access S3 from the Spark Driver or Executors, you have to give additional properties to Spark when you submit your Job or launch your REPL.
 
 | Key                            | Value             |
 | ------------------------------ | ------------------|
