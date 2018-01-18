@@ -2,7 +2,7 @@
 title: Quick Start
 ---
 
-Quick Start the Datalayer Science Platform on AWS.
+**Quick Start the Datalayer Science Platform on AWS in 10 minutes.**
 
 From your Linux laptop (with [Git](https://git-scm.com/downloads), [Golang](https://golang.org/dl), [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl) and [Helm](https://github.com/kubernetes/helm/releases) available), run the following.
 
