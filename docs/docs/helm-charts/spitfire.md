@@ -41,6 +41,7 @@ Forward the 8081 port and open the Spitfire home page on `http://localhost:8081`
 echo http://localhost:8080
 kubectl port-forward $(kubectl get pods -n default -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") 8080:8080
 ```
+
 Or if you already run `kubectl proxy`.
 
 ```shell
