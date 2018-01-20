@@ -16,4 +16,6 @@ Test it with the provided [quick start guide](/docs/quick-start). We are looking
 
 **Send feedback or question to our Twitter account [@datalayerio](https://twitter.com/datalayerio).**
 
+Datalayer ships Docker images via [Dockerhub](https://hub.docker.com/u/datalayer). You can customize your own images based [those Docker files](https://github.com/datalayer/docker-files).
+
 ![Kuber Plane](/images/kuber-plane/kuber-plane.png "Kuber Plane")
