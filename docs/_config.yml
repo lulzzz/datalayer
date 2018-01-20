@@ -40,6 +40,7 @@ gems:
   - jekyll-sitemap
 #  - jekyll-seo-tag
   - jekyll-include-cache
+  - jekyll-redirect-from
 # disabled gems
 #  - jekyll-redirect-from
 

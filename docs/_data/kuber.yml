@@ -2,4 +2,4 @@ bigheader: "Kuber"
 abstract: "Kubernetes, made Simple."
 toc:
 - docs/kuber/index.md
-- docs/kuber/s3-access.md
+- docs/kuber/s3.md

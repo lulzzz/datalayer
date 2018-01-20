@@ -2,6 +2,8 @@ bigheader: "Releases"
 abstract: "Releases"
 toc:
 - docs/releases/index.md
+- docs/releases/release-plan.md
+- docs/releases/v-0.0.2.md
 - title: Releases Notes
   section:
   - docs/releases/v-0.0.1.md
