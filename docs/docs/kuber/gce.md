@@ -1,4 +1,7 @@
 
+---
+title: Google Cloud Storage
+---
 
 This is for use with the GCS connector https://cloud.google.com/dataproc/docs/concepts/connectors/cloud-storage.
 

@@ -2,16 +2,17 @@ bigheader: "Kuber"
 abstract: "Kubernetes, made Simple."
 toc:
 - docs/kuber/index.md
-- title: Storage
-  section:
-  - docs/kuber/s3.md
 - title: Apps
   section:
+  - docs/kuber/heapster.md
   - docs/kuber/dashboard.md
   - docs/kuber/hdfs.md
   - docs/kuber/spark.md
   - docs/kuber/spitfire.md
   - docs/kuber/kuber-plane.md
+- title: Storage
+  section:
+  - docs/kuber/s3.md
 - title: Docker Files
   section:
   - docs/kuber/sidecar.md
