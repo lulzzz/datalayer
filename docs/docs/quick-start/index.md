@@ -38,7 +38,7 @@ Check the Dashboard.
 open  http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashboard-kubernetes-dashboard:/proxy/#!/overview?namespace=_all
 ```
 
-Deploy the applications.
+Deploy the applications (ensure you have the [https://github.com/kubernetes/helm/releases](Helm client available)).
 
 ```shell
 git clone https://github.com/datalayer/helm-charts

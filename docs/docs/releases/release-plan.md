@@ -98,6 +98,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 <!--
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-plane
+ + parameter description http://docs.datalayer.io/docs/kuber/ -> automatically clone the repo you give on the notebook with --repo...
 + Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? !
 + Reuse as much as possible of k8s-dashboard source code
 + Benchmark Performance

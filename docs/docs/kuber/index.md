@@ -46,19 +46,59 @@ Check the cluster is running.
 watch kubectl get nodes; watch kubectl get pods --all-namespaces;
 ```
 
-You must also have Helm client available to deploy applications.
+You must also have a [https://github.com/kubernetes/helm/releases](Helm client available) to deploy applications.
 
-For a release version, just add the Datalayer Helm chart repository.
+For a snapshot version of the Datalayer helm charts, clone the Datalayer `helm-charts` repository.
+
+```shell
+git clone https://github.com/datalayer/helm-charts.git helm-charts
+cd helm-charts
+```
+
+For a release version of the Datalayer helm charts, just add the Datalayer Helm chart repository (for now, we strongly recommend to use the latest and greates snapshots).
 
 ```shell
 helm repo add datalayer http://helm-charts.datalayer.io
 ```
 
-For a snapshot version, clone the Datalayer `helm-charts` repository.
+Launch a K8s proxy in another terminal to have easy access to the services.
 
 ```shell
-git clone https://github.com/datalayer/helm-charts.git helm-charts
+kubectl proxy
+```
+
+Check the Dashboard.
+
+```shell
+open  http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashboard-kubernetes-dashboard:/proxy/#!/overview?namespace=_all
+```
+
+Deploy the applications.
+
+```shell
+git clone https://github.com/datalayer/helm-charts
 cd helm-charts
+./deploy-charts.sh hdfs
+./deploy-charts.sh spitfire
+./deploy-charts.sh kuber-plane
+```
+
+Browse the Notebook.
+
+```
+open http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy
+```
+
+...or get the URL from the AWS Load Balancer.
+
+```shell
+kubectl describe services spitfire-lb | grep Ingress
+```
+
+Delete the cluster.
+
+```shell
+kuber delete kuber -v 4 --purge
 ```
 
 <!--
