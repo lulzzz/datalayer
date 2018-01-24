@@ -76,9 +76,9 @@ cd helm-charts
 ./deploy-charts.sh kuber-plane
 ```
 
-[Browse the Notebook](http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy).
+For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber).
 
-Optionally, to connect without proxy, you can get the URL of the Notebook from the AWS Load Balancer.
+For example [browse the Spitfire Notebook](http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy)). Optionally, to connect without proxy, you can get the URL of the Notebook from the AWS Load Balancer.
 
 ```shell
 kubectl describe services spitfire-lb | grep Ingress

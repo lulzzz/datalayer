@@ -8,7 +8,9 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 + HDFS Pods View and Volumes View
 + Dataset View
++ Define tags on created cloud resources
 + Notes Git History View
++ Ensure cloud resource are fully cleaned on deletion
 
 ## 0.0.4 Alexandria
 
@@ -35,7 +37,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 0.1.0
 
 + Github Auth
-+ SSH from Plane
++ SSH from Plane to Pods
 + Join AWS VPC
 + Join Local Nodes
 
