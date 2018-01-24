@@ -107,6 +107,7 @@ Deploy the applications.
 git clone https://github.com/datalayer/helm-charts
 cd helm-charts
 ./deploy-charts.sh hdfs
+./deploy-charts.sh spark
 ./deploy-charts.sh spitfire
 ./deploy-charts.sh kuber-plane
 ```
