@@ -46,7 +46,7 @@ Check the cluster is running.
 watch kubectl get nodes; watch kubectl get pods --all-namespaces;
 ```
 
-You must also have a [https://github.com/kubernetes/helm/releases](Helm client available) to deploy applications.
+You must also have a [Helm client available](https://github.com/kubernetes/helm/releases) to deploy applications.
 
 For a snapshot version of the Datalayer helm charts, clone the Datalayer `helm-charts` repository.
 
