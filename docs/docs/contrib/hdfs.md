@@ -15,7 +15,7 @@ title: Apache HDFS
   <tr class="b">
     <td>Jar with dependencies</td>
     <td></td>
-    <td><a href="https://github.com/datalayer-contrib/hdfs-k8s/tree/jar-with-dependencies">datalayer-contrib:hdfs-k8s/jar-with-dependencies</a></td>
+    <td><a href="https://github.com/datalayer-contrib/hdfs/tree/jar-with-dependencies">datalayer-contrib:hdfs/jar-with-dependencies</a></td>
     <td><a href=""></a></td>
     <td><a href="https://github.com/apache-spark-on-k8s/kubernetes-HDFS/pull/27">#27</a></td>
     <td>OPEN</td>

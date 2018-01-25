@@ -18,7 +18,7 @@ Test the presence of the Hadoop configuration.
 ```shell
 kubectl exec -it $(kubectl get pods -n default \
   -l "app=spitfire" -o jsonpath="{.items[0].metadata.name}") \
-  -- cat /etc/hdfs-k8s/conf/core-site.xml
+  -- cat /etc/hdfs/conf/core-site.xml
 ```
 
 This should print the Hadoop `core-site.xml` configuration file.
@@ -29,7 +29,7 @@ This should print the Hadoop `core-site.xml` configuration file.
 <configuration>
   <property>
     <name>fs.defaultFS</name>
-    <value>hdfs://hdfs-k8s-hdfs-k8s-hdfs-nn:9000/</value>
+    <value>hdfs://hdfs-hdfs-hdfs-nn:9000/</value>
     <description>NameNode URI</description>
   </property>
 </configuration>

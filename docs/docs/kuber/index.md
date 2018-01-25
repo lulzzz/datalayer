@@ -106,10 +106,10 @@ Deploy the applications.
 ```shell
 git clone https://github.com/datalayer/helm-charts
 cd helm-charts
-./deploy-charts.sh hdfs
-./deploy-charts.sh spark
-./deploy-charts.sh spitfire
-./deploy-charts.sh kuber-plane
+./deploy-chart.sh hdfs
+./deploy-chart.sh spark
+./deploy-chart.sh spitfire
+./deploy-chart.sh kuber-plane
 ```
 
 For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber).

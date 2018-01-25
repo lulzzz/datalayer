@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="zeppelin_out-cluster_spark-cluster.svg"
-   inkscape:export-filename="/src/k8s/spark-k8s-docs/src/jekyll/img/zeppelin_out-cluster_spark-cluster.png"
+   inkscape:export-filename="/src/k8s/spark-docs/src/jekyll/img/zeppelin_out-cluster_spark-cluster.png"
    inkscape:export-xdpi="126"
    inkscape:export-ydpi="126">
   <defs
@@ -307,7 +307,7 @@
        transform="matrix(0.51408969,0,0,0.51408969,83.849022,381.82289)"
        inkscape:export-ydpi="250.55"
        inkscape:export-xdpi="250.55"
-       inkscape:export-filename="/src/k8s/spark-k8s-docs/src/jekyll/img/zeppelin_out-cluster_spark-cluster.png"
+       inkscape:export-filename="/src/k8s/spark-docs/src/jekyll/img/zeppelin_out-cluster_spark-cluster.png"
        inkscape:connector-curvature="0"
        id="path3055-5-1-0"
        d="m 319.34933,683.73367 a 5.1801472,5.137755 0 0 0 -1.98518,0.50235 l -27.08929,12.94355 a 5.1801472,5.137755 0 0 0 -2.80281,3.48533 l -6.68311,29.07448 a 5.1801472,5.137755 0 0 0 0.7033,3.93918 5.1801472,5.137755 0 0 0 0.29449,0.40882 l 18.75012,23.31293 a 5.1801472,5.137755 0 0 0 4.05005,1.93321 l 30.0688,-0.007 a 5.1801472,5.137755 0 0 0 4.05005,-1.92975 l 18.7432,-23.31639 a 5.1801472,5.137755 0 0 0 1.00126,-4.34801 l -6.69351,-29.07448 a 5.1801472,5.137755 0 0 0 -2.80281,-3.48533 l -27.09276,-12.93662 a 5.1801472,5.137755 0 0 0 -2.5118,-0.50235 z"
