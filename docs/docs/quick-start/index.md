@@ -16,7 +16,7 @@ export AWS_SECRET_ACCESS_KEY=<your-aws-key-secret>
 git clone https://github.com/datalayer/kuber
 cd kuber
 go build
-kuber create kuber -p aws
+kuber create kuber -p aws -z us-west-2 # eu-central-1 also supported.
 kuber apply kuber -v 4
 ```
 

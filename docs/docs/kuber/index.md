@@ -36,7 +36,7 @@ From your Linux laptop (with [Git](https://git-scm.com/downloads), [Golang](http
 git clone https://github.com/datalayer/kuber
 cd kuber
 go build
-kuber create kuber -p aws
+kuber create kuber -p aws -z us-west-2 # eu-central-1 also supported.
 kuber apply kuber -v 4
 ```
 
