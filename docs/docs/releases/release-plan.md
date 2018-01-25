@@ -4,7 +4,7 @@ title: Release Plan
 
 Here after our `Release Plan` which may evolve at any time (no commitment... just track the features on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
 
-## 0.0.3 Mystic
+## 0.2.0 Mystic
 
 + HDFS Pods View and Volumes View
 + Dataset View
@@ -12,46 +12,46 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Notes Git History View
 + Ensure cloud resource are fully cleaned on deletion
 
-## 0.0.4 Alexandria
+## 0.3.0 Alexandria
 
 + Multiple HDFS with cluster-id
 + Kerberos HDFS
 + IPFS App
 + Etcd App
 
-## 0.0.5 Arcadia
+## 1.0.0 Arcadia
 
 + Workspace View
 + Enable SSL on Load Balancers
 + Workspace Functions
 
-## 0.0.6 Atlas
+## 1.1.0 Atlas
 
 + Multi Notebooks
 + Multi Datasets
 
-## 0.0.7 Waterloo
+## 1.2.0 Waterloo
 
 + Multi Clusters
-
-## 0.1.0
-
-+ Github Auth
-+ SSH from Plane to Pods
 + Join AWS VPC
 + Join Local Nodes
 
-## 0.2.0
+## 1.3.0
+
++ Github Auth
++ SSH from Plane to Pods
+
+## 1.4.0
 
 + Datalayer.ai Widgets
 + Notes as a REST
 
-## 0.3.0
+## 1.5.0
 
 + Integrate Airflow
 + Visual Scheduler
 
-## 0.4.0
+## 1.6.0
 
 + Multi K8S Cluster
 + Publish to Twitter
@@ -60,40 +60,40 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + User Timeline
 + Microsoft Auth
 
-## 0.5.0
+## 1.7.0
 
 + Tensorflow App
 + HDFS Locality
 
-## 0.6.0
+## 1.8.0
 
 + Solr App
 + HBase App
 
-## 0.7.0
+## 2.0.0
 
 + Reuse K8S IAM and RBAC
 + JWT Security
 
-## 0.8.0
+## 2.1.0
 
 + Notes Authorization
 + HDFS Treemap View
 
-## 0.9.0
+## 2.2.0
 
 + Notes Diff
 + Kuber Plane Secrets
 
-## 1.0.0
+## 2.3.0
 
 + Cost Compensation
 
-## 1.1.0
+## 2.4.0
 
 + Data Market
 
-## 1.2.0
+## 2.5.0
 
 + Apps Market
 + Support Azure
