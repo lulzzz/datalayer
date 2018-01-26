@@ -106,6 +106,8 @@ Deploy the applications.
 ```shell
 git clone https://github.com/datalayer/helm-charts
 cd helm-charts
+./deploy-chart.sh heapster
+./deploy-chart.sh k8s-dashboard
 ./deploy-chart.sh hdfs
 ./deploy-chart.sh spark
 ./deploy-chart.sh spitfire
