@@ -71,12 +71,12 @@ Deploy the applications (ensure you have the [Helm client available](https://git
 ```shell
 git clone https://github.com/datalayer/helm-charts
 cd helm-charts
-./deploy-chart.sh heapster
-./deploy-chart.sh k8s-dashboard
-./deploy-chart.sh hdfs
-./deploy-chart.sh spark
-./deploy-chart.sh spitfire
-./deploy-chart.sh kuber-plane
+./kuber-app heapster
+./kuber-app k8s-dashboard
+./kuber-app hdfs
+./kuber-app spark
+./kuber-app spitfire
+./kuber-app kuber-plane
 ```
 
 For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber).
