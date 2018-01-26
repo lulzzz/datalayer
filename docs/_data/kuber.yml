@@ -7,7 +7,7 @@ toc:
 - title: Apps
   section:
   - docs/kuber/heapster.md
-  - docs/kuber/dashboard.md
+  - docs/kuber/k8s-dashboard.md
   - docs/kuber/hdfs.md
   - docs/kuber/spark.md
   - docs/kuber/spitfire.md
