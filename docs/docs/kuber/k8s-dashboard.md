@@ -1,5 +1,5 @@
 ---
-title: Dashboard
+title: K8S Dashboard
 ---
 
 To ease the management, it is interesting to install the standard `Kubernetes Dashboard` with `Heapster` as monitoring tool.
