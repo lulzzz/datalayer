@@ -2,6 +2,8 @@ bigheader: "Kuber"
 abstract: "Kubernetes, made Simple."
 toc:
 - docs/kuber/index.md
+- docs/kuber/apps.md
+- docs/kuber/cost-hibernation.md
 - title: Apps
   section:
   - docs/kuber/heapster.md

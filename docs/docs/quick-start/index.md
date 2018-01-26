@@ -45,8 +45,6 @@ kube-system   calico-node-gxw5b                                                 
 kube-system   calico-node-sgjpd                                                 2/2       Running   0          1h
 kube-system   calico-policy-controller-7985d9cc6f-w9d8q                         1/1       Running   0          1h
 kube-system   etcd-ip-10-0-0-62.us-west-2.compute.internal                      1/1       Running   0          59m
-kube-system   heapster-heapster-5dcd888f86-d5m5p                                2/2       Running   0          58m
-kube-system   k8s-dashboard-kubernetes-dashboard-79846f6966-s9h64               1/1       Running   0          58m
 kube-system   kube-apiserver-ip-10-0-0-62.us-west-2.compute.internal            1/1       Running   0          59m
 kube-system   kube-controller-manager-ip-10-0-0-62.us-west-2.compute.internal   1/1       Running   0          59m
 kube-system   kube-dns-545bc4bfd4-7w6z8                                         3/3       Running   0          1h
@@ -84,7 +82,7 @@ Deploy more applications.
 ./kuber-app kuber-plane
 ```
 
-For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber).
+For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber/apps).
 
 For example [browse the Spitfire Notebook](http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy). Optionally, to connect without proxy, you can get the URL of the Notebook from the AWS Load Balancer.
 
