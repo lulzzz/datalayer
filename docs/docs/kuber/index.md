@@ -93,6 +93,13 @@ For a release version of the Datalayer helm charts, just add the Datalayer Helm 
 helm repo add datalayer http://helm-charts.datalayer.io
 ```
 
+Deploy the dashboard (ensure you have the [Helm client available](https://github.com/kubernetes/helm/releases)).
+
+```shell
+./kuber-app heapster
+./kuber-app k8s-dashboard
+```
+
 Launch a K8s proxy in another terminal to have easy access to the services.
 
 ```shell
@@ -101,13 +108,9 @@ kubectl proxy
 
 [Check the Dashboard](http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashboard-kubernetes-dashboard:/proxy/#!/overview?namespace=_all).
 
-Deploy the applications.
+Deploy more applications.
 
 ```shell
-git clone https://github.com/datalayer/helm-charts
-cd helm-charts
-./kuber-app heapster
-./kuber-app k8s-dashboard
 ./kuber-app hdfs
 ./kuber-app spark
 ./kuber-app spitfire

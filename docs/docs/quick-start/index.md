@@ -58,6 +58,15 @@ kube-system   kube-scheduler-ip-10-0-0-62.us-west-2.compute.internal            
 kube-system   tiller-deploy-546cf9696c-9k9bk                                    1/1       Running   0          58m
 ```
 
+Deploy the dashboard (ensure you have the [Helm client available](https://github.com/kubernetes/helm/releases)).
+
+```shell
+git clone https://github.com/datalayer/helm-charts
+cd helm-charts
+./kuber-app heapster
+./kuber-app k8s-dashboard
+```
+
 Launch a K8s proxy in another terminal to have easy access to the services.
 
 ```shell
@@ -66,13 +75,9 @@ kubectl proxy
 
 [Check the Dashboard](http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashboard-kubernetes-dashboard:/proxy/#!/overview?namespace=_all).
 
-Deploy the applications (ensure you have the [Helm client available](https://github.com/kubernetes/helm/releases)).
+Deploy more applications.
 
 ```shell
-git clone https://github.com/datalayer/helm-charts
-cd helm-charts
-./kuber-app heapster
-./kuber-app k8s-dashboard
 ./kuber-app hdfs
 ./kuber-app spark
 ./kuber-app spitfire
