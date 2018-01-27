@@ -7,7 +7,6 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 0.2.0 Mystic
 
 + HDFS Pods View and Volumes View
-+ R (RStudio, Shiny and Sparklyr) Application
 + Dataset View
 + Integrate `kuber-app` into Kuber binary
 + Notes Git History View
@@ -22,6 +21,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 1.0.0 Arcadia
 
 + Workspace View
++ Import / Export Notes and Notebooks (Zeppelin + Jupyter formats)
 + Enable SSL on Load Balancers
 + Workspace Functions
 
@@ -40,6 +40,8 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 1.3.0
 
 + Github Auth
++ Support ipywidgets
++ Support React.js application packages
 + SSH from Plane to Pods
 
 ## 1.4.0
@@ -100,7 +102,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Support Azure
 
 <!--
-+ Plan kubicorn branch change
++ datalayer-contrib kubicorn branch (for AWS EIP address)
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-plane
  + parameter description http://docs.datalayer.io/docs/kuber/ -> automatically clone the repo you give on the notebook with --repo...
 + Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? 
@@ -109,4 +111,6 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Golang check for SSL on HTTP request
 + Revisit this.xxx = window['xxx']
 + Support IPython Kernels
++ Jupyter Application
++ R (RStudio, Shiny and Sparklyr) Application
 -->
