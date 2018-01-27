@@ -7,17 +7,17 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 0.2.0 Mystic
 
 + HDFS Pods View and Volumes View
++ R (RStudio, Shiny and Sparklyr) Application
 + Dataset View
-+ Define tags on created cloud resources
++ Integrate `kuber-app` into Kuber binary
 + Notes Git History View
-+ Ensure cloud resource are fully cleaned on deletion
 
 ## 0.3.0 Alexandria
 
 + Multiple HDFS with cluster-id
 + Kerberos HDFS
-+ IPFS App
-+ Etcd App
++ IPFS Application
++ Etcd Application
 
 ## 1.0.0 Arcadia
 
@@ -29,8 +29,9 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 + Multi Notebooks
 + Multi Datasets
++ Ensure cloud resource are fully cleaned on deletion
 
-## 1.2.0 Waterloo
+## 1.2.0 Terminator
 
 + Multi Clusters
 + Join AWS VPC
@@ -62,13 +63,13 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 ## 1.7.0
 
-+ Tensorflow App
++ Tensorflow Application
 + HDFS Locality
 
 ## 1.8.0
 
-+ Solr App
-+ HBase App
++ Solr Application
++ HBase Application
 
 ## 2.0.0
 
@@ -99,9 +100,10 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Support Azure
 
 <!--
++ Plan kubicorn branch change
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-plane
  + parameter description http://docs.datalayer.io/docs/kuber/ -> automatically clone the repo you give on the notebook with --repo...
-+ Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? !
++ Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? 
 + Reuse as much as possible of k8s-dashboard source code
 + Benchmark Performance
 + Golang check for SSL on HTTP request
