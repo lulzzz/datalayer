@@ -40,7 +40,8 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 1.3.0
 
 + Github Auth
-+ Support ipywidgets
++ Support Jupyter ipywidgets
++ Support R htmlwidgets
 + Support React.js application packages
 + SSH from Plane to Pods
 
