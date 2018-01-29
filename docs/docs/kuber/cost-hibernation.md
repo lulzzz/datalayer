@@ -10,7 +10,7 @@ Kuber offers this powerfull feature that we call `Cost Hibernation`.
 
 First of all, you are free to use AWS normal instances or cheaper Spot requests instances.
 
-Once you decide to pause, simply set the number of workers to 0 (via the AWS management console or via Kuber Plane).
+Once you decide to pause, simply set the number of workers to 0 (via the AWS management console or via Kuber Board).
 
 You can even stop the master and start it again when you need it as Kuber has assigned a fixed IP address from the available EIP (Elastic IP) pool.
 

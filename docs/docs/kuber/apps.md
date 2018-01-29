@@ -8,6 +8,6 @@ Kuber is available with the following certified applications that makes up the `
 + [HDFS](/docs/kuber/hdfs) is the Hadoop distributed file system to persist your Big Datasets.
 + [Spark](/docs/kuber/spark) allows you to analyse your Big Datasets.
 + [Spitfire](/docs/kuber/spitfire) is an extension to the Apache Zeppelin WEB Notebook to analyse your Big Datasets in a visual way.
-+ [Kuber Plane](/docs/kuber/kuber-plane) is an innovative WEB Notebook for Data Scientists to better collaborate with Business.
++ [Kuber Board](/docs/kuber/kuber-board) is an innovative WEB Notebook for Data Scientists to better collaborate with Business.
 
 You are free and welcome to develop you own applications on the `Datalayer Science Platform`.

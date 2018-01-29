@@ -112,7 +112,7 @@ Deploy more applications.
 ./kuber-app hdfs
 ./kuber-app spark
 ./kuber-app spitfire
-./kuber-app kuber-plane
+./kuber-app kuber-board
 ```
 
 For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber/apps).

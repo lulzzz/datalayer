@@ -87,7 +87,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 2.2.0
 
 + Notes Diff
-+ Kuber Plane Secrets
++ Kuber Board Secrets
 
 ## 2.3.0
 
@@ -104,7 +104,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 <!--
 + datalayer-contrib kubicorn branch (for AWS EIP address)
-+ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-plane
++ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-board
  + parameter description http://docs.datalayer.io/docs/kuber/ -> automatically clone the repo you give on the notebook with --repo...
 + Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? 
 + Reuse as much as possible of k8s-dashboard source code

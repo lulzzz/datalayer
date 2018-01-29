@@ -11,7 +11,7 @@ toc:
   - docs/kuber/hdfs.md
   - docs/kuber/spark.md
   - docs/kuber/spitfire.md
-  - docs/kuber/kuber-plane.md
+  - docs/kuber/kuber-board.md
 - title: Storage
   section:
   - docs/kuber/s3.md
