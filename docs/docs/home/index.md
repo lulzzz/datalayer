@@ -12,8 +12,6 @@ Last but not least, we also ship the premises of `Kuber Board`, a nice user inte
 
 Datalayer solutions make life easier, more productive (less cost, more business value) for `Data Scientists,` `Business` and `Devops`.
 
-![Kuber Actors](/images/kuber/kuber-actors.svg "Kuber Actors")
-
 Devops use the Kuber CLI to create the Kubernetes cluster and deploy the needed Applications. This is achieved in `Exploration` and `Production` environments ([read more](/docs/devops)).
 
 ![Devops](/images/personas/devops.svg "Devops")
@@ -25,14 +23,6 @@ Data Scientists use the deployed applications to explore and share insights in a
 Business review the Data Scientist insights in their favorite environement like Microsoft Office 365 ([read more](/docs/business)).
 
 ![Business](/images/personas/business.svg "Business")
-
-Datalayer helps the Data Science actors to collaborate and share their knowledge in a `Library` which exposes searchable higher level of abstraction such as `Datasets`, `Books`, `Functions` and `Models`.
-
-![Kuber Library](/images/kuber/kuber-library.svg "Kuber Library")
-
-The `Library` is build during the `Exploration` and can be reused during during the `Production` phase.
-
-![Kuber Environments](/images/kuber/kuber-environments.svg "Kuber Environments")
 
 **You are welcome to contribute on this project as a User or as a Developer hacking on the base source code available in our [Github repositories](https://github.com/datalayer).**
 
