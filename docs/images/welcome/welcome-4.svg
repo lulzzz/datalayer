@@ -202,9 +202,9 @@
      inkscape:window-height="1119"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="0.61109621"
-     inkscape:cx="133.95065"
-     inkscape:cy="355.33963"
+     inkscape:zoom="1.1577409"
+     inkscape:cx="429.97791"
+     inkscape:cy="298.56249"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -220,8 +220,9 @@
      inkscape:label="Layer 2"
      transform="translate(0,-128)">
     <g
-       id="g4568">
+       id="g4492">
       <g
+         transform="translate(0,-10.221543)"
          id="g4529">
         <g
            transform="matrix(0.50959338,0,0,0.50959338,576.10866,74.273861)"
@@ -518,7 +519,7 @@
              y="616.25366">Devops</tspan></text>
       </g>
       <g
-         transform="matrix(1.6734135,0,0,1.6734135,-611.9784,-242.12799)"
+         transform="matrix(1.6734135,0,0,1.6734135,-414.70601,-552.21465)"
          id="g4945">
         <g
            transform="matrix(0.30452329,0,0,0.30452329,462.52895,188.93786)"
@@ -838,7 +839,7 @@
              y="511.38071">Data Scientist</tspan></text>
       </g>
       <g
-         transform="matrix(1.6734135,0,0,1.6734135,-837.75527,-558.43864)"
+         transform="matrix(1.6734135,0,0,1.6734135,-1064.0581,-263.94974)"
          id="g4893">
         <g
            transform="matrix(0.30452329,0,0,0.30452329,721.42022,193.91036)"
@@ -1190,33 +1191,33 @@
        r="231.22154"
        style="opacity:0.26600001;fill:#ddecef;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.33899999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="ellipse5326-2-9"
-       cx="451.92038"
+       cx="448.65961"
        cy="391.79611"
        inkscape:export-filename="/d/image5500.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:52.19215393px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="352.78586"
-       y="373.02567"
+       style="font-style:normal;font-weight:normal;font-size:40.58947372px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="236.04053"
+       y="369.43912"
        id="text4355"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4357"
-         x="352.78586"
-         y="373.02567">Explore</tspan></text>
+         x="236.04053"
+         y="369.43912">Explore Big Datasets</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:24.87258339px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="289.362"
-       y="412.98923"
+       x="262.2731"
+       y="406.98923"
        id="text4355-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4357-6"
-         x="289.362"
-         y="412.98923">...and Build Data Products</tspan></text>
+         x="262.2731"
+         y="406.98923">...and Build Big Data Products</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
