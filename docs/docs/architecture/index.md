@@ -6,7 +6,7 @@ Datalayer helps the Data Science actors to collaborate and share their knowledge
 
 ![Kuber Actors](/images/kuber/kuber-actors.svg "Kuber Actors")
 
-The `Library` is build during the `Exploration` and can be reused during during the `Production` phase.
+The `Library` is build during the `Exploration` and is reused during the `Production` phase.
 
 ![Kuber Library](/images/kuber/kuber-library.svg "Kuber Library")
 

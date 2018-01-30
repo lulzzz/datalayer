@@ -86,7 +86,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 ## 2.2.0
 
-+ Notes Diff
++ Notes PR with Diff
 + Kuber Board Secrets
 
 ## 2.3.0
