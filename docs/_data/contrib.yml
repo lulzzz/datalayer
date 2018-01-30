@@ -1,7 +1,0 @@
-bigheader: "Contrib"
-abstract: "Datalayer Contributions."
-toc:
-- docs/contrib/index.md
-- docs/contrib/hdfs.md
-- docs/contrib/spark.md
-- docs/contrib/zeppelin.md

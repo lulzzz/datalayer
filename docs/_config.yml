@@ -58,8 +58,9 @@ emptyArray: []
 tocs:
  - home
  - quick-start
- - docker-files
- - helm-charts
- - releases
+ - devops
+ - data-scientists
+ - business
  - kuber
- - contrib
+ - releases
+ - open-source
