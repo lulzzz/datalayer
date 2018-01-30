@@ -26,7 +26,7 @@ Business review the Data Scientist insights in their favorite environement like 
 
 ![Business](/images/personas/business.svg "Business")
 
-Datalayer helps the Data Science actors to collaborate and share their knowledge in a `Library` which exposes searchable higher level of abstraction such as `Books`, `Datasets`, `Algorithms` and `Models`.
+Datalayer helps the Data Science actors to collaborate and share their knowledge in a `Library` which exposes searchable higher level of abstraction such as `Datasets`, `Books`, `Functions` and `Models`.
 
 ![Kuber Library](/images/kuber/kuber-library.svg "Kuber Library")
 
