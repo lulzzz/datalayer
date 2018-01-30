@@ -10,7 +10,7 @@ The [version 0.0.1](/docs/releases/v-0.0.1) is released and fully supported on A
 
 Last but not least, we also ship the premises of `Kuber Board`, a nice user interface to control your cluster which also acts as a collaborative Data Science Notebook to share datasets analysis with authentication via Twitter OAuth.
 
-Datalayer solutions make life easier, more productive (less cost, more business value) for `Devops`, `Data Scientists` and `Business`.
+Datalayer solutions make life easier, more productive (less cost, more business value) for `Data Scientists,` `Business` and `Devops`.
 
 ![Kuber](/images/kuber/kuber-1.svg "Kuber")
 
