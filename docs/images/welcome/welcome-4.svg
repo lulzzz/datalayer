@@ -202,9 +202,9 @@
      inkscape:window-height="1119"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="1.1577409"
-     inkscape:cx="429.97791"
-     inkscape:cy="298.56249"
+     inkscape:zoom="0.54834408"
+     inkscape:cx="-99.460191"
+     inkscape:cy="186.23534"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -1198,26 +1198,36 @@
        inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40.58947372px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="236.04053"
-       y="369.43912"
+       style="font-style:normal;font-weight:normal;font-size:40.43117523px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="236.84242"
+       y="369.36505"
        id="text4355"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4357"
-         x="236.04053"
-         y="369.43912">Explore Big Datasets</tspan></text>
+         x="236.84242"
+         y="369.36505"
+         style="font-size:24.90250206px"><tspan
+   style="font-weight:bold"
+   id="tspan4356">Explore</tspan> any Dataset at <tspan
+   style="font-weight:bold"
+   id="tspan4350">low cost</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:24.87258339px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="262.2731"
-       y="406.98923"
+       style="font-style:normal;font-weight:normal;font-size:24.77558136px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="214.26845"
+       y="406.76871"
        id="text4355-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4357-6"
-         x="262.2731"
-         y="406.98923">...and Build Big Data Products</tspan></text>
+         x="214.26845"
+         y="406.76871"
+         style="font-size:24.90250206px">and build <tspan
+   style="font-weight:bold"
+   id="tspan4354">Data Products</tspan> that <tspan
+   style="font-weight:bold"
+   id="tspan4352">scale</tspan>.</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
