@@ -16,7 +16,7 @@ title: Apache Spark
     <td>Client Mode</td>
     <td><a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a></td>
     <td>
-      <a href="https://github.com/datalayer-contrib/spark/tree/client-mode-datalayer-dev">datalayer-contrib:client-mode-datalayer-dev</a>
+      <a href="https://github.com/datalayer-contrib/spark-k8s/tree/client-mode-datalayer-dev">datalayer-contrib:client-mode-datalayer-dev</a>
     </td>
     <td>
       <a href="https://github.com/apache-spark-on-k8s/userdocs/pull/25">[WIP] Describe Spark submit in relation with client-mode (+ hadoop and dependencies)</a></td>
