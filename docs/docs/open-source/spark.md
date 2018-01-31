@@ -13,6 +13,21 @@ title: Apache Spark
     <td style="text-align: center;"><b>STATUS</b></td>
   </tr>
   <tr class="a">
+    <td>Client Mode</td>
+    <td><a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a></td>
+    <td>
+      <a href="https://github.com/datalayer-contrib/spark/tree/client-mode-datalayer-dev">datalayer-contrib:client-mode-datalayer-dev</a>
+    </td>
+    <td>
+      <a href="https://github.com/apache-spark-on-k8s/userdocs/pull/25">[WIP] Describe Spark submit in relation with client-mode (+ hadoop and dependencies)</a></td>
+    <td>
+      <a href="https://github.com/apache/spark/pull/20451">datalayer-contrib:k8s-client-mode</a>
+      <br/>
+      <a href="https://github.com/apache-spark-on-k8s/spark/pull/456">#456</a>
+    </td>
+    <td>OPEN</td>
+  </tr>
+  <tr class="a">
     <td>Docker Logging Handler</td>
     <td></td>
     <td><a href="https://github.com/datalayer-contrib/spark/tree/docker-logging-handler">datalayer-contrib:spark/docker-logging-handler</a></td>
