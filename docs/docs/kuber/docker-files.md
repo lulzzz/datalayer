@@ -1,6 +1,8 @@
 ---
-title: Sidecar
+title: Docker Files
 ---
+
+## Sidecar
 
 To access the Kubernetes API [from a Pod](https://kubernetes.io/docs/concepts/cluster-administration/proxies) one of the solution is to run `kubectl proxy` in a so-called sidecar container within the Pod.
 

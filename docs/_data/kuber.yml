@@ -11,10 +11,11 @@ toc:
   - docs/kuber/hdfs.md
   - docs/kuber/spark.md
   - docs/kuber/spitfire.md
+  - docs/kuber/kuber-cli.md
   - docs/kuber/kuber-board.md
 - title: Storage
   section:
   - docs/kuber/s3.md
 - title: Docker Files
   section:
-  - docs/kuber/sidecar.md
+  - docs/kuber/docker-files.md
