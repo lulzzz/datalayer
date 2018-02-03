@@ -2,7 +2,7 @@
 title: Release Plan
 ---
 
-Here after our `Release Plan` which may evolve at any time (no commitment... just track the features on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
+Here after our `Release Plan` which may evolve at any time (no commitment... just track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
 
 ## 0.2.0 Mystic
 
