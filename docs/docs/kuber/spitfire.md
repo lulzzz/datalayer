@@ -11,6 +11,8 @@ helm install \
   -n spitfire
 ```
 
+![Spitfire](/images/datalayer/spitfire.svg "Spitfire")
+
 You can set `spitfire.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take some time as a complete new Docker image will be pulled).
 
 Test the presence of the Hadoop configuration.
@@ -113,7 +115,7 @@ spec:
 EOF
 ```
 
-# Additional Documentation
+# Setup Options
 
 > At the time being, the needed code is not integrated in the `master` branches of `apache-zeppelin` nor the `apache-spark-on-k8s/spark` repositories.
 > You are welcome to already ty it out and send any feedback and question.

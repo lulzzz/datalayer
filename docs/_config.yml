@@ -57,12 +57,11 @@ emptyArray: []
 # Tables of contents, stored in the _data folder, that control the sidebar nav
 tocs:
  - home
+ - what
+ - why
+ - who
  - quick-start
- - architecture
- - story-telling
- - devops
- - data-scientists
- - business
  - kuber
+ - studio
  - releases
  - open-source

@@ -2,7 +2,11 @@
 title: Docker Files
 ---
 
-## Sidecar
+Datalayer ships Docker images available on [Dockerhub](https://hub.docker.com/u/datalayer).
+
+You can customize your own images based [those Docker files](https://github.com/datalayer/docker-files).
+
+## K8S Sidecar
 
 To access the Kubernetes API [from a Pod](https://kubernetes.io/docs/concepts/cluster-administration/proxies) one of the solution is to run `kubectl proxy` in a so-called sidecar container within the Pod.
 

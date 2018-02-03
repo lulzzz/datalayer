@@ -2,4 +2,4 @@
 title: Kuber CLI
 ---
 
-Kuber command line interface to operate the K8S cluster.
+Kuber CLI is the command line interface to operate the K8S cluster and its applications.

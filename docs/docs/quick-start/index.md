@@ -71,7 +71,7 @@ Launch a K8s proxy in another terminal to have easy access to the services.
 kubectl proxy
 ```
 
-[Check the Dashboard](http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashboard-kubernetes-dashboard:/proxy/#!/overview?namespace=_all).
+Check the [Dashboard](http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashboard-kubernetes-dashboard:/proxy/#!/overview?namespace=_all).
 
 Deploy more applications.
 

@@ -8,19 +8,24 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 + HDFS Pods View and Volumes View
 + Dataset View
-+ Integrate `kuber-app` into Kuber binary
-+ Notes Git History View
++ Integrate `kuber-app` into Kuber binary commands (see, join, scale, pause, hibernate, delete)
++ README View
++ RELEASE_NOTES View
++ Fix Spark cold start
++ History View
 
 ## 0.3.0 Alexandria
 
 + Multiple HDFS with cluster-id
-+ Kerberos HDFS
-+ IPFS Application
-+ Etcd Application
++ Workspace View
++ Notes Permissions View
++ HDFS Locality
 
 ## 1.0.0 Arcadia
 
-+ Workspace View
++ Kerberos HDFS
++ IPFS Application
++ Etcd Application
 + Import / Export Notes and Notebooks (Zeppelin + Jupyter formats)
 + Enable SSL on Load Balancers
 + Workspace Functions
@@ -33,6 +38,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 ## 1.2.0 Terminator
 
++ Master HA
 + Multi Clusters
 + Join AWS VPC
 + Join Local Nodes
@@ -92,6 +98,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 2.3.0
 
 + Cost Compensation
++ Notes Metrics (Resource Usage, Time)
 
 ## 2.4.0
 
@@ -104,6 +111,17 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 <!--
 + datalayer-contrib kubicorn branch (for AWS EIP address)
+vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfiguration.go 			
+            logger.Debug("Attempting to lookup master IP for node registration..")
+ 			input := &ec2.DescribeInstancesInput{
+ 				Filters: []*ec2.Filter{
++					{
++						Name:   S("tag:Cost"),
++						Values: []*string{S("kuber")},
++					},
+ 					{
+ 						Name:   S("tag:Name"),
+ 						Values: []*string{S(fmt.Sprintf("%s.master", immutable.Name))},
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-board
  + parameter description http://docs.datalayer.io/docs/kuber/ -> automatically clone the repo you give on the notebook with --repo...
 + Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? 

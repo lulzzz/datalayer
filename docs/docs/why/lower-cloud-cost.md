@@ -1,5 +1,5 @@
 ---
-title: Cost Hibernation
+title: Lower your Cloud Costs
 ---
 
 `Kuber` is particulary suited for exploration cases where you have to quickly spinup a Spark cluster with HDFS, scale it up and down and even put the number of worker to zero for a few days and stop the master.
@@ -7,6 +7,8 @@ title: Cost Hibernation
 Of course, you want to retrieve all the configuration and dataset you have created before pausing the cluster to avoid costs.
 
 Kuber offers this powerfull feature that we call `Cost Hibernation`.
+
+![Scale Workers](/images/datalayer/scale-workers.png "Scale Workers")
 
 First of all, you are free to use AWS normal instances or cheaper Spot requests instances.
 

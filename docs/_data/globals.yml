@@ -1,11 +1,10 @@
 tocs:
 - home
+- what
+- why
+- who
 - quick-start
-- architecture
-- story-telling
-- devops
-- data-scientists
-- business
 - kuber
+- studio
 - releases
-- contrib
+- open-source
