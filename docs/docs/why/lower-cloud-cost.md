@@ -24,4 +24,4 @@ We will also introduce `Cost Compensation`: the more cloud resource your share, 
 
 And last but not least, we favor good analysts: the more `Stars` you get, the more quota you will have. **We want to build a Community of workers backed by beautiful Notebooks, Spark and HDFS.**
 
-![Cost Compensation](/images/datalayer/cost-compensation.svg "Cost Compensation")
+![Cost Compensation](/images/datalayer/cost-compensation.svg) "Cost Compensation")

@@ -12,4 +12,4 @@ If you prefer an User Interface, we also ship `Kuber Board` which bring the next
 
 We also enable the usage of low cost cluster resources such as Spot Instances that can even span multiple `Virtual Private Clouds`.
 
-![Cost Compensation](/images/datalayer/cost-compensation.svg "Cost Compensation")
+![Cost Compensation](/images/datalayer/cost-compensation.svg) "Cost Compensation")
