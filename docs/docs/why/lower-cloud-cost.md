@@ -19,3 +19,9 @@ You can even stop the master and start it again when you need it as Kuber has as
 Bump back the number of worker to the number you want, and by magic, the HDFS file system will reappear just like you left it a few days ago, but this time with brand new virtual machines. For you, as a user, you don't see the difference.
 
 ![AWS AutoScaling](/images/aws/aws-autoscaling.png "AWS AutoScaling")
+
+We will also introduce `Cost Compensation`: the more cloud resource your share, the more quota you will have to run your data processing. 
+
+And last but not least, we favor good analysts: the more `Stars` you get, the more quota you will have. **We want to build a Community of workers backed by beautiful Notebooks, Spark and HDFS.**
+
+![Cost Compensation](/images/datalayer/cost-compensation.svg "Cost Compensation")

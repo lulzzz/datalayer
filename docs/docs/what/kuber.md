@@ -10,6 +10,6 @@ If you prefer an User Interface, we also ship `Kuber Board` which bring the next
 
 ![Kuber Board](/images/datalayer/kuber-board.svg "Kuber Board")
 
-We also enable the usage of low cost cluster resources such as Spot Instances that can even span multiple Virtual Private Networks.
+We also enable the usage of low cost cluster resources such as Spot Instances that can even span multiple `Virtual Private Clouds`.
 
-![Kuber Join](/images/datalayer/kuber-join.svg "Kuber Join")
+![Cost Compensation](/images/datalayer/cost-compensation.svg "Cost Compensation")
