@@ -2,9 +2,7 @@
 title: Docker Files
 ---
 
-Datalayer ships Docker images available on [Dockerhub](https://hub.docker.com/u/datalayer).
-
-You can customize your own images based [those Docker files](https://github.com/datalayer/docker-files).
+Datalayer ships Docker images available on [Dockerhub](https://hub.docker.com/u/datalayer). You can customize your own images based the Docker files available in the [Datalayer docker-files repository](https://github.com/datalayer/docker-files).
 
 ## K8S Sidecar
 
