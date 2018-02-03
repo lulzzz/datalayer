@@ -16,30 +16,27 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 ## 0.3.0 Alexandria
 
-+ Multiple HDFS with cluster-id
 + Workspace View
 + Notes Permissions View
 + HDFS Locality
 
 ## 1.0.0 Arcadia
 
-+ Kerberos HDFS
++ Ensure cloud resource are fully cleaned on deletion
++ Solr Application
++ HBase Application
++ Library
+
+## 1.1.0 Atlas
+
 + IPFS Application
 + Etcd Application
 + Import / Export Notes and Notebooks (Zeppelin + Jupyter formats)
 + Enable SSL on Load Balancers
 + Workspace Functions
 
-## 1.1.0 Atlas
-
-+ Multi Notebooks
-+ Multi Datasets
-+ Ensure cloud resource are fully cleaned on deletion
-
 ## 1.2.0 Terminator
 
-+ Master HA
-+ Multi Clusters
 + Join AWS VPC
 + Join Local Nodes
 
@@ -60,10 +57,10 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 + Integrate Airflow
 + Visual Scheduler
++ HDFS Locality
 
 ## 1.6.0
 
-+ Multi K8S Cluster
 + Publish to Twitter
 + Publish to OneNote
 + Follow User
@@ -73,17 +70,15 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 1.7.0
 
 + Tensorflow Application
-+ HDFS Locality
 
 ## 1.8.0
 
-+ Solr Application
-+ HBase Application
++ Kerberos HDFS
 
 ## 2.0.0
 
-+ Reuse K8S IAM and RBAC
-+ JWT Security
++ Notes PR with Diff
++ Kuber Board Secrets
 
 ## 2.1.0
 
@@ -92,8 +87,8 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 ## 2.2.0
 
-+ Notes PR with Diff
-+ Kuber Board Secrets
++ Reuse K8S IAM and RBAC
++ JWT Security
 
 ## 2.3.0
 
@@ -102,12 +97,17 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 ## 2.4.0
 
-+ Data Market
++ Master HA
++ Multi K8S Cluster
++ Multi Clusters
++ Multi Notebooks
++ Multi Datasets
++ Multiple HDFS with cluster-id
++ Support Azure
 
 ## 2.5.0
 
 + Apps Market
-+ Support Azure
 
 <!--
 + datalayer-contrib kubicorn branch (for AWS EIP address)
