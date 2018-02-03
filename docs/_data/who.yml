@@ -1,5 +1,5 @@
-bigheader: "Business"
-abstract: "Business."
+bigheader: "Who"
+abstract: "For who is Datalayer."
 toc:
 - docs/who/index.md
 - docs/who/devops.md

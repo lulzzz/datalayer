@@ -1,5 +1,5 @@
-bigheader: "Data Scientists"
-abstract: "Data Scientists."
+bigheader: "Why"
+abstract: "Why you should use Datalayer."
 toc:
 - docs/why/index.md
 - docs/why/collaborative-story-telling.md
