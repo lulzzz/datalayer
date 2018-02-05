@@ -6,7 +6,7 @@ title: Lower your Cloud Costs
 
 Of course, you want to retrieve all the configuration and dataset you have created before pausing the cluster to avoid costs.
 
-Kuber offers this powerfull feature that we call `Cost Hibernation`.
+Kuber offers this powerfull feature called `Resource Cost Control`.
 
 ![Scale Workers](/images/datalayer/scale-workers.png "Scale Workers")
 

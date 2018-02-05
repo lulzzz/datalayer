@@ -6,6 +6,12 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 
 ## 0.2.0 Mystic
 
++ Resources Requests
++ User Lists
++ Google Authentication
+
+## 0.3.0 Alexandria
+
 + HDFS Pods View and Volumes View
 + Dataset View
 + Integrate `kuber-app` into Kuber binary commands (see, join, scale, pause, hibernate, delete)
@@ -14,29 +20,26 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Fix Spark cold start
 + History View
 
-## 0.3.0 Alexandria
+## 1.0.0 Arcadia
 
 + Workspace View
 + Notes Permissions View
 + HDFS Locality
 
-## 1.0.0 Arcadia
+## 1.1.0 Atlas
 
 + Ensure cloud resource are fully cleaned on deletion
 + Solr Application
 + HBase Application
 + Library
 
-## 1.1.0 Atlas
+## 1.2.0 Terminator
 
 + IPFS Application
 + Etcd Application
 + Import / Export Notes and Notebooks (Zeppelin + Jupyter formats)
 + Enable SSL on Load Balancers
 + Workspace Functions
-
-## 1.2.0 Terminator
-
 + Join AWS VPC
 + Join Local Nodes
 

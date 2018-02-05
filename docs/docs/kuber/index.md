@@ -19,7 +19,7 @@ Optionaly, you can persist those credentials in your home folder (`~/.aws/creden
 
 ```console
 # ~/.aws/credentials
-[kuber-rest]
+[kuber]
 aws_access_key_id=<your-aws-key-id>
 aws_secret_access_key=<your-aws-key-secret>
 ```

@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="kuber-architecture.svg">
+   sodipodi:docname="architecture.svg">
   <defs
      id="defs4">
     <marker
@@ -960,14 +960,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.88918921"
-     inkscape:cx="326.87259"
-     inkscape:cy="247.70363"
+     inkscape:zoom="0.42983268"
+     inkscape:cx="718.52998"
+     inkscape:cy="-198.20851"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
+     inkscape:window-width="1920"
+     inkscape:window-height="1119"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -2491,180 +2491,176 @@
          x="311.21948"
          y="959.02832">Spot Virtual Machines</tspan></text>
     <g
-       id="g7469"
-       transform="translate(-73.046043,27.280822)">
-      <g
-         inkscape:label="Layer 1"
-         id="layer1-49"
-         transform="matrix(0.18687667,0,0,0.18687667,603.10537,437.71661)">
-        <path
-           style="fill:#008080;fill-rule:evenodd;stroke:#008080;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 337.59894,900.1437 c 1.17988,-47.1016 -37.69045,-99.5303 -76.15607,-124.6102 -55.60591,-37.1359 -106.34448,-49.0018 -158.32503,-46.7472 13.45825,12.4405 40.58003,17.3748 28.16358,51.7601 -16.49219,-3.7988 -15.22264,-9.0828 -38.711881,-13.1629 -27.09591,-6.915 -39.10268,-13.9222 -45.77888,-28.7019 -11.40677,46.0054 13.46245,79.9187 44.14832,111.8932 -23.30954,0.6504 -44.17223,-6.8554 -63.17777,-20.5518 -1.48032,41.4915 25.53399,59.2374 47.19304,81.4461 -23.35808,-8.7918 -40.82302,-2.8507 -58.61071,2.2835 58.15072,6.5549 93.353241,70.9937 143.416751,104.9502 37.79074,3.9677 91.7374,-16.9888 91.7374,-16.9888 -17.75421,3.4044 -82.4426,-45.3971 -65.48421,-101.6552 -1.16032,10.932 98.22431,68.936 129.84622,56.1568 14.80553,-5.9832 22.548,-33.2204 21.73924,-56.0719 z"
-           id="path4348"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cccccccccccscsc" />
-        <path
-           style="fill:#ffffff;fill-rule:evenodd;stroke:#f8f8f8;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 280.60175,858.1668 c -11.78864,-17.0102 -41.89139,-23.3549 -48.76158,-22.251 20.87849,10.9693 10.19928,26.4926 29.73212,33.6686 8.42596,1.528 17.97289,-2.6861 19.11784,-11.2871 z"
-           id="path4352"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccc" />
-      </g>
-      <g
-         transform="matrix(0.33587506,0,0,0.33587506,603.50397,651.7771)"
-         id="g5520-8-7-5">
-        <symbol
-           id="node_high_level-9-1-6"
-           viewBox="-81 -93 162 186.1"
-           transform="translate(0,-77)">
-          <polygon
-             class="st0"
-             points="-80,-46 -80,46 0,92 80,46 80,-46 0,-92 "
-             id="polygon382-2-1-1"
-             style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <g
-             id="Isolation_Mode_3_-6-5-1" />
-        </symbol>
-        <symbol
-           id="node_x5F_empty-6-9-5"
-           viewBox="-87.5 -100.6 175.1 201.1"
-           transform="translate(0,-77)">
-          <use
-             xlink:href="#node_high_level-9-1-6"
-             width="162"
-             height="186.10001"
-             id="XMLID_201_-4-7-9"
-             x="-81"
-             y="-93"
-             transform="matrix(1.0808,0,0,1.0808,-3.292006e-5,83.221563)"
-             style="overflow:visible" />
-          <g
-             id="g387-9-7-8">
-            <polygon
-               class="st1"
-               points="0,-88.3 76.7,-44.4 76.8,-28.1 -14,-80.3 "
-               id="polygon389-5-6-4"
-               style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd" />
-            <polygon
-               class="st2"
-               points="38.8,-66.1 76.7,-44.4 76.8,-28.1 32.1,-53.8 "
-               id="polygon391-0-7-8"
-               style="opacity:0.45;fill:#ffffff" />
-          </g>
-        </symbol>
-        <symbol
-           id="node_x5F_new-4-3-1"
-           viewBox="-87.6 -101 175.2 202"
-           transform="translate(0,-77)">
-          <polygon
-             class="st3"
-             points="0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 86.6,-50 "
-             id="polygon394-8-6-0"
-             style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st4"
-             points="0,-100 25.8,-85.1 -86.6,-20.2 -86.6,-50 "
-             id="polygon396-7-5-3"
-             style="fill:#006de9" />
-          <polygon
-             class="st5"
-             points="15.7,-85.1 0,-94.3 -40.8,-70.7 -32.9,-57 "
-             id="polygon398-1-6-0"
-             style="fill:#a0caea" />
-          <text
-             transform="matrix(0.866,-0.5,-0.5,-0.866,-33.9256,-70.7388)"
-             class="st6"
-             style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-             id="text400-7-3-4">Docker</text>
-          <text
-             transform="matrix(0.866,-0.5,-0.5,-0.866,-76.0668,-46.4087)"
-             class="st6"
-             style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-             id="text402-2-9-4">Kubelt</text>
-        </symbol>
-        <circle
-           id="circle49-7-4-4"
-           r="54.599998"
-           cy="95.942696"
-           cx="97.293816"
-           style="opacity:0.1;fill:url(#linearGradient6136)" />
-        <circle
-           style="fill:none;stroke:#326de6;stroke-width:2;stroke-miterlimit:10"
-           id="circle69-2-8-4"
-           r="54.599998"
-           cy="95.942696"
-           cx="97.293816"
-           class="st39" />
+       transform="matrix(0.18687667,0,0,0.18687667,530.05933,464.99743)"
+       id="layer1-49"
+       inkscape:label="Layer 1">
+      <path
+         sodipodi:nodetypes="cccccccccccscsc"
+         inkscape:connector-curvature="0"
+         id="path4348"
+         d="m 337.59894,900.1437 c 1.17988,-47.1016 -37.69045,-99.5303 -76.15607,-124.6102 -55.60591,-37.1359 -106.34448,-49.0018 -158.32503,-46.7472 13.45825,12.4405 40.58003,17.3748 28.16358,51.7601 -16.49219,-3.7988 -15.22264,-9.0828 -38.711881,-13.1629 -27.09591,-6.915 -39.10268,-13.9222 -45.77888,-28.7019 -11.40677,46.0054 13.46245,79.9187 44.14832,111.8932 -23.30954,0.6504 -44.17223,-6.8554 -63.17777,-20.5518 -1.48032,41.4915 25.53399,59.2374 47.19304,81.4461 -23.35808,-8.7918 -40.82302,-2.8507 -58.61071,2.2835 58.15072,6.5549 93.353241,70.9937 143.416751,104.9502 37.79074,3.9677 91.7374,-16.9888 91.7374,-16.9888 -17.75421,3.4044 -82.4426,-45.3971 -65.48421,-101.6552 -1.16032,10.932 98.22431,68.936 129.84622,56.1568 14.80553,-5.9832 22.548,-33.2204 21.73924,-56.0719 z"
+         style="fill:#008080;fill-rule:evenodd;stroke:#008080;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4352"
+         d="m 280.60175,858.1668 c -11.78864,-17.0102 -41.89139,-23.3549 -48.76158,-22.251 20.87849,10.9693 10.19928,26.4926 29.73212,33.6686 8.42596,1.528 17.97289,-2.6861 19.11784,-11.2871 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#f8f8f8;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g5520-8-7-5"
+       transform="matrix(0.33587506,0,0,0.33587506,530.45793,679.05792)">
+      <symbol
+         transform="translate(0,-77)"
+         viewBox="-81 -93 162 186.1"
+         id="node_high_level-9-1-6">
+        <polygon
+           style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+           id="polygon382-2-1-1"
+           points="0,92 80,46 80,-46 0,-92 -80,-46 -80,46 "
+           class="st0" />
         <g
-           transform="translate(-195.60619,-31.557301)"
-           id="g190-2-1-7">
-          <g
-             id="g192-6-2-6">
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon194-1-9-3"
-               points="303.5,108.7 292.9,114.8 282.4,108.7 292.9,102.6 "
-               class="st50" />
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon196-0-3-1"
-               points="292.9,114.8 292.9,127 282.4,120.9 282.4,108.7 "
-               class="st50" />
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon198-6-9-7"
-               points="303.5,108.7 303.5,120.9 292.9,127 292.9,114.8 "
-               class="st50" />
-          </g>
-          <g
-             id="g200-1-0-5">
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon202-5-8-9"
-               points="286.3,132 278.4,136.5 270.5,132 278.4,127.4 "
-               class="st50" />
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon204-9-8-6"
-               points="278.4,136.5 278.4,145.7 270.5,141.1 270.5,132 "
-               class="st50" />
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon206-4-5-2"
-               points="286.3,132 286.3,141.1 278.4,145.7 278.4,136.5 "
-               class="st50" />
-          </g>
-          <g
-             id="g208-9-0-1">
-            <path
-               style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               inkscape:connector-curvature="0"
-               id="path210-0-9-7"
-               d="m 318,141.8 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,-10.6 -21.1,0 0,10.6 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,0.2 0,0 c 0.2,2.9 4.9,5.2 10.5,5.2 5.7,0 10.3,-2.3 10.5,-5.2 l 0,0 0,-0.2 z"
-               class="st51" />
-            <ellipse
-               style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="ellipse212-9-6-8"
-               ry="5.4000001"
-               rx="10.6"
-               cy="131.3"
-               cx="307.39999"
-               class="st51" />
-          </g>
+           id="Isolation_Mode_3_-6-5-1" />
+      </symbol>
+      <symbol
+         transform="translate(0,-77)"
+         viewBox="-87.5 -100.6 175.1 201.1"
+         id="node_x5F_empty-6-9-5">
+        <use
+           style="overflow:visible"
+           transform="matrix(1.0808,0,0,1.0808,-3.292006e-5,83.221563)"
+           y="-93"
+           x="-81"
+           id="XMLID_201_-4-7-9"
+           height="186.10001"
+           width="162"
+           xlink:href="#node_high_level-9-1-6" />
+        <g
+           id="g387-9-7-8">
+          <polygon
+             style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
+             id="polygon389-5-6-4"
+             points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
+             class="st1" />
+          <polygon
+             style="opacity:0.45;fill:#ffffff"
+             id="polygon391-0-7-8"
+             points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
+             class="st2" />
+        </g>
+      </symbol>
+      <symbol
+         transform="translate(0,-77)"
+         viewBox="-87.6 -101 175.2 202"
+         id="node_x5F_new-4-3-1">
+        <polygon
+           style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+           id="polygon394-8-6-0"
+           points="-86.6,50 0,100 86.6,50 86.6,-50 0,-100 -86.6,-50 "
+           class="st3" />
+        <polygon
+           style="fill:#006de9"
+           id="polygon396-7-5-3"
+           points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
+           class="st4" />
+        <polygon
+           style="fill:#a0caea"
+           id="polygon398-1-6-0"
+           points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
+           class="st5" />
+        <text
+           id="text400-7-3-4"
+           style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
+           class="st6"
+           transform="matrix(0.866,-0.5,-0.5,-0.866,-33.9256,-70.7388)">Docker</text>
+        <text
+           id="text402-2-9-4"
+           style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
+           class="st6"
+           transform="matrix(0.866,-0.5,-0.5,-0.866,-76.0668,-46.4087)">Kubelt</text>
+      </symbol>
+      <circle
+         style="opacity:0.1;fill:url(#linearGradient6136)"
+         cx="97.293816"
+         cy="95.942696"
+         r="54.599998"
+         id="circle49-7-4-4" />
+      <circle
+         class="st39"
+         cx="97.293816"
+         cy="95.942696"
+         r="54.599998"
+         id="circle69-2-8-4"
+         style="fill:none;stroke:#326de6;stroke-width:2;stroke-miterlimit:10" />
+      <g
+         id="g190-2-1-7"
+         transform="translate(-195.60619,-31.557301)">
+        <g
+           id="g192-6-2-6">
+          <polygon
+             class="st50"
+             points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
+             id="polygon194-1-9-3"
+             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+          <polygon
+             class="st50"
+             points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
+             id="polygon196-0-3-1"
+             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+          <polygon
+             class="st50"
+             points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
+             id="polygon198-6-9-7"
+             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+        </g>
+        <g
+           id="g200-1-0-5">
+          <polygon
+             class="st50"
+             points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
+             id="polygon202-5-8-9"
+             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+          <polygon
+             class="st50"
+             points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
+             id="polygon204-9-8-6"
+             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+          <polygon
+             class="st50"
+             points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
+             id="polygon206-4-5-2"
+             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+        </g>
+        <g
+           id="g208-9-0-1">
+          <path
+             class="st51"
+             d="m 318,141.8 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,-10.6 -21.1,0 0,10.6 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,0.2 0,0 c 0.2,2.9 4.9,5.2 10.5,5.2 5.7,0 10.3,-2.3 10.5,-5.2 l 0,0 0,-0.2 z"
+             id="path210-0-9-7"
+             inkscape:connector-curvature="0"
+             style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+          <ellipse
+             class="st51"
+             cx="307.39999"
+             cy="131.3"
+             rx="10.6"
+             ry="5.4000001"
+             id="ellipse212-9-6-8"
+             style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
       </g>
-      <text
-         sodipodi:linespacing="125%"
-         id="text7066-9-5"
-         y="652.6413"
-         x="603.1297"
-         style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="652.6413"
-           x="603.1297"
-           id="tspan7068-3-7"
-           sodipodi:role="line">Spitfire</tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="530.08368"
+       y="679.92212"
+       id="text7066-9-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7068-3-7"
+         x="530.08368"
+         y="679.92212">Spitfire</tspan></text>
     <g
        id="g5364"
        transform="matrix(0.73883739,0,0,0.73883739,282.94773,757.23868)">

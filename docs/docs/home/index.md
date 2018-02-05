@@ -10,7 +10,7 @@ The [version 0.0.1](/docs/releases/v-0.0.1) is released and fully supported on A
 
 You will also get a K8S Dashboard with Heapster to monitor resources usage. Last but not least, we also ship `Kuber Board`, a nice user interface to control your cluster.
 
-Datalayer solutions make life easier, more productive, cheaper and bring more business value:
+Datalayer solutions make life easier, more productive, cheaper and bring more business value.
 
 + [Devops](/docs/who/devops) use the Kuber CLI to create the Kubernetes cluster and deploy the needed Applications. You also get the Kuber Board WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Production` environments.
 + [Data Scientists](/docs/who/data-scientists) use the Data Studio to explore and share insights in a visual way, in private or in public (e.g. on Twitter).
