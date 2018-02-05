@@ -8,7 +8,7 @@ Current projects organisation is not enough agile and can be summarized as a ser
 
 Datalayer shuffles the phases and allows better agility and collaboration while raising the bar to prepare a faster and cheaper `Go-to-Production`.
 
-+ [Lower cost](/docs/why/lower-cloud-cost) cloud resources.
-+ Think to [Production while Exploring](/docs/why/exploration-to-production).
-+ Enable [Data Story Telling](/docs/why/collaborative-story-telling).
-+ Ships beautiful User Interface for Data Scientists and Business to create [Data Products](/docs/why/data-products).
++ IT-Less and [Lower cost](/docs/why/it-less-lower-cloud-cost) cloud resources.
++ [No Vendor nor Cloud lock-in](/docs/why/no-vendor-cloud-lock-in).
++ Think to [Production while Exploring](/docs/why/exploration-to-production) to create scalable Data Products.
++ Enable [Data Story Telling](/docs/why/collaborative-story-telling) and ship beautiful User Interface for Data Scientists and Business.
