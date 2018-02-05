@@ -7,7 +7,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 ## 0.2.0 Mystic
 
 + Resources Requests
-+ User Lists
++ Basic User Management
 + Google Authentication
 
 ## 0.3.0 Alexandria
@@ -25,6 +25,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Workspace View
 + Notes Permissions View
 + HDFS Locality
++ Publish to User Timeline
 
 ## 1.1.0 Atlas
 
