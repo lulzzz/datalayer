@@ -1,5 +1,7 @@
 ---
-title: Quick Start
+title: Install
+redirect_from:
+- "/docs/quick-start"
 ---
 
 **Quick Start the Datalayer Science Platform on AWS in 10 minutes.**

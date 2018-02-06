@@ -2,39 +2,33 @@
 title: Release Plan
 ---
 
-Here after our `Release Plan` which may evolve at any time (no commitment... just track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
+Here is our `Release Plan` which may evolve at any time (no commitment... just track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
 
-## 0.2.0 Mystic
-
-+ Resources Requests
-+ Basic User Management
-+ Google Authentication
-
-## 0.3.0 Alexandria
+## 1.1.0 Alexandria
 
 + HDFS Pods View and Volumes View
 + Dataset View
-+ Integrate `kuber-app` into Kuber binary commands (see, join, scale, pause, hibernate, delete)
++ Integrate `kuber-app` into Kuber binary commands [seed, join, scale, pause, hibernate, delete]
 + README View
 + RELEASE_NOTES View
 + Fix Spark cold start
 + History View
 
-## 1.0.0 Arcadia
+## 1.2.0 Mystic
 
 + Workspace View
 + Notes Permissions View
 + HDFS Locality
 + Publish to User Timeline
 
-## 1.1.0 Atlas
+## 1.3.0 Atlas
 
 + Ensure cloud resource are fully cleaned on deletion
 + Solr Application
 + HBase Application
 + Library
 
-## 1.2.0 Terminator
+## 1.4.0 Terminator
 
 + IPFS Application
 + Etcd Application
@@ -44,7 +38,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Join AWS VPC
 + Join Local Nodes
 
-## 1.3.0
+## 1.5.0 Sylvidra
 
 + Github Auth
 + Support Jupyter ipywidgets
@@ -52,18 +46,18 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Support React.js application packages
 + SSH from Plane to Pods
 
-## 1.4.0
+## 1.6.0
 
 + Datalayer.ai Widgets
 + Notes as a REST
 
-## 1.5.0
+## 1.7.0
 
 + Integrate Airflow
 + Visual Scheduler
 + HDFS Locality
 
-## 1.6.0
+## 1.8.0
 
 + Publish to Twitter
 + Publish to OneNote
@@ -71,12 +65,9 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + User Timeline
 + Microsoft Auth
 
-## 1.7.0
+## 1.9.0
 
 + Tensorflow Application
-
-## 1.8.0
-
 + Kerberos HDFS
 
 ## 2.0.0
@@ -109,7 +100,7 @@ Here after our `Release Plan` which may evolve at any time (no commitment... jus
 + Multiple HDFS with cluster-id
 + Support Azure
 
-## 2.5.0
+## 3.0.0
 
 + Apps Market
 

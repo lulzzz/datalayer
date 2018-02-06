@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="kuber-join.svg">
+   sodipodi:docname="cost-compensation.svg">
   <defs
      id="defs4">
     <marker
@@ -990,14 +990,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.57345312"
-     inkscape:cx="324.42726"
-     inkscape:cy="411.90918"
+     inkscape:zoom="1.1088254"
+     inkscape:cx="319.57642"
+     inkscape:cy="184.77364"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
+     inkscape:window-width="1920"
+     inkscape:window-height="1119"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -1977,37 +1977,33 @@
            id="tspan7068-3-8-9-7"
            sodipodi:role="line">Kubernetes Master</tspan></text>
     </g>
-    <g
-       id="g5422"
-       transform="matrix(1.0776105,0,0,1.0776105,-207.26603,29.924928)">
-      <path
-         inkscape:connector-curvature="0"
-         style="fill:#008080;fill-opacity:1"
-         id="path6"
-         d="m 523.35629,526.72972 c -13.33885,8.47342 -23.0469,31.61369 -23.32291,58.79258 l 46.52133,0 c -0.27279,-27.17889 -9.86006,-50.31916 -23.19867,-58.79283 z m -2.33668,20.21858 2.27455,4.49878 2.27431,-4.49854 c 1.23871,0.28842 2.44518,0.81055 3.60367,1.54213 l 0.51531,6.02118 2.49168,-3.54923 c 0.98427,1.00721 1.91943,2.17711 2.80154,3.49119 l -0.77906,4.36326 2.2784,-1.90257 c 3.02423,5.49234 5.21398,12.84585 6.1417,21.17581 -1.24441,-3.98569 -3.29242,-7.48842 -5.90525,-10.20998 l 0.49598,-4.44062 -3.17737,2.07308 c -0.7561,-0.56171 -1.54397,-1.06574 -2.35961,-1.50728 l -0.41476,-5.08007 -3.26279,3.58047 c -0.90641,-0.25716 -1.83413,-0.4439 -2.78208,-0.55029 l -1.92191,-4.12281 -1.92192,4.12677 c -1.00933,0.11356 -1.99879,0.31272 -2.9605,0.59668 l -3.08437,-3.38258 -0.39144,4.82017 c -0.82395,0.44452 -1.62,0.95228 -2.38318,1.51894 l -3.17724,-2.0732 0.49969,4.44074 c -2.61381,2.72169 -4.66444,6.22329 -5.90909,10.21022 0.92772,-8.33095 3.12094,-15.68347 6.14542,-21.17605 l 2.27518,1.90257 -0.77868,-4.36313 c 0.91383,-1.36184 1.88632,-2.56793 2.90991,-3.59956 l 2.3869,3.39423 0.48816,-5.74244 c 1.16556,-0.73939 2.37982,-1.26724 3.62685,-1.55775 z" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text7066-9"
-         y="611.44366"
-         x="495.65109"
-         style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="611.44366"
-           x="495.65109"
-           id="tspan7068-3"
-           sodipodi:role="line">Kuber</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text7066-9-3"
-         y="629.75891"
-         x="496.15475"
-         style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="629.75891"
-           x="496.15475"
-           id="tspan7068-3-6"
-           sodipodi:role="line">Board</tspan></text>
-    </g>
+    <path
+       d="m 356.7082,597.5344 c -14.37408,9.13105 -24.83558,34.06725 -25.13301,63.35551 l 50.13187,0 c -0.29396,-29.28826 -10.6253,-54.22446 -24.99913,-63.35577 z m -2.51803,21.78776 2.45108,4.84793 2.45082,-4.84767 c 1.33485,0.3108 2.63495,0.87345 3.88335,1.66181 l 0.55531,6.48849 2.68506,-3.82469 c 1.06066,1.08538 2.0684,2.34608 3.01897,3.76215 l -0.83953,4.70189 2.45523,-2.05023 c 3.25894,5.9186 5.61864,13.84282 6.61836,22.81928 -1.34099,-4.29503 -3.54794,-8.0696 -6.36356,-11.00239 l 0.53448,-4.78525 -3.42397,2.23397 c -0.81478,-0.60531 -1.6638,-1.14845 -2.54274,-1.62426 l -0.44695,-5.47434 -3.51602,3.85835 c -0.97676,-0.27712 -1.97648,-0.47835 -2.998,-0.593 l -2.07107,-4.44278 -2.07108,4.44705 c -1.08766,0.12238 -2.15392,0.33699 -3.19026,0.64299 l -3.32375,-3.6451 -0.42182,5.19426 c -0.8879,0.47902 -1.74573,1.02619 -2.56814,1.63683 l -3.42383,-2.2341 0.53847,4.78538 c -2.81667,2.93293 -5.02645,6.70629 -6.3677,11.00264 0.99972,-8.97751 3.36316,-16.90067 6.62237,-22.81953 l 2.45176,2.05023 -0.83911,-4.70175 c 0.98475,-1.46754 2.03271,-2.76723 3.13575,-3.87893 l 2.57214,3.65766 0.52605,-6.18811 c 1.25602,-0.79678 2.56452,-1.3656 3.90833,-1.67865 z"
+       id="path6"
+       style="fill:#008080;fill-opacity:1"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:19.84919167px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="326.85278"
+       y="688.82306"
+       id="text7066-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7068-3"
+         x="326.85278"
+         y="688.82306">Kuber</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:19.84919167px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="327.39554"
+       y="708.55975"
+       id="text7066-9-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7068-3-6"
+         x="327.39554"
+         y="708.55975">Board</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:22.31274986px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -3708,6 +3704,232 @@
          y="590.12933"
          id="tspan13036-9"
          style="text-align:center;text-anchor:middle">HDFS Datanode</tspan></text>
+    <g
+       id="g6295"
+       transform="matrix(0.12059461,0,0,0.12059461,258.4599,661.42685)">
+      <circle
+         r="255.07637"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5683-91-7-6"
+         cx="256"
+         cy="256"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <ellipse
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-6-9-8-3"
+         cx="160.49969"
+         cy="213.98793"
+         rx="9.9116879"
+         ry="9.5771914"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <ellipse
+         inkscape:export-ydpi="42.880001"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         ry="29.137291"
+         rx="28.858023"
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725118;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-6-0-6-7"
+         cx="98.500038"
+         cy="161.37505" />
+      <ellipse
+         inkscape:export-ydpi="42.880001"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         ry="29.137291"
+         rx="28.858023"
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725118;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-6-0-2-5-9"
+         cx="343.39618"
+         cy="161.37505" />
+      <ellipse
+         inkscape:export-ydpi="42.880001"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         ry="29.137291"
+         rx="28.858023"
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725118;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-6-0-1-0-2"
+         cx="220.11505"
+         cy="267.23877" />
+      <ellipse
+         inkscape:export-ydpi="42.880001"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         ry="29.137291"
+         rx="28.858023"
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725118;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-6-0-2-9-9-3"
+         cx="465.01135"
+         cy="267.23877" />
+      <ellipse
+         inkscape:export-ydpi="42.880001"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         ry="29.137291"
+         rx="28.858023"
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725118;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-6-0-18-3-1"
+         cx="98.500038"
+         cy="371.52722" />
+      <ellipse
+         inkscape:export-ydpi="42.880001"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         ry="29.137291"
+         rx="28.858023"
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725118;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-6-0-2-7-6-1"
+         cx="343.39618"
+         cy="371.52722" />
+      <path
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:#2ecc71;stroke-width:1.84725142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 89.814314,156.32929 218.80601,260.40268"
+         id="path5615-1-8-2-1-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <path
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:#2ecc71;stroke-width:1.84725142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 96.770454,374.79437 221.93399,265.07121"
+         id="path5615-1-8-2-7-2-9"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <path
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:#2ecc71;stroke-width:1.84725142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 159.36764,213.51968 185.63455,-53.6214"
+         id="path5615-1-8-2-6-10-4"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <path
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:#2ecc71;stroke-width:1.84725142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 342.20668,374.57873 466.20108,266.28955"
+         id="path5615-1-8-2-2-0-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <path
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:#2ecc71;stroke-width:1.84725142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 463.82169,273.02335 342.08704,161.36977"
+         id="path5615-1-8-2-6-2-6-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <ellipse
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-5-1-4-6-5"
+         cx="164.30553"
+         cy="316.85919"
+         rx="14.429013"
+         ry="14.568645"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <ellipse
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-6-9-1-49-9"
+         cx="404.20355"
+         cy="322.74646"
+         rx="9.9116879"
+         ry="9.5771914"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <path
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:#2ecc71;stroke-width:1.84725142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 223.92367,267.97748 238.11238,4.41025"
+         id="path5615-1-8-2-6-8-6-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <ellipse
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-6-9-2-5-1"
+         cx="89.053947"
+         cy="274.77197"
+         rx="10.051037"
+         ry="9.7118378"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <ellipse
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-5-1-4-0-94-5"
+         cx="225.52231"
+         cy="99.13018"
+         rx="14.429013"
+         ry="14.568645"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <ellipse
+         ry="19.42486"
+         rx="19.238682"
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-9-6-9-1-1-8"
+         cx="307.15424"
+         cy="73.89917"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <ellipse
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5493-6-9-2-8-9-9"
+         cx="295.63644"
+         cy="330.03812"
+         rx="4.8096638"
+         ry="4.8610778"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <path
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:#2ecc71;stroke-width:1.84725142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 89.715974,276.87271 79.012876,43.09824"
+         id="path5615-1-8-2-2-2-0-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+      <path
+         style="opacity:1;fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:#2ecc71;stroke-width:1.84725142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 222.99232,99.413366 307.00323,74.387293"
+         id="path5615-1-8-2-2-1-9-9"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/dla/datalayer-website/src/main/webapp/pages/datalayer.io/ext/images/logo-datalayer-hub.png"
+         inkscape:export-xdpi="42.880001"
+         inkscape:export-ydpi="42.880001" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:19.84919167px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="253.93698"
+       y="744.11273"
+       id="text7066-9-3-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7068-3-6-3"
+         x="253.93698"
+         y="744.11273">Library</tspan></text>
   </g>
   <style
      id="style754"

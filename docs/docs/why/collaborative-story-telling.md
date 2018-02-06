@@ -8,4 +8,6 @@ The following picture shows an example for a `Social Media Analysis` case.
 
 ![Collaboration](/images/datalayer/collaboration.svg "Collaboration")
 
+Data Analytics is sometimes arid. We want make life more pleasant with beautiful and collaborative user interfaces so the Data Science days are fun and not a breeze to `Build Beautiful and Scalable Data Products`.
+
 ![Story Telling](/images/datalayer/storytelling-1.jpg "Story Telling")

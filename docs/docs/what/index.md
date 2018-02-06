@@ -1,5 +1,5 @@
 ---
-title: What do we offer?
+title: Datalayer Offering
 ---
 
 We ship [Kuber](/docs/what/kuber) to create a Kubernetes cluster on Amazon AWS from scratch.
