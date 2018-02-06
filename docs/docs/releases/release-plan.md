@@ -8,6 +8,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 
 + HDFS Pods View and Volumes View
 + Dataset View
++ Dataset Wrangle
 + Integrate `kuber-app` into Kuber binary commands [seed, join, scale, pause, hibernate, delete]
 + README View
 + RELEASE_NOTES View
