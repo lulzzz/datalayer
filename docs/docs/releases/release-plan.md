@@ -11,7 +11,8 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Integrate `kuber-app` into Kuber binary commands [seed, join, scale, pause, hibernate, delete]
 + README View
 + RELEASE_NOTES View
-+ Home Page via Config
++ Define Home Page in Settings
++ Note Scratchpad View
 + History View
 + Clone Note
 
@@ -27,6 +28,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 ## 1.3.0 Atlas
 
 + Ensure cloud resource are fully cleaned on deletion
++ Sudio local Docker connecting to Remote Cluster
 + Solr Application
 + HBase Application
 + Library
