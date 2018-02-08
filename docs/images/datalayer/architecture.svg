@@ -665,36 +665,6 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#SVGID_2_-4"
-       id="linearGradient5918"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-195.60619,-31.557301)"
-       x1="238.2856"
-       y1="127.5093"
-       x2="347.5509"
-       y2="127.5093" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#SVGID_2_-4"
-       id="linearGradient6027"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-195.60619,-31.557301)"
-       x1="238.2856"
-       y1="127.5093"
-       x2="347.5509"
-       y2="127.5093" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#SVGID_2_-4"
-       id="linearGradient6136"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-195.60619,-31.557301)"
-       x1="238.2856"
-       y1="127.5093"
-       x2="347.5509"
-       y2="127.5093" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#SVGID_2_-4"
        id="linearGradient6243"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(-195.60619,-31.557301)"
@@ -912,16 +882,6 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)" />
     </marker>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#SVGID_2_-4"
-       id="linearGradient5395"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-195.60619,-31.557301)"
-       x1="238.2856"
-       y1="127.5093"
-       x2="347.5509"
-       y2="127.5093" />
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
@@ -952,6 +912,2076 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
          transform="matrix(-0.8,0,0,-0.8,-10,0)" />
     </marker>
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4276-5"
+       effect="spiro" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6271-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path6273-2" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Lstart-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path4240-1" />
+    </marker>
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect6213-27"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5891-0"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5819-9"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5755-3"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect5751-6"
+       effect="spiro" />
+    <linearGradient
+       y2="12.7559"
+       x2="-5674.9575"
+       y1="12.7559"
+       x1="-5691.9653"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_1_-7">
+      <stop
+         id="stop33-5"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop35-3"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-5635.2725"
+       y1="12.7559"
+       x1="-5674.9575"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_2_-5">
+      <stop
+         id="stop40-6"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop42-2"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.015099"
+       x2="-5663.6196"
+       y1="34.015099"
+       x1="-5691.9653"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_3_-9">
+      <stop
+         id="stop47-1"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop49-2"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014198"
+       x2="-5635.2725"
+       y1="34.014198"
+       x1="-5663.6196"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_4_-7">
+      <stop
+         id="stop54-0"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop56-9"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-5652.2808"
+       y1="55.274899"
+       x1="-5691.9653"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_5_-3">
+      <stop
+         id="stop61-6"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop63-0"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-5635.2715"
+       y1="55.274899"
+       x1="-5652.2808"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_6_-6">
+      <stop
+         id="stop68-2"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop70-6"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-4983.3027"
+       y1="12.7559"
+       x1="-5000.3105"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_7_">
+      <stop
+         id="stop83"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop85"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-4943.6182"
+       y1="12.7559"
+       x1="-4983.3027"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_8_">
+      <stop
+         id="stop90"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop92"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.015099"
+       x2="-4971.9648"
+       y1="34.015099"
+       x1="-5000.3105"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_9_">
+      <stop
+         id="stop97"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop99"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014198"
+       x2="-4943.6182"
+       y1="34.014198"
+       x1="-4971.9648"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_10_">
+      <stop
+         id="stop104"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop106"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-4960.626"
+       y1="55.274899"
+       x1="-5000.3105"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_11_">
+      <stop
+         id="stop111"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop113"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-4943.6172"
+       y1="55.274899"
+       x1="-4960.626"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_12_">
+      <stop
+         id="stop118"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop120"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-3690.7051"
+       y1="12.7559"
+       x1="-3707.7129"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_13_">
+      <stop
+         id="stop133"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop135"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-3651.0205"
+       y1="12.7559"
+       x1="-3690.7051"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_14_">
+      <stop
+         id="stop140"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop142"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.015099"
+       x2="-3679.3672"
+       y1="34.015099"
+       x1="-3707.7129"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_15_">
+      <stop
+         id="stop147"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop149"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014198"
+       x2="-3651.0205"
+       y1="34.014198"
+       x1="-3679.3672"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_16_">
+      <stop
+         id="stop154"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop156"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-3668.0283"
+       y1="55.274899"
+       x1="-3707.7129"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_17_">
+      <stop
+         id="stop161"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop163"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-3651.0195"
+       y1="55.274899"
+       x1="-3668.0283"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_18_">
+      <stop
+         id="stop168"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop170"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-3044.4062"
+       y1="12.7559"
+       x1="-3061.4141"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_19_">
+      <stop
+         id="stop183"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop185"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-3004.7217"
+       y1="12.7559"
+       x1="-3044.4062"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_20_">
+      <stop
+         id="stop190"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop192"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.015099"
+       x2="-3033.0684"
+       y1="34.015099"
+       x1="-3061.4141"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_21_">
+      <stop
+         id="stop197"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop199"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014198"
+       x2="-3004.7217"
+       y1="34.014198"
+       x1="-3033.0684"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_22_">
+      <stop
+         id="stop204"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop206"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-3021.7295"
+       y1="55.274899"
+       x1="-3061.4141"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_23_">
+      <stop
+         id="stop211"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop213"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-3004.7207"
+       y1="55.274899"
+       x1="-3021.7295"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_24_">
+      <stop
+         id="stop218"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop220"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-4337.0039"
+       y1="12.7559"
+       x1="-4354.0117"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_25_">
+      <stop
+         id="stop233"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop235"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-4297.3193"
+       y1="12.7559"
+       x1="-4337.0039"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_26_">
+      <stop
+         id="stop240"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop242"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.015099"
+       x2="-4325.666"
+       y1="34.015099"
+       x1="-4354.0117"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_27_">
+      <stop
+         id="stop247"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop249"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014198"
+       x2="-4297.3193"
+       y1="34.014198"
+       x1="-4325.666"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_28_">
+      <stop
+         id="stop254"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop256"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-4314.3271"
+       y1="55.274899"
+       x1="-4354.0117"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_29_">
+      <stop
+         id="stop261"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop263"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-4297.3184"
+       y1="55.274899"
+       x1="-4314.3271"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_30_">
+      <stop
+         id="stop268"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop270"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-2398.1074"
+       y1="12.7559"
+       x1="-2415.1152"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_31_">
+      <stop
+         id="stop283"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop285"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-2358.4229"
+       y1="12.7559"
+       x1="-2398.1074"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_32_">
+      <stop
+         id="stop290"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop292"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.015099"
+       x2="-2386.7695"
+       y1="34.015099"
+       x1="-2415.1152"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_33_">
+      <stop
+         id="stop297"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop299"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014198"
+       x2="-2358.4229"
+       y1="34.014198"
+       x1="-2386.7695"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_34_">
+      <stop
+         id="stop304"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop306"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-2375.4307"
+       y1="55.274899"
+       x1="-2415.1152"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_35_">
+      <stop
+         id="stop311"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop313"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-2358.4219"
+       y1="55.274899"
+       x1="-2375.4307"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_36_">
+      <stop
+         id="stop318"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop320"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-1751.8086"
+       y1="12.7559"
+       x1="-1768.8164"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_37_">
+      <stop
+         id="stop353"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop355"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-1712.124"
+       y1="12.7559"
+       x1="-1751.8086"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_38_">
+      <stop
+         id="stop360"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop362"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.015099"
+       x2="-1740.4707"
+       y1="34.015099"
+       x1="-1768.8164"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_39_">
+      <stop
+         id="stop367"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop369"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014198"
+       x2="-1712.124"
+       y1="34.014198"
+       x1="-1740.4707"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_40_">
+      <stop
+         id="stop374"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop376"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-1729.1318"
+       y1="55.274899"
+       x1="-1768.8164"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_41_">
+      <stop
+         id="stop381"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop383"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274899"
+       x2="-1712.123"
+       y1="55.274899"
+       x1="-1729.1318"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_42_">
+      <stop
+         id="stop388"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop390"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-5278.1094"
+       y1="12.7559"
+       x1="-5295.1172"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_43_">
+      <stop
+         id="stop403"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop405"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-5238.4248"
+       y1="12.7559"
+       x1="-5278.1094"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_44_">
+      <stop
+         id="stop410"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop412"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014599"
+       x2="-5266.7715"
+       y1="34.014599"
+       x1="-5295.1172"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_45_">
+      <stop
+         id="stop417"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop419"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.013699"
+       x2="-5238.4248"
+       y1="34.013699"
+       x1="-5266.7715"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_46_">
+      <stop
+         id="stop424"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop426"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-5255.4326"
+       y1="55.274399"
+       x1="-5295.1172"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_47_">
+      <stop
+         id="stop431"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop433"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-5238.4229"
+       y1="55.274399"
+       x1="-5255.4326"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_48_">
+      <stop
+         id="stop438"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop440"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-4603.4629"
+       y1="12.7559"
+       x1="-4620.4707"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_49_">
+      <stop
+         id="stop447"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop449"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-4563.7783"
+       y1="12.7559"
+       x1="-4603.4629"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_50_">
+      <stop
+         id="stop454"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop456"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014599"
+       x2="-4592.125"
+       y1="34.014599"
+       x1="-4620.4707"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_51_">
+      <stop
+         id="stop461"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop463"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.013699"
+       x2="-4563.7783"
+       y1="34.013699"
+       x1="-4592.125"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_52_">
+      <stop
+         id="stop468"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop470"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-4580.7861"
+       y1="55.274399"
+       x1="-4620.4707"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_53_">
+      <stop
+         id="stop475"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop477"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-4563.7764"
+       y1="55.274399"
+       x1="-4580.7861"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_54_">
+      <stop
+         id="stop482"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop484"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-3310.8652"
+       y1="12.7559"
+       x1="-3327.873"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_55_">
+      <stop
+         id="stop491"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop493"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-3271.1807"
+       y1="12.7559"
+       x1="-3310.8652"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_56_">
+      <stop
+         id="stop498"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop500"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014599"
+       x2="-3299.5273"
+       y1="34.014599"
+       x1="-3327.873"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_57_">
+      <stop
+         id="stop505"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop507"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.013699"
+       x2="-3271.1807"
+       y1="34.013699"
+       x1="-3299.5273"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_58_">
+      <stop
+         id="stop512"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop514"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-3288.1885"
+       y1="55.274399"
+       x1="-3327.873"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_59_">
+      <stop
+         id="stop519"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop521"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-3271.1787"
+       y1="55.274399"
+       x1="-3288.1885"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_60_">
+      <stop
+         id="stop526"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop528"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-2664.5664"
+       y1="12.7559"
+       x1="-2681.5742"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_61_">
+      <stop
+         id="stop535"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop537"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-2624.8818"
+       y1="12.7559"
+       x1="-2664.5664"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_62_">
+      <stop
+         id="stop542"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop544"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014599"
+       x2="-2653.2285"
+       y1="34.014599"
+       x1="-2681.5742"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_63_">
+      <stop
+         id="stop549"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop551"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.013699"
+       x2="-2624.8818"
+       y1="34.013699"
+       x1="-2653.2285"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_64_">
+      <stop
+         id="stop556"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop558"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-2641.8896"
+       y1="55.274399"
+       x1="-2681.5742"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_65_">
+      <stop
+         id="stop563"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop565"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-2624.8799"
+       y1="55.274399"
+       x1="-2641.8896"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_66_">
+      <stop
+         id="stop570"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop572"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-3957.1641"
+       y1="12.7559"
+       x1="-3974.1719"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_67_">
+      <stop
+         id="stop579"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop581"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-3917.4795"
+       y1="12.7559"
+       x1="-3957.1641"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_68_">
+      <stop
+         id="stop586"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop588"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014599"
+       x2="-3945.8262"
+       y1="34.014599"
+       x1="-3974.1719"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_69_">
+      <stop
+         id="stop593"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop595"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.013699"
+       x2="-3917.4795"
+       y1="34.013699"
+       x1="-3945.8262"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_70_">
+      <stop
+         id="stop600"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop602"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-3934.4873"
+       y1="55.274399"
+       x1="-3974.1719"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_71_">
+      <stop
+         id="stop607"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop609"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-3917.4775"
+       y1="55.274399"
+       x1="-3934.4873"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_72_">
+      <stop
+         id="stop614"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop616"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-2018.2676"
+       y1="12.7559"
+       x1="-2035.2754"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_73_">
+      <stop
+         id="stop623"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop625"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-1978.583"
+       y1="12.7559"
+       x1="-2018.2676"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_74_">
+      <stop
+         id="stop630"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop632"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014599"
+       x2="-2006.9297"
+       y1="34.014599"
+       x1="-2035.2754"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_75_">
+      <stop
+         id="stop637"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop639"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.013699"
+       x2="-1978.583"
+       y1="34.013699"
+       x1="-2006.9297"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_76_">
+      <stop
+         id="stop644"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop646"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-1995.5908"
+       y1="55.274399"
+       x1="-2035.2754"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_77_">
+      <stop
+         id="stop651"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop653"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-1978.5811"
+       y1="55.274399"
+       x1="-1995.5908"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_78_">
+      <stop
+         id="stop658"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop660"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-1371.9688"
+       y1="12.7559"
+       x1="-1388.9766"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_79_">
+      <stop
+         id="stop683"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop685"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="12.7559"
+       x2="-1332.2852"
+       y1="12.7559"
+       x1="-1371.9688"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_80_">
+      <stop
+         id="stop690"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop692"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.014599"
+       x2="-1360.6309"
+       y1="34.014599"
+       x1="-1388.9766"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_81_">
+      <stop
+         id="stop697"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop699"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="34.013699"
+       x2="-1332.2852"
+       y1="34.013699"
+       x1="-1360.6309"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_82_">
+      <stop
+         id="stop704"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop706"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-1349.292"
+       y1="55.274399"
+       x1="-1388.9766"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_83_">
+      <stop
+         id="stop711"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop713"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="55.274399"
+       x2="-1332.2832"
+       y1="55.274399"
+       x1="-1349.292"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_84_">
+      <stop
+         id="stop718"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop720"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-5129.0059"
+       y1="20.550301"
+       x1="-5164.7227"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_85_">
+      <stop
+         id="stop727"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop729"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-5045.6641"
+       y1="20.550301"
+       x1="-5129.0059"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_86_">
+      <stop
+         id="stop734"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop736"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.195801"
+       x2="-5105.1953"
+       y1="65.195801"
+       x1="-5164.7227"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_87_">
+      <stop
+         id="stop741"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop743"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.193398"
+       x2="-5045.6641"
+       y1="65.193398"
+       x1="-5105.1953"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_88_">
+      <stop
+         id="stop748"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop750"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-5081.3818"
+       y1="109.8418"
+       x1="-5164.7227"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_89_">
+      <stop
+         id="stop755"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop757"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-5045.6621"
+       y1="109.8418"
+       x1="-5081.3818"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_90_">
+      <stop
+         id="stop762"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop764"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-4482.707"
+       y1="20.550301"
+       x1="-4518.4238"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_91_">
+      <stop
+         id="stop777"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop779"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-4399.3652"
+       y1="20.550301"
+       x1="-4482.707"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_92_">
+      <stop
+         id="stop784"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop786"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.195801"
+       x2="-4458.8965"
+       y1="65.195801"
+       x1="-4518.4238"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_93_">
+      <stop
+         id="stop791"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop793"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.193398"
+       x2="-4399.3652"
+       y1="65.193398"
+       x1="-4458.8965"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_94_">
+      <stop
+         id="stop798"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop800"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-4435.083"
+       y1="109.8418"
+       x1="-4518.4238"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_95_">
+      <stop
+         id="stop805"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop807"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-4399.3633"
+       y1="109.8418"
+       x1="-4435.083"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_96_">
+      <stop
+         id="stop812"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop814"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-3190.1094"
+       y1="20.550301"
+       x1="-3225.8262"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_97_">
+      <stop
+         id="stop827"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop829"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-3106.7676"
+       y1="20.550301"
+       x1="-3190.1094"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_98_">
+      <stop
+         id="stop834"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop836"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.195801"
+       x2="-3166.2988"
+       y1="65.195801"
+       x1="-3225.8262"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_99_">
+      <stop
+         id="stop841"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop843"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.193398"
+       x2="-3106.7676"
+       y1="65.193398"
+       x1="-3166.2988"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_100_">
+      <stop
+         id="stop848"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop850"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-3142.4854"
+       y1="109.8418"
+       x1="-3225.8262"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_101_">
+      <stop
+         id="stop855"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop857"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-3106.7656"
+       y1="109.8418"
+       x1="-3142.4854"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_102_">
+      <stop
+         id="stop862"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop864"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-2543.8105"
+       y1="20.550301"
+       x1="-2579.5273"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_103_">
+      <stop
+         id="stop877"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop879"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-2460.4688"
+       y1="20.550301"
+       x1="-2543.8105"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_104_">
+      <stop
+         id="stop884"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop886"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.195801"
+       x2="-2520"
+       y1="65.195801"
+       x1="-2579.5273"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_105_">
+      <stop
+         id="stop891"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop893"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.193398"
+       x2="-2460.4688"
+       y1="65.193398"
+       x1="-2520"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_106_">
+      <stop
+         id="stop898"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop900"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-2496.1865"
+       y1="109.8418"
+       x1="-2579.5273"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_107_">
+      <stop
+         id="stop905"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop907"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-2460.4668"
+       y1="109.8418"
+       x1="-2496.1865"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_108_">
+      <stop
+         id="stop912"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop914"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-3836.4082"
+       y1="20.550301"
+       x1="-3872.125"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_109_">
+      <stop
+         id="stop927"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop929"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-3753.0664"
+       y1="20.550301"
+       x1="-3836.4082"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_110_">
+      <stop
+         id="stop934"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop936"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.195801"
+       x2="-3812.5977"
+       y1="65.195801"
+       x1="-3872.125"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_111_">
+      <stop
+         id="stop941"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop943"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.193398"
+       x2="-3753.0664"
+       y1="65.193398"
+       x1="-3812.5977"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_112_">
+      <stop
+         id="stop948"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop950"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-3788.7842"
+       y1="109.8418"
+       x1="-3872.125"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_113_">
+      <stop
+         id="stop955"
+         style="stop-color:#28B899"
+         offset="0" />
+      <stop
+         id="stop957"
+         style="stop-color:#1B937B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-3753.0645"
+       y1="109.8418"
+       x1="-3788.7842"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_114_">
+      <stop
+         id="stop962"
+         style="stop-color:#03594A"
+         offset="0" />
+      <stop
+         id="stop964"
+         style="stop-color:#128570"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-1897.5117"
+       y1="20.550301"
+       x1="-1933.2285"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_115_">
+      <stop
+         id="stop977"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop979"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-1814.1699"
+       y1="20.550301"
+       x1="-1897.5117"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_116_">
+      <stop
+         id="stop984"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop986"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.195801"
+       x2="-1873.7012"
+       y1="65.195801"
+       x1="-1933.2285"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_117_">
+      <stop
+         id="stop991"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop993"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.193398"
+       x2="-1814.1699"
+       y1="65.193398"
+       x1="-1873.7012"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_118_">
+      <stop
+         id="stop998"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop1000"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-1849.8877"
+       y1="109.8418"
+       x1="-1933.2285"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_119_">
+      <stop
+         id="stop1005"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop1007"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-1814.168"
+       y1="109.8418"
+       x1="-1849.8877"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_120_">
+      <stop
+         id="stop1012"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop1014"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-1251.2129"
+       y1="20.550301"
+       x1="-1286.9297"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_121_">
+      <stop
+         id="stop1059"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop1061"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="20.550301"
+       x2="-1167.8711"
+       y1="20.550301"
+       x1="-1251.2129"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_122_">
+      <stop
+         id="stop1066"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop1068"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.195801"
+       x2="-1227.4023"
+       y1="65.195801"
+       x1="-1286.9297"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_123_">
+      <stop
+         id="stop1073"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop1075"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="65.193398"
+       x2="-1167.8711"
+       y1="65.193398"
+       x1="-1227.4023"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_124_">
+      <stop
+         id="stop1080"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop1082"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-1203.5889"
+       y1="109.8418"
+       x1="-1286.9297"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_125_">
+      <stop
+         id="stop1087"
+         style="stop-color:#B8B8B8"
+         offset="0" />
+      <stop
+         id="stop1089"
+         style="stop-color:#888888"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="109.8418"
+       x2="-1167.8691"
+       y1="109.8418"
+       x1="-1203.5889"
+       gradientUnits="userSpaceOnUse"
+       id="SVGID_126_">
+      <stop
+         id="stop1094"
+         style="stop-color:#111111"
+         offset="0" />
+      <stop
+         id="stop1096"
+         style="stop-color:#6D6D6D"
+         offset="1" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -960,9 +2990,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.42983268"
-     inkscape:cx="718.52998"
-     inkscape:cy="-198.20851"
+     inkscape:zoom="0.80352594"
+     inkscape:cx="586.22874"
+     inkscape:cy="137.80306"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -990,17 +3020,17 @@
      id="layer1"
      transform="translate(0,-308.26772)">
     <rect
-       style="opacity:0.5;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:5.08381844;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.5;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:5.08400011;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4816"
-       width="614.29102"
-       height="395.0065"
-       x="199.31628"
-       y="511.58029"
+       width="614.79126"
+       height="320.83575"
+       x="173.06616"
+       y="586.00116"
        rx="15.07"
        ry="22.394096" />
     <g
        id="g4945"
-       transform="matrix(1.2279756,0,0,1.2279756,13.242213,-166.32167)">
+       transform="matrix(1.2279756,0,0,1.2279756,-12.757787,-92.32167)">
       <g
          inkscape:label="Layer 1"
          id="layer1-5"
@@ -1320,7 +3350,7 @@
     </g>
     <g
        id="g4893"
-       transform="matrix(1.2279756,0,0,1.2279756,-20.449084,-178.56077)">
+       transform="matrix(1.2279756,0,0,1.2279756,-46.449084,-104.56077)">
       <g
          inkscape:label="Layer 1"
          id="layer1-55"
@@ -1641,7 +3671,7 @@
     </g>
     <g
        id="g5756"
-       transform="matrix(0.18634259,0,0,0.18634259,803.52387,464.86885)">
+       transform="matrix(0.18634259,0,0,0.18634259,777.52387,538.86885)">
       <path
          id="path5758"
          d="m 633.9,812.04 c 112.46,0 173.96,-93.168 173.96,-173.96 0,-2.6463 -0.0539,-5.2806 -0.1726,-7.903 11.938,-8.6302 22.314,-19.4 30.498,-31.66 -10.955,4.8694 -22.744,8.1474 -35.111,9.6255 12.623,-7.5693 22.314,-19.543 26.886,-33.817 -11.813,7.0031 -24.895,12.093 -38.824,14.841 -11.157,-11.884 -27.041,-19.317 -44.629,-19.317 -33.764,0 -61.144,27.381 -61.144,61.132 0,4.7978 0.5364,9.4646 1.5854,13.941 -50.815,-2.5569 -95.874,-26.886 -126.03,-63.88 -5.2508,9.0354 -8.2785,19.531 -8.2785,30.73 0,21.212 10.794,39.938 27.208,50.893 -10.031,-0.30992 -19.454,-3.0635 -27.69,-7.6468 -0.009,0.25652 -0.009,0.50661 -0.009,0.78077 0,29.61 21.075,54.332 49.051,59.934 -5.1376,1.4006 -10.543,2.1516 -16.122,2.1516 -3.9336,0 -7.766,-0.38716 -11.491,-1.1026 7.7838,24.293 30.355,41.971 57.115,42.465 -20.926,16.402 -47.287,26.171 -75.937,26.171 -4.929,0 -9.7983,-0.28036 -14.584,-0.84634 27.059,17.344 59.189,27.464 93.722,27.464"
@@ -1650,7 +3680,7 @@
     </g>
     <g
        id="g5770"
-       transform="matrix(0.24919504,0,0,0.24919504,861.96179,681.95379)"
+       transform="matrix(0.24919504,0,0,0.24919504,835.96179,755.95379)"
        style="fill:#c75b12">
       <path
          id="path5772"
@@ -1663,7 +3693,7 @@
     </g>
     <g
        id="g5788"
-       transform="matrix(0.119901,0,0,0.119901,326.90616,981.63447)">
+       transform="matrix(0.119901,0,0,0.119901,256.90616,981.63447)">
       <path
          id="path5790"
          d="m 86.4,66.4 c 0,3.7 0.4,6.7 1.1,8.9 0.8,2.2 1.8,4.6 3.2,7.2 0.5,0.8 0.7,1.6 0.7,2.3 0,1 -0.6,2 -1.9,3 L 83.2,92 c -0.9,0.6 -1.8,0.9 -2.6,0.9 -1,0 -2,-0.5 -3,-1.4 C 76.2,90 75,88.4 74,86.8 73,85.1 72,83.2 70.9,80.9 63.1,90.1 53.3,94.7 41.5,94.7 c -8.4,0 -15.1,-2.4 -20,-7.2 -4.9,-4.8 -7.4,-11.2 -7.4,-19.2 0,-8.5 3,-15.4 9.1,-20.6 6.1,-5.2 14.2,-7.8 24.5,-7.8 3.4,0 6.9,0.3 10.6,0.8 3.7,0.5 7.5,1.3 11.5,2.2 l 0,-7.3 C 69.8,28 68.2,22.7 65.1,19.6 61.9,16.5 56.5,15 48.8,15 c -3.5,0 -7.1,0.4 -10.8,1.3 -3.7,0.9 -7.3,2 -10.8,3.4 -1.6,0.7 -2.8,1.1 -3.5,1.3 -0.7,0.2 -1.2,0.3 -1.6,0.3 -1.4,0 -2.1,-1 -2.1,-3.1 l 0,-4.9 C 20,11.7 20.2,10.5 20.7,9.8 21.2,9.1 22.1,8.4 23.5,7.7 27,5.9 31.2,4.4 36.1,3.2 41,1.9 46.2,1.3 51.7,1.3 63.6,1.3 72.3,4 77.9,9.4 83.4,14.8 86.2,23 86.2,34 l 0,32.4 z M 45.8,81.6 c 3.3,0 6.7,-0.6 10.3,-1.8 3.6,-1.2 6.8,-3.4 9.5,-6.4 1.6,-1.9 2.8,-4 3.4,-6.4 0.6,-2.4 1,-5.3 1,-8.7 l 0,-4.2 c -2.9,-0.7 -6,-1.3 -9.2,-1.7 -3.2,-0.4 -6.3,-0.6 -9.4,-0.6 -6.7,0 -11.6,1.3 -14.9,4 -3.3,2.7 -4.9,6.5 -4.9,11.5 0,4.7 1.2,8.2 3.7,10.6 2.4,2.5 5.9,3.7 10.5,3.7 z m 80.3,10.8 c -1.8,0 -3,-0.3 -3.8,-1 -0.8,-0.6 -1.5,-2 -2.1,-3.9 L 96.7,10.2 c -0.6,-2 -0.9,-3.3 -0.9,-4 0,-1.6 0.8,-2.5 2.4,-2.5 l 9.8,0 c 1.9,0 3.2,0.3 3.9,1 0.8,0.6 1.4,2 2,3.9 l 16.8,66.2 15.6,-66.2 c 0.5,-2 1.1,-3.3 1.9,-3.9 0.8,-0.6 2.2,-1 4,-1 l 8,0 c 1.9,0 3.2,0.3 4,1 0.8,0.6 1.5,2 1.9,3.9 l 15.8,67 17.3,-67 c 0.6,-2 1.3,-3.3 2,-3.9 0.8,-0.6 2.1,-1 3.9,-1 l 9.3,0 c 1.6,0 2.5,0.8 2.5,2.5 0,0.5 -0.1,1 -0.2,1.6 -0.1,0.6 -0.3,1.4 -0.7,2.5 l -24.1,77.3 c -0.6,2 -1.3,3.3 -2.1,3.9 -0.8,0.6 -2.1,1 -3.8,1 l -8.6,0 c -1.9,0 -3.2,-0.3 -4,-1 -0.8,-0.7 -1.5,-2 -1.9,-4 L 156,23 140.6,87.4 c -0.5,2 -1.1,3.3 -1.9,4 -0.8,0.7 -2.2,1 -4,1 l -8.6,0 z m 128.5,2.7 c -5.2,0 -10.4,-0.6 -15.4,-1.8 -5,-1.2 -8.9,-2.5 -11.5,-4 -1.6,-0.9 -2.7,-1.9 -3.1,-2.8 -0.4,-0.9 -0.6,-1.9 -0.6,-2.8 l 0,-5.1 c 0,-2.1 0.8,-3.1 2.3,-3.1 0.6,0 1.2,0.1 1.8,0.3 0.6,0.2 1.5,0.6 2.5,1 3.4,1.5 7.1,2.7 11,3.5 4,0.8 7.9,1.2 11.9,1.2 6.3,0 11.2,-1.1 14.6,-3.3 3.4,-2.2 5.2,-5.4 5.2,-9.5 0,-2.8 -0.9,-5.1 -2.7,-7 -1.8,-1.9 -5.2,-3.6 -10.1,-5.2 L 246,52 c -7.3,-2.3 -12.7,-5.7 -16,-10.2 -3.3,-4.4 -5,-9.3 -5,-14.5 0,-4.2 0.9,-7.9 2.7,-11.1 1.8,-3.2 4.2,-6 7.2,-8.2 3,-2.3 6.4,-4 10.4,-5.2 4,-1.2 8.2,-1.7 12.6,-1.7 2.2,0 4.5,0.1 6.7,0.4 2.3,0.3 4.4,0.7 6.5,1.1 2,0.5 3.9,1 5.7,1.6 1.8,0.6 3.2,1.2 4.2,1.8 1.4,0.8 2.4,1.6 3,2.5 0.6,0.8 0.9,1.9 0.9,3.3 l 0,4.7 c 0,2.1 -0.8,3.2 -2.3,3.2 -0.8,0 -2.1,-0.4 -3.8,-1.2 -5.7,-2.6 -12.1,-3.9 -19.2,-3.9 -5.7,0 -10.2,0.9 -13.3,2.8 -3.1,1.9 -4.7,4.8 -4.7,8.9 0,2.8 1,5.2 3,7.1 2,1.9 5.7,3.8 11,5.5 l 14.2,4.5 c 7.2,2.3 12.4,5.5 15.5,9.6 3.1,4.1 4.6,8.8 4.6,14 0,4.3 -0.9,8.2 -2.6,11.6 -1.8,3.4 -4.2,6.4 -7.3,8.8 -3.1,2.5 -6.8,4.3 -11.1,5.6 -4.5,1.4 -9.2,2.1 -14.3,2.1 z"
@@ -1688,7 +3718,7 @@
     </g>
     <g
        id="g5393"
-       transform="matrix(1.2279756,0,0,1.2279756,-202.27409,-158.1458)">
+       transform="matrix(1.2279756,0,0,1.2279756,-228.27409,-158.1458)">
       <g
          transform="matrix(0.22495731,0,0,-0.22495731,709.85,770.27435)"
          id="g4163">
@@ -1771,7 +3801,7 @@
            transform="translate(0,-77)">
           <polygon
              class="st0"
-             points="0,-92 -80,-46 -80,46 0,92 80,46 80,-46 "
+             points="80,46 80,-46 0,-92 -80,-46 -80,46 0,92 "
              id="polygon382-6"
              style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <g
@@ -1794,12 +3824,12 @@
              id="g387-1">
             <polygon
                class="st1"
-               points="76.7,-44.4 76.8,-28.1 -14,-80.3 0,-88.3 "
+               points="-14,-80.3 0,-88.3 76.7,-44.4 76.8,-28.1 "
                id="polygon389-59"
                style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd" />
             <polygon
                class="st2"
-               points="76.7,-44.4 76.8,-28.1 32.1,-53.8 38.8,-66.1 "
+               points="32.1,-53.8 38.8,-66.1 76.7,-44.4 76.8,-28.1 "
                id="polygon391-9"
                style="opacity:0.45;fill:#ffffff" />
           </g>
@@ -1810,17 +3840,17 @@
            transform="translate(0,-77)">
           <polygon
              class="st3"
-             points="86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 "
+             points="0,100 86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 "
              id="polygon394-4"
              style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st4"
-             points="25.8,-85.1 -86.6,-20.2 -86.6,-50 0,-100 "
+             points="-86.6,-50 0,-100 25.8,-85.1 -86.6,-20.2 "
              id="polygon396-9"
              style="fill:#006de9" />
           <polygon
              class="st5"
-             points="0,-94.3 -40.8,-70.7 -32.9,-57 15.7,-85.1 "
+             points="-32.9,-57 15.7,-85.1 0,-94.3 -40.8,-70.7 "
              id="polygon398-10"
              style="fill:#a0caea" />
           <text
@@ -1855,17 +3885,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon194-4"
-               points="292.9,114.8 282.4,108.7 292.9,102.6 303.5,108.7 "
+               points="292.9,102.6 303.5,108.7 292.9,114.8 282.4,108.7 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon196-2"
-               points="292.9,127 282.4,120.9 282.4,108.7 292.9,114.8 "
+               points="282.4,108.7 292.9,114.8 292.9,127 282.4,120.9 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon198-9"
-               points="303.5,120.9 292.9,127 292.9,114.8 303.5,108.7 "
+               points="292.9,114.8 303.5,108.7 303.5,120.9 292.9,127 "
                class="st50" />
           </g>
           <g
@@ -1873,17 +3903,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon202-1"
-               points="278.4,136.5 270.5,132 278.4,127.4 286.3,132 "
+               points="278.4,127.4 286.3,132 278.4,136.5 270.5,132 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon204-0"
-               points="278.4,145.7 270.5,141.1 270.5,132 278.4,136.5 "
+               points="270.5,132 278.4,136.5 278.4,145.7 270.5,141.1 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon206-42"
-               points="286.3,141.1 278.4,145.7 278.4,136.5 286.3,132 "
+               points="278.4,136.5 286.3,132 286.3,141.1 278.4,145.7 "
                class="st50" />
           </g>
           <g
@@ -1914,7 +3944,7 @@
            transform="translate(0,-77)">
           <polygon
              class="st0"
-             points="-80,-46 -80,46 0,92 80,46 80,-46 0,-92 "
+             points="80,-46 0,-92 -80,-46 -80,46 0,92 80,46 "
              id="polygon382-8-2"
              style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <g
@@ -1937,12 +3967,12 @@
              id="g387-5-8">
             <polygon
                class="st1"
-               points="0,-88.3 76.7,-44.4 76.8,-28.1 -14,-80.3 "
+               points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
                id="polygon389-3-04"
                style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd" />
             <polygon
                class="st2"
-               points="38.8,-66.1 76.7,-44.4 76.8,-28.1 32.1,-53.8 "
+               points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
                id="polygon391-8-0"
                style="opacity:0.45;fill:#ffffff" />
           </g>
@@ -1953,17 +3983,17 @@
            transform="translate(0,-77)">
           <polygon
              class="st3"
-             points="0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 86.6,-50 "
+             points="86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 "
              id="polygon394-3-9"
              style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st4"
-             points="0,-100 25.8,-85.1 -86.6,-20.2 -86.6,-50 "
+             points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
              id="polygon396-1-62"
              style="fill:#006de9" />
           <polygon
              class="st5"
-             points="15.7,-85.1 0,-94.3 -40.8,-70.7 -32.9,-57 "
+             points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
              id="polygon398-8-5"
              style="fill:#a0caea" />
           <text
@@ -1998,17 +4028,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon194-8-2"
-               points="303.5,108.7 292.9,114.8 282.4,108.7 292.9,102.6 "
+               points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon196-6-9"
-               points="292.9,114.8 292.9,127 282.4,120.9 282.4,108.7 "
+               points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon198-0-4"
-               points="303.5,108.7 303.5,120.9 292.9,127 292.9,114.8 "
+               points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
                class="st50" />
           </g>
           <g
@@ -2016,17 +4046,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon202-8-5"
-               points="286.3,132 278.4,136.5 270.5,132 278.4,127.4 "
+               points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon204-8-1"
-               points="278.4,136.5 278.4,145.7 270.5,141.1 270.5,132 "
+               points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon206-8-7"
-               points="286.3,132 286.3,141.1 278.4,145.7 278.4,136.5 "
+               points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
                class="st50" />
           </g>
           <g
@@ -2057,7 +4087,7 @@
            transform="translate(0,-77)">
           <polygon
              class="st0"
-             points="-80,-46 -80,46 0,92 80,46 80,-46 0,-92 "
+             points="80,-46 0,-92 -80,-46 -80,46 0,92 80,46 "
              id="polygon382-8-0-4"
              style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <g
@@ -2080,12 +4110,12 @@
              id="g387-5-4-4">
             <polygon
                class="st1"
-               points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
+               points="0,-88.3 76.7,-44.4 76.8,-28.1 -14,-80.3 "
                id="polygon389-3-0-1"
                style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd" />
             <polygon
                class="st2"
-               points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
+               points="38.8,-66.1 76.7,-44.4 76.8,-28.1 32.1,-53.8 "
                id="polygon391-8-5-2"
                style="opacity:0.45;fill:#ffffff" />
           </g>
@@ -2096,17 +4126,17 @@
            transform="translate(0,-77)">
           <polygon
              class="st3"
-             points="0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 86.6,-50 "
+             points="86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 "
              id="polygon394-3-4-8"
              style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st4"
-             points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
+             points="0,-100 25.8,-85.1 -86.6,-20.2 -86.6,-50 "
              id="polygon396-1-6-9"
              style="fill:#006de9" />
           <polygon
              class="st5"
-             points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
+             points="15.7,-85.1 0,-94.3 -40.8,-70.7 -32.9,-57 "
              id="polygon398-8-9-2"
              style="fill:#a0caea" />
           <text
@@ -2141,17 +4171,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon194-8-4-8"
-               points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
+               points="303.5,108.7 292.9,114.8 282.4,108.7 292.9,102.6 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon196-6-8-3"
-               points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
+               points="292.9,114.8 292.9,127 282.4,120.9 282.4,108.7 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon198-0-1-3"
-               points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
+               points="303.5,108.7 303.5,120.9 292.9,127 292.9,114.8 "
                class="st50" />
           </g>
           <g
@@ -2159,17 +4189,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon202-8-8-8"
-               points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
+               points="286.3,132 278.4,136.5 270.5,132 278.4,127.4 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon204-8-9-0"
-               points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
+               points="278.4,136.5 278.4,145.7 270.5,141.1 270.5,132 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon206-8-3-4"
-               points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
+               points="286.3,132 286.3,141.1 278.4,145.7 278.4,136.5 "
                class="st50" />
           </g>
           <g
@@ -2200,7 +4230,7 @@
            transform="translate(0,-77)">
           <polygon
              class="st0"
-             points="0,-92 -80,-46 -80,46 0,92 80,46 80,-46 "
+             points="80,46 80,-46 0,-92 -80,-46 -80,46 0,92 "
              id="polygon382-8-1-6"
              style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <g
@@ -2223,12 +4253,12 @@
              id="g387-5-6-0">
             <polygon
                class="st1"
-               points="76.7,-44.4 76.8,-28.1 -14,-80.3 0,-88.3 "
+               points="-14,-80.3 0,-88.3 76.7,-44.4 76.8,-28.1 "
                id="polygon389-3-4-3"
                style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd" />
             <polygon
                class="st2"
-               points="76.7,-44.4 76.8,-28.1 32.1,-53.8 38.8,-66.1 "
+               points="32.1,-53.8 38.8,-66.1 76.7,-44.4 76.8,-28.1 "
                id="polygon391-8-6-3"
                style="opacity:0.45;fill:#ffffff" />
           </g>
@@ -2239,17 +4269,17 @@
            transform="translate(0,-77)">
           <polygon
              class="st3"
-             points="86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 "
+             points="0,100 86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 "
              id="polygon394-3-5-7"
              style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st4"
-             points="25.8,-85.1 -86.6,-20.2 -86.6,-50 0,-100 "
+             points="-86.6,-50 0,-100 25.8,-85.1 -86.6,-20.2 "
              id="polygon396-1-8-3"
              style="fill:#006de9" />
           <polygon
              class="st5"
-             points="0,-94.3 -40.8,-70.7 -32.9,-57 15.7,-85.1 "
+             points="-32.9,-57 15.7,-85.1 0,-94.3 -40.8,-70.7 "
              id="polygon398-8-6-2"
              style="fill:#a0caea" />
           <text
@@ -2284,17 +4314,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon194-8-6-7"
-               points="292.9,114.8 282.4,108.7 292.9,102.6 303.5,108.7 "
+               points="292.9,102.6 303.5,108.7 292.9,114.8 282.4,108.7 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon196-6-2-9"
-               points="292.9,127 282.4,120.9 282.4,108.7 292.9,114.8 "
+               points="282.4,108.7 292.9,114.8 292.9,127 282.4,120.9 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon198-0-9-6"
-               points="303.5,120.9 292.9,127 292.9,114.8 303.5,108.7 "
+               points="292.9,114.8 303.5,108.7 303.5,120.9 292.9,127 "
                class="st50" />
           </g>
           <g
@@ -2302,17 +4332,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon202-8-0-4"
-               points="278.4,136.5 270.5,132 278.4,127.4 286.3,132 "
+               points="278.4,127.4 286.3,132 278.4,136.5 270.5,132 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon204-8-8-1"
-               points="278.4,145.7 270.5,141.1 270.5,132 278.4,136.5 "
+               points="270.5,132 278.4,136.5 278.4,145.7 270.5,141.1 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon206-8-1-0"
-               points="286.3,141.1 278.4,145.7 278.4,136.5 286.3,132 "
+               points="278.4,136.5 286.3,132 286.3,141.1 278.4,145.7 "
                class="st50" />
           </g>
           <g
@@ -2343,7 +4373,7 @@
            transform="translate(0,-77)">
           <polygon
              class="st0"
-             points="-80,-46 -80,46 0,92 80,46 80,-46 0,-92 "
+             points="80,-46 0,-92 -80,-46 -80,46 0,92 80,46 "
              id="polygon382-8-3-6"
              style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <g
@@ -2366,12 +4396,12 @@
              id="g387-5-9-9">
             <polygon
                class="st1"
-               points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
+               points="0,-88.3 76.7,-44.4 76.8,-28.1 -14,-80.3 "
                id="polygon389-3-3-3"
                style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd" />
             <polygon
                class="st2"
-               points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
+               points="38.8,-66.1 76.7,-44.4 76.8,-28.1 32.1,-53.8 "
                id="polygon391-8-3-9"
                style="opacity:0.45;fill:#ffffff" />
           </g>
@@ -2382,17 +4412,17 @@
            transform="translate(0,-77)">
           <polygon
              class="st3"
-             points="0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 86.6,-50 "
+             points="86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 "
              id="polygon394-3-0-8"
              style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st4"
-             points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
+             points="0,-100 25.8,-85.1 -86.6,-20.2 -86.6,-50 "
              id="polygon396-1-5-3"
              style="fill:#006de9" />
           <polygon
              class="st5"
-             points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
+             points="15.7,-85.1 0,-94.3 -40.8,-70.7 -32.9,-57 "
              id="polygon398-8-66-0"
              style="fill:#a0caea" />
           <text
@@ -2427,17 +4457,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon194-8-67-4"
-               points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
+               points="303.5,108.7 292.9,114.8 282.4,108.7 292.9,102.6 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon196-6-5-9"
-               points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
+               points="292.9,114.8 292.9,127 282.4,120.9 282.4,108.7 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon198-0-6-2"
-               points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
+               points="303.5,108.7 303.5,120.9 292.9,127 292.9,114.8 "
                class="st50" />
           </g>
           <g
@@ -2445,17 +4475,17 @@
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon202-8-7-7"
-               points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
+               points="286.3,132 278.4,136.5 270.5,132 278.4,127.4 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon204-8-2-4"
-               points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
+               points="278.4,136.5 278.4,145.7 270.5,141.1 270.5,132 "
                class="st50" />
             <polygon
                style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                id="polygon206-8-8-9"
-               points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
+               points="286.3,132 286.3,141.1 278.4,145.7 278.4,136.5 "
                class="st50" />
           </g>
           <g
@@ -2481,196 +4511,25 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.75880814px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="311.21948"
+       x="240.24841"
        y="959.02832"
        id="text7066"
        sodipodi:linespacing="125%"
        transform="scale(0.98631236,1.0138776)"><tspan
          sodipodi:role="line"
          id="tspan7068"
-         x="311.21948"
+         x="240.24841"
          y="959.02832">Spot Virtual Machines</tspan></text>
     <g
-       transform="matrix(0.18687667,0,0,0.18687667,530.05933,464.99743)"
-       id="layer1-49"
-       inkscape:label="Layer 1">
-      <path
-         sodipodi:nodetypes="cccccccccccscsc"
-         inkscape:connector-curvature="0"
-         id="path4348"
-         d="m 337.59894,900.1437 c 1.17988,-47.1016 -37.69045,-99.5303 -76.15607,-124.6102 -55.60591,-37.1359 -106.34448,-49.0018 -158.32503,-46.7472 13.45825,12.4405 40.58003,17.3748 28.16358,51.7601 -16.49219,-3.7988 -15.22264,-9.0828 -38.711881,-13.1629 -27.09591,-6.915 -39.10268,-13.9222 -45.77888,-28.7019 -11.40677,46.0054 13.46245,79.9187 44.14832,111.8932 -23.30954,0.6504 -44.17223,-6.8554 -63.17777,-20.5518 -1.48032,41.4915 25.53399,59.2374 47.19304,81.4461 -23.35808,-8.7918 -40.82302,-2.8507 -58.61071,2.2835 58.15072,6.5549 93.353241,70.9937 143.416751,104.9502 37.79074,3.9677 91.7374,-16.9888 91.7374,-16.9888 -17.75421,3.4044 -82.4426,-45.3971 -65.48421,-101.6552 -1.16032,10.932 98.22431,68.936 129.84622,56.1568 14.80553,-5.9832 22.548,-33.2204 21.73924,-56.0719 z"
-         style="fill:#008080;fill-rule:evenodd;stroke:#008080;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="path4352"
-         d="m 280.60175,858.1668 c -11.78864,-17.0102 -41.89139,-23.3549 -48.76158,-22.251 20.87849,10.9693 10.19928,26.4926 29.73212,33.6686 8.42596,1.528 17.97289,-2.6861 19.11784,-11.2871 z"
-         style="fill:#ffffff;fill-rule:evenodd;stroke:#f8f8f8;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <g
-       id="g5520-8-7-5"
-       transform="matrix(0.33587506,0,0,0.33587506,530.45793,679.05792)">
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-81 -93 162 186.1"
-         id="node_high_level-9-1-6">
-        <polygon
-           style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-           id="polygon382-2-1-1"
-           points="0,92 80,46 80,-46 0,-92 -80,-46 -80,46 "
-           class="st0" />
-        <g
-           id="Isolation_Mode_3_-6-5-1" />
-      </symbol>
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-87.5 -100.6 175.1 201.1"
-         id="node_x5F_empty-6-9-5">
-        <use
-           style="overflow:visible"
-           transform="matrix(1.0808,0,0,1.0808,-3.292006e-5,83.221563)"
-           y="-93"
-           x="-81"
-           id="XMLID_201_-4-7-9"
-           height="186.10001"
-           width="162"
-           xlink:href="#node_high_level-9-1-6" />
-        <g
-           id="g387-9-7-8">
-          <polygon
-             style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
-             id="polygon389-5-6-4"
-             points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
-             class="st1" />
-          <polygon
-             style="opacity:0.45;fill:#ffffff"
-             id="polygon391-0-7-8"
-             points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
-             class="st2" />
-        </g>
-      </symbol>
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-87.6 -101 175.2 202"
-         id="node_x5F_new-4-3-1">
-        <polygon
-           style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-           id="polygon394-8-6-0"
-           points="-86.6,50 0,100 86.6,50 86.6,-50 0,-100 -86.6,-50 "
-           class="st3" />
-        <polygon
-           style="fill:#006de9"
-           id="polygon396-7-5-3"
-           points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
-           class="st4" />
-        <polygon
-           style="fill:#a0caea"
-           id="polygon398-1-6-0"
-           points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
-           class="st5" />
-        <text
-           id="text400-7-3-4"
-           style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-           class="st6"
-           transform="matrix(0.866,-0.5,-0.5,-0.866,-33.9256,-70.7388)">Docker</text>
-        <text
-           id="text402-2-9-4"
-           style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-           class="st6"
-           transform="matrix(0.866,-0.5,-0.5,-0.866,-76.0668,-46.4087)">Kubelt</text>
-      </symbol>
-      <circle
-         style="opacity:0.1;fill:url(#linearGradient6136)"
-         cx="97.293816"
-         cy="95.942696"
-         r="54.599998"
-         id="circle49-7-4-4" />
-      <circle
-         class="st39"
-         cx="97.293816"
-         cy="95.942696"
-         r="54.599998"
-         id="circle69-2-8-4"
-         style="fill:none;stroke:#326de6;stroke-width:2;stroke-miterlimit:10" />
-      <g
-         id="g190-2-1-7"
-         transform="translate(-195.60619,-31.557301)">
-        <g
-           id="g192-6-2-6">
-          <polygon
-             class="st50"
-             points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
-             id="polygon194-1-9-3"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
-             id="polygon196-0-3-1"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
-             id="polygon198-6-9-7"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-        <g
-           id="g200-1-0-5">
-          <polygon
-             class="st50"
-             points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
-             id="polygon202-5-8-9"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
-             id="polygon204-9-8-6"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
-             id="polygon206-4-5-2"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-        <g
-           id="g208-9-0-1">
-          <path
-             class="st51"
-             d="m 318,141.8 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,-10.6 -21.1,0 0,10.6 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,0.2 0,0 c 0.2,2.9 4.9,5.2 10.5,5.2 5.7,0 10.3,-2.3 10.5,-5.2 l 0,0 0,-0.2 z"
-             id="path210-0-9-7"
-             inkscape:connector-curvature="0"
-             style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <ellipse
-             class="st51"
-             cx="307.39999"
-             cy="131.3"
-             rx="10.6"
-             ry="5.4000001"
-             id="ellipse212-9-6-8"
-             style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-      </g>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="530.08368"
-       y="679.92212"
-       id="text7066-9-5"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan7068-3-7"
-         x="530.08368"
-         y="679.92212">Spitfire</tspan></text>
-    <g
        id="g5364"
-       transform="matrix(0.73883739,0,0,0.73883739,282.94773,757.23868)">
+       transform="matrix(0.73883739,0,0,0.73883739,233.12572,743.02925)">
       <polygon
          id="polygon5338"
-         points="32.4,37.9 32.2,34.4 30.7,31.4 30.9,30 31.8,30.5 34.4,32.9 35.6,33 37,32.4 38.4,31.4 39.1,29.1 43.1,29.4 45.6,28.4 47.6,26.6 49,23.9 49.4,20.7 49.1,17.1 48.3,13.8 47.5,12.7 46.4,12.4 44.5,14.5 42.8,15.1 41.3,12.6 39.8,11.2 38.9,10.7 35.7,7.9 33,6.5 30.4,6.3 27.3,6.8 24.6,7.8 22.8,9.3 21.3,11.1 19.8,11.5 17.2,14 13.7,14.6 10.6,16 7.9,17.7 5.3,20.8 3.9,22.3 2.5,22.8 2.1,21.9 2.8,21 2.9,19.7 3.4,19.7 3.8,20.1 3.7,18.8 3.2,18.4 3.2,17.9 2,18.6 0.8,19.9 0.6,21.1 1.1,22.1 1.5,23.7 2.4,24.1 3.4,24.1 4.3,23.5 3.7,26.6 4.3,30 3.6,31.6 1.5,33.9 1.8,35.4 2.9,37 4.8,38.3 5.9,38.5 7,38.5 6.3,41.5 8.9,42.6 12.2,43 13.3,42.2 13.4,40.3 14.7,38.2 14.8,36.5 17.8,36.8 20.6,36.5 17.8,38.2 18.3,40.2 20,43 21.8,43.7 23.1,43.2 23.7,42 26.6,39.8 27.2,40.3 31.7,40.5 32.6,39.7 32.7,38.4 "
+         points="13.3,42.2 13.4,40.3 14.7,38.2 14.8,36.5 17.8,36.8 20.6,36.5 17.8,38.2 18.3,40.2 20,43 21.8,43.7 23.1,43.2 23.7,42 26.6,39.8 27.2,40.3 31.7,40.5 32.6,39.7 32.7,38.4 32.4,37.9 32.2,34.4 30.7,31.4 30.9,30 31.8,30.5 34.4,32.9 35.6,33 37,32.4 38.4,31.4 39.1,29.1 43.1,29.4 45.6,28.4 47.6,26.6 49,23.9 49.4,20.7 49.1,17.1 48.3,13.8 47.5,12.7 46.4,12.4 44.5,14.5 42.8,15.1 41.3,12.6 39.8,11.2 38.9,10.7 35.7,7.9 33,6.5 30.4,6.3 27.3,6.8 24.6,7.8 22.8,9.3 21.3,11.1 19.8,11.5 17.2,14 13.7,14.6 10.6,16 7.9,17.7 5.3,20.8 3.9,22.3 2.5,22.8 2.1,21.9 2.8,21 2.9,19.7 3.4,19.7 3.8,20.1 3.7,18.8 3.2,18.4 3.2,17.9 2,18.6 0.8,19.9 0.6,21.1 1.1,22.1 1.5,23.7 2.4,24.1 3.4,24.1 4.3,23.5 3.7,26.6 4.3,30 3.6,31.6 1.5,33.9 1.8,35.4 2.9,37 4.8,38.3 5.9,38.5 7,38.5 6.3,41.5 8.9,42.6 12.2,43 "
          style="clip-rule:evenodd;fill:#fcd116;fill-rule:evenodd" />
       <polygon
          id="polygon5340"
-         points="3.7,20.8 4.1,21.3 4.2,20.7 3.9,20.7 "
+         points="3.9,20.7 3.7,20.8 4.1,21.3 4.2,20.7 "
          style="fill:#1e1e1e" />
       <path
          id="path5342"
@@ -2715,7 +4574,7 @@
     </g>
     <g
        id="g5520"
-       transform="matrix(0.33587505,0,0,0.33587505,273.93715,795.57039)">
+       transform="matrix(0.33587505,0,0,0.33587505,224.11514,785.36096)">
       <symbol
          transform="translate(0,-77)"
          viewBox="-81 -93 162 186.1"
@@ -2723,7 +4582,7 @@
         <polygon
            style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon382"
-           points="80,-46 0,-92 -80,-46 -80,46 0,92 80,46 "
+           points="80,46 80,-46 0,-92 -80,-46 -80,46 0,92 "
            class="st0" />
         <g
            id="Isolation_Mode_3_" />
@@ -2746,12 +4605,12 @@
           <polygon
              style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
              id="polygon389"
-             points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
+             points="76.7,-44.4 76.8,-28.1 -14,-80.3 0,-88.3 "
              class="st1" />
           <polygon
              style="opacity:0.45;fill:#ffffff"
              id="polygon391"
-             points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
+             points="76.7,-44.4 76.8,-28.1 32.1,-53.8 38.8,-66.1 "
              class="st2" />
         </g>
       </symbol>
@@ -2762,17 +4621,17 @@
         <polygon
            style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon394"
-           points="86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 "
+           points="0,100 86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 "
            class="st3" />
         <polygon
            style="fill:#006de9"
            id="polygon396"
-           points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
+           points="25.8,-85.1 -86.6,-20.2 -86.6,-50 0,-100 "
            class="st4" />
         <polygon
            style="fill:#a0caea"
            id="polygon398"
-           points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
+           points="0,-94.3 -40.8,-70.7 -32.9,-57 15.7,-85.1 "
            class="st5" />
         <text
            id="text400"
@@ -2805,17 +4664,17 @@
            id="g192">
           <polygon
              class="st50"
-             points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
+             points="292.9,114.8 282.4,108.7 292.9,102.6 303.5,108.7 "
              id="polygon194"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
+             points="292.9,127 282.4,120.9 282.4,108.7 292.9,114.8 "
              id="polygon196"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
+             points="303.5,120.9 292.9,127 292.9,114.8 303.5,108.7 "
              id="polygon198"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -2823,17 +4682,17 @@
            id="g200">
           <polygon
              class="st50"
-             points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
+             points="278.4,136.5 270.5,132 278.4,127.4 286.3,132 "
              id="polygon202"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
+             points="278.4,145.7 270.5,141.1 270.5,132 278.4,136.5 "
              id="polygon204"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
+             points="286.3,141.1 278.4,145.7 278.4,136.5 286.3,132 "
              id="polygon206"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -2858,7 +4717,7 @@
     </g>
     <g
        id="g5520-4"
-       transform="matrix(0.1824347,0,0,0.1824347,326.06253,842.97838)">
+       transform="matrix(0.1824347,0,0,0.1824347,276.24052,832.76895)">
       <symbol
          transform="translate(0,-77)"
          viewBox="-81 -93 162 186.1"
@@ -2866,7 +4725,7 @@
         <polygon
            style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon382-8"
-           points="0,-92 -80,-46 -80,46 0,92 80,46 80,-46 "
+           points="80,-46 0,-92 -80,-46 -80,46 0,92 80,46 "
            class="st0" />
         <g
            id="Isolation_Mode_3_-5" />
@@ -2889,12 +4748,12 @@
           <polygon
              style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
              id="polygon389-3"
-             points="76.7,-44.4 76.8,-28.1 -14,-80.3 0,-88.3 "
+             points="0,-88.3 76.7,-44.4 76.8,-28.1 -14,-80.3 "
              class="st1" />
           <polygon
              style="opacity:0.45;fill:#ffffff"
              id="polygon391-8"
-             points="76.7,-44.4 76.8,-28.1 32.1,-53.8 38.8,-66.1 "
+             points="38.8,-66.1 76.7,-44.4 76.8,-28.1 32.1,-53.8 "
              class="st2" />
         </g>
       </symbol>
@@ -2905,17 +4764,17 @@
         <polygon
            style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon394-3"
-           points="86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 "
+           points="86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 "
            class="st3" />
         <polygon
            style="fill:#006de9"
            id="polygon396-1"
-           points="25.8,-85.1 -86.6,-20.2 -86.6,-50 0,-100 "
+           points="0,-100 25.8,-85.1 -86.6,-20.2 -86.6,-50 "
            class="st4" />
         <polygon
            style="fill:#a0caea"
            id="polygon398-8"
-           points="0,-94.3 -40.8,-70.7 -32.9,-57 15.7,-85.1 "
+           points="15.7,-85.1 0,-94.3 -40.8,-70.7 -32.9,-57 "
            class="st5" />
         <text
            id="text400-9"
@@ -2948,17 +4807,17 @@
            id="g192-3">
           <polygon
              class="st50"
-             points="292.9,114.8 282.4,108.7 292.9,102.6 303.5,108.7 "
+             points="303.5,108.7 292.9,114.8 282.4,108.7 292.9,102.6 "
              id="polygon194-8"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="292.9,127 282.4,120.9 282.4,108.7 292.9,114.8 "
+             points="292.9,114.8 292.9,127 282.4,120.9 282.4,108.7 "
              id="polygon196-6"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="303.5,120.9 292.9,127 292.9,114.8 303.5,108.7 "
+             points="303.5,108.7 303.5,120.9 292.9,127 292.9,114.8 "
              id="polygon198-0"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -2966,17 +4825,17 @@
            id="g200-4">
           <polygon
              class="st50"
-             points="278.4,136.5 270.5,132 278.4,127.4 286.3,132 "
+             points="286.3,132 278.4,136.5 270.5,132 278.4,127.4 "
              id="polygon202-8"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="278.4,145.7 270.5,141.1 270.5,132 278.4,136.5 "
+             points="278.4,136.5 278.4,145.7 270.5,141.1 270.5,132 "
              id="polygon204-8"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="286.3,141.1 278.4,145.7 278.4,136.5 286.3,132 "
+             points="286.3,132 286.3,141.1 278.4,145.7 278.4,136.5 "
              id="polygon206-8"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -3001,7 +4860,7 @@
     </g>
     <g
        id="g5520-4-0"
-       transform="matrix(0.1824347,0,0,0.1824347,243.59346,830.65542)">
+       transform="matrix(0.1824347,0,0,0.1824347,193.77145,820.44599)">
       <symbol
          transform="translate(0,-77)"
          viewBox="-81 -93 162 186.1"
@@ -3009,7 +4868,7 @@
         <polygon
            style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon382-8-0"
-           points="0,-92 -80,-46 -80,46 0,92 80,46 80,-46 "
+           points="80,-46 0,-92 -80,-46 -80,46 0,92 80,46 "
            class="st0" />
         <g
            id="Isolation_Mode_3_-5-9" />
@@ -3032,12 +4891,12 @@
           <polygon
              style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
              id="polygon389-3-0"
-             points="-14,-80.3 0,-88.3 76.7,-44.4 76.8,-28.1 "
+             points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
              class="st1" />
           <polygon
              style="opacity:0.45;fill:#ffffff"
              id="polygon391-8-5"
-             points="32.1,-53.8 38.8,-66.1 76.7,-44.4 76.8,-28.1 "
+             points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
              class="st2" />
         </g>
       </symbol>
@@ -3048,17 +4907,17 @@
         <polygon
            style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon394-3-4"
-           points="86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 "
+           points="86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 "
            class="st3" />
         <polygon
            style="fill:#006de9"
            id="polygon396-1-6"
-           points="-86.6,-50 0,-100 25.8,-85.1 -86.6,-20.2 "
+           points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
            class="st4" />
         <polygon
            style="fill:#a0caea"
            id="polygon398-8-9"
-           points="-32.9,-57 15.7,-85.1 0,-94.3 -40.8,-70.7 "
+           points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
            class="st5" />
         <text
            id="text400-9-2"
@@ -3091,17 +4950,17 @@
            id="g192-3-5">
           <polygon
              class="st50"
-             points="292.9,102.6 303.5,108.7 292.9,114.8 282.4,108.7 "
+             points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
              id="polygon194-8-4"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="282.4,108.7 292.9,114.8 292.9,127 282.4,120.9 "
+             points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
              id="polygon196-6-8"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="292.9,114.8 303.5,108.7 303.5,120.9 292.9,127 "
+             points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
              id="polygon198-0-1"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -3109,17 +4968,17 @@
            id="g200-4-2">
           <polygon
              class="st50"
-             points="278.4,127.4 286.3,132 278.4,136.5 270.5,132 "
+             points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
              id="polygon202-8-8"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="270.5,132 278.4,136.5 278.4,145.7 270.5,141.1 "
+             points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
              id="polygon204-8-9"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="278.4,136.5 286.3,132 286.3,141.1 278.4,145.7 "
+             points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
              id="polygon206-8-3"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -3144,7 +5003,7 @@
     </g>
     <g
        id="g5520-4-05"
-       transform="matrix(0.1824347,0,0,0.1824347,283.4061,855.30133)">
+       transform="matrix(0.1824347,0,0,0.1824347,233.58409,845.0919)">
       <symbol
          transform="translate(0,-77)"
          viewBox="-81 -93 162 186.1"
@@ -3152,7 +5011,7 @@
         <polygon
            style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon382-8-1"
-           points="80,-46 0,-92 -80,-46 -80,46 0,92 80,46 "
+           points="80,46 80,-46 0,-92 -80,-46 -80,46 0,92 "
            class="st0" />
         <g
            id="Isolation_Mode_3_-5-0" />
@@ -3175,12 +5034,12 @@
           <polygon
              style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
              id="polygon389-3-4"
-             points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
+             points="76.7,-44.4 76.8,-28.1 -14,-80.3 0,-88.3 "
              class="st1" />
           <polygon
              style="opacity:0.45;fill:#ffffff"
              id="polygon391-8-6"
-             points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
+             points="76.7,-44.4 76.8,-28.1 32.1,-53.8 38.8,-66.1 "
              class="st2" />
         </g>
       </symbol>
@@ -3191,17 +5050,17 @@
         <polygon
            style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon394-3-5"
-           points="86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 "
+           points="0,100 86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 "
            class="st3" />
         <polygon
            style="fill:#006de9"
            id="polygon396-1-8"
-           points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
+           points="25.8,-85.1 -86.6,-20.2 -86.6,-50 0,-100 "
            class="st4" />
         <polygon
            style="fill:#a0caea"
            id="polygon398-8-6"
-           points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
+           points="0,-94.3 -40.8,-70.7 -32.9,-57 15.7,-85.1 "
            class="st5" />
         <text
            id="text400-9-28"
@@ -3234,17 +5093,17 @@
            id="g192-3-0">
           <polygon
              class="st50"
-             points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
+             points="292.9,114.8 282.4,108.7 292.9,102.6 303.5,108.7 "
              id="polygon194-8-6"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
+             points="292.9,127 282.4,120.9 282.4,108.7 292.9,114.8 "
              id="polygon196-6-2"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
+             points="303.5,120.9 292.9,127 292.9,114.8 303.5,108.7 "
              id="polygon198-0-9"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -3252,17 +5111,17 @@
            id="g200-4-9">
           <polygon
              class="st50"
-             points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
+             points="278.4,136.5 270.5,132 278.4,127.4 286.3,132 "
              id="polygon202-8-0"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
+             points="278.4,145.7 270.5,141.1 270.5,132 278.4,136.5 "
              id="polygon204-8-8"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
+             points="286.3,141.1 278.4,145.7 278.4,136.5 286.3,132 "
              id="polygon206-8-1"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -3287,7 +5146,7 @@
     </g>
     <g
        id="g5520-4-4"
-       transform="matrix(0.1824347,0,0,0.1824347,337.43757,801.26989)">
+       transform="matrix(0.1824347,0,0,0.1824347,287.61556,791.06046)">
       <symbol
          transform="translate(0,-77)"
          viewBox="-81 -93 162 186.1"
@@ -3295,7 +5154,7 @@
         <polygon
            style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon382-8-3"
-           points="0,-92 -80,-46 -80,46 0,92 80,46 80,-46 "
+           points="80,-46 0,-92 -80,-46 -80,46 0,92 80,46 "
            class="st0" />
         <g
            id="Isolation_Mode_3_-5-91" />
@@ -3318,12 +5177,12 @@
           <polygon
              style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
              id="polygon389-3-3"
-             points="-14,-80.3 0,-88.3 76.7,-44.4 76.8,-28.1 "
+             points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
              class="st1" />
           <polygon
              style="opacity:0.45;fill:#ffffff"
              id="polygon391-8-3"
-             points="32.1,-53.8 38.8,-66.1 76.7,-44.4 76.8,-28.1 "
+             points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
              class="st2" />
         </g>
       </symbol>
@@ -3334,17 +5193,17 @@
         <polygon
            style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
            id="polygon394-3-0"
-           points="86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 86.6,50 "
+           points="86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 0,100 "
            class="st3" />
         <polygon
            style="fill:#006de9"
            id="polygon396-1-5"
-           points="-86.6,-50 0,-100 25.8,-85.1 -86.6,-20.2 "
+           points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
            class="st4" />
         <polygon
            style="fill:#a0caea"
            id="polygon398-8-66"
-           points="-32.9,-57 15.7,-85.1 0,-94.3 -40.8,-70.7 "
+           points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
            class="st5" />
         <text
            id="text400-9-4"
@@ -3377,17 +5236,17 @@
            id="g192-3-2">
           <polygon
              class="st50"
-             points="292.9,102.6 303.5,108.7 292.9,114.8 282.4,108.7 "
+             points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
              id="polygon194-8-67"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="282.4,108.7 292.9,114.8 292.9,127 282.4,120.9 "
+             points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
              id="polygon196-6-5"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="292.9,114.8 303.5,108.7 303.5,120.9 292.9,127 "
+             points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
              id="polygon198-0-6"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -3395,17 +5254,17 @@
            id="g200-4-98">
           <polygon
              class="st50"
-             points="278.4,127.4 286.3,132 278.4,136.5 270.5,132 "
+             points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
              id="polygon202-8-7"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="270.5,132 278.4,136.5 278.4,145.7 270.5,141.1 "
+             points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
              id="polygon204-8-2"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
           <polygon
              class="st50"
-             points="278.4,136.5 286.3,132 286.3,141.1 278.4,145.7 "
+             points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
              id="polygon206-8-8"
              style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
         </g>
@@ -3431,17 +5290,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:11.08256054px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="257.93076"
-       y="802.88562"
+       x="208.10875"
+       y="788.67621"
        id="text7066-9-0-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7068-3-8-9"
-         x="257.93076"
-         y="802.88562">Apache Hadoop</tspan></text>
+         x="208.10875"
+         y="788.67621">Apache Hadoop</tspan></text>
     <g
        id="g5733"
-       transform="matrix(1.2279756,0,0,1.2279756,-197.36219,-158.1458)">
+       transform="matrix(1.2279756,0,0,1.2279756,-223.36219,-158.1458)">
       <g
          inkscape:label="Layer 1"
          id="layer1-4"
@@ -3482,423 +5341,107 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="901.09875"
-       y="638.59839"
+       x="875.09875"
+       y="712.59839"
        id="text7066-9-0-1-9-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7068-3-8-9-7-2"
-         x="901.09875"
-         y="638.59839">Twitter</tspan></text>
+         x="875.09875"
+         y="712.59839">Twitter</tspan></text>
     <path
-       d="m 356.34297,528.24532 c -13.33885,8.47342 -23.0469,31.61369 -23.32291,58.79258 l 46.52133,0 c -0.27279,-27.17889 -9.86006,-50.31916 -23.19867,-58.79283 z m -2.33668,20.21858 2.27455,4.49878 2.27431,-4.49854 c 1.23871,0.28842 2.44518,0.81055 3.60367,1.54213 l 0.51531,6.02118 2.49168,-3.54923 c 0.98427,1.00721 1.91943,2.17711 2.80154,3.49119 l -0.77906,4.36326 2.2784,-1.90257 c 3.02423,5.49234 5.21398,12.84585 6.1417,21.17581 -1.24441,-3.98569 -3.29242,-7.48842 -5.90525,-10.20998 l 0.49598,-4.44062 -3.17737,2.07308 c -0.7561,-0.56171 -1.54397,-1.06574 -2.35961,-1.50728 l -0.41476,-5.08007 -3.26279,3.58047 c -0.90641,-0.25716 -1.83413,-0.4439 -2.78208,-0.55029 l -1.92191,-4.12281 -1.92192,4.12677 c -1.00933,0.11356 -1.99879,0.31272 -2.9605,0.59668 l -3.08437,-3.38258 -0.39144,4.82017 c -0.82395,0.44452 -1.62,0.95228 -2.38318,1.51894 l -3.17724,-2.0732 0.49969,4.44074 c -2.61381,2.72169 -4.66444,6.22329 -5.90909,10.21022 0.92772,-8.33095 3.12094,-15.68347 6.14542,-21.17605 l 2.27518,1.90257 -0.77868,-4.36313 c 0.91383,-1.36184 1.88632,-2.56793 2.90991,-3.59956 l 2.3869,3.39423 0.48816,-5.74244 c 1.16556,-0.73939 2.37982,-1.26724 3.62685,-1.55775 z"
+       d="m 330.34297,602.24532 c -13.33885,8.47342 -23.0469,31.61369 -23.32291,58.79258 l 46.52133,0 c -0.27279,-27.17889 -9.86006,-50.31916 -23.19867,-58.79283 z m -2.33668,20.21858 2.27455,4.49878 2.27431,-4.49854 c 1.23871,0.28842 2.44518,0.81055 3.60367,1.54213 l 0.51531,6.02118 2.49168,-3.54923 c 0.98427,1.00721 1.91943,2.17711 2.80154,3.49119 l -0.77906,4.36326 2.2784,-1.90257 c 3.02423,5.49234 5.21398,12.84585 6.1417,21.17581 -1.24441,-3.98569 -3.29242,-7.48842 -5.90525,-10.20998 l 0.49598,-4.44062 -3.17737,2.07308 c -0.7561,-0.56171 -1.54397,-1.06574 -2.35961,-1.50728 l -0.41476,-5.08007 -3.26279,3.58047 c -0.90641,-0.25716 -1.83413,-0.4439 -2.78208,-0.55029 l -1.92191,-4.12281 -1.92192,4.12677 c -1.00933,0.11356 -1.99879,0.31272 -2.9605,0.59668 l -3.08437,-3.38258 -0.39144,4.82017 c -0.82395,0.44452 -1.62,0.95228 -2.38318,1.51894 l -3.17724,-2.0732 0.49969,4.44074 c -2.61381,2.72169 -4.66444,6.22329 -5.90909,10.21022 0.92772,-8.33095 3.12094,-15.68347 6.14542,-21.17605 l 2.27518,1.90257 -0.77868,-4.36313 c 0.91383,-1.36184 1.88632,-2.56793 2.90991,-3.59956 l 2.3869,3.39423 0.48816,-5.74244 c 1.16556,-0.73939 2.37982,-1.26724 3.62685,-1.55775 z"
        id="path6"
        style="fill:#008080;fill-opacity:1"
        inkscape:connector-curvature="0" />
-    <g
-       id="g5520-8-7"
-       transform="matrix(0.33587505,0,0,0.33587505,323.60216,628.16809)">
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-81 -93 162 186.1"
-         id="node_high_level-9-1">
-        <polygon
-           style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-           id="polygon382-2-1"
-           points="-80,46 0,92 80,46 80,-46 0,-92 -80,-46 "
-           class="st0" />
-        <g
-           id="Isolation_Mode_3_-6-5" />
-      </symbol>
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-87.5 -100.6 175.1 201.1"
-         id="node_x5F_empty-6-9">
-        <use
-           style="overflow:visible"
-           transform="matrix(1.0808,0,0,1.0808,-3.292006e-5,83.221563)"
-           y="-93"
-           x="-81"
-           id="XMLID_201_-4-7"
-           height="186.10001"
-           width="162"
-           xlink:href="#node_high_level-9-1" />
-        <g
-           id="g387-9-7">
-          <polygon
-             style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
-             id="polygon389-5-6"
-             points="-14,-80.3 0,-88.3 76.7,-44.4 76.8,-28.1 "
-             class="st1" />
-          <polygon
-             style="opacity:0.45;fill:#ffffff"
-             id="polygon391-0-7"
-             points="32.1,-53.8 38.8,-66.1 76.7,-44.4 76.8,-28.1 "
-             class="st2" />
-        </g>
-      </symbol>
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-87.6 -101 175.2 202"
-         id="node_x5F_new-4-3">
-        <polygon
-           style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-           id="polygon394-8-6"
-           points="-86.6,-50 -86.6,50 0,100 86.6,50 86.6,-50 0,-100 "
-           class="st3" />
-        <polygon
-           style="fill:#006de9"
-           id="polygon396-7-5"
-           points="-86.6,-50 0,-100 25.8,-85.1 -86.6,-20.2 "
-           class="st4" />
-        <polygon
-           style="fill:#a0caea"
-           id="polygon398-1-6"
-           points="-32.9,-57 15.7,-85.1 0,-94.3 -40.8,-70.7 "
-           class="st5" />
-        <text
-           id="text400-7-3"
-           style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-           class="st6"
-           transform="matrix(0.866,-0.5,-0.5,-0.866,-33.9256,-70.7388)">Docker</text>
-        <text
-           id="text402-2-9"
-           style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-           class="st6"
-           transform="matrix(0.866,-0.5,-0.5,-0.866,-76.0668,-46.4087)">Kubelt</text>
-      </symbol>
-      <circle
-         style="opacity:0.1;fill:url(#linearGradient6027)"
-         cx="97.293816"
-         cy="95.942696"
-         r="54.599998"
-         id="circle49-7-4" />
-      <circle
-         class="st39"
-         cx="97.293816"
-         cy="95.942696"
-         r="54.599998"
-         id="circle69-2-8"
-         style="fill:none;stroke:#326de6;stroke-width:2;stroke-miterlimit:10" />
-      <g
-         id="g190-2-1"
-         transform="translate(-195.60619,-31.557301)">
-        <g
-           id="g192-6-2">
-          <polygon
-             class="st50"
-             points="292.9,102.6 303.5,108.7 292.9,114.8 282.4,108.7 "
-             id="polygon194-1-9"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="282.4,108.7 292.9,114.8 292.9,127 282.4,120.9 "
-             id="polygon196-0-3"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="292.9,114.8 303.5,108.7 303.5,120.9 292.9,127 "
-             id="polygon198-6-9"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-        <g
-           id="g200-1-0">
-          <polygon
-             class="st50"
-             points="278.4,127.4 286.3,132 278.4,136.5 270.5,132 "
-             id="polygon202-5-8"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="270.5,132 278.4,136.5 278.4,145.7 270.5,141.1 "
-             id="polygon204-9-8"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="278.4,136.5 286.3,132 286.3,141.1 278.4,145.7 "
-             id="polygon206-4-5"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-        <g
-           id="g208-9-0">
-          <path
-             class="st51"
-             d="m 318,141.8 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,-10.6 -21.1,0 0,10.6 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,0.2 0,0 c 0.2,2.9 4.9,5.2 10.5,5.2 5.7,0 10.3,-2.3 10.5,-5.2 l 0,0 0,-0.2 z"
-             id="path210-0-9"
-             inkscape:connector-curvature="0"
-             style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <ellipse
-             class="st51"
-             cx="307.39999"
-             cy="131.3"
-             rx="10.6"
-             ry="5.4000001"
-             id="ellipse212-9-6"
-             style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-      </g>
-    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="328.63779"
-       y="612.95929"
+       x="302.63779"
+       y="686.95929"
        id="text7066-9"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7068-3"
-         x="328.63779"
-         y="612.95929">Kuber</tspan></text>
+         x="302.63779"
+         y="686.95929">Kuber</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="329.14145"
-       y="631.27454"
+       x="303.14145"
+       y="705.27454"
        id="text7066-9-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7068-3-6"
-         x="329.14145"
-         y="631.27454">Board</tspan></text>
-    <g
-       id="g12414"
-       transform="matrix(1.2279756,0,0,1.2279756,-7.839083,-12.117624)">
-      <g
-         transform="matrix(0.27351933,0,0,0.27351933,338.42767,547.71247)"
-         id="g5520-8">
-        <symbol
-           id="node_high_level-9"
-           viewBox="-81 -93 162 186.1"
-           transform="translate(0,-77)">
-          <polygon
-             class="st0"
-             points="0,92 80,46 80,-46 0,-92 -80,-46 -80,46 "
-             id="polygon382-2"
-             style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <g
-             id="Isolation_Mode_3_-6" />
-        </symbol>
-        <symbol
-           id="node_x5F_empty-6"
-           viewBox="-87.5 -100.6 175.1 201.1"
-           transform="translate(0,-77)">
-          <use
-             xlink:href="#node_high_level-9"
-             width="162"
-             height="186.10001"
-             id="XMLID_201_-4"
-             x="-81"
-             y="-93"
-             transform="matrix(1.0808,0,0,1.0808,-3.292006e-5,83.221563)"
-             style="overflow:visible" />
-          <g
-             id="g387-9">
-            <polygon
-               class="st1"
-               points="76.8,-28.1 -14,-80.3 0,-88.3 76.7,-44.4 "
-               id="polygon389-5"
-               style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd" />
-            <polygon
-               class="st2"
-               points="76.8,-28.1 32.1,-53.8 38.8,-66.1 76.7,-44.4 "
-               id="polygon391-0"
-               style="opacity:0.45;fill:#ffffff" />
-          </g>
-        </symbol>
-        <symbol
-           id="node_x5F_new-4"
-           viewBox="-87.6 -101 175.2 202"
-           transform="translate(0,-77)">
-          <polygon
-             class="st3"
-             points="-86.6,50 0,100 86.6,50 86.6,-50 0,-100 -86.6,-50 "
-             id="polygon394-8"
-             style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st4"
-             points="-86.6,-20.2 -86.6,-50 0,-100 25.8,-85.1 "
-             id="polygon396-7"
-             style="fill:#006de9" />
-          <polygon
-             class="st5"
-             points="-40.8,-70.7 -32.9,-57 15.7,-85.1 0,-94.3 "
-             id="polygon398-1"
-             style="fill:#a0caea" />
-          <text
-             transform="matrix(0.866,-0.5,-0.5,-0.866,-33.9256,-70.7388)"
-             class="st6"
-             style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-             id="text400-7">Docker</text>
-          <text
-             transform="matrix(0.866,-0.5,-0.5,-0.866,-76.0668,-46.4087)"
-             class="st6"
-             style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-             id="text402-2">Kubelt</text>
-        </symbol>
-        <circle
-           id="circle49-7"
-           r="54.599998"
-           cy="95.942696"
-           cx="97.293816"
-           style="opacity:0.1;fill:url(#linearGradient5918)" />
-        <circle
-           style="fill:none;stroke:#326de6;stroke-width:2;stroke-miterlimit:10"
-           id="circle69-2"
-           r="54.599998"
-           cy="95.942696"
-           cx="97.293816"
-           class="st39" />
-        <g
-           transform="translate(-195.60619,-31.557301)"
-           id="g190-2">
-          <g
-             id="g192-6">
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon194-1"
-               points="282.4,108.7 292.9,102.6 303.5,108.7 292.9,114.8 "
-               class="st50" />
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon196-0"
-               points="282.4,120.9 282.4,108.7 292.9,114.8 292.9,127 "
-               class="st50" />
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon198-6"
-               points="292.9,127 292.9,114.8 303.5,108.7 303.5,120.9 "
-               class="st50" />
-          </g>
-          <g
-             id="g200-1">
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon202-5"
-               points="270.5,132 278.4,127.4 286.3,132 278.4,136.5 "
-               class="st50" />
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon204-9"
-               points="270.5,141.1 270.5,132 278.4,136.5 278.4,145.7 "
-               class="st50" />
-            <polygon
-               style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="polygon206-4"
-               points="278.4,145.7 278.4,136.5 286.3,132 286.3,141.1 "
-               class="st50" />
-          </g>
-          <g
-             id="g208-9">
-            <path
-               style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               inkscape:connector-curvature="0"
-               id="path210-0"
-               d="m 318,141.8 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,-10.6 -21.1,0 0,10.6 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,0.2 0,0 c 0.2,2.9 4.9,5.2 10.5,5.2 5.7,0 10.3,-2.3 10.5,-5.2 l 0,0 0,-0.2 z"
-               class="st51" />
-            <ellipse
-               style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-               id="ellipse212-9"
-               ry="5.4000001"
-               rx="10.6"
-               cy="131.3"
-               cx="307.39999"
-               class="st51" />
-          </g>
-        </g>
-      </g>
-      <g
-         transform="translate(4.403424,-73.977523)"
-         id="g12268">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="345.85938"
-           y="611.96808"
-           id="text7066-9-0"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan7068-3-8"
-             x="345.85938"
-             y="611.96808">K8S</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="319.87305"
-           y="625.84778"
-           id="text7066-9-0-7"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan7068-3-8-5"
-             x="319.87305"
-             y="625.84778">Dashboard</tspan></text>
-      </g>
-    </g>
+         x="303.14145"
+         y="705.27454">Board</tspan></text>
     <rect
        style="opacity:0.5;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:5.08381844;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4816-3"
        width="617.06842"
        height="105.78982"
-       x="199.21512"
+       x="173.21512"
        y="915.77106"
        rx="15.07"
        ry="22.394096" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.75880814px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="644.4212"
+       x="620.08826"
        y="954.86719"
        id="text7066-2"
        sodipodi:linespacing="125%"
        transform="scale(0.98631236,1.0138776)"><tspan
          sodipodi:role="line"
          id="tspan7068-9"
-         x="644.4212"
+         x="620.08826"
          y="954.86719">EKS</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.75880814px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="297.26157"
+       x="226.29042"
        y="937.86969"
        id="text7066-1"
        sodipodi:linespacing="125%"
        transform="scale(0.98631236,1.0138776)"><tspan
          sodipodi:role="line"
          id="tspan7068-2"
-         x="297.26157"
+         x="226.29042"
          y="937.86969">Exploration Environment</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.75880814px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="615.95905"
+       x="591.6261"
        y="938.93634"
        id="text7066-1-7"
        sodipodi:linespacing="125%"
        transform="scale(0.98631236,1.0138776)"><tspan
          sodipodi:role="line"
          id="tspan7068-2-0"
-         x="615.95905"
+         x="591.6261"
          y="938.93634">Production Environment</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20.70576477px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="464.591"
-       y="851.07739"
+       x="440.81793"
+       y="862.80713"
        id="text7066-1-7-9"
        sodipodi:linespacing="125%"
        transform="scale(0.98631236,1.0138776)"><tspan
          sodipodi:role="line"
          id="tspan7068-2-0-3"
-         x="464.591"
-         y="851.07739">Library</tspan></text>
+         x="440.81793"
+         y="862.80713">Library</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.22797549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-6-2)"
-       d="m 355.92846,461.17834 0.10607,47.09142"
+       d="m 329.92846,535.17834 0.10607,47.09142"
        id="path5973-6-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.22797549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-6-8)"
-       d="m 815.79014,633.0249 32.65089,0.0162"
+       d="m 789.79014,707.0249 32.65089,0.0162"
        id="path5973-6-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -3907,53 +5450,41 @@
        id="rect4816-3-2"
        width="164.90662"
        height="259.2453"
-       x="851.67712"
-       y="511.58029"
+       x="825.67712"
+       y="585.58032"
        rx="15.07"
        ry="22.394096" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.22797549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-6-8-0)"
-       d="m 928.49568,448.09266 0.10606,61.15036"
+       d="m 902.49568,543.75014 0.10606,39.49288"
        id="path5973-6-9-3"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.22797549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-6-2-7)"
-       d="m 383.88052,563.31418 46.9233,58.79766"
-       id="path5973-6-1-9"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.22797549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-6-2-2)"
-       d="M 615.69738,576.30727 586.0998,603.05635"
-       id="path5973-6-1-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="203.7141"
-       y="439.86658"
+       x="177.7141"
+       y="513.86658"
        id="text7066-9-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7068-3-3"
-         x="203.7141"
-         y="439.86658">Kuber</tspan></text>
+         x="177.7141"
+         y="513.86658">Kuber</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="217.46136"
-       y="458.18176"
+       x="191.46136"
+       y="532.18176"
        id="text7066-9-3-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7068-3-6-1"
-         x="217.46136"
-         y="458.18176">CLI</tspan></text>
+         x="191.46136"
+         y="532.18176">CLI</tspan></text>
     <g
        id="g5788-3"
-       transform="matrix(0.119901,0,0,0.119901,632.87218,975.51368)">
+       transform="matrix(0.119901,0,0,0.119901,608.87218,975.51368)">
       <path
          id="path5790-6"
          d="m 86.4,66.4 c 0,3.7 0.4,6.7 1.1,8.9 0.8,2.2 1.8,4.6 3.2,7.2 0.5,0.8 0.7,1.6 0.7,2.3 0,1 -0.6,2 -1.9,3 L 83.2,92 c -0.9,0.6 -1.8,0.9 -2.6,0.9 -1,0 -2,-0.5 -3,-1.4 C 76.2,90 75,88.4 74,86.8 73,85.1 72,83.2 70.9,80.9 63.1,90.1 53.3,94.7 41.5,94.7 c -8.4,0 -15.1,-2.4 -20,-7.2 -4.9,-4.8 -7.4,-11.2 -7.4,-19.2 0,-8.5 3,-15.4 9.1,-20.6 6.1,-5.2 14.2,-7.8 24.5,-7.8 3.4,0 6.9,0.3 10.6,0.8 3.7,0.5 7.5,1.3 11.5,2.2 l 0,-7.3 C 69.8,28 68.2,22.7 65.1,19.6 61.9,16.5 56.5,15 48.8,15 c -3.5,0 -7.1,0.4 -10.8,1.3 -3.7,0.9 -7.3,2 -10.8,3.4 -1.6,0.7 -2.8,1.1 -3.5,1.3 -0.7,0.2 -1.2,0.3 -1.6,0.3 -1.4,0 -2.1,-1 -2.1,-3.1 l 0,-4.9 C 20,11.7 20.2,10.5 20.7,9.8 21.2,9.1 22.1,8.4 23.5,7.7 27,5.9 31.2,4.4 36.1,3.2 41,1.9 46.2,1.3 51.7,1.3 63.6,1.3 72.3,4 77.9,9.4 83.4,14.8 86.2,23 86.2,34 l 0,32.4 z M 45.8,81.6 c 3.3,0 6.7,-0.6 10.3,-1.8 3.6,-1.2 6.8,-3.4 9.5,-6.4 1.6,-1.9 2.8,-4 3.4,-6.4 0.6,-2.4 1,-5.3 1,-8.7 l 0,-4.2 c -2.9,-0.7 -6,-1.3 -9.2,-1.7 -3.2,-0.4 -6.3,-0.6 -9.4,-0.6 -6.7,0 -11.6,1.3 -14.9,4 -3.3,2.7 -4.9,6.5 -4.9,11.5 0,4.7 1.2,8.2 3.7,10.6 2.4,2.5 5.9,3.7 10.5,3.7 z m 80.3,10.8 c -1.8,0 -3,-0.3 -3.8,-1 -0.8,-0.6 -1.5,-2 -2.1,-3.9 L 96.7,10.2 c -0.6,-2 -0.9,-3.3 -0.9,-4 0,-1.6 0.8,-2.5 2.4,-2.5 l 9.8,0 c 1.9,0 3.2,0.3 3.9,1 0.8,0.6 1.4,2 2,3.9 l 16.8,66.2 15.6,-66.2 c 0.5,-2 1.1,-3.3 1.9,-3.9 0.8,-0.6 2.2,-1 4,-1 l 8,0 c 1.9,0 3.2,0.3 4,1 0.8,0.6 1.5,2 1.9,3.9 l 15.8,67 17.3,-67 c 0.6,-2 1.3,-3.3 2,-3.9 0.8,-0.6 2.1,-1 3.9,-1 l 9.3,0 c 1.6,0 2.5,0.8 2.5,2.5 0,0.5 -0.1,1 -0.2,1.6 -0.1,0.6 -0.3,1.4 -0.7,2.5 l -24.1,77.3 c -0.6,2 -1.3,3.3 -2.1,3.9 -0.8,0.6 -2.1,1 -3.8,1 l -8.6,0 c -1.9,0 -3.2,-0.3 -4,-1 -0.8,-0.7 -1.5,-2 -1.9,-4 L 156,23 140.6,87.4 c -0.5,2 -1.1,3.3 -1.9,4 -0.8,0.7 -2.2,1 -4,1 l -8.6,0 z m 128.5,2.7 c -5.2,0 -10.4,-0.6 -15.4,-1.8 -5,-1.2 -8.9,-2.5 -11.5,-4 -1.6,-0.9 -2.7,-1.9 -3.1,-2.8 -0.4,-0.9 -0.6,-1.9 -0.6,-2.8 l 0,-5.1 c 0,-2.1 0.8,-3.1 2.3,-3.1 0.6,0 1.2,0.1 1.8,0.3 0.6,0.2 1.5,0.6 2.5,1 3.4,1.5 7.1,2.7 11,3.5 4,0.8 7.9,1.2 11.9,1.2 6.3,0 11.2,-1.1 14.6,-3.3 3.4,-2.2 5.2,-5.4 5.2,-9.5 0,-2.8 -0.9,-5.1 -2.7,-7 -1.8,-1.9 -5.2,-3.6 -10.1,-5.2 L 246,52 c -7.3,-2.3 -12.7,-5.7 -16,-10.2 -3.3,-4.4 -5,-9.3 -5,-14.5 0,-4.2 0.9,-7.9 2.7,-11.1 1.8,-3.2 4.2,-6 7.2,-8.2 3,-2.3 6.4,-4 10.4,-5.2 4,-1.2 8.2,-1.7 12.6,-1.7 2.2,0 4.5,0.1 6.7,0.4 2.3,0.3 4.4,0.7 6.5,1.1 2,0.5 3.9,1 5.7,1.6 1.8,0.6 3.2,1.2 4.2,1.8 1.4,0.8 2.4,1.6 3,2.5 0.6,0.8 0.9,1.9 0.9,3.3 l 0,4.7 c 0,2.1 -0.8,3.2 -2.3,3.2 -0.8,0 -2.1,-0.4 -3.8,-1.2 -5.7,-2.6 -12.1,-3.9 -19.2,-3.9 -5.7,0 -10.2,0.9 -13.3,2.8 -3.1,1.9 -4.7,4.8 -4.7,8.9 0,2.8 1,5.2 3,7.1 2,1.9 5.7,3.8 11,5.5 l 14.2,4.5 c 7.2,2.3 12.4,5.5 15.5,9.6 3.1,4.1 4.6,8.8 4.6,14 0,4.3 -0.9,8.2 -2.6,11.6 -1.8,3.4 -4.2,6.4 -7.3,8.8 -3.1,2.5 -6.8,4.3 -11.1,5.6 -4.5,1.4 -9.2,2.1 -14.3,2.1 z"
@@ -3978,7 +5509,7 @@
     </g>
     <g
        id="g5074"
-       transform="matrix(0.22387464,0,0,0.22387464,380.21556,979.62706)">
+       transform="matrix(0.22387464,0,0,0.22387464,310.21556,979.62706)">
       <g
          transform="matrix(1.9220551,0,0,1.9220551,-88.812414,-49.450845)"
          id="Layer_1">
@@ -4014,7 +5545,7 @@
     </g>
     <g
        id="g5074-6"
-       transform="matrix(0.22387464,0,0,0.22387464,715.60982,971.57871)">
+       transform="matrix(0.22387464,0,0,0.22387464,691.60982,971.57871)">
       <g
          transform="matrix(1.9220551,0,0,1.9220551,-88.812414,-49.450845)"
          id="Layer_1-2">
@@ -4051,171 +5582,28 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.75880814px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="729.64642"
+       x="705.31348"
        y="953.54767"
        id="text7066-2-6"
        sodipodi:linespacing="125%"
        transform="scale(0.98631236,1.0138776)"><tspan
          sodipodi:role="line"
          id="tspan7068-9-2"
-         x="729.64642"
+         x="705.31348"
          y="953.54767">AKS</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:18.41963387px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="615.25525"
-       y="598.21661"
+       x="588.50677"
+       y="684.24854"
        id="text7066-9-5-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7068-3-7-2"
-         x="615.25525"
-         y="598.21661">Studio</tspan></text>
+         x="588.50677"
+         y="684.24854">Studio</tspan></text>
     <g
-       id="g5520-8-7-5-2"
-       transform="matrix(0.33587506,0,0,0.33587506,612.02291,594.2535)">
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-81 -93 162 186.1"
-         id="node_high_level-9-1-6-7">
-        <polygon
-           style="fill:#ffffff;stroke:#326de6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-           id="polygon382-2-1-1-0"
-           points="80,46 80,-46 0,-92 -80,-46 -80,46 0,92 "
-           class="st0" />
-        <g
-           id="Isolation_Mode_3_-6-5-1-9" />
-      </symbol>
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-87.5 -100.6 175.1 201.1"
-         id="node_x5F_empty-6-9-5-3">
-        <use
-           style="overflow:visible"
-           transform="matrix(1.0808,0,0,1.0808,-3.292006e-5,83.221563)"
-           y="-93"
-           x="-81"
-           id="XMLID_201_-4-7-9-6"
-           height="186.10001"
-           width="162"
-           xlink:href="#node_high_level-9-1-6-7" />
-        <g
-           id="g387-9-7-8-0">
-          <polygon
-             style="clip-rule:evenodd;opacity:0.70999995;fill:#326ce6;fill-rule:evenodd"
-             id="polygon389-5-6-4-6"
-             points="76.7,-44.4 76.8,-28.1 -14,-80.3 0,-88.3 "
-             class="st1" />
-          <polygon
-             style="opacity:0.45;fill:#ffffff"
-             id="polygon391-0-7-8-2"
-             points="76.7,-44.4 76.8,-28.1 32.1,-53.8 38.8,-66.1 "
-             class="st2" />
-        </g>
-      </symbol>
-      <symbol
-         transform="translate(0,-77)"
-         viewBox="-87.6 -101 175.2 202"
-         id="node_x5F_new-4-3-1-6">
-        <polygon
-           style="fill:#ffffff;stroke:#006de9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-           id="polygon394-8-6-0-1"
-           points="0,100 86.6,50 86.6,-50 0,-100 -86.6,-50 -86.6,50 "
-           class="st3" />
-        <polygon
-           style="fill:#006de9"
-           id="polygon396-7-5-3-8"
-           points="25.8,-85.1 -86.6,-20.2 -86.6,-50 0,-100 "
-           class="st4" />
-        <polygon
-           style="fill:#a0caea"
-           id="polygon398-1-6-0-7"
-           points="0,-94.3 -40.8,-70.7 -32.9,-57 15.7,-85.1 "
-           class="st5" />
-        <text
-           id="text400-7-3-4-9"
-           style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-           class="st6"
-           transform="matrix(0.866,-0.5,-0.5,-0.866,-33.9256,-70.7388)">Docker</text>
-        <text
-           id="text402-2-9-4-2"
-           style="font-size:11.36320019px;font-family:RobotoSlab-Regular;fill:#ffffff"
-           class="st6"
-           transform="matrix(0.866,-0.5,-0.5,-0.866,-76.0668,-46.4087)">Kubelt</text>
-      </symbol>
-      <circle
-         style="opacity:0.1;fill:url(#linearGradient5395)"
-         cx="97.293816"
-         cy="95.942696"
-         r="54.599998"
-         id="circle49-7-4-4-0" />
-      <circle
-         class="st39"
-         cx="97.293816"
-         cy="95.942696"
-         r="54.599998"
-         id="circle69-2-8-4-2"
-         style="fill:none;stroke:#326de6;stroke-width:2;stroke-miterlimit:10" />
-      <g
-         id="g190-2-1-7-3"
-         transform="translate(-195.60619,-31.557301)">
-        <g
-           id="g192-6-2-6-7">
-          <polygon
-             class="st50"
-             points="292.9,114.8 282.4,108.7 292.9,102.6 303.5,108.7 "
-             id="polygon194-1-9-3-5"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="292.9,127 282.4,120.9 282.4,108.7 292.9,114.8 "
-             id="polygon196-0-3-1-9"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="303.5,120.9 292.9,127 292.9,114.8 303.5,108.7 "
-             id="polygon198-6-9-7-2"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-        <g
-           id="g200-1-0-5-2">
-          <polygon
-             class="st50"
-             points="278.4,136.5 270.5,132 278.4,127.4 286.3,132 "
-             id="polygon202-5-8-9-8"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="278.4,145.7 270.5,141.1 270.5,132 278.4,136.5 "
-             id="polygon204-9-8-6-9"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <polygon
-             class="st50"
-             points="286.3,141.1 278.4,145.7 278.4,136.5 286.3,132 "
-             id="polygon206-4-5-2-7"
-             style="fill:#06f7c9;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-        <g
-           id="g208-9-0-1-3">
-          <path
-             class="st51"
-             d="m 318,141.8 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,-10.6 -21.1,0 0,10.6 c 0,0 0,0 0,0 0,0 0,0 0,0 l 0,0.2 0,0 c 0.2,2.9 4.9,5.2 10.5,5.2 5.7,0 10.3,-2.3 10.5,-5.2 l 0,0 0,-0.2 z"
-             id="path210-0-9-7-6"
-             inkscape:connector-curvature="0"
-             style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-          <ellipse
-             class="st51"
-             cx="307.39999"
-             cy="131.3"
-             rx="10.6"
-             ry="5.4000001"
-             id="ellipse212-9-6-8-1"
-             style="fill:#8115ff;stroke:#011f38;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
-        </g>
-      </g>
-    </g>
-    <g
-       transform="translate(278.54961,-442.55307)"
+       transform="translate(252.54961,-368.55307)"
        id="g6203-7">
       <g
          inkscape:label="Layer 1"
@@ -4513,13 +5901,13 @@
     </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.22797549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-6-2-1)"
-       d="m 643.77074,462.38046 0.10607,47.09142"
+       d="m 617.77074,536.38046 0.10607,47.09142"
        id="path5973-6-1-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <g
        id="g5157"
-       transform="matrix(0.56381884,0,0,0.56381884,200.43426,357.08196)">
+       transform="matrix(0.56381884,0,0,0.56381884,174.43426,431.08196)">
       <rect
          id="rect4"
          class="bk"
@@ -4560,27 +5948,8 @@
       </path>
     </g>
     <g
-       transform="matrix(0.17485386,0,0,0.17485386,926.28233,611.58045)"
-       id="layer1-2"
-       inkscape:label="Layer 1">
-      <rect
-         rx="1000.8358"
-         ry="1000.8358"
-         y="-538.79138"
-         x="-1792.5015"
-         height="350"
-         width="350"
-         id="rect3975"
-         style="fill:none;fill-opacity:1;stroke:#2ecc71;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect3076"
-         d="m -1706.5923,-465.60957 0,25.45455 25.4544,0 0,-25.45455 -25.4544,0 z m 25.4544,25.45455 0,25.45454 -25.4544,0 0,25.45455 -25.4547,0 0,25.45455 -25.4544,0 0,76.36362 25.4544,0 0,-50.90909 25.4547,0 0,50.90909 25.4544,0 0,-25.45454 127.273,0 0,25.45454 25.4544,0 0,-50.90909 25.4547,0 0,50.90909 25.4544,0 0,-76.36362 -25.4544,0 0,-25.45455 -25.4547,0 0,-25.45455 -25.4544,0 0,-25.45454 -25.4547,0 0,25.45454 -76.3636,0 0,-25.45454 -25.4547,0 z m 127.273,0 25.4544,0 0,-25.45455 -25.4544,0 0,25.45455 z m 0,152.72726 -50.9092,0 0,25.45456 50.9092,0 0,-25.45456 z m -127.273,0 0,25.45456 50.9092,0 0,-25.45456 -50.9092,0 z m 0,-101.81817 25.4547,0 0,25.45455 -25.4547,0 0,-25.45455 z m 101.8183,0 25.4547,0 0,25.45455 -25.4547,0 0,-25.45455 z"
-         style="fill:#2ecc71;fill-opacity:1;stroke:#16a085;stroke-opacity:1" />
-    </g>
-    <g
        id="g6295"
-       transform="matrix(0.19167934,0,0,0.19167934,448.01213,740.13121)">
+       transform="matrix(0.19167934,0,0,0.19167934,424.56449,752.02383)">
       <circle
          r="255.07637"
          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#2ecc71;stroke-width:1.84725142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -4795,12 +6164,12 @@
     </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.22797549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-6-2-75)"
-       d="m 301.33558,386.6663 -41.74464,-0.14262"
+       d="m 275.33558,460.6663 -41.74464,-0.14262"
        id="path5973-6-1-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <g
-       transform="matrix(0.17742079,0,0,0.17742079,548.94908,748.03098)"
+       transform="matrix(0.17742079,0,0,0.17742079,1145.0052,1018.099)"
        id="layer1-3"
        inkscape:label="Layer 1">
       <g
@@ -4854,15 +6223,233 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20.70576477px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="209.93169"
-       y="728.03223"
+       x="39.947472"
+       y="995.63116"
        id="text7066-1-7-9-1"
        sodipodi:linespacing="125%"
        transform="scale(0.98631236,1.0138776)"><tspan
          sodipodi:role="line"
          id="tspan7068-2-0-3-9"
-         x="209.93169"
-         y="728.03223">Production</tspan></text>
+         x="39.947472"
+         y="995.63116">Exploration</tspan></text>
+    <g
+       transform="matrix(0.17591218,0,0,0.17591218,382.15955,1020.074)"
+       id="layer1-2-7"
+       inkscape:label="Layer 1">
+      <rect
+         rx="994.81458"
+         ry="994.81458"
+         y="-538.79138"
+         x="-1792.5015"
+         height="350"
+         width="350"
+         id="rect3975-5"
+         style="fill:none;fill-opacity:1;stroke:#2ecc71;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="rect3076-3"
+         d="m -1706.5923,-465.60957 0,25.45455 25.4544,0 0,-25.45455 -25.4544,0 z m 25.4544,25.45455 0,25.45454 -25.4544,0 0,25.45455 -25.4547,0 0,25.45455 -25.4544,0 0,76.36362 25.4544,0 0,-50.90909 25.4547,0 0,50.90909 25.4544,0 0,-25.45454 127.273,0 0,25.45454 25.4544,0 0,-50.90909 25.4547,0 0,50.90909 25.4544,0 0,-76.36362 -25.4544,0 0,-25.45455 -25.4547,0 0,-25.45455 -25.4544,0 0,-25.45454 -25.4547,0 0,25.45454 -76.3636,0 0,-25.45454 -25.4547,0 z m 127.273,0 25.4544,0 0,-25.45455 -25.4544,0 0,25.45455 z m 0,152.72726 -50.9092,0 0,25.45456 50.9092,0 0,-25.45456 z m -127.273,0 0,25.45456 50.9092,0 0,-25.45456 -50.9092,0 z m 0,-101.81817 25.4547,0 0,25.45455 -25.4547,0 0,-25.45455 z m 101.8183,0 25.4547,0 0,25.45455 -25.4547,0 0,-25.45455 z"
+         style="fill:#2ecc71;fill-opacity:1;stroke:#16a085;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(0.17635143,0,0,0.17635143,587.09148,481.91766)"
+       id="layer1-6"
+       inkscape:label="Layer 1">
+      <path
+         sodipodi:nodetypes="cccccccccccscsc"
+         inkscape:connector-curvature="0"
+         id="path4348"
+         d="m 349.93733,908.67361 c 1.28522,-51.30686 -41.05549,-108.41646 -82.95534,-135.73556 -60.57046,-40.45142 -115.839,-53.37674 -172.460411,-50.92078 14.659811,13.5512 44.203041,18.92603 30.678041,56.3813 -17.96461,-4.138 -16.58172,-9.89375 -42.168101,-14.33817 C 53.516466,756.52807 40.437728,748.8953 33.165463,732.79605 20.74029,782.9088 47.829858,819.84996 81.255379,854.67915 55.864749,855.38757 33.13942,847.21162 12.437053,832.29244 10.824564,877.48828 40.250738,896.8186 63.843521,921.01007 38.400013,911.43338 19.375798,917.90489 1.3865832e-6,923.49747 63.342468,930.63759 101.68789,1000.8297 156.22111,1037.8177 c 41.16472,4.3219 99.92778,-18.5056 99.92778,-18.5056 -19.33932,3.7085 -89.80314,-49.45011 -71.33068,-110.731 -1.26392,11.90804 106.99385,75.09059 141.43898,61.17052 16.12738,-6.51743 24.5611,-36.1864 23.68014,-61.07801 z"
+         style="fill:#008080;fill-rule:evenodd;stroke:#008080;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4352"
+         d="m 287.85138,862.9489 c -12.84114,-18.52885 -45.63148,-25.43998 -53.11504,-24.23752 22.74253,11.94866 11.10987,28.85783 32.38662,36.67455 9.17823,1.66441 19.57752,-2.92594 20.8247,-12.29479 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#f8f8f8;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20.70576477px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="814.25977"
+       y="996.57782"
+       id="text7066-1-7-9-1-3"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98631236,1.0138776)"><tspan
+         sodipodi:role="line"
+         id="tspan7068-2-0-3-9-6"
+         x="814.25977"
+         y="996.57782">Production</tspan></text>
+    <g
+       transform="translate(208.14746,-686.4952)"
+       id="layer1-8"
+       inkscape:label="Layer 1">
+      <g
+         transform="matrix(0.56442308,0,0,0.56442308,2243.1145,1017.1636)"
+         id="g576">
+        <linearGradient
+           id="linearGradient6130"
+           gradientUnits="userSpaceOnUse"
+           x1="-3974.1719"
+           y1="12.7559"
+           x2="-3957.1641"
+           y2="12.7559">
+          <stop
+             offset="0"
+             style="stop-color:#28B899"
+             id="stop6132" />
+          <stop
+             offset="1"
+             style="stop-color:#1B937B"
+             id="stop6134" />
+        </linearGradient>
+        <rect
+           style="fill:url(#SVGID_67_)"
+           x="-3974.1721"
+           y="5.6690001"
+           width="17.007999"
+           height="14.173"
+           id="rect583" />
+        <linearGradient
+           id="linearGradient6137"
+           gradientUnits="userSpaceOnUse"
+           x1="-3957.1641"
+           y1="12.7559"
+           x2="-3917.4795"
+           y2="12.7559">
+          <stop
+             offset="0"
+             style="stop-color:#03594A"
+             id="stop6139" />
+          <stop
+             offset="1"
+             style="stop-color:#128570"
+             id="stop6141" />
+        </linearGradient>
+        <rect
+           style="fill:url(#SVGID_68_)"
+           x="-3957.1641"
+           y="5.6690001"
+           width="39.685001"
+           height="14.173"
+           id="rect590" />
+        <linearGradient
+           id="linearGradient6144"
+           gradientUnits="userSpaceOnUse"
+           x1="-3974.1719"
+           y1="34.014599"
+           x2="-3945.8262"
+           y2="34.014599">
+          <stop
+             offset="0"
+             style="stop-color:#28B899"
+             id="stop6146" />
+          <stop
+             offset="1"
+             style="stop-color:#1B937B"
+             id="stop6148" />
+        </linearGradient>
+        <rect
+           style="fill:url(#SVGID_69_)"
+           x="-3974.1721"
+           y="26.927999"
+           width="28.346001"
+           height="14.173"
+           id="rect597" />
+        <linearGradient
+           id="linearGradient6151"
+           gradientUnits="userSpaceOnUse"
+           x1="-3945.8262"
+           y1="34.013699"
+           x2="-3917.4795"
+           y2="34.013699">
+          <stop
+             offset="0"
+             style="stop-color:#03594A"
+             id="stop6153" />
+          <stop
+             offset="1"
+             style="stop-color:#128570"
+             id="stop6155" />
+        </linearGradient>
+        <rect
+           style="fill:url(#SVGID_70_)"
+           x="-3945.8259"
+           y="26.927999"
+           width="28.347"
+           height="14.171"
+           id="rect604" />
+        <linearGradient
+           id="linearGradient6158"
+           gradientUnits="userSpaceOnUse"
+           x1="-3974.1719"
+           y1="55.274399"
+           x2="-3934.4873"
+           y2="55.274399">
+          <stop
+             offset="0"
+             style="stop-color:#28B899"
+             id="stop6160" />
+          <stop
+             offset="1"
+             style="stop-color:#1B937B"
+             id="stop6162" />
+        </linearGradient>
+        <rect
+           style="fill:url(#SVGID_71_)"
+           x="-3974.1721"
+           y="48.188"
+           width="39.685001"
+           height="14.174"
+           id="rect611" />
+        <linearGradient
+           id="linearGradient6165"
+           gradientUnits="userSpaceOnUse"
+           x1="-3934.4873"
+           y1="55.274399"
+           x2="-3917.4775"
+           y2="55.274399">
+          <stop
+             offset="0"
+             style="stop-color:#03594A"
+             id="stop6167" />
+          <stop
+             offset="1"
+             style="stop-color:#128570"
+             id="stop6169" />
+        </linearGradient>
+        <rect
+           style="fill:url(#SVGID_72_)"
+           x="-3934.4871"
+           y="48.188"
+           width="17.01"
+           height="14.174"
+           id="rect618" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:41.72948074px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="257.01477"
+       y="360.26877"
+       id="text7066-1-7-9-1-7"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98631236,1.0138776)"><tspan
+         sodipodi:role="line"
+         id="tspan7068-2-0-3-9-9"
+         x="257.01477"
+         y="360.26877">DATALAYER SCIENCE PLATFORM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="481.76208"
+       y="350.45581"
+       id="text6098"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6100"
+         x="481.76208"
+         y="350.45581"></tspan></text>
   </g>
   <style
      id="style754"

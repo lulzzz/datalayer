@@ -11,8 +11,6 @@ helm install \
   -n spitfire
 ```
 
-![Spitfire](/images/datalayer/spitfire.svg "Spitfire")
-
 You can set `spitfire.imagePullPolicy=Always` to ensure you have the latest fresh version (this may take some time as a complete new Docker image will be pulled).
 
 Test the presence of the Hadoop configuration.

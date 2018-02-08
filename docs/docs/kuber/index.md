@@ -43,7 +43,7 @@ kuber apply kuber -v 4
 Check the cluster is running.
 
 ```shell
-watch kubectl get nodes; watch kubectl get pods --all-namespaces;
+watch kubectl get nodes; watch kubectl get pods --all-namespaces
 ```
 
 This will give the list of nodes and then the list pods (there will be DNS, Calico as the Tiller pods for Helm).

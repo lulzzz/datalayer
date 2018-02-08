@@ -6,17 +6,19 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 
 ## 1.1.0 Alexandria
 
++ Fix Spark cold start
 + HDFS Pods View and Volumes View
-+ Dataset View
-+ Dataset Wrangle
 + Integrate `kuber-app` into Kuber binary commands [seed, join, scale, pause, hibernate, delete]
 + README View
 + RELEASE_NOTES View
-+ Fix Spark cold start
++ Home Page via Config
 + History View
++ Clone Note
 
 ## 1.2.0 Mystic
 
++ Dataset View
++ Dataset Wrangle
 + Workspace View
 + Notes Permissions View
 + HDFS Locality
