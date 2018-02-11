@@ -3,6 +3,6 @@ abstract: "Releases"
 toc:
 - docs/releases/index.md
 - docs/releases/release-plan.md
-- docs/releases/v-1.0.0.md
+- docs/releases/v-0.2.0.md
 - docs/releases/v-0.1.0.md
 - docs/releases/v-0.0.1.md

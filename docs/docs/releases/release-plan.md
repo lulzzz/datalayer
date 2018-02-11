@@ -4,7 +4,7 @@ title: Release Plan
 
 Here is our `Release Plan` which may evolve at any time (no commitment... just track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
 
-## 1.1.0 Alexandria
+## 1.0.0 Alexandria
 
 + Fix Spark cold start
 + HDFS Pods View and Volumes View
@@ -16,8 +16,9 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + History View
 + Clone Note
 
-## 1.2.0 Mystic
+## 1.1.0 Mystic
 
++ Spitfire per-User Interpreter Settings
 + Dataset View
 + Dataset Wrangle
 + Workspace View
@@ -25,7 +26,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + HDFS Locality
 + Publish to User Timeline
 
-## 1.3.0 Atlas
+## 1.2.0 Atlas
 
 + Ensure cloud resource are fully cleaned on deletion
 + Sudio local Docker connecting to Remote Cluster
@@ -33,7 +34,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + HBase Application
 + Library
 
-## 1.4.0 Terminator
+## 1.3.0 Terminator
 
 + IPFS Application
 + Etcd Application
@@ -43,7 +44,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Join AWS VPC
 + Join Local Nodes
 
-## 1.5.0 Sylvidra
+## 1.4.0 Sylvidra
 
 + Github Auth
 + Support Jupyter ipywidgets
@@ -51,18 +52,18 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Support React.js application packages
 + SSH from Plane to Pods
 
-## 1.6.0
+## 1.5.0
 
 + Datalayer.ai Widgets
 + Notes as a REST
 
-## 1.7.0
+## 1.6.0
 
 + Integrate Airflow
 + Visual Scheduler
 + HDFS Locality
 
-## 1.8.0
+## 1.7.0
 
 + Publish to Twitter
 + Publish to OneNote
@@ -70,7 +71,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + User Timeline
 + Microsoft Auth
 
-## 1.9.0
+## 1.8.0
 
 + Tensorflow Application
 + Kerberos HDFS
