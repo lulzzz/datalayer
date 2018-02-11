@@ -25,6 +25,8 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Notes Permissions View
 + HDFS Locality
 + Publish to User Timeline
++ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-board
+ + parameter description http://docs.datalayer.io/docs/kuber/ -> automatically clone the repo you give on the notebook with --repo...
 
 ## 1.2.0 Atlas
 
@@ -33,6 +35,21 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Solr Application
 + HBase Application
 + Library
++ datalayer-contrib kubicorn branch (for AWS EIP address)
+
+```
+vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfiguration.go 			
+            logger.Debug("Attempting to lookup master IP for node registration..")
+ 			input := &ec2.DescribeInstancesInput{
+ 				Filters: []*ec2.Filter{
+					{
+						Name:   S("tag:Cost"),
+						Values: []*string{S("kuber")},
+					},
+ 					{
+ 						Name:   S("tag:Name"),
+ 						Values: []*string{S(fmt.Sprintf("%s.master", immutable.Name))},
+```
 
 ## 1.3.0 Terminator
 
@@ -109,22 +126,6 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 ## 3.0.0
 
 + Apps Market
-
-<!--
-+ datalayer-contrib kubicorn branch (for AWS EIP address)
-vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfiguration.go 			
-            logger.Debug("Attempting to lookup master IP for node registration..")
- 			input := &ec2.DescribeInstancesInput{
- 				Filters: []*ec2.Filter{
-+					{
-+						Name:   S("tag:Cost"),
-+						Values: []*string{S("kuber")},
-+					},
- 					{
- 						Name:   S("tag:Name"),
- 						Values: []*string{S(fmt.Sprintf("%s.master", immutable.Name))},
-+ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-board
- + parameter description http://docs.datalayer.io/docs/kuber/ -> automatically clone the repo you give on the notebook with --repo...
 + Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? 
 + Reuse as much as possible of k8s-dashboard source code
 + Benchmark Performance
@@ -133,4 +134,3 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Support IPython Kernels
 + Jupyter Application
 + R (RStudio, Shiny and Sparklyr) Application
--->
