@@ -12,6 +12,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + README View
 + RELEASE_NOTES View
 + Define Home Page in Settings
++ Golang check for SSL on HTTP request
 + Note Scratchpad View
 + History View
 + Clone Note
@@ -97,7 +98,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 ## 2.0.0
 
 + Notes PR with Diff
-+ Kuber Board Secrets
++ Kuber UI Secrets
 
 ## 2.1.0
 
@@ -130,7 +131,6 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? 
 + Reuse as much as possible of k8s-dashboard source code
 + Benchmark Performance
-+ Golang check for SSL on HTTP request
 + Revisit this.xxx = window['xxx']
 + Support IPython Kernels
 + Jupyter Application

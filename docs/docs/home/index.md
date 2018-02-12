@@ -8,11 +8,11 @@ The `Datalayer Science Platform` is particulary suited for Data Science explorat
 
 The [version 0.1.0](/docs/releases/v-0.1.0) is released and fully supported on AWS Amazon Cloud. Today, you can create Kubernetes cluster on the AWS Amazon cloud and deploy as many as you want `Data Studio` which acts as a collaborative Data Science Notebook to share datasets analysis with authentication via Twitter OAuth. You will benefit from Apache Spark (Data Analytics) and Apache Hadoop (Distributed File System) running natively on K8S.
 
-You will also get a K8S Dashboard with Heapster to monitor resources usage. Last but not least, we also ship `Kuber Board`, a nice user interface to control your cluster.
+You will also get a K8S Dashboard with Heapster to monitor resources usage. Last but not least, we also ship `Kuber UI`, a nice user interface to control your cluster.
 
 Datalayer solutions make life easier, more productive, cheaper and bring more business value.
 
-+ [Devops](/docs/who/devops) use the Kuber CLI to create the Kubernetes cluster and deploy the needed Applications. You also get the Kuber Board WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Production` environments.
++ [Devops](/docs/who/devops) use the Kuber CLI to create the Kubernetes cluster and deploy the needed Applications. You also get the Kuber UI WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Production` environments.
 + [Data Scientists](/docs/who/data-scientists) use the Data Studio to explore and share insights in a visual way, in private or in public (e.g. on Twitter).
 + [Business](/docs/who/business) review the Data Scientist insights in their favorite environement like Microsoft Office 365.
 

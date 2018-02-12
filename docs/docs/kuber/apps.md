@@ -9,6 +9,6 @@ Kuber is available with the following certified applications that makes up the `
 + [Spark](/docs/kuber/spark) allows you to analyse your Big Datasets.
 + [Spitfire](/docs/kuber/spitfire) is an extension to the Apache Zeppelin WEB Notebook to analyse your Big Datasets in a visual way.
 + [Kuber CLI](/docs/kuber/kuber-cli) to control your system via the command line.
-+ [Kuber Board](/docs/kuber/kuber-board) to control your system via the WEB UI.
++ [Kuber UI](/docs/kuber/kuber-board) to control your system via the WEB UI.
 
 You are free and welcome to develop you own applications on the `Datalayer Science Platform`.

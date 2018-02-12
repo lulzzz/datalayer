@@ -1,5 +1,5 @@
 ---
-title: Kuber Board
+title: Kuber UI
 ---
 
-Kuber Board is the WEB user interface to operate the K8S cluster and its applications.
+Kuber UI is the WEB user interface to operate the K8S cluster and its applications.
