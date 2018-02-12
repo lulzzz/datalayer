@@ -32,6 +32,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 
 + Ensure cloud resource are fully cleaned on deletion
 + Sudio local Docker connecting to Remote Cluster
++ Resource Reservation per User + Reports
 + Solr Application
 + HBase Application
 + Library
