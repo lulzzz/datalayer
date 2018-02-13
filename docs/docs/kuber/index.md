@@ -128,3 +128,5 @@ Delete the cluster.
 ```shell
 kuber delete kuber -v 4 --purge
 ```
+
+![Kub](er/images/datalayer/kuber.svg "Kuber")
