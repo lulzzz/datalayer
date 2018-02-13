@@ -1,9 +1,8 @@
 ---
-title: Kuber UI
+title: Explorer
 ---
 
-Kuber CLI is the command line interface to operate the K8S cluster and its applications.
+`Explorer` is the WEB user interface to analyse datasets.
 
-Kuber UI is the WEB user interface to operate the K8S cluster and its applications.
+`Kuber CLI` is the command line interface to operate the K8S cluster and its applications. `Kuber UI` is the WEB user interface to operate the K8S cluster and its applications.
 
-Explorer is the WEB user interface to analyse datasets.
