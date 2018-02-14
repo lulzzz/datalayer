@@ -1,5 +1,5 @@
 ---
-title: Less Cloud Costs
+title: Cost-Less
 redirect_from:
 - "/docs/kuber/cost-hibernation"
 ---
