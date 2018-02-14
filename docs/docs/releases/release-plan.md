@@ -6,26 +6,23 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 
 ## 1.0.0 Alexandria
 
-+ Spitfire per-User Interpreter Settings
-+ Interpreter Settings View
-+ Home page with Cluster Status + Spark REPL (Variables + Number of Spark Executors) + Last Note + Reservations (jaugue + action if no reservation) + Cluster capacity (Current number of nodes in visual way) + Interpreter Status
 + Ingress to Kuber and Spitfire
-+ Status Header (Cluster + Interpreter + Spark REPL)
 + Interpreter Settings Restart
-+ Reconnecting WebSocket
-+ Fix Spark cold start (timeout + first run after node restart)
++ Fix Move Paragraph Bug
 + Note Results Attributes (State...) and Actions (Cancel..)
++ Manage and Display PROGRESS Message while Note is Running
++ Horizontal + Vertical Layout Toggle for Note Editor
++ Interpreter Settings View
++ Fix Spark cold start (Timeout + First run after node restart)
++ Reconnecting WebSocket
++ Spitfire per-User Interpreter Settings
++ Home page with Cluster Status + Spark REPL (Variables + Number of Spark Executors) + Last Note + Reservations (jaugue + action if no reservation) + Cluster capacity (Current number of nodes in visual way) + Interpreter Status
++ Status Header (Cluster + Interpreter + Spark REPL)
 + Allow to scale up/down the cluster size to a certain extend based on configuration
 + Show PENDING State as soon as Note is Running
-+ Manage and Display PROGRESS Message while Note is Running
 + Add Progress Bar while Note is Running
 + Sidebar with Variables List, Scratchpad, Number of Spark Executors
-+ Search and Reuse Snippets
-+ Fix Move Paragraph Bug
 + Scratchpad Sidepanel
-+ Python pip Dependencies
-+ Horizontal + Vertical Layout Toggle for Note Editor
-+ Google Business Auth
 + Do not Change Past Reservations
 + Delete Reservations
 + User Reservation History and Analysis View
@@ -35,6 +32,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 
 ## 1.1.0 Mystic
 
++ Create, Search and Reuse Snippets
 + Kuber controller on micro instance to wakeup the Master
 + Notify Cluster up/down via UI Message and Email
 + Show Running Paragraphs in Footer
