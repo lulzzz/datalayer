@@ -33,6 +33,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 ## 1.1.0 Mystic
 
 + Create, Search and Reuse Snippets
++ Reservation Color per User in Calendar View
 + Kuber controller on micro instance to wakeup the Master
 + Notify Cluster up/down via UI Message and Email
 + Show Running Paragraphs in Footer
