@@ -8,9 +8,9 @@ Big Data Science adoption trend can be summarized as such.
 
 ![Adoption](/images/datalayer/adoption.svg "Adoption")
 
-## User Categories
+## Big Data Science Users
 
-Datalayer targets 3 categories of users who will create and use cost effective clusters of size they need without prior IT skills.
+Datalayer targets 3 types of users who will create and use cost effective clusters of size they need without prior IT skills.
 
 1. Standalone Data Scientists.
 2. Small to medium analytics teams of data-driven business.
@@ -20,13 +20,11 @@ As a user, you are looking for agile and low cost iterations during your Data Sc
 
 ![Data Science Projects](/images/datalayer/data-science-projects.svg "Data Science Projects")
 
-## User Profiles
-
-Depending on your category (`Standalone Data Scientist` or `Business`) you will may have more than one hat (more than one profile) during the lifecycle of your Data Science project. The typical stakeholders of the project are the `Devops`, a `Data Scientist` or a `Business`.
+The typical stakeholders of the project are the `Devops`, a `Data Scientist` or a `Business`.
 
 ![Kuber Who](/images/datalayer/kuber-who.svg "Kuber Who")
 
-For all those 3 profiles, Datalayer solutions make life easier, more productive, cheaper and bring more business value.
+You may have more than one hat (more than one profile) during the lifecycle of your Data Science project. For those 3 profiles, Datalayer solutions make life easier, more productive, cheaper and bring more business value.
 
 1. [As Devops](/docs/who/devops), you use the `Kuber CLI` to create the Kubernetes cluster and deploy the needed Applications. You also get the `Kuber UI` WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Production` environments.
 2. [As Data Scientists](/docs/who/data-scientists), you use the `Data Studio` to request cluster resources for a certain period of time. You explore and share insights in a visual way, in private or in public (e.g. on Twitter).

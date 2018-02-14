@@ -2,7 +2,7 @@
 title: HDFS
 ---
 
-Install the `hdfs` chart.
+Install the `HDFS` chart.
 
 ```
 helm install \

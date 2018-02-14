@@ -2,7 +2,7 @@
 title: K8S Dashboard
 ---
 
-To ease the management, it is interesting to install the standard `Kubernetes Dashboard` with `Heapster` as monitoring tool.
+To ease the management, it is interesting to install the standard `Kubernetes Dashboard`.
 
 ```shell
 # Temp workaround to relax roles...
@@ -10,8 +10,6 @@ kubectl create clusterrolebinding add-on-cluster-admin \
   --clusterrole=cluster-admin \
   --serviceaccount=kube-system:default
 ```
-
-Now you can install the `Dashboard`.
 
 ```shell
 helm install k8s-dashboard \

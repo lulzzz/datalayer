@@ -6,20 +6,31 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 
 ## 1.0.0 Alexandria
 
-+ Fix Spark cold start
++ Spitfire per-User Interpreter Settings
++ Interpreter Settings View
++ Notify Cluster up/down via UI Message and Email
++ Interpreter Settings Restart
++ Fix Spark cold start (timeout)
++ Commit Notebook
++ Google Business Auth
++ Do not Change Past Reservations
++ Run only on active Reservations
++ Delete Reservations
++ User Resevation History and Analysis View
 + HDFS Pods View and Volumes View
-+ Integrate `kuber-app` into Kuber binary commands [seed, join, scale, pause, hibernate, delete]
++ Integrate `kuber-app` into Kuber binary [seed, join, scale, pause, hibernate, delete]
 + README View
 + RELEASE_NOTES View
 + Define Home Page in Settings
 + Golang check for SSL on HTTP request
 + Note Scratchpad View
-+ History View
++ History Views
++ Scrollable Paragraph List on Note Editor
++ Note Results Attributes
 + Clone Note
 
 ## 1.1.0 Mystic
 
-+ Spitfire per-User Interpreter Settings
 + Dataset View
 + Dataset Wrangle
 + Workspace View

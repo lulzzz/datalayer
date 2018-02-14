@@ -8,7 +8,9 @@ We support for now [https://aws.amazon.com](Amazon Cloud). Read our [Release Pla
 
 The [Kuber](https://github.com/datalayer/kuber) repository contains the source code to run the REST server endpoints.
 
-Before using Kuber, setup your AWS environment with the needed AWS credentials via environement variables.
+We distinguish `Kuber CLI` which is the command line interface to operate the K8S cluster and its applications from `Kuber UI` is the WEB user interface to operate the K8S cluster and its applications.
+
+Before using `Kuber`, setup your `AWS` environment with the needed AWS credentials via environement variables.
 
 ```shell
 export AWS_ACCESS_KEY_ID=<your-aws-key-id>

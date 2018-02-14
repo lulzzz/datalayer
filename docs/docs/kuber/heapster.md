@@ -2,7 +2,7 @@
 title: Heapster
 ---
 
-To ease the management, it is interesting to install the standard `Kubernetes Dashboard` with `Heapster` as monitoring tool.
+To ease the management, it is interesting to install `Heapster` as monitoring tool.
 
 ```shell
 # Temp workaround to relax roles...

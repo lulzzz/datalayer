@@ -1,10 +1,10 @@
 ---
-title: IT-Less with Lower Cloud Costs
+title: Less Cloud Costs
 redirect_from:
 - "/docs/kuber/cost-hibernation"
 ---
 
-`Kuber` is particulary suited for exploration cases where you have to quickly spinup a Spark cluster with HDFS, scale it up and down and even put the number of worker to zero for a few days and stop the master. And you do not need to know IT to achieve this. Of course, you want to retrieve all the configuration and dataset you have created before pausing the cluster to avoid costs. Kuber offers this powerfull feature called `Resource Control`.
+You want to retrieve all the configuration and dataset you have created before pausing the cluster to avoid costs. Kuber offers this powerfull feature called `Resource Control`.
 
 ![Scale Workers](/images/datalayer/scale-workers.png "Scale Workers")
 

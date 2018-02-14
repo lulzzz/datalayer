@@ -2,7 +2,7 @@
 title: Spitfire
 ---
 
-Install the `spitfire` chart.
+Install the `Spitfire` chart.
 
 ```shell
 helm install \

@@ -2,7 +2,8 @@ bigheader: "Why"
 abstract: "Why you should use Datalayer."
 toc:
 - docs/why/index.md
-- docs/why/it-less-lower-cloud-cost.md
-- docs/why/no-vendor-cloud-lock-in.md
-- docs/why/exploration-to-production.md
+- docs/why/less-cloud-costs.md
+- docs/why/it-less.md
+- docs/why/no-lock-in.md
 - docs/why/collaborative-story-telling.md
+- docs/why/exploration-to-production.md
