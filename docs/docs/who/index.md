@@ -26,7 +26,7 @@ The typical stakeholders of the project are the `Devops`, a `Data Scientist` or 
 
 You may have more than one hat (more than one profile) during the lifecycle of your Data Science project. For those 3 profiles, Datalayer solutions make life easier, more productive, cheaper and bring more business value.
 
-1. [As Devops](/docs/who/devops), you use the `Kuber CLI` to create the Kubernetes cluster and deploy the needed Applications. You also get the `Kuber UI` WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Production` environments.
+1. [As Devops](/docs/who/devops), you use the `Kuber CLI` to create the Kubernetes cluster and deploy the needed Applications. You also get the `Kuber UI` WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Assembly` environments.
 2. [As Data Scientists](/docs/who/data-scientists), you use the `Data Studio` to request cluster resources for a certain period of time. You explore and share insights in a visual way, in private or in public (e.g. on Twitter).
 3. [As Business](/docs/who/business), you review the Data Scientist insights in their favorite environement like Microsoft Office 365.
 
