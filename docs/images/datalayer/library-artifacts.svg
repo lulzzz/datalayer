@@ -1089,9 +1089,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.51978307"
-     inkscape:cx="-111.85852"
-     inkscape:cy="-188.85193"
+     inkscape:zoom="1.4213543"
+     inkscape:cx="298.05855"
+     inkscape:cy="130.21052"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2555,14 +2555,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.58334541px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="279.02725"
+       x="303.02725"
        y="826.79297"
        id="text6369-2-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan6371-9-6"
-         x="279.02725"
-         y="826.79297">Snippets</tspan></text>
+         x="303.02725"
+         y="826.79297">Gists</tspan></text>
   </g>
   <style
      id="style754"

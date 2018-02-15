@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="kuber-collaboration.svg">
+   sodipodi:docname="collaboration.svg">
   <defs
      id="defs4">
     <marker
@@ -890,14 +890,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25575206"
-     inkscape:cx="-338.78107"
-     inkscape:cy="4.8171016"
+     inkscape:zoom="0.49452059"
+     inkscape:cx="-166.76461"
+     inkscape:cy="-10.677568"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
+     inkscape:window-width="1920"
+     inkscape:window-height="1119"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -1881,35 +1881,35 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.58334541px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="201.4724"
-       y="699.98615"
+       y="715.98615"
        id="text6369-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="201.4724"
-         y="699.98615"
+         y="715.98615"
          id="tspan5449">Twitter Influencer</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.58334541px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="461.99597"
-       y="703.43396"
+       y="719.43396"
        id="text6369-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan6371-2"
          x="461.99597"
-         y="703.43396">Top 5 Influencers</tspan></text>
+         y="719.43396">Top 5 Influencers</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.58334541px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="723.185"
-       y="702.7384"
+       y="718.7384"
        id="text6369-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan6371-0"
          x="723.185"
-         y="702.7384">Influencer Model</tspan></text>
+         y="718.7384">Influencer Model</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.58334541px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1925,13 +1925,13 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.58334541px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="251.92915"
-       y="729.53497"
+       y="745.53497"
        id="text6369-3-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan6371-6-5"
          x="251.92915"
-         y="729.53497">Notebook</tspan></text>
+         y="745.53497">Notebook</tspan></text>
     <g
        id="g5020"
        transform="matrix(0.37790696,0,0,0.37790696,224.70064,816.91944)"
@@ -2034,7 +2034,7 @@
        inkscape:export-xdpi="45"
        inkscape:export-ydpi="45" />
     <g
-       transform="matrix(0.33333333,0,0,0.33333333,254.98289,560.52803)"
+       transform="matrix(0.33333333,0,0,0.33333333,254.98289,576.52803)"
        id="g5368">
       <path
          style="opacity:1;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -2121,8 +2121,8 @@
        id="rect3791-7-5"
        width="45.328117"
        height="45.328125"
-       x="-69.149895"
-       y="795.57471"
+       x="-80.463615"
+       y="806.88818"
        ry="0"
        transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" />
     <rect
@@ -2130,19 +2130,19 @@
        id="rect3791-7-5-6"
        width="45.328117"
        height="45.328125"
-       x="-39.761341"
-       y="826.27222"
+       x="-51.075062"
+       y="837.58569"
        ry="0"
        transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" />
     <path
        style="fill:#f1c40f;fill-opacity:1;stroke:#000000;stroke-width:0.91568291;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 566.44744,545.34572 31.88533,32.37428 -27.40364,27.42559 -25.4479,-25.62853 -5.33184,5.15123 -6.65545,-6.78316 c 10.92296,-10.87603 22.02269,-21.6389 32.9535,-32.53941 z"
+       d="m 566.44744,561.34572 31.88533,32.37428 -27.40364,27.42559 -25.4479,-25.62853 -5.33184,5.15123 -6.65545,-6.78316 c 10.92296,-10.87603 22.02269,-21.6389 32.9535,-32.53941 z"
        id="path3950"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:#3498db;stroke:#000000;stroke-width:1.79144096;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 791.29171,553.60368 76.644,0.14315 -1.0591,76.50085 z"
+       d="m 791.29171,569.60368 76.644,0.14315 -1.0591,76.50085 z"
        id="path5456-5-6-1-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -2151,7 +2151,7 @@
        inkscape:export-ydpi="67.226479" />
     <path
        style="fill:#f1c40f;fill-opacity:1;stroke:#000000;stroke-width:1.42144036;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 772.79641,555.37437 96.6228,96.62291 -96.5586,-1.2755 z"
+       d="m 772.79641,571.37437 96.6228,96.62291 -96.5586,-1.2755 z"
        id="path5456-9-1-6-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"

@@ -34,7 +34,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 
 + Create, Search and Reuse Snippets
 + Reservation Color per User in Calendar View
-+ Kuber controller on micro instance to wakeup the Master
++ Kuber seed on micro instance or Docker to create and manage (sleep/wakeup) the Cluster
 + Notify Cluster up/down via UI Message and Email
 + Show Running Paragraphs in Footer
 + Run only on active Reservations
