@@ -114,7 +114,7 @@ Deploy more applications.
 ./kuber.sh hdfs
 ./kuber.sh spark
 ./kuber.sh spitfire
-./kuber.sh kuber-board
+./kuber.sh kuber-ui
 ```
 
 For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber/apps).

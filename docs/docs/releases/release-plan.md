@@ -6,32 +6,36 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 
 ## 1.0.0 Alexandria
 
-+ Ingress to Kuber and Spitfire
-+ Interpreter Settings Restart
 + Fix Move Paragraph Bug
-+ Note Results Attributes (State...) and Actions (Cancel..)
-+ Manage and Display PROGRESS Message while Note is Running
 + Horizontal + Vertical Layout Toggle for Note Editor
-+ Interpreter Settings View
-+ Fix Spark cold start (Timeout + First run after node restart)
-+ Reconnecting WebSocket
-+ Spitfire per-User Interpreter Settings
-+ Home page with Cluster Status + Spark REPL (Variables + Number of Spark Executors) + Last Note + Reservations (jaugue + action if no reservation) + Cluster capacity (Current number of nodes in visual way) + Interpreter Status
-+ Status Header (Cluster + Interpreter + Spark REPL)
-+ Allow to scale up/down the cluster size to a certain extend based on configuration
 + Show PENDING State as soon as Note is Running
 + Add Progress Bar while Note is Running
-+ Sidebar with Variables List, Scratchpad, Number of Spark Executors
-+ Scratchpad Sidepanel
-+ Do not Change Past Reservations
-+ Delete Reservations
-+ User Reservation History and Analysis View
++ Note Results Attributes (State...) and Actions (Cancel..)
++ Manage and Display PROGRESS Messages while Note is Running
++ Fix Spark cold start: Timeout + First run after Node Restart
++ Interpreter Settings Restart
++ Interpreter Settings View
++ Cluster Status View: Current Capacity (Current number of nodes in visual way) + Usage + Health
++ Scratchpad Overlay
++ Interpreter Status View
++ Reservations View: Jaugue + Action if no Reservation
++ Spark REPL Status View: Variables + Number of Spark Executors
++ Status Header: Cluster Status + Interpreter Status + Spark REPL Status
++ Home page: Cluster Status + Latest Note + Reservations View + Cluster Status + Interpreter Status
++ Spitfire per-User Interpreter Settings
++ Dev Sidebar: Scratchpad + Variables List +  Number of Spark Executors
 + History Views with Commit
-+ Scrollable Paragraph List on Note Editor
 + Clone Note
++ Fix Failing WebSocket via Corporate Proxy
 
 ## 1.1.0 Mystic
 
++ Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
++ Scrollable Paragraph List on Note Editor
++ Do not Change Past Reservations
++ Delete Reservations
++ User Reservation History and Analysis View
++ Reconnecting WebSocket
 + Create, Search and Reuse Snippets
 + Reservation Color per User in Calendar View
 + Kuber seed on micro instance or Docker to create and manage (sleep/wakeup) the Cluster
@@ -50,7 +54,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Golang check for SSL on HTTP request
 + HDFS Locality
 + Publish to User Timeline
-+ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-board (parameter description http://docs.datalayer.io/docs/kuber -> automatically clone the repo you give on the notebook with --repo...)
++ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber -> automatically clone the repo you give on the notebook with --repo...)
 
 ## 1.2.0 Atlas
 
