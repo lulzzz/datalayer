@@ -12,7 +12,7 @@ You will also get a K8S Dashboard with Heapster to monitor resources usage. Last
 
 Datalayer solutions make life easier, more productive, cheaper and bring more business value.
 
-+ [Devops](/docs/who/devops) use the Kuber CLI to create the Kubernetes cluster and deploy the needed Applications. You also get the Kuber UI WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Assembly` environments.
++ [Devops](/docs/who/devops) use the Kuber CLI to create the Kubernetes cluster and deploy the needed Applications. You also get the Kuber UI WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Alpha` environments.
 + [Data Scientists](/docs/who/data-scientists) use the Data Studio to explore and share insights in a visual way, in private or in public (e.g. on Twitter).
 + [Business](/docs/who/business) review the Data Scientist insights in their favorite environement like Microsoft Office 365.
 

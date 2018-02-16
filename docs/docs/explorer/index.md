@@ -16,7 +16,7 @@ Each Note also receives a Cover.
 
 ![Note Cover](/images/datalayer/note-cover.png "Notebook Cover")
 
-The Notes can be assembled in Flows to prepare the `Assembly` phase.
+The Notes can be assembled in Flows to prepare the `Alpha` phase.
 
 ![Flows](/images/datalayer/flows.png "Flows")
 
