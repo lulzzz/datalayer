@@ -96,8 +96,8 @@ helm repo add datalayer http://helm-charts.datalayer.io
 Deploy the dashboard (ensure you have the [Helm client available](https://github.com/kubernetes/helm/releases)).
 
 ```shell
-./kuber-app heapster
-./kuber-app k8s-dashboard
+./kuber.sh heapster
+./kuber.sh k8s-dashboard
 ```
 
 Launch a K8s proxy in another terminal to have easy access to the services.
@@ -111,10 +111,10 @@ kubectl proxy
 Deploy more applications.
 
 ```shell
-./kuber-app hdfs
-./kuber-app spark
-./kuber-app spitfire
-./kuber-app kuber-board
+./kuber.sh hdfs
+./kuber.sh spark
+./kuber.sh spitfire
+./kuber.sh kuber-board
 ```
 
 For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber/apps).

@@ -42,7 +42,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Define Home Page in Settings
 + README View
 + RELEASE_NOTES View
-+ Integrate `kuber-app` into Kuber binary [seed, join, scale, pause, hibernate, delete]
++ Integrate `kuber.sh` into Kuber binary [seed, join, scale, pause, hibernate, delete]
 + Dataset View
 + Dataset Wrangle
 + Workspace View

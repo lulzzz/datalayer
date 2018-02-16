@@ -63,8 +63,8 @@ Deploy the dashboard (ensure you have the [Helm client available](https://github
 ```shell
 git clone https://github.com/datalayer/helm-charts
 cd helm-charts
-./kuber-app heapster
-./kuber-app k8s-dashboard
+./kuber.sh heapster
+./kuber.sh k8s-dashboard
 ```
 
 Launch a K8s proxy in another terminal to have easy access to the services.
@@ -78,10 +78,10 @@ Check the [Dashboard](http://localhost:8001/api/v1/namespaces/kube-system/servic
 Deploy more applications.
 
 ```shell
-./kuber-app hdfs
-./kuber-app spark
-./kuber-app spitfire
-./kuber-app explorer
+./kuber.sh hdfs
+./kuber.sh spark
+./kuber.sh spitfire
+./kuber.sh explorer
 ```
 
 For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber/apps).
