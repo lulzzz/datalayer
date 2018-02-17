@@ -21,4 +21,4 @@ We will introduce `Cost Compensation` to build a Community of workers backed by 
 + The more cloud resource your share, the more quota you will have to run your data processing. 
 + And last but not least, we favor good analysts: the more `Stars` you get, the more quota you will have.
 
-![Cost Compensation](/images/datalayer/cost-compensation.svg) "Cost Compensation")
+![Cost Compensation](/images/datalayer/cost-compensation.svg "Cost Compensation")
