@@ -15,13 +15,13 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Fix Spark cold start: Timeout + First run after Node Restart
 + Interpreter Settings Restart
 + Interpreter Settings View
-+ Cluster Status View: Current Capacity (Current number of nodes in visual way) + Usage + Health
 + Scratchpad Overlay
++ Cluster Status View: Current Capacity (Current number of nodes in visual way) + Usage + Health
 + Interpreter Status View
-+ Reservations View: Jaugue + Action if no Reservation
 + Spark REPL Status View: Variables + Number of Spark Executors
 + Status Header: Cluster Status + Interpreter Status + Spark REPL Status
-+ Home page: Cluster Status + Latest Note + Reservations View + Cluster Status + Interpreter Status
++ Reservations View: Jaugue + Action if no Reservation
++ Home page: Cluster Status + Reservations Status + Cluster Status + Interpreter Status + Latest Note
 + Spitfire per-User Interpreter Settings
 + Dev Sidebar: Scratchpad + Variables List +  Number of Spark Executors
 + History Views with Commit
