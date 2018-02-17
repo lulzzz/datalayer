@@ -50,14 +50,15 @@ Here is our `Release Plan` which may evolve at any time (no commitment... just t
 + Dataset View
 + Dataset Wrangle
 + Workspace View
+
+## 1.2.0 Atlas
+
 + Notes Permissions View
 + Golang check for SSL on HTTP request
 + HDFS Locality
 + Publish to User Timeline
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber -> automatically clone the repo you give on the notebook with --repo...)
-
-## 1.2.0 Atlas
-
++ Publish, Search and Load Book in Library
 + Ensure cloud resource are fully cleaned on deletion
 + Sudio local Docker connecting to Remote Cluster
 + Resource Reservation per User + Reports
