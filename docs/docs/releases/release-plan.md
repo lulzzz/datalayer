@@ -2,34 +2,17 @@
 title: Release Plan
 ---
 
-Here is our `Release Plan` which may evolve at any time (no commitment... just track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
+Here is our `Release Plan` which may evolve at any time (no commitment.
+
+You can track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
 
 ## 1.0.0 Alexandria
 
-+ Fix Move Paragraph Bug
-+ Horizontal + Vertical Layout Toggle for Note Editor
-+ Show PENDING State as soon as Note is Running
-+ Add Progress Bar while Note is Running
-+ Note Results Attributes (State...) and Actions (Cancel..)
-+ Manage and Display PROGRESS Messages while Note is Running
-+ Fix Spark cold start: Timeout + First run after Node Restart
-+ Interpreter Settings Restart
-+ Interpreter Settings View
-+ Scratchpad Overlay
-+ Cluster Status View: Current Capacity (Current number of nodes in visual way) + Usage + Health
-+ Interpreter Status View
-+ Spark REPL Status View: Variables + Number of Spark Executors
-+ Status Header: Cluster Status + Interpreter Status + Spark REPL Status
-+ Reservations View: Jaugue + Action if no Reservation
-+ Home page: Cluster Status + Reservations Status + Cluster Status + Interpreter Status + Latest Note
-+ Spitfire per-User Interpreter Settings
-+ Dev Sidebar: Scratchpad + Variables List +  Number of Spark Executors
-+ History Views with Commit
-+ Clone Note
 + Fix Failing WebSocket via Corporate Proxy
 
 ## 1.1.0 Mystic
 
++ Horizontal + Vertical Layout Toggle for Note Editor
 + Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
 + Scrollable Paragraph List on Note Editor
 + Do not Change Past Reservations
