@@ -39,6 +39,7 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Notes Permissions View
 + Golang check for SSL on HTTP request
 + HDFS Locality
++ Better manager the spitfire shared secret
 + Publish to User Timeline
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber -> automatically clone the repo you give on the notebook with --repo...)
 + Publish, Search and Load Book in Library
