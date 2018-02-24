@@ -14,7 +14,7 @@ Datalayer solutions make life easier, more productive, cheaper and bring more bu
 
 + [Devops](/docs/who/devops) use the Kuber CLI to create the Kubernetes cluster and deploy the needed Applications. You also get the Kuber UI WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Alpha` environments.
 + [Data Scientists](/docs/who/data-scientists) use the Data Studio to explore and share insights in a visual way, in private or in public (e.g. on Twitter).
-+ [Business](/docs/who/business) review the Data Scientist insights in their favorite environement like Microsoft Office 365.
++ [Business](/docs/who/business) review the Data Scientist insights in their favorite environement like Microsoft Office 365, Twitter or Google.
 
 **You are welcome to contribute on this project as a User or as a Developer hacking on the base source code available in our [Github repositories](https://github.com/datalayer).**
 
