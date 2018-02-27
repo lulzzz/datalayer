@@ -6,7 +6,7 @@ Here is our `Release Plan` which may evolve at any time (no commitment.
 
 You can track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
 
-## 1.0.0 Arcadia
+## 1.0.0 Alexandria
 
 + ReservationsStatus (Reserve if free)
 + SparkStatus
