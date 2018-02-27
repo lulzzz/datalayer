@@ -6,13 +6,23 @@ Here is our `Release Plan` which may evolve at any time (no commitment.
 
 You can track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
 
-## 1.0.0 Alexandria
+## 1.0.0 Arcadia
 
-+ Fix Failing WebSocket via Corporate Proxy
++ ReservationsStatus (Reserve if free)
++ SparkStatus
++ Scratchpad Sidebar (Editor + Variables List + Number of Spark Executors)
++ Commit Notebook
++ Clone Note
++ Microsoft Auth -> Contacts + Screenshot to OneNote
++ Spark Cold Start: Intepreter Start Timeout + First Run after Node Restart
++ Per-User Interpreter Settings
 
 ## 1.1.0 Mystic
 
++ HDFSStatus
++ Fix Failing WebSocket via some very strict Corporate Proxy
 + Horizontal + Vertical Layout Toggle for Note Editor
++ Tag Load Balancer with kuber-role=explorer
 + Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
 + Scrollable Paragraph List on Note Editor
 + Do not Change Past Reservations
