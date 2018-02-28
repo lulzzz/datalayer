@@ -8,22 +8,23 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 ## 1.0.0 Alexandria
 
-+ ReservationsStatus (Reserve if free)
-+ SparkStatus
++ Per-User Interpreter Settings
++ Spark Cold Start: Intepreter Start Timeout + First Run after Node Restart
 + Scratchpad Sidebar (Editor + Variables List + Number of Spark Executors)
 + Commit Notebook
 + Clone Note
-+ Microsoft Auth -> Contacts + Screenshot to OneNote
-+ Spark Cold Start: Intepreter Start Timeout + First Run after Node Restart
-+ Per-User Interpreter Settings
++ Microsoft Auth: Contacts + Screenshot to OneNote
++ Fix Failing WebSocket via some very strict Corporate Proxy
++ Tag Load Balancer with kuber-role=explorer
++ Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
++ Rename ws* to spitfire*
++ Rename *status to state*
 
 ## 1.1.0 Mystic
 
-+ HDFSStatus
-+ Fix Failing WebSocket via some very strict Corporate Proxy
++ HDFS State
++ HDFS Pods View and Volumes View
 + Horizontal + Vertical Layout Toggle for Note Editor
-+ Tag Load Balancer with kuber-role=explorer
-+ Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
 + Scrollable Paragraph List on Note Editor
 + Do not Change Past Reservations
 + Delete Reservations
@@ -33,25 +34,24 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Reservation Color per User in Calendar View
 + KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
 + Notify Cluster up/down via UI Message and Email
-+ Show Running Paragraphs in Footer
-+ Run only on active Reservations
-+ HDFS Pods View and Volumes View
++ Run only on Active Reservations
 + Define Home Page in Settings
 + README View
 + RELEASE_NOTES View
-+ Integrate `kuber.sh` into Kuber binary [seed, join, scale, pause, hibernate, delete]
-+ Dataset View
-+ Dataset Wrangle
-+ Workspace View
++ Integrate kuber.sh into Kuber binary [seed, join, scale, pause, hibernate, delete]
++ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber 
++ Automatically clone the repo you give on the notebook with --repo...)
 
 ## 1.2.0 Atlas
 
++ Dataset View
++ Dataset Wrangle
++ Workspace View
 + Notes Permissions View
 + Golang check for SSL on HTTP request
-+ HDFS Locality
-+ Better manager the spitfire shared secret
++ Ensure HDFS Locality
++ Better manage the spitfire shared secret
 + Publish to User Timeline
-+ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber -> automatically clone the repo you give on the notebook with --repo...)
 + Publish, Search and Load Book in Library
 + Ensure cloud resource are fully cleaned on deletion
 + Sudio local Docker connecting to Remote Cluster
@@ -60,7 +60,6 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + HBase Application
 + Library
 + datalayer-contrib kubicorn branch (for AWS EIP address)
-
 ```
 vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfiguration.go 			
             logger.Debug("Attempting to lookup master IP for node registration..")
