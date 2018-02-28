@@ -29,6 +29,7 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Do not Change Past Reservations
 + Delete Reservations
 + User Reservation History and Analysis View
++ Budget View
 + Reconnecting WebSocket
 + Create, Search and Reuse Snippets
 + Reservation Color per User in Calendar View
