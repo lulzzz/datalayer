@@ -10,7 +10,7 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 + Per-User Interpreter Settings
 + Scratchpad Sidebar: Editor + Variables List + Number of Spark Executors
-+ Spark Cold Start: Intepreter Start Timeout + First Run after Node Restart
++ Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
 + Rename ws* to spitfire*
 + Commit Notebook
 + Clone Note
