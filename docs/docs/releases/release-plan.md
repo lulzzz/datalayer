@@ -72,7 +72,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
  						Values: []*string{S(fmt.Sprintf("%s.master", immutable.Name))},
 ```
 
-## 1.3.0 Terminator
+## 2.0.0 Terminator
 
 + IPFS Application
 + Etcd Application
@@ -82,7 +82,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Join AWS VPC
 + Join Local Nodes
 
-## 1.4.0 Sylvidra
+## 2.1.0 Sylvidra
 
 + Github Auth
 + Support Jupyter ipywidgets
@@ -91,18 +91,18 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + SSH from Plane to Pods
 + Reservatio no-show-up + terminate-on-no-activity
 
-## 1.5.0
+## 2.3.0
 
 + Datalayer.ai Widgets
 + Notes as a REST
 
-## 1.6.0
+## 2.4.0
 
 + Integrate Airflow
 + Visual Scheduler
 + HDFS Locality
 
-## 1.7.0
+## 2.5.0
 
 + Publish to Twitter
 + Publish to OneNote
@@ -110,32 +110,32 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + User Timeline
 + Microsoft Auth
 
-## 1.8.0
+## 2.6.0
 
 + Tensorflow Application
 + Kerberos HDFS
 
-## 2.0.0
+## 2.7.0
 
 + Notes PR with Diff
 + Kuber UI Secrets
 
-## 2.1.0
+## 3.0.0
 
 + Notes Authorization
 + HDFS Treemap View
 
-## 2.2.0
+## 3.1.0
 
 + Reuse K8S IAM and RBAC
 + JWT Security
 
-## 2.3.0
+## 3.2.0
 
 + Cost Compensation
 + Notes Metrics (Resource Usage, Time)
 
-## 2.4.0
+## 4.0.0
 
 + Master HA
 + Multi K8S Cluster
@@ -145,7 +145,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Multiple HDFS with cluster-id
 + Support Azure
 
-## 3.0.0
+## 5.0.0
 
 + Apps Market
 + Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? 
