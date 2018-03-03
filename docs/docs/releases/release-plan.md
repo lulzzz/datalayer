@@ -9,20 +9,17 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 ## 1.0.0 Alexandria
 
 + Per-User Interpreter Settings
++ Scratchpad Sidebar: Editor + Variables List + Number of Spark Executors
 + Spark Cold Start: Intepreter Start Timeout + First Run after Node Restart
-+ Scratchpad Sidebar (Editor + Variables List + Number of Spark Executors)
++ Rename ws* to spitfire*
 + Commit Notebook
 + Clone Note
 + Microsoft Auth: Contacts + Screenshot to OneNote
-+ Fix Failing WebSocket via some very strict Corporate Proxy
-+ Tag Load Balancer with kuber-role=explorer
-+ Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
-+ Rename ws* to spitfire*
-+ Rename *status to state*
 
 ## 1.1.0 Mystic
 
 + HDFS State
++ Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
 + HDFS Pods View and Volumes View
 + Horizontal + Vertical Layout Toggle for Note Editor
 + Scrollable Paragraph List on Note Editor
