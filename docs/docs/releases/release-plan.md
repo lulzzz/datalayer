@@ -8,13 +8,12 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 ## 1.0.0 Alexandria
 
-+ Per-User Interpreter Settings
 + Scratchpad Sidebar: Editor + Variables List + Number of Spark Executors
-+ Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
++ Microsoft Auth: Contacts + Screenshot to OneNote
 + Rename ws* to spitfire*
 + Commit Notebook
-+ Clone Note
-+ Microsoft Auth: Contacts + Screenshot to OneNote
++ Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
++ Per-User Interpreter Settings
 
 ## 1.1.0 Mystic
 
