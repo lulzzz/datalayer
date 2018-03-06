@@ -8,31 +8,37 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 ## 1.0.0 Alexandria
 
-+ Indicators Status
-+ Scratchpad Sidebar
-+ Comment Sidebar on Note
-+ Microsoft Auth: Contacts + Screenshot to OneNote
 + Rename ws* to spitfire*
++ Reservation Status
++ Topology Status
++ HDFS Status
+  + HDFS Pods View
+  + Volumes View
++ Spark Status
++ Scratchpad Sidebar
 + New Paragraph via Mouse-click (class=new-paragraph)
 + Per-User Interpreter Settings
 + Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
 
 ## 1.1.0 Mystic
 
++ Microsoft Auth
+ + Contacts
+ + Screenshot to OneNote
 + Notify when Permission is assigned
-+ HDFS State
-+ Chat Room with Connected Users
++ Budget View
 + Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
-+ HDFS Pods View and Volumes View
 + Horizontal + Vertical Layout Toggle for Note Editor
 + Scrollable Paragraph List on Note Editor
-+ Do not Change Past Reservations
-+ Delete Reservations
-+ User Reservation History and Analysis View
-+ Reservation Color per User in Calendar View
-+ Budget View
-+ Create, Search and Reuse Snippets
-+ KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
++ Comment Sidebar on Note
++ Reservations
+  + Do not Change Past Reservations
+  + Delete Reservations
+  + User Reservation History and Analysis View
+  + Reservation Color per User in Calendar View
+
+## 1.2.0 Atlas
+
 + Notify Cluster up/down via UI Message and Email
 + Run only on Active Reservations
 + Define Home Page in Settings
@@ -41,20 +47,29 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Integrate kuber.sh into Kuber binary [seed, join, scale, pause, hibernate, delete]
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber 
 + Automatically clone the repo you give on the notebook with --repo...)
++ Snippets
+ + Create
+ + Search
+ + Reuse
++ KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
 
-## 1.2.0 Atlas
+## 2.0.0 Terminator
 
 + Dataset View
 + Dataset Wrangle
 + Workspace View
-+ Notes Permissions View
++ Fine Grained Permissions View
 + Golang check for SSL on HTTP request
++ Chat Room with Connected Users
 + Ensure HDFS Locality
 + Better manage the spitfire shared secret
 + Publish to User Timeline
 + Publish, Search and Load Book in Library
 + Ensure cloud resource are fully cleaned on deletion
 + Sudio local Docker connecting to Remote Cluster
+
+## 2.1.0 Sylvidra
+
 + Resource Reservation per User + Reports
 + Solr Application
 + HBase Application
@@ -74,7 +89,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
  						Values: []*string{S(fmt.Sprintf("%s.master", immutable.Name))},
 ```
 
-## 2.0.0 Terminator
+## 2.3.0
 
 + IPFS Application
 + Etcd Application
@@ -83,42 +98,35 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Workspace Functions
 + Join AWS VPC
 + Join Local Nodes
-
-## 2.1.0 Sylvidra
-
 + Github Auth
 + Support Jupyter ipywidgets
-+ Support R htmlwidgets
-+ Support React.js application packages
-+ SSH from Plane to Pods
-+ Reservatio no-show-up + terminate-on-no-activity
-
-## 2.3.0
-
-+ Datalayer.ai Widgets
-+ Notes as a REST
 
 ## 2.4.0
 
++ Support R htmlwidgets
++ Support React.js application packages
++ SSH from Plane to Pods
+
+## 2.5.0
+
++ Reservatioms no-show-up + Terminate on no-activity
++ Datalayer.ai Widgets
++ Notes as a REST
 + Integrate Airflow
 + Visual Scheduler
 + HDFS Locality
 
-## 2.5.0
+## 2.6.0
 
 + Publish to Twitter
 + Publish to OneNote
 + Follow User
 + User Timeline
-+ Microsoft Auth
-
-## 2.6.0
-
-+ Tensorflow Application
-+ Kerberos HDFS
 
 ## 2.7.0
 
++ Tensorflow Application
++ Kerberos HDFS
 + Notes PR with Diff
 + Kuber UI Secrets
 
