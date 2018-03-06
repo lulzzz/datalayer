@@ -8,16 +8,20 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 ## 1.0.0 Alexandria
 
-+ Scratchpad Sidebar: Editor + Variables List + Number of Spark Executors
++ Indicators Status
++ Scratchpad Sidebar
++ Comment Sidebar on Note
 + Microsoft Auth: Contacts + Screenshot to OneNote
 + Rename ws* to spitfire*
-+ Commit Notebook
-+ Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
++ New Paragraph via Mouse-click (class=new-paragraph)
 + Per-User Interpreter Settings
++ Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
 
 ## 1.1.0 Mystic
 
++ Notify when Permission is assigned
 + HDFS State
++ Chat Room with Connected Users
 + Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
 + HDFS Pods View and Volumes View
 + Horizontal + Vertical Layout Toggle for Note Editor
@@ -25,10 +29,9 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Do not Change Past Reservations
 + Delete Reservations
 + User Reservation History and Analysis View
-+ Budget View
-+ Reconnecting WebSocket
-+ Create, Search and Reuse Snippets
 + Reservation Color per User in Calendar View
++ Budget View
++ Create, Search and Reuse Snippets
 + KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
 + Notify Cluster up/down via UI Message and Email
 + Run only on Active Reservations
