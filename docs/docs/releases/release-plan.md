@@ -6,27 +6,19 @@ Here is our `Release Plan` which may evolve at any time (no commitment.
 
 You can track the progress on our [Twitter account](https://twitter.com/datalayerio) or on the [Github issue page](https://github.com/datalayer/datalayer/issues)).
 
-## 1.0.0 Alexandria
-
-+ Rename ws* to spitfire*
-+ Reservation Status
-+ Topology Status
-+ HDFS Status
-  + HDFS Pods View
-  + Volumes View
-+ Spark Status
-+ Scratchpad Sidebar
-+ New Paragraph via Mouse-click (class=new-paragraph)
-+ Per-User Interpreter Settings
-+ Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
-
-## 1.1.0 Mystic
+## 1.1.0 Alexandria
 
 + Microsoft Auth
  + Contacts
  + Screenshot to OneNote
 + Notify when Permission is assigned
 + Budget View
++ New Paragraph via Mouse-click (class=new-paragraph)
++ Per-User Interpreter Settings
++ Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
+
+## 1.2.0 Mystic
+
 + Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
 + Horizontal + Vertical Layout Toggle for Note Editor
 + Scrollable Paragraph List on Note Editor
@@ -37,11 +29,10 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
   + User Reservation History and Analysis View
   + Reservation Color per User in Calendar View
 
-## 1.2.0 Atlas
+## 1.3.0 Atlas
 
 + Notify Cluster up/down via UI Message and Email
 + Run only on Active Reservations
-+ Define Home Page in Settings
 + README View
 + RELEASE_NOTES View
 + Integrate kuber.sh into Kuber binary [seed, join, scale, pause, hibernate, delete]
@@ -51,7 +42,6 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
  + Create
  + Search
  + Reuse
-+ KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
 
 ## 2.0.0 Terminator
 
@@ -66,14 +56,15 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Publish to User Timeline
 + Publish, Search and Load Book in Library
 + Ensure cloud resource are fully cleaned on deletion
-+ Sudio local Docker connecting to Remote Cluster
++ Local Docker connecting to Remote Cluster
 
 ## 2.1.0 Sylvidra
 
 + Resource Reservation per User + Reports
-+ Solr Application
-+ HBase Application
 + Library
+ + Solr Application
+ + HBase Application
++ Define Home Page in Settings
 + datalayer-contrib kubicorn branch (for AWS EIP address)
 ```
 vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfiguration.go 			
@@ -105,7 +96,8 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 
 + Support R htmlwidgets
 + Support React.js application packages
-+ SSH from Plane to Pods
++ SSH from UI to Pods
++ KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
 
 ## 2.5.0
 
