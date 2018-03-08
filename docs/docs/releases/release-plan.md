@@ -22,7 +22,6 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
 + Horizontal + Vertical Layout Toggle for Note Editor
 + Scrollable Paragraph List on Note Editor
-+ Comment Sidebar on Note
 + Reservations
   + Do not Change Past Reservations
   + Delete Reservations
@@ -32,16 +31,13 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 ## 1.3.0 Atlas
 
 + Notify Cluster up/down via UI Message and Email
-+ Run only on Active Reservations
-+ README View
-+ RELEASE_NOTES View
++ Run only on Active Reservations for connected User
++ Current Connected Users View
++ Current Jobs View
++ Comment on Note View
 + Integrate kuber.sh into Kuber binary [seed, join, scale, pause, hibernate, delete]
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber 
 + Automatically clone the repo you give on the notebook with --repo...)
-+ Snippets
- + Create
- + Search
- + Reuse
 
 ## 2.0.0 Terminator
 
@@ -52,14 +48,17 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Golang check for SSL on HTTP request
 + Chat Room with Connected Users
 + Ensure HDFS Locality
-+ Better manage the spitfire shared secret
 + Publish to User Timeline
-+ Publish, Search and Load Book in Library
 + Ensure cloud resource are fully cleaned on deletion
 + Local Docker connecting to Remote Cluster
 
 ## 2.1.0 Sylvidra
 
++ Publish, Search and Load Book in Library
++ Snippets
+ + Create
+ + Search
+ + Reuse
 + Resource Reservation per User + Reports
 + Library
  + Solr Application
@@ -86,10 +85,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Etcd Application
 + Import / Export Notes and Notebooks (Zeppelin + Jupyter formats)
 + Enable SSL on Load Balancers
-+ Workspace Functions
-+ Join AWS VPC
-+ Join Local Nodes
-+ Github Auth
++ Support Azure
 + Support Jupyter ipywidgets
 
 ## 2.4.0
@@ -98,6 +94,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Support React.js application packages
 + SSH from UI to Pods
 + KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
++ Better manage the spitfire shared secret
 
 ## 2.5.0
 
@@ -107,6 +104,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Integrate Airflow
 + Visual Scheduler
 + HDFS Locality
++ Instance Type View
 
 ## 2.6.0
 
@@ -114,6 +112,8 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Publish to OneNote
 + Follow User
 + User Timeline
++ README View
++ RELEASE_NOTES View
 
 ## 2.7.0
 
@@ -130,7 +130,10 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 ## 3.1.0
 
 + Reuse K8S IAM and RBAC
-+ JWT Security
++ Workspace Functions
++ Join AWS VPC
++ Join Local Nodes
++ Github Auth
 
 ## 3.2.0
 
@@ -145,13 +148,16 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Multi Notebooks
 + Multi Datasets
 + Multiple HDFS with cluster-id
-+ Support Azure
 
 ## 5.0.0
 
 + Apps Market
++ JWT Security
 + Test lower case viper.BindPFlag("microsoftredirect", serverCmd.PersistentFlags().Lookup("microsoft-redirect"))? 
 + Reuse as much as possible of k8s-dashboard source code
+
+## 6.0.0
+
 + Benchmark Performance
 + Revisit this.xxx = window['xxx']
 + Support IPython Kernels
