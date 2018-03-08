@@ -34,6 +34,7 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Run only on Active Reservations for connected User
 + Current Connected Users View
 + Current Jobs View
++ Support Azure
 + Comment on Note View
 + Integrate kuber.sh into Kuber binary [seed, join, scale, pause, hibernate, delete]
 + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber 
@@ -49,21 +50,18 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Chat Room with Connected Users
 + Ensure HDFS Locality
 + Publish to User Timeline
-+ Ensure cloud resource are fully cleaned on deletion
++ Ensure cloud resource are fully cleaned on Deletion
 + Local Docker connecting to Remote Cluster
 
 ## 2.1.0 Sylvidra
 
++ Platform Activity View
 + Publish, Search and Load Book in Library
 + Snippets
  + Create
  + Search
  + Reuse
 + Resource Reservation per User + Reports
-+ Library
- + Solr Application
- + HBase Application
-+ Define Home Page in Settings
 + datalayer-contrib kubicorn branch (for AWS EIP address)
 ```
 vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfiguration.go 			
@@ -79,51 +77,54 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
  						Values: []*string{S(fmt.Sprintf("%s.master", immutable.Name))},
 ```
 
-## 2.3.0
+## 2.3.0 Eliminator
 
++ Library
+ + Solr Application
+ + HBase Application
++ Define Home Page in Settings
 + IPFS Application
 + Etcd Application
-+ Import / Export Notes and Notebooks (Zeppelin + Jupyter formats)
-+ Enable SSL on Load Balancers
-+ Support Azure
-+ Support Jupyter ipywidgets
 
 ## 2.4.0
 
++ Import / Export Notes and Notebooks (Zeppelin + Jupyter formats)
++ Enable SSL on Load Balancers
++ Support Jupyter ipywidgets
 + Support R htmlwidgets
 + Support React.js application packages
 + SSH from UI to Pods
-+ KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
-+ Better manage the spitfire shared secret
 
 ## 2.5.0
 
++ KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
++ Better manage the spitfire shared secret
 + Reservatioms no-show-up + Terminate on no-activity
 + Datalayer.ai Widgets
 + Notes as a REST
 + Integrate Airflow
-+ Visual Scheduler
-+ HDFS Locality
-+ Instance Type View
 
 ## 2.6.0
 
++ Visual Scheduler
++ HDFS Locality
++ Instance Type View
 + Publish to Twitter
 + Publish to OneNote
 + Follow User
-+ User Timeline
-+ README View
-+ RELEASE_NOTES View
 
 ## 2.7.0
 
++ User Timeline
++ README View
++ RELEASE_NOTES View
 + Tensorflow Application
-+ Kerberos HDFS
-+ Notes PR with Diff
-+ Kuber UI Secrets
 
 ## 3.0.0
 
++ Kerberos HDFS
++ Notes PR with Diff
++ Kuber UI Secrets
 + Notes Authorization
 + HDFS Treemap View
 
@@ -139,11 +140,11 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 
 + Cost Compensation
 + Notes Metrics (Resource Usage, Time)
++ Master HA
++ Multi K8S Cluster
 
 ## 4.0.0
 
-+ Master HA
-+ Multi K8S Cluster
 + Multi Clusters
 + Multi Notebooks
 + Multi Datasets

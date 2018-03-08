@@ -6,6 +6,8 @@ redirect_from:
 
 You want to retrieve all the configuration and dataset you have created before pausing the cluster to avoid costs. Kuber offers this powerfull feature called `Resource Control`.
 
+You can spare until 75% of your cloud costs with a correct allocation of resources. Contact us to know more.
+
 ![Scale Workers](/images/datalayer/scale-workers.png "Scale Workers")
 
 First of all, you are free to use AWS normal instances or cheaper Spot requests instances. Once you decide to pause, simply set the number of workers to 0 (via the AWS management console or via Kuber UI). You can even stop the master and start it again when you need it as Kuber has assigned a fixed IP address from the available EIP (Elastic IP) pool.
