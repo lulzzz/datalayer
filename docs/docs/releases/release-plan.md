@@ -42,8 +42,8 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 ## 2.0.0 Terminator
 
++ Platform Activity View
 + Dataset View
-+ Dataset Wrangle
 + Workspace View
 + Fine Grained Permissions View
 + Golang check for SSL on HTTP request
@@ -55,7 +55,6 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 ## 2.1.0 Sylvidra
 
-+ Platform Activity View
 + Publish, Search and Load Book in Library
 + Snippets
  + Create
@@ -103,6 +102,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Datalayer.ai Widgets
 + Notes as a REST
 + Integrate Airflow
++ Dataset Wrangle View
 
 ## 2.6.0
 
