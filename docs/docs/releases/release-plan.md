@@ -15,8 +15,8 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Voyager2 Vizualisation
 + Dataset View
 + Spark Cold Start
- + Interpreter Start Timeout
- + First Run after Node Restart
+  + Interpreter Start Timeout
+  + First Run after Node Restart
 
 ## 1.2.0 Mystic
 
