@@ -8,13 +8,11 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 ## 1.1.0 Alexandria
 
-+ Microsoft Auth
- + Contacts
- + Screenshot to OneNote
-+ Notify when Permission is assigned
-+ Budget View
 + New Paragraph via Mouse-click (class=new-paragraph)
-+ Per-User Interpreter Settings
++ Vegas Vizualisation
++ Bokeh Vizualisation
++ Altair Vizualisation
++ Voyager2 Vizualisation
 + Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
 
 ## 1.2.0 Mystic
@@ -22,39 +20,44 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Allow to Scale Up/Down Cluster Size to a certain extent based on Configuration and License Limits
 + Horizontal + Vertical Layout Toggle for Note Editor
 + Scrollable Paragraph List on Note Editor
++ Chat Room with Connected Users
++ Comment on Note View
++ Activity View
+
+## 1.3.0 Atlas
+
++ Notify Cluster up/down via Toastr
++ Current Connected Users View
++ Current Jobs View
++ Support Azure
++ Enhance Microsoft Auth
+ + Contacts
+ + Screenshot to OneNote
++ Notify when Permission is assigned
++ Budget View
 + Reservations
   + Do not Change Past Reservations
   + Delete Reservations
   + User Reservation History and Analysis View
   + Reservation Color per User in Calendar View
-
-## 1.3.0 Atlas
-
-+ Notify Cluster up/down via UI Message and Email
-+ Run only on Active Reservations for connected User
-+ Current Connected Users View
-+ Current Jobs View
-+ Support Azure
-+ Comment on Note View
-+ Integrate kuber.sh into Kuber binary [seed, join, scale, pause, hibernate, delete]
-+ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber 
-+ Automatically clone the repo you give on the notebook with --repo...)
+  + Run only on Active Reservations for connected User
 
 ## 2.0.0 Terminator
 
-+ Platform Activity View
++ Integrate kuber.sh into Kuber binary [seed, join, scale, pause, hibernate, delete]
++ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber 
++ Automatically clone the repo you give on the notebook with --repo...)
 + Dataset View
 + Workspace View
 + Fine Grained Permissions View
 + Golang check for SSL on HTTP request
-+ Chat Room with Connected Users
+
+## 2.1.0 Sylvidra
+
 + Ensure HDFS Locality
 + Publish to User Timeline
 + Ensure cloud resource are fully cleaned on Deletion
 + Local Docker connecting to Remote Cluster
-
-## 2.1.0 Sylvidra
-
 + Publish, Search and Load Book in Library
 + Snippets
  + Create
@@ -82,8 +85,8 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
  + Solr Application
  + HBase Application
 + Define Home Page in Settings
-+ IPFS Application
-+ Etcd Application
++ Publish to Twitter
++ Publish to OneNote
 
 ## 2.4.0
 
@@ -102,15 +105,14 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Datalayer.ai Widgets
 + Notes as a REST
 + Integrate Airflow
-+ Dataset Wrangle View
 
 ## 2.6.0
 
 + Visual Scheduler
++ IPFS Application
++ Etcd Application
 + HDFS Locality
 + Instance Type View
-+ Publish to Twitter
-+ Publish to OneNote
 + Follow User
 
 ## 2.7.0
