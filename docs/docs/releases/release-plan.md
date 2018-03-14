@@ -34,8 +34,8 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Current Jobs View
 + Support Azure
 + Enhance Microsoft Auth
- + Contacts
- + Screenshot to OneNote
+  + Contacts
+  + Screenshot to OneNote
 
 + Notify when Permission is assigned
 + Reservations
