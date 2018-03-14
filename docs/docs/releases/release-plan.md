@@ -13,7 +13,10 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Bokeh Vizualisation
 + Altair Vizualisation
 + Voyager2 Vizualisation
-+ Spark Cold Start: Interpreter Start Timeout + First Run after Node Restart
++ Dataset View
++ Spark Cold Start
+ + Interpreter Start Timeout
+ + First Run after Node Restart
 
 ## 1.2.0 Mystic
 
@@ -33,8 +36,8 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Enhance Microsoft Auth
  + Contacts
  + Screenshot to OneNote
+
 + Notify when Permission is assigned
-+ Budget View
 + Reservations
   + Do not Change Past Reservations
   + Delete Reservations
@@ -44,13 +47,13 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 
 ## 2.0.0 Terminator
 
-+ Integrate kuber.sh into Kuber binary [seed, join, scale, pause, hibernate, delete]
-+ kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps hdfs,spark,spitfire,kuber-ui (parameter description http://docs.datalayer.io/docs/kuber 
-+ Automatically clone the repo you give on the notebook with --repo...)
-+ Dataset View
++ Automatically Clone the Notebook Repository given as paraemeter --repo...)
 + Workspace View
++ Budget View
 + Fine Grained Permissions View
 + Golang check for SSL on HTTP request
++ Integrate `kuber.sh` into Kuber binary with Commands (seed, join, scale, pause, hibernate, delete)
+  + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps [hdfs,spark,spitfire,explorer] (parameter description http://docs.datalayer.io/docs/kuber)
 
 ## 2.1.0 Sylvidra
 
@@ -59,10 +62,11 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Ensure cloud resource are fully cleaned on Deletion
 + Local Docker connecting to Remote Cluster
 + Publish, Search and Load Book in Library
-+ Snippets
+  + Snippets
   + Create
   + Search
   + Reuse
+
 + Resource Reservation per User + Reports
 + datalayer-contrib kubicorn branch (for AWS EIP address)
 ```
@@ -84,6 +88,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 + Library
   + Solr Application
   + HBase Application
+
 + Define Home Page in Settings
 + Publish to Twitter
 + Publish to OneNote
@@ -91,33 +96,35 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 ## 2.4.0
 
 + Import / Export Notes and Notebooks (Zeppelin + Jupyter formats)
-+ Enable SSL on Load Balancers
++ Suport Jupyterlab Widgets
 + Support Jupyter ipywidgets
++ Support IPython Kernels
 + Support R htmlwidgets
++ Support R (RStudio, Shiny and Sparklyr) Application
 + Support React.js application packages
 + SSH from UI to Pods
 
 ## 2.5.0
 
-+ KuberDog on micro instance or Docker to create, manage and monitor (sleep/wakeup) the Cluster
-+ Better manage the spitfire shared secret
++ KuberDog on micro-instance or Docker to Create, Manage and Monitor (Sleep/Wakeup) the Cluster
++ Better Manage the Spitfire shared Secret
 + Reservatioms no-show-up + Terminate on no-activity
 + Datalayer.ai Widgets
 + Notes as a REST
-+ Integrate Airflow
 
 ## 2.6.0
 
-+ Visual Scheduler
++ Integrate Airflow
++ Scheduler View
 + IPFS Application
 + Etcd Application
 + HDFS Locality
 + Instance Type View
-+ Follow User
 
 ## 2.7.0
 
 + User Timeline
++ Follow User
 + README View
 + RELEASE_NOTES View
 + Tensorflow Application
@@ -125,9 +132,9 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 ## 3.0.0
 
 + Kerberos HDFS
-+ Notes PR with Diff
++ Note Pull Request View
 + Kuber UI Secrets
-+ Notes Authorization
++ Finer Grained Notes Permissions
 + HDFS Treemap View
 
 ## 3.1.0
@@ -163,6 +170,3 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 
 + Benchmark Performance
 + Revisit `this.xxx = window['xxx']`
-+ Support IPython Kernels
-+ Jupyter Application
-+ R (RStudio, Shiny and Sparklyr) Application
