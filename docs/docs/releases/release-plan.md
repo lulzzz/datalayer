@@ -60,9 +60,9 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Local Docker connecting to Remote Cluster
 + Publish, Search and Load Book in Library
 + Snippets
- + Create
- + Search
- + Reuse
+  + Create
+  + Search
+  + Reuse
 + Resource Reservation per User + Reports
 + datalayer-contrib kubicorn branch (for AWS EIP address)
 ```
@@ -82,8 +82,8 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 ## 2.3.0 Eliminator
 
 + Library
- + Solr Application
- + HBase Application
+  + Solr Application
+  + HBase Application
 + Define Home Page in Settings
 + Publish to Twitter
 + Publish to OneNote
@@ -162,7 +162,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 ## 6.0.0
 
 + Benchmark Performance
-+ Revisit this.xxx = window['xxx']
++ Revisit `this.xxx = window['xxx']`
 + Support IPython Kernels
 + Jupyter Application
 + R (RStudio, Shiny and Sparklyr) Application
