@@ -27,6 +27,6 @@ yarn.lock
 docs/_site
 docs/Gemfile.lock
 
-contrib
+repos
+packages
 
-docs/__wip
