@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+
+<html class="full" lang="en">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <title>Datalayer - Data Science Platform - Simple. Collaborative. Multi Cloud. Big Data Science.</title>
+  <meta name="description" content="Enterprise Data Science Platform" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="res/bootstrap.css?v=2" />
+  <link rel="stylesheet" href="res/animate.css?v=2" />
+  <link rel="stylesheet" href="res/ionicons.css?v=2" />
+  <link rel="stylesheet" href="res/styles.css?v=2" />
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+  <style>
+      a {
+#        text-decoration: underline;
+      }
+      .header-content {
+        color: white !important;
+      }
+      .carousel-control-prev {
+        z-index: 99;
+      }
+      .carousel-control-next {
+        z-index: 99;
+      }
+      .full {
+        background: rgba(0, 0, 0, 0) url("img/bck/graph.png") no-repeat fixed center center / cover !important;
+      }
+      .bg-faded {
+         background-color: transparent !transparent;
+      }
+      #partners blockquote {
+        font-family: Georgia, serif;
+        font-size: 20px;
+        position: relative;
+        margin: 0.5em;
+        padding: 0.5em 2em 0.5em 3em;
+      }
+      #partners blockquote:before {
+        font-family: Georgia, serif;
+        position: absolute;
+        font-size: 6em;
+        line-height: 1;
+        top: 0;
+        left: 0;
+        content: "\201C";
+      }
+      #partners blockquote:after {
+        font-family: Georgia, serif;
+        position: absolute;
+        /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+        float:right;
+        font-size:6em;
+        line-height: 1;
+        right:0;
+        bottom:-0.5em;
+        content: "\201D";
+      }
+      #partners blockquote footer {
+        padding: 0 2em 0 0;
+        text-align:right;
+      }
+      #partners blockquote cite:before {
+        content: "\2013";
+      }
+      #partners blockquote footer {
+        background-color: white;
+      }
+      .card-footer {
+        background-color: #f7f7f9;
+      }
+      .nav-item a:hover {
+        color: #1abc9c !important;
+      }
+      .carousel-item {
+        height: 100vh;
+        width: 100vw;
+      }
+      .carousel-item.active {
+        height: 100vh;
+        width: 100vw;
+      }
+      .carousel-item.active img {
+        height: 100vh;
+        width: 100vw;
+      }
+      .transparent-bg {
+        padding: 4px 0px;
+        display: inline;
+        position: relative;
+        left: 10px;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 0 0 rgba(0, 0, 0, 0.5), -10px 0 0 rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 10px 0 0 rgba(0, 0, 0, 0.5), -10px 0 0 rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 10px 0 0 rgba(0, 0, 0, 0.5), -10px 0 0 rgba(0, 0, 0, 0.5);
+        -o-box-shadow: 10px 0 0 rgba(0, 0, 0, 0.5), -10px 0 0 rgba(0, 0, 0, 0.5);
+        line-height: 45px;
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+      }
+  </style>
+
+</head>
+
+<body class="bg-faded" style="">
+
+<header id="first">
+  <div class="header-content">
+    <div class="inner">
+
+      <h3 class="wow fadeIn text-normal" style="font-size: 64px;">Data Science Platform for the Enterprise</h3>
+      <br/>
+      <h2 class="wow fadeIn text-normal" style="visibility: visible; animation-name: fadeIn;">Simple. Collaborative. Multi Cloud. Big Data Science.</h2>
+      <br/>
+<!--
+
+
+      <h2 class="wow fadeIn text-normal" style="visibility: visible; animation-name: fadeIn;">Data Scientists collaborate and share to build visual data products</h2>
+      <br/>
+      <h2 class="wow fadeIn text-normal" style="visibility: visible; animation-name: fadeIn;">Devops scale, secure and reduce costs</h2>
+      <br/>
+      <h3 class="wow fadeIn text-normal" style="font-size: 64px;">Enterprise Data Science Platform for Data Storytelling</h3>
+      <br/>
+      <h1>A ready-made collaborative platform for Data Scientists to Build Visual Data Products</h1>
+      <br/>
+      <h2 class="wow fadeIn text-normal transparent-bg" style="visibility: visible; animation-name: fadeIn;">Share your data stories with Spark, Python and R at scale</h2>
+      <br/>
+      <h4 class="wow fadeIn text-normal transparent-bg" style="visibility: visible; animation-name: fadeIn;">Datalayer is the Big Data distribution on Kubernetes</h4>
+      <br/>
+      <h2 class="wow fadeIn text-normal" style="visibility: visible; animation-name: fadeIn;">Model Data, Collaborate and Share Results with your Stakeholders</h2>
+      <br/>
+      <h4 class="wow fadeIn text-normal" style="visibility: visible; animation-name: fadeIn;">A ready-made AI Solution to Deploy at Scale with Spark, Python and R</h4>
+-->
+      <hr>
+      <a href="/" class="btn btn-success btn-xl page-scroll wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; color: white;">Get Started</a>
+<!--
+      <a href="#platform" class="btn btn-outline-success btn-xl page-scroll wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; color: white;">Get Started</a>
+      <a href="#videoModal" data-toggle="modal" class="btn btn-outline-info btn-xl page-scroll wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; color: white;">Demo</a>
+      <a href="#contactModal" data-toggle="modal" class="btn btn-outline-secondary btn-xl page-scroll wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; color: white;">Contact us</a>
+-->
+    </div>
+  </div>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="3"></li>
+      <li data-target="#carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img class="d-block img-fluid mx-auto" src="img/bck/svg/2.png">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Visual</h3>
+          <p>Share stories with Spark, Python and R and build awesome Data Products</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid mx-auto" src="img/bck/building/9.png">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Personal Cloud</h3>
+          <p>Personal Cloud, an easy and hybrid solution to analyse datasets built on the Linux, Docker, Kubernetes stack</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid mx-auto" src="img/bck/building/8.jpg">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Scalable</h3>
+          <p>Designed for Business Critical Projects</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid mx-auto" src="img/bck/building/5.jpg">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Secured</h3>
+          <p>Designed for Business Critical Projects</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid mx-auto" src="img/bck/building/4.jpg">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Ready-made</h3>
+          <p>Strong Foundations and Flexible Deliverables</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</header>
+
+<nav id="topNav" class="navbar navbar-toggleable-sm fixed-top">
+  <div class="container">
+    <button class="navbar-toggler hidden-md-up float-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      ☰
+    </button>
+    <a class="navbar-brand page-scroll" href="#first">
+      <img src="img/logo-datalayer-horizontal-white.png" alt="Datalayer" height="20" id="datalayer-logo">
+    </a>
+    <div class="collapse navbar-collapse" id="collapsingNavbar">
+      <ul class="navbar-nav">
+<!--
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#cases">Cases</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#clients">Clients</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#partners">Partners</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#value">Value</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#whitepaper">White Paper</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#getit">Get it!</a>
+        </li>
+-->
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="/">Community</a>
+        </li>
+<!--
+        <li class="nav-item">
+            <a class="nav-link page-scroll" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link page-scroll" data-toggle="modal" title="About" href="#aboutModal">About</a>
+        </li>
+-->
+      </ul>
+    </div>
+  </div>
+</nav>
+  <aside class="" id="features">
+      <div class="container text-center">
+          <h2 class="text-primary text-center">Advantages</h2>
+          <hr class="accent">
+          <br/>
+          <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="col-md-3 col-sm-6 col-12 text-center">
+                <h3>Simple</h3>
+                <i class="icon-lg ion-ios-heart-outline wow pulse" style="visibility: visible; animation-name: pulse; color: black;"></i>
+                <p class="text-primary">Easily write and share your data stories</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <h3>Collaborative</h3>
+                <i class="icon-lg ion-ios-chatboxes-outline wow pulse" style="visibility: visible; animation-name: pulse; color: black;"></i>
+                <p class="text-primary">Boost your teams with Collaborative Data Storytelling</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 text-center">
+                <h3>Multi Cloud</h3>
+                <i class="icon-lg ion-ios-speedometer-outline wow pulse" style="visibility: visible; animation-name: pulse; color: black;"></i>
+                <p class="text-primary">Control and lower your costs</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 text-center">
+                <h3>For Data Scientists</h3>
+                <i class="icon-lg ion-ios-lightbulb-outline wow pulse" style="visibility: visible; animation-name: pulse; color: black;"></i>
+                <p class="text-primary">Big Data with Spark, Python and R at scale</p>
+            </div>
+          </div>
+<!--
+      <div class="container text-center">
+          <h2 class="text-primary text-center">Featured</h2>
+          <hr class="accent">
+          <br/>
+          <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+              <div class="col-md-3 col-sm-6 col-12">
+                  <a href="http://codify.ai"><h3>codify.ai</h3></a>
+                  <p class="text-primary">Reveal the Data Scientist in you</p>
+                  <a href="http://codify.ai"><i class="icon-lg ion-ios-game-controller-b-outline wow pulse" style="visibility: visible; animation-name: pulse; color: black;"></i></a>
+                  <p class="text-primary">Learn Algorithms, Demonstrate and Compete with Peers</p>
+              </div>
+              <div class="col-md-3 col-sm-6 col-12 text-center">
+                  <a href="http://datagraph.ai"><h3>datagraph.ai</h3></a>
+                  <p class="text-primary">Graph Analytics Playground</p>
+                  <a href="http://datagraph.ai"><i class="icon-lg ion-ios-location-outline wow pulse" style="visibility: visible; animation-name: pulse; color: black;"></i></a>
+                  <p class="text-primary">Awesome Graph Analytics with Visualizations
+                  </p>
+              </div>
+              <div class="col-md-3 col-sm-6 col-12 text-center">
+                  <a href="http://datastory.ai"><h3>datastory.ai</h3></a>
+                  <p class="text-primary">Tell a Story with Data</p>
+                  <a href="http://datastory.ai"><i class="icon-lg ion-ios-pulse wow pulse" style="visibility: visible; animation-name: pulse; color: black;"></i></a>
+                  <p class="text-primary">Pure Story Telling for Data-Journalism</p>
+              </div>
+              <div class="col-md-3 col-sm-6 col-12 text-center">
+                  <a href="http://ubi.ai"><h3>ubi.ai</h3></a>
+                  <p class="text-primary">Monetize your Data Science</p>
+                  <a href="http://ubi.ai"><i class="icon-lg ion-ios-speedometer-outline wow pulse" style="visibility: visible; animation-name: pulse; color: black;"></i></a>
+                  <p class="text-primary">Open Market for Algorithms, Models, Datasets and Visualizations</p>
+                  <h2 class="text-primary"></h2>
+              </div>
+          </div>
+          <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+              <div class="col-md-3 col-sm-6 col-12">
+                  <div class="card text-left text-normal">
+                      <div class="card-header">
+                          This is a card header
+                      </div>
+                      <img class="card-img-top img-fluid" src="/res/sample13.jpg" alt="Card image cap">
+                      <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <ul class="list-unstyled">
+                              <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                              <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                          </ul>
+                          <h6>Migration tips</h6>
+                          <ul class="list-unstyled">
+                              <li><code>pull-right</code> = <code>float-right</code></li>
+                              <li><code>img-responsive</code> = <code>img-fluid</code></li>
+                              <li><code>list-inline &gt; li</code> = <code>list-inline-item</code></li>
+                          </ul>
+                          <i class="icon-large ion-ios-pricetags-outline"> </i>tag-1<br/>
+                          <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                          <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a><br/>
+                      </div>
+                      <div class="card-footer">
+                          <div class="row text-muted">
+                          </div>
+                          <div class="row text-muted">
+                              <div class="col-md-6"><small>@foo</small></div>
+                              <div class="col-md-6 text-right"><small>20 <i class="icon-large ion-ios-heart-outline"></i></small></div>
+                          </div>
+                          <div class="row text-muted">
+                              <div class="col-md-6"><small>3 mins ago</small></div>
+                              <div class="col-md-6 text-right"><small>3 <i class="icon-large ion-ios-star-outline"></i></small></div>
+                          </div>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card text-left text-normal">
+                      <div class="card-header">
+                          This is a card header
+                      </div>
+                      <img class="card-img-top img-fluid" src="/res/sample5.jpg">
+                      <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Cras justo odio</li>
+                              <li class="list-group-item">Dapibus ac facilisis in</li>
+                              <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
+                      </div>
+                      <div class="card-block">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                      </div>
+                      <div class="card-block">
+                          <a href="#" class="btn btn-primary">Button</a>
+                      </div>
+                      <div class="card-footer text-muted">
+                          This is a card footer
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card text-normal">
+                      <div class="card-block">
+                          <ul class="list-unstyled">
+                              <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                              <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                              <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                              <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li>
+                          </ul>
+                          <h6>Migration tips</h6>
+                          <ul class="list-unstyled">
+                              <li><code>pull-right</code> = <code>float-right</code></li>
+                              <li><code>img-responsive</code> = <code>img-fluid</code></li>
+                              <li><code>list-inline &gt; li</code> = <code>list-inline-item</code></li>
+                          </ul>
+                          <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                          <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                      </div>
+                  </div>
+                  <br/>
+            <div class="card-deck-wrapper">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top img-responsive" src="/res/sample13.jpg">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-responsive" src="/res/sample13.jpg">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-responsive" src="/res/sample13.jpg">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+              <div class="col-md-3 col-sm-6 col-12 text-center">
+                  <div class="card text-normal">
+                      <div class="card-block">
+                          <ul class="list-unstyled">
+                              <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                              <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                              <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                              <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li>
+                          </ul>
+                          <h6>Migration tips</h6>
+                          <ul class="list-unstyled">
+                              <li><code>pull-right</code> = <code>float-right</code></li>
+                              <li><code>carousel-inner &gt; item</code> = <code>carousel-item</code></li>
+                              <li><code>table-condensed</code> = <code>table-sm</code></li>
+                              <li><code>center-block</code> = <code>mx-auto</code></li>
+                          </ul>
+                          <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                          <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card text-normal">
+                      <div class="card-block">
+                          <ul class="list-unstyled">
+                              <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                              <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                              <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                              <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li>
+                          </ul>
+                          <h6>Migration tips</h6>
+                          <ul class="list-unstyled">
+                              <li><code>pull-right</code> = <code>float-right</code></li>
+                              <li><code>img-responsive</code> = <code>img-fluid</code></li>
+                              <li><code>list-inline &gt; li</code> = <code>list-inline-item</code></li>
+                          </ul>
+                          <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                          <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card card-inverse card-success text-center">
+                      <div class="card-block">
+                          <blockquote class="card-blockquote">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer>Someone famous in
+                                  <cite title="Source Title">Source Title</cite>
+                              </footer>
+                          </blockquote>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card card-inverse card-info text-center">
+                      <div class="card-block">
+                          <blockquote class="card-blockquote">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer>Someone famous in
+                                  <cite title="Source Title">Source Title</cite>
+                              </footer>
+                          </blockquote>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card card-inverse card-warning text-center">
+                      <div class="card-block">
+                          <blockquote class="card-blockquote">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer>Someone famous in
+                                  <cite title="Source Title">Source Title</cite>
+                              </footer>
+                          </blockquote>
+                      </div>
+                  </div>
+                  <br/>
+              </div>
+              <div class="col-md-3 col-sm-6 col-12 text-center">
+                  <div class="card text-normal">
+                      <div class="card-block">
+                          <ul class="list-unstyled">
+                              <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                              <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                          </ul>
+                          <h6>Migration tips</h6>
+                          <ul class="list-unstyled">
+                              <li><code>pull-right</code> = <code>float-right</code></li>
+                              <li><code>img-responsive</code> = <code>img-fluid</code></li>
+                              <li><code>table-condensed</code> = <code>table-sm</code></li>
+                              <li><code>center-block</code> = <code>mx-auto</code></li>
+                          </ul>
+                          <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                          <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card text-normal">
+                      <div class="card-block">
+                          <ul class="list-unstyled">
+                              <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                              <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                              <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                              <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li>
+                          </ul>
+                          <h6>Migration tips</h6>
+                          <ul class="list-unstyled">
+                              <li><code>pull-right</code> = <code>float-right</code></li>
+                              <li><code>img-responsive</code> = <code>img-fluid</code></li>
+                              <li><code>list-inline &gt; li</code> = <code>list-inline-item</code></li>
+                          </ul>
+                          <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                          <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card">
+                      <img class="card-img-top img-fluid" src="/res/sample9.jpg">
+                      <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card">
+                      <img class="card-img-top img-fluid" src="/res/sample7.jpg">
+                      <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card">
+                      <img class="card-img-top img-fluid" src="/res/sample3.jpg">
+                      <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                  </div>
+                  <br/>
+              </div>
+              <div class="col-md-3 col-sm-6 col-12 text-center">
+                  <div class="card text-normal">
+                      <div class="card-block">
+                          <ul class="list-unstyled">
+                              <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                              <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                              <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                              <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li>
+                          </ul>
+                          <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                          <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card text-normal">
+                      <div class="card-block">
+                          <ul class="list-unstyled">
+                              <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                              <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                              <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                          </ul>
+                          <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                          <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card card-inverse card-primary text-center">
+                      <div class="card-block">
+                          <blockquote class="card-blockquote">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer>Someone famous in
+                                  <cite title="Source Title">Source Title</cite>
+                              </footer>
+                          </blockquote>
+                      </div>
+                  </div>
+                  <br/>
+                  <div class="card card-inverse card-danger text-center">
+                      <div class="card-block">
+                          <blockquote class="card-blockquote">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer>Someone famous in
+                                  <cite title="Source Title">Source Title</cite>
+                              </footer>
+                          </blockquote>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <br/>
+      </div>
+-->
+<!--
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    6
+                </div>
+                <div class="col-sm-6 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 6 units </div>
+                </div>
+                <div class="col-sm-5">
+                    5
+                </div>
+                <div class="col-sm-7 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 7 units </div>
+                </div>
+                <div class="col-sm-4">
+                    4
+                </div>
+                <div class="col-sm-8 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 8 units </div>
+                </div>
+                <div class="col-sm-3">
+                    3
+                </div>
+                <div class="col-sm-9 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 9 units </div>
+                </div>
+                <div class="col-sm-2">
+                    2
+                </div>
+                <div class="col-sm-10 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 10 units </div>
+                </div>
+                <div class="col-sm-1">
+                    1
+                </div>
+                <div class="col-sm-11 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 11 units </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 2 </div>
+                </div>
+                <div class="col-lg-10">
+
+                </div>
+                <div class="col-lg-4 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 4 </div>
+                </div>
+                <div class="col-lg-8">
+
+                </div>
+                <div class="col-lg-6 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 6 </div>
+                </div>
+                <div class="col-lg-6">
+
+                </div>
+                <div class="col-lg-8 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 8 </div>
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-10 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 10 </div>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-12 text-normal">
+                    <div class="card my-1 bg-primary text-faded"> 12 </div>
+                </div>
+            </div>
+       </div>
+-->
+</aside>
+<!--
+  <section id="cases">
+        <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <h2>Uses Cases</h2>
+            <p class="lead">
+                What you notice first in <a href="http://zeppelin.apache.org/">Apache Zeppelin</a> is the ability to <code>connect</code> numerous data sources,  <code>use</code> algorithms written language as different
+                as Scala, R and Python and <code>share</code> your analysis. Datalayer builds on top of Zeppelin to offer unique features any company needs in house.
+            </p>
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/icons/icon-3.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">zeppelin-rest</h4>
+                        <p class="card-text">Transform any note into a process can you call via a REST API. Call the note <code>easily</code> from any client.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/icons/icon-4.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">zeppelin-flow</h4>
+                        <p class="card-text">Assemble your notes to make a complete application. We offer a <code>visual</code> interface to compose a flow.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/icons/icon-2.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">zeppelin-kerberos</h4>
+                        <p class="card-text">Kerberos for the WEB user interface, with user <code>impersonation</code>. We integrate with MIT Kerberos as Microsoft Active Directory.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+<section id="clients">
+  <div class="container-fluid">
+    <h2 class="m-t-0 text-primary text-center text-uppercase">Clients</h2>
+    <p class="text-center">
+      <br/>
+      <img src="img/msc/client-logos.png" />
+    </p>
+    <!--
+                <p class="text-center"><small>To accomodate a variety of use cases and business.</small></p>
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1 col-12 offset-0">
+                        <div class="row">
+                              <div class="col-md-2 offset-md-1 offset-sm-0">
+                                <div class="card-block text-center">
+                                  <h2 class="card-title">Social</h2>
+                                  <p class="text-muted">Find new Consumer habits in less expensive and more diverse ways.</p>
+                                  <hr class="accent hidden-sm-up">
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card-block text-center">
+                                  <h2 class="card-title">Marketing</h2>
+                                  <p class="text-muted">Identify Loyal Customers with Text Mining and Graph Analytics.</p>
+                                  <hr class="accent hidden-md-up">
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card-block text-center">
+                                  <h2 class="card-title">IoT</h2>
+                                  <p class="text-muted">Lower maintenance costs and vehicules delays. Help Management deciding to further invest in IoT.</p>
+                                  <hr class="accent hidden-lg-up">
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card-block text-center">
+                                  <h2 class="card-title">Fraud</h2>
+                                  <p class="text-muted">Patterns of fraud can be retrieved in the unstructured machine data generated.</p>
+                                  <hr class="accent hidden-xl-up">
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card-block text-center">
+                                  <h2 class="card-title">360º</h2>
+                                  <p class="text-muted">Extend customer view incorporating internal and external information sources.</p>
+                                  <hr class="accent">
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+    -->
+    <!--
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample14.jpg" class="img-fluid">
+                                    <div class="card-img-overlay">
+    -->
+    <!--
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
+                                        </h4>
+    -->
+    <!--
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample20.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card card-inverse">
+                                    <img src="res/sample22.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample15.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample35.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample16.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample13.jpg" class="card-img img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample11.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample23.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample9.jpg" class="card-img img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample5.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample5.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample4.jpg" class="img-fluid">
+    -->
+    <!--
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample4.jpg">view</a>
+                                        </h4>
+                                    </div>
+    -->
+    <!--
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample3.jpg" class="card-img img-fluid">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample2.jpg" class="img-fluid">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample2.jpg">view</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
+                                <div class="card">
+                                    <img src="res/sample7.jpg" class="img-fluid">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample7.jpg">view</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-xl-offset-0 col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-6 text-center">
+                                <div class="card m-x-auto">
+                                    <img src="res/sample21.jpg" class="img-fluid">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-center">
+                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample21.jpg">view</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    -->
+
+  </div>
+
+</section>
+
+<aside class="bg-alt" id="partners">
+
+  <div class="container text-center">
+    <h2 class="m-t-0 text-primary text-center text-uppercase">Partners</h2>
+    <hr class="accent">
+    <br/>
+    <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+      <div class="col-md-6 col-sm-6 col-12 text-center">
+        <img src="img/msc/logo-microsoft.png" class="img-fluid" />
+        <!--
+                            <h1 class="text-primary">Microsoft</h1>
+        -->
+        <p>
+          Datalayer Solutions are available on the <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/datalayer.datalayer-notebook">Microsoft Azure market place</a>.
+          Download the <a href="http://download.microsoft.com/download/D/9/E/D9E22342-96D9-4455-BB15-99A1AF514DDD/Microsoft%20Azure%20ISV%20Mini%20Case%20Study%20-%20Datalayer.pptx">mini-case study</a> and <a href="http://download.microsoft.com/download/D/9/E/D9E22342-96D9-4455-BB15-99A1AF514DDD/Microsoft%20Azure%20ISV%20Datasheet%20-%20Datalayer.pptx">datasheet</a> from the Microsoft WEB site to know more.
+          Read also on <a href="https://channel9.msdn.com/Blogs/PartnerApps/Datalayer-Azure-Deliver-Notebook-Solution-to-Data-Scientists">Channel 9</a> how Datalayer WEB Notebook integrates with OneNote on Azure
+        </p>
+      </div>
+      <div class="col-md-6 col-sm-6 col-12 text-center">
+        <div>
+          <blockquote>
+            <img src="img/portrait/nicole-herskowitz-2.jpg" class="img-fluid rounded-circle float-left">
+            Datalayer's offering is bridging the gap between science and business, and
+            fosters business communication. Utilizing Microsoft Azure, Datalayer is
+            offering their customers the opportunity to better communicate and work with
+            their data-driven strategy.
+            <footer>
+              <cite>
+                Nicole Herskowitz, Senior Director of Product Marketing, <a href="http://www.microsoft.com">Microsoft</a> Azure.
+              </cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!--
+                <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="col-md-6 col-sm-6 col-12 text-center">
+                        <div>
+                            <blockquote>
+                                <img src="/img/portrait/john-kreisa-2.jpg" class="ing-fluid rounded-circle float-right">
+                                With a commitment to open source Apache Hadoop, Datalayer is very synergistic with Hortonworks, and we’re pleased to welcome them to our System Integrator Partner Program.
+                                <footer>
+                                    <cite>
+                                        John Kreisa, VP International Marketing <a href="http://www.hortonworks.com">Hortonworks</a>
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12 text-center">
+                        <img src="img/msc/logo-hortonworks-2.png" class="img-fluid" />
+                        <h1 class="text-primary">Hortonworks</h1>
+                        <p>
+                            Datalayer is certified by Hortonworks, one of the top Big Data player, as ISV Partner. Visit the <a href="http://hortonworks.com/partner/datalayer">Datalayer partner page</a> on the Hortonworks WEB site.
+                        </p>
+                    </div>
+                </div>
+    -->
+  </div>
+  <!--
+          <div class="container text-center">
+              <h2 class="text-primary text-center">What we heard</h2>
+              <h2 class="text-primary text-center">Don't take our words, See our testimonials</h2>
+              <hr class="accent">
+              <br/>
+              <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                  <div class="col-md-6 col-sm-6 col-12 text-center">
+                      <img src="/img/portrait/john-kreisa-2.jpg" class="img-fluid">
+                      <h1 class="text-primary">John Kreisa</h1>
+                      <h3 class="text-primary">VP Marketing <a href="http://www.hortonworks.com">Hortonworks</a>.</h3>
+                      <p>
+                          With a commitment to open source Apache Hadoop, Datalayer is very synergistic with Hortonworks, and we’re pleased to welcome them to our System Integrator Partner Program.
+                      </p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-12 text-center">
+                      <img src="img/portrait/nicole-herskowitz-2.jpg" class="img-fluid">
+                      <h1 class="text-primary">Nicole Herskowitz</h1>
+                      <h3 class="text-primary">Senior Director of Product Marketing, Microsoft Azure, <a href="http://www.microsoft.com">Microsoft Corp</a>.</h3>
+                      <p>
+                          Datalayer's offering is bridging the gap between science and business, and
+                          fosters business communication. Utilizing Microsoft Azure, Datalayer is
+                          offering their customers the opportunity to better communicate and work with
+                          their data-driven strategy.
+                      </p>
+                  </div>
+              </div>
+              <hr>
+              <br/>
+          </div>
+  -->
+  </section>
+</aside>
+<!--
+  <section id="value" class="">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="m-t-0 text-primary">Value Proposition</h2>
+                  <hr class="accent">
+              </div>
+          </div>
+      </div>
+      <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="row">
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-chatbubbles wow fadeIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"></i>
+                      <h6 class="text-uppercase">Collaborative</h6>
+                      <p class="text-muted m-b-0">Analyse datasets and demonstrate your skills. Grow your Data Science Network and Connect with peers.</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-wand wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"></i>
+                      <h6 class="text-uppercase">Magic</h6>
+                      <p class="text-muted m-b-0">Combine Spark, Python and R power on an integrated platform.</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-social-sass wow fadeIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"></i>
+                      <h6 class="text-uppercase">Social</h6>
+                      <p class="text-muted m-b-0">Bring social behavior in a Notebook tailored for your Data Scientists: Clone, Fork, Follow, Like...</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-ios-checkmark-outline wow fadeIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"></i>
+                      <h6 class="text-uppercase">Easy</h6>
+                      <p class="text-muted m-b-0">Setup your environment with ease with our <a href="https://registry.hub.docker.com/u/datalayer/">Docker images</a>.</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-thumbsup wow fadeIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"></i>
+                      <h6 class="text-uppercase">Business Results</h6>
+                      <p class="text-muted m-b-0">Also for Business Analysts. Share on Microsoft OneNote and Twitter.</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-ios-locked-outline wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"></i>
+                      <h6 class="text-uppercase">Secured</h6>
+                      <p class="text-muted m-b-0">We run on Kerberos and on professional distributions (Hortonworks, Cloudera...) to protect your data assets.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-erlenmeyer-flask-bubbles wow fadeIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"></i>
+                      <h6 class="text-uppercase">Experiment</h6>
+                      <p class="text-muted m-b-0">xxx.</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-volume-medium wow fadeIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"></i>
+                      <h6 class="text-uppercase">xxx</h6>
+                      <p class="text-muted m-b-0">xxx.</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                  <div class="feature">
+                      <i class="icon-lg ion-social-bitcoin wow fadeIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"></i>
+                      <h6 class="text-uppercase">xxx</h6>
+                      <p class="text-muted m-b-0">xxx.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+-->
+<!--
+    <section id="whitepaper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="text-nowrap">White Paper...</h2>
+                </div>
+                <div class="col-12 col-lg-6 text-right">
+                    <button class="btn btn-lg text-normal btn-outline-secondary">Outline</button>
+                    <button class="btn btn-lg text-normal btn-outline-primary">Buttons</button>
+                    <button class="btn btn-lg text-normal btn-outline-danger">Are Here</button>
+                </div>
+                <div class="col-12">
+                    <br/>
+                    <h1 class="display-4">Wow.</h1>
+                    <p class="lead text-justify">Text is larger in Bootstrap
+                     4. The default font size is now 16px. There are also new "Display
+                    headings" that really stand out. The new `rem` based sizing is an
+                    improvement too.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                    <div class="col-md-6 col-12 text-center">
+                        <nav class="navbar navbar-inverse bg-inverse navbar-toggleable text-normal rounded">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">About</a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <h2>Storytelling</h2>
+                        <p class="text-justify">The new Bootstrap 4 <code>.navbar</code> code is lighter. You can make it responsive using the Collapse component and <code>.navbar-toggleable-*</code> classes that enable you to control the breakpoint.</p>
+                    </div>
+                    <div class="col-12 clearfix">
+                        <hr>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <h2>AI and Machine Learning</h2>
+                        <p class="text-justify">Some components have been removed from Bootstrap 4. The Glyphicons icon fonts are no longer included, but it's easy to
+                          utilize another font like FontAwesome, <a href="https://octicons.github.com/">Octicons</a> or <a href="http://ionicons.com/">Ionicons</a>.
+                          The Affix jQuery plugin has also been dropped. The
+                          new recommendation is to use HTML5 position: sticky or a sticky
+                          polyfill instead.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-12 text-center">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                <a href="#alertModal" data-toggle="modal" data-target="#alertModal"><i class="icon-lg ion-ios-cloud-download-outline wow fadeIn" style="visibility: visible; animation-name: fadeIn;"></i></a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                <i class="icon-lg ion-ios-pie-outline wow fadeIn text-primary" style="visibility: visible; animation-name: fadeIn;"></i>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                <i class="icon-lg ion-ios-star-outline wow fadeIn text-primary" style="visibility: visible; animation-name: fadeIn;"></i>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                <i class="icon-lg ion-ios-heart-outline wow fadeIn text-primary" style="visibility: visible; animation-name: fadeIn;"></i>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                <i class="icon-lg ion-ios-pulse wow fadeIn text-primary" style="visibility: visible; animation-name: fadeIn;"></i>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                <i class="icon-lg ion-ios-refresh-outline wow fadeIn text-primary" style="visibility: visible; animation-name: fadeIn;"></i>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                <i class="icon-lg ion-ios-gear-outline wow fadeIn text-primary" style="visibility: visible; animation-name: fadeIn;"></i>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                    <i class="icon-lg ion-ios-timer-outline wow fadeIn text-primary" style="visibility: visible; animation-name: fadeIn;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 clearfix">
+                        <hr>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card text-normal">
+                            <div class="card-block">
+                            <ul class="list-unstyled">
+                                <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                                <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                                <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                                <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li>
+                            </ul>
+                            <h6>Migration tips</h6>
+                            <ul class="list-unstyled">
+                                <li><code>pull-right</code> = <code>float-right</code></li>
+                                <li><code>img-responsive</code> = <code>img-fluid</code></li>
+                                <li><code>list-inline &gt; li</code> = <code>list-inline-item</code></li>
+                                <li>add <code>nav-item</code> to nav navbar &gt; li</li>
+                                <li>add <code>nav-link</code> to nav navbar &gt; li &gt; a</li>
+                                <li>the <code>active</code> class is added to <code>nav-item</code> for scrollspy</li>
+                                <li><code>carousel-inner &gt; item</code> = <code>carousel-item</code></li>
+                                <li><code>table-condensed</code> = <code>table-sm</code></li>
+                                <li><code>center-block</code> = <code>mx-auto</code></li>
+                            </ul>
+                            <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                            <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <h2>Handy utilities</h2>
+                        <p class="text-justify">Several simple, but useful <a href="http://v4-alpha.getbootstrap.com/components/utilities">utility classes</a> have been added like text, margin and padding helpers. There are
+                        also <a href="http://v4-alpha.getbootstrap.com/components/utilities/#contextual-colors-and-backgrounds">contextual colors</a> and
+                        <a href="http://v4-alpha.getbootstrap.com/layout/responsive-utilities/">responsive utility</a> classes to hide content on
+                        specific breakpoints. There's even a new fluid Jumbotron!</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+-->
+<!--
+    <aside class="bg-alt" id="getit">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2 class="text-primary">Get Started for Free</h2>
+                <a href="http://www.codeply.com/download/kNmg5E60WS" target="ext" class="btn btn-success btn-lg wow flipInX text-uppercase" style="visibility: visible; animation-name: flipInX;">Free Docker Image</a>
+            </div>
+            <br/>
+            <hr>
+            <br/>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <h6 class="wide-space text-center text-uppercase">Want more?</h6>
+                    <div class="row">
+                        <div class="col-sm-4 col-6 text-center">
+                            <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
+                            <h3>Starter</h3>
+                            <p>xxx</p>
+                        </div>
+                        <div class="col-sm-4 col-6 text-center">
+                            <i class="icon-lg ion-social-sass" title="sass"></i>
+                            <h3>Value</h3>
+                            <p>xxx</p>
+                            <p>yyy</p>
+                        </div>
+                        <div class="col-sm-4 col-6 text-center">
+                            <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
+                            <h3>PRO</h3>
+                            <p>xxx</p>
+                            <p>yyy</p>
+                            <p>zzz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+-->
+<!--
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="m-t-0 text-primary text-center text-uppercase">Latest Blog Posts</h2>
+                    <hr class="accent">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card-columns">
+                <div class="card text-normal">
+                    <div class="card-block">
+                        <ul class="list-unstyled">
+                            <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                            <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
+                            <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
+                            <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li>
+                        </ul>
+                        <h6>Migration tips</h6>
+                        <ul class="list-unstyled">
+                            <li><code>pull-right</code> = <code>float-right</code></li>
+                            <li><code>img-responsive</code> = <code>img-fluid</code></li>
+                            <li><code>list-inline &gt; li</code> = <code>list-inline-item</code></li>
+                            <li>add <code>nav-item</code> to nav navbar &gt; li</li>
+                            <li>add <code>nav-link</code> to nav navbar &gt; li &gt; a</li>
+                            <li>the <code>active</code> class is added to <code>nav-item</code> for scrollspy</li>
+                            <li><code>carousel-inner &gt; item</code> = <code>carousel-item</code></li>
+                            <li><code>table-condensed</code> = <code>table-sm</code></li>
+                            <li><code>center-block</code> = <code>mx-auto</code></li>
+                        </ul>
+                        <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a><br/>
+                        <a href="http://upgrade-bootstrap.bootply.com/">Upgrade to Bootstrap 4</a>
+                    </div>
+                </div>
+                <div class="card p-3 text-normal">
+                    <blockquote class="card-block card-blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer>
+                            <small class="text-muted">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="//placehold.it/480" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img img-fluid" src="//placehold.it/400" alt="Card image">
+                </div>
+                <div class="card p-3 text-right">
+                    <blockquote class="card-blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer>
+                            <small class="text-muted">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+<!--
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h2 class="mt-0 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">Get in Touch</h2>
+                    <hr class="accent">
+                    <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                <div class="col-lg-10 offset-lg-1 text-center">
+                    <form class="contact-form row">
+                        <div class="col-md-4">
+                            <label></label>
+                            <input class="form-control" placeholder="Name" type="text">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input class="form-control" placeholder="Email" type="text">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input class="form-control" placeholder="Phone" type="text">
+                        </div>
+                        <div class="col-md-12">
+                            <label></label>
+                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                        </div>
+                        <div class="col-md-4 offset-md-4">
+                            <label></label>
+                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-success btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-3">
+        <h6 class="text-uppercase">More</h6>
+        <ul class="list-unstyled">
+          <li><a href="/blog" title="Blog">Blog</a></li>
+          <li><a href="/docs" title="Documentation">Documentation</a></li>
+          <li><a href="mailto:info@datalayer.io" title="Mail">Mail</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm-3 column">
+        <!--
+                            <h6 class="text-uppercase">About</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" data-toggle="modal" data-target="#alertModal">Contact Us</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#alertModal">Delivery Information</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#alertModal">Privacy Policy</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#alertModal">Terms &amp; Conditions</a></li>
+                            </ul>
+        -->
+      </div>
+      <div class="col-12 col-sm-3 column">
+        <!--
+                            <h6 class="text-uppercase">Stay Posted</h6>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" title="No spam, we promise!" placeholder="Tell us your email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
+                                </div>
+                            </form>
+        -->
+      </div>
+      <div class="col-12 col-sm-3 text-xs-right">
+        <h6 class="text-uppercase">Follow</h6>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a rel="nofollow" href="https://twitter.com/datalayerio" title="Twitter" target="_blank"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
+          <!--
+                                  <li class="list-inline-item"><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <!--
+                <span class="pull-right text-muted small"><a href="http://themes.guide/">Made by Themes.guide</a> ©2015-2016</span>
+    -->
+  </div>
+</footer>
+
+<div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <img src="res/222.png" id="galleryImage" class="m-x-auto img-fluid">
+        <p>
+          <br/>
+          <button class="btn btn-primary btn-lg" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h2 class="text-center">Bootstrap 4 Theme</h2>
+        <h6 class="text-center">A free, responsive template</h6>
+        <a class="text-center">
+          <a href="https://en.wikipedia.org/wiki/Indirection">All problems in computer science can be solved by another level of indirection"</a>
+          </p>
+          <p class="text-center"><a href="http://www.codeply.com/download/kNmg5E60WS">Download</a></p>
+          <br/>
+          <button class="btn btn-success btn-lg" data-dismiss="modal" aria-hidden="true"> OK </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="aboutModal2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h2 class="text-center">Nice Job!</h2>
+        <p class="text-center">You clicked the link, but it doesn't actually go anywhere because this is only a demo.</p>
+        <p class="text-center"><a href="http://bootstrap4.guide/">Learn more</a></p>
+        <br/>
+        <button class="btn btn-primary btn-lg" data-dismiss="modal" aria-hidden="true">OK <i class="ion-android-close"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="videoModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Discover the Data Science Platform for Collaborative Data Storytelling</h4>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="http://player.vimeo.com/video/71876963?autoplay=0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contactModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">We love hearing from You...</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center">
+              <form class="contact-form row">
+                <div class="col-md-4">
+                  <label></label>
+                  <input class="form-control" placeholder="Name" type="text">
+                </div>
+                <div class="col-md-4">
+                  <label></label>
+                  <input class="form-control" placeholder="Email" type="text">
+                </div>
+                <div class="col-md-4">
+                  <label></label>
+                  <input class="form-control" placeholder="Phone" type="text">
+                </div>
+                <div class="col-md-12">
+                  <label></label>
+                  <textarea class="form-control" rows="3" placeholder="Your message here.."></textarea>
+                </div>
+                <div class="col-md-4 offset-md-4">
+                  <label></label>
+                  <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-success btn-block btn-lg">Get in Touch <i class="ion-android-arrow-forward"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="res/jquery_002.js?v=2"></script>
+<script src="res/tether.js?v=2"></script>
+<script src="res/bootstrap.js?v=2"></script>
+<script src="res/jquery.js?v=2"></script>
+<script src="res/wow.js?v=2"></script>
+<script src="res/scripts.js?v=2"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-21012230-20', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>

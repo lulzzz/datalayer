@@ -1,0 +1,26 @@
+- id: gallery-1
+  description: Random screenshots of the Datalayer Science Platform.
+  imagefolder: /images/gallery-1
+  images:
+  - name: cluster-status.png
+    thumb: cluster-status.png
+    text: Cluster Status
+  - name: home.png
+    thumb: home.png
+    text: Home Page
+  - name: note.png
+    thumb: note.png
+    text: Note Example
+  - name: flows.png
+    thumb: flows.png
+    text: Notes Flow
+  - name: profile.png
+    thumb: profile.png
+    text: Profile Page
+  - name: reservations.png
+    thumb: reservations.png
+    text: Cluster Reservations
+  - name: scratchpad.png
+    thumb: scratchpad.png
+    text: Scratchpad
+  
