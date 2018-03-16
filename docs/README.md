@@ -2,7 +2,7 @@
 
 # Datalayer Documentation
 
-Browse the documentation on Datalayer on the official website [https://datalayer.io/docs](http://docs.datalayer.io).
+Browse the documentation on Datalayer on the official website [http://datalayer.io/docs](http://datalayer.io).
 
 Prerequisistes to build the site with [jekyll](https://jekyllrb.com):
 

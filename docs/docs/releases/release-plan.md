@@ -53,7 +53,7 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Fine Grained Permissions View
 + Golang check for SSL on HTTP request
 + Integrate `kuber.sh` into Kuber binary with Commands (seed, join, scale, pause, hibernate, delete)
-  + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps [hdfs,spark,spitfire,explorer] (parameter description http://docs.datalayer.io/docs/kuber)
+  + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps [hdfs,spark,spitfire,explorer] (parameter description http://datalayer.io/docs/kuber)
 
 ## 2.1.0 Sylvidra
 
