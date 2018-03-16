@@ -23,10 +23,10 @@ export DATALAYER_SBIN_DIR=$DATALAYER_BIN_DIR/../sbin
 INITIAL_PATH=$PATH
 export PATH=$DATALAYER_BIN_DIR:$DATALAYER_BIN_DIR/../sbin:$DATALAYER_BIN_DIR/../sbin/cmd:$PATH
 
-source $DATALAYER_SBIN_DIR/datalayer-env
-source $DATALAYER_SBIN_DIR/datalayer-cli-control
+source $DATALAYER_SBIN_DIR/util/datalayer-env
+source $DATALAYER_SBIN_DIR/util/datalayer-cli-control
 
-$DATALAYER_SBIN_DIR/datalayer-header "$@"
+$DATALAYER_SBIN_DIR/util/datalayer-header "$@"
 
 if [ $# == 0 ] ; then
 #  echo $USAGE
