@@ -1,0 +1,89 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+export PATH=/opt/firefox-56.0a1.en-US.linux-x86_64:$PATH
+export DISPLAY=:99
+export ZEPPELIN_INTERPRETER_OUTPUT_LIMIT=1102400
+
+if [ -z "$1" ]
+then
+  export NOTEBOOK_NAME=school
+else
+  export NOTEBOOK_NAME=$1
+fi
+
+if [ -z "$2" ]
+then
+  export ZEPPELIN_PORT=8091
+else
+  export ZEPPELIN_PORT=$2
+fi
+
+echo -e $YELLOW$BOLD"Starting Apache Zeppelin ["$BLUE"$NOTEBOOK_NAME"$YELLOW"]"$NOBOLD$NOCOLOR
+echo
+
+export HADOOP_HOME=/sdk/conf/hadoop
+# unset HADOOP_HOME
+# unset SPARK_HOME
+
+# TMP_DIR=`mktemp -d -t tmp-zeppelin-XXXXXXX`
+# ZEPPELIN_NOTEBOOK_DIR=$TMP_DIR ./bin/zeppelin.sh
+
+if [ -z "$ZEPPELIN_HOME" ]
+then
+  export ZEPPELIN_HOME=$DLAHOME/repos/spitfire
+else
+  export ZEPPELIN_HOME=$ZEPPELIN_HOME
+fi
+
+if [ -z "$ZEPPELIN_WAR" ]
+then
+  export ZEPPELIN_WAR=$ZEPPELIN_HOME/zeppelin-web/dist
+else
+  export ZEPPELIN_WAR=$ZEPPELIN_WAR
+fi
+
+export ZEPPELIN_CONF_DIR=/sdk/notes/$NOTEBOOK_NAME/_conf
+export ZEPPELIN_NOTEBOOK_DIR=/sdk/notes/$NOTEBOOK_NAME
+
+echo -e $YELLOW"Browse "$BOLD"http://localhost:$ZEPPELIN_PORT"$NOBOLD$NOCOLOR
+echo
+echo -e $YELLOW"+ ZEPPELIN_CONF_DIR=$ZEPPELIN_CONF_DIR"$NOCOLOR
+echo -e $YELLOW"+ ZEPPELIN_NOTEBOOK_DIR=$ZEPPELIN_NOTEBOOK_DIR"$NOCOLOR
+echo
+echo -e $YELLOW"+ users: [admin/password1] [user1/password2] [user2/password3] [user3/password4]"$NOCOLOR
+echo -e $YELLOW"+ tail -f $DLAHOME/repos/spitfire/logs/zeppelin-datalayer-datalayer-001.log"$NOCOLOR
+echo
+
+# ZEPPELIN_MEM - the Xmx for Zeppelin server and possibly additional GC settings (default: -Xmx1024m -XX:MaxPermSize=512m)
+export ZEPPELIN_MEM="-Xmx8g -XX:MaxPermSize=4g"
+
+# ZEPPELIN_INTP_MEM - the Xmx for Zeppelin interpreter (default: -Xmx$DRIVER_MEMORY -XX:MaxPermSize=512m)
+export ZEPPELIN_INTP_MEM="-Xmx8g -XX:MaxPermSize=4g"
+
+# ZEPPELIN_JAVA_OPTS - the options for Zeppelin server (using them to pass Spark options, since its the process that spawns everything else) (default: -Dspark.home=$SPARK_HOME -Dspark.driver.memory=$DRIVER_MEMORY -Dspark.executor.memory=$EXECUTOR_MEMORY -Dspark.cores.max=$CORES_MAX -Dspark.ui.port=${PORT0-4040})
+
+cd $ZEPPELIN_HOME
+
+# DATALAYER_LAB_BIN_DIR/datalayer-notebook \
+#  -Dspark.driver.extraJavaOptions=-Dhdp.version=2.2.0.0-2041 \
+#  -Dspark.yarn.am.extraJavaOptions=-Dhdp.version=2.2.0.0-2041 \
+#  "$@"
+
+./bin/zeppelin.sh

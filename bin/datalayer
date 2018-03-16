@@ -21,9 +21,10 @@ export DATALAYER_BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export DATALAYER_SBIN_DIR=$DATALAYER_BIN_DIR/../sbin
 
 INITIAL_PATH=$PATH
-export PATH=$DATALAYER_BIN_DIR:$DATALAYER_BIN_DIR/../sbin:$DATALAYER_BIN_DIR/../sbin/sample:$PATH
+export PATH=$DATALAYER_BIN_DIR:$DATALAYER_BIN_DIR/../sbin:$DATALAYER_BIN_DIR/../sbin/cmd:$PATH
 
 source $DATALAYER_SBIN_DIR/datalayer-env
+source $DATALAYER_SBIN_DIR/datalayer-cli-control
 
 $DATALAYER_SBIN_DIR/datalayer-header "$@"
 
@@ -32,7 +33,7 @@ if [ $# == 0 ] ; then
   exit 0;
 fi
 
-FLAG=/bin/bash datalayer-$1 "${@:2}"
+FLAG=/bin/bash $1 "${@:2}"
 
 PATH=$INITIAL_PATH
 

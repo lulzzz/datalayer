@@ -17,16 +17,28 @@
 # specific language governing permissions and limitations
 # under the License.
 
-if [ "$DATALAYER_SHOW_HEADER" == "false" ]
-then
-  exit 0
-fi
+echo -e $BOLD$YELLOW"Building Apache Spark k8S with Maven ["$BLUE"$@"$YELLOW"]"$NOCOLOR$NOBOLD
+echo
 
-echo -e $GREEN$BOLD"""            ___       __       __
-  ───────  / _ \___ _/ /____ _/ /__ ___ _____ ____
- ───────  / // / _ \`/ __/ _ \`/ / _ \`/ // / -_) __/
-───────  /____/\_,_/\__/\_,_/_/\_,_/\_, /\__/_/
-                                  /___/
+export HADOOP_VERSION=2.9.0
 
-(c) 2017 http://datalayer.io v-$DATALAYER_VERSION"""
-echo -e $NOBOLD$NOCOLOR
+#  -Psparkr \
+#  -Phive \
+#  -Phive-thriftserver \
+#  -Pnetlib-lgpl \
+#  -pl resource-managers/kubernetes/core -am \
+#  -Dmaven.install.skip=false \
+#  -Dspark.shade.packageName=org.eclipse \
+mvn \
+  -Pkubernetes \
+  -Pbigtop-dist \
+  -Phadoop-2.7 \
+  -Dhadoop.version=$HADOOP_VERSION \
+  -Pyarn \
+  -Dyarn.version=$HADOOP_VERSION \
+  -Dmaven.javadoc.skip=true \
+  -Dcheckstyle.skip=true \
+  -Dscalastyle.skip=true \
+  -Drat.skip=true \
+  -Dcobertura.skip=true \
+   "$@"

@@ -1,0 +1,296 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# local_branch,remote_url,remote_branch,remote_branch_origin,pull_request,info
+
+# config-load-from-file,https://github.com/datalayer/spitfire.git,config-load-from-file,config-load-from-file,pull_request,Load configuration from file|\
+# hortonworks-repo,https://github.com/datalayer/spitfire.git,hortonworks-repo,hortonworks-repo,pull_request,Add Hortonworks Maven repository|\
+# hdinsight,https://github.com/datalayer/spitfire.git,hdinsight,hdinsight,pull_request,Support HDInsight|\
+
+# ZEPPELIN-1320,https://github.com/prabhjyotsingh/zeppelin.git,ZEPPELIN-1320,[ZEPPELIN-1320]] Run zeppelin interpreter process as web front end user|\
+# remote-interpreter-config,https://github.com/datalayer/spitfire.git,remote-interpreter-config,remote-interpreter-config,[ZEPPELIN-1395] Local or Remote Interpreter by Configuration|\
+# ZEPPELIN-1210,https://github.com/jongyoul/zeppelin.git,ZEPPELIN-1210,ZEPPELIN-1210,[ZEPPELIN-1210] Run interpreter per user|\
+# multiuser,https://github.com/datalayer/spitfire.git,multiuser,multiuser|[ZEPPELIN-1339] Note management per user - [ZEPPELIN-1000] Multiple simultaneous users on a single WEB server - [ZEPPELIN-1338] User level interpreter setting\
+
+# cloud-storage,https://github.com/datalayer/spitfire.git,cloud-storage,cloud-storage,pull_request,Add cloud storage|\
+
+BRANCHES="""master,https://github.com/datalayer/spitfire.git,master,master,pull_request,Branch tracking the official Apache master branch|\
+disable-eslint,https://github.com/datalayer/spitfire.git,disable-eslint,disable-eslint,pull_request,Disable javascript eslint|\
+note-layout,https://github.com/datalayer/spitfire.git,note-layout,note-layout,pull_request,Store note layout|\
+flows,https://github.com/datalayer/spitfire.git,flows,flows,pull_request,Flows Editor|\
+datalayer-shiro-realm,https://github.com/datalayer/spitfire.git,datalayer-shiro-realm,datalayer-shiro-realm,pull_request,Datalayer Shiro Realm|\
+README,https://github.com/datalayer/spitfire.git,README,README,pull_request,Change README|\
+skin-datalayer,https://github.com/datalayer/spitfire.git,skin-datalayer,skin-datalayer,pull_request,Datalayer Skin|\
+mathjax,https://github.com/datalayer/spitfire.git,mathjax,mathjax,pull_request,Add mathjax interpreter|\
+json-subtype,https://github.com/datalayer/spitfire.git,json-subtype,json-subtype,pull_request,Fix gson subtype exception|\
+run-all-paragraphs,https://github.com/datalayer/spitfire.git,run-all-paragraphs,run-all-paragraphs,pull_request,Update run-all-paragraphs|\
+inject-services,https://github.com/datalayer/spitfire.git,inject-services,inject-services,https://github.com/apache/zeppelin/pull/1361,[ZEPPELIN-1354] Inject Services|\
+ZEPPELIN-2494-api-display,https://github.com/datalayer/spitfire.git,ZEPPELIN-2494-api-display,ZEPPELIN-2494-api-display,pull_request,[ZEPPELIN-2494] Return API format as output|\
+ZEPPELIN-2359,https://github.com/datalayer/spitfire.git,ZEPPELIN-2359,ZEPPELIN-2359,pull_request,[ZEPPELIN-2359] Support Spell as Display PR #2227|\
+kerberos-rest,https://github.com/datalayer/spitfire.git,kerberos-rest,kerberos-rest,pull_request,Kerberos REST|\
+spark-driver-memory,https://github.com/datalayer/spitfire.git,spark-driver-memory,spark-driver-memory,pull_request,Give more memory to spark driver|\
+commons-lang,https://github.com/datalayer/spitfire.git,commons-lang,commons-lang,pull_request,Force commons-lang versions|\
+spark-interpreter-k8s,https://github.com/banzaicloud/zeppelin.git,spark-interpreter-k8s,spark-interpreter-k8s,pull_request,Spark interpreter on k8s|\
+!
+""";
+
+do_pull=false
+
+function print_branches() {
+  IFS='|' read -d '!' -a array <<< "$BRANCHES"
+  for element in "${array[@]}"
+  do
+    IFS=',' read -a el <<< "$element"
+    local_branch=${el[0]}
+    remote_url=${el[1]}
+    remote=${el[2]}
+    remote_branch=${el[2]}
+    remote_branch_origin=${el[3]}
+    pr=${el[4]}
+    info=${el[5]}
+  done
+#  echo -e $GREEN$BOLD"$remote: UPSTREAM[$remote_url#$remote_branch] >>> ORIGIN[$remote_branch_origin] <<<>>> LOCAL[$local_branch] - INFO[$info]"$NOBOLD$NOCOLOR
+}
+
+function merge_branches() {
+
+  IFS='|' read -d '!' -a array <<< "$BRANCHES"
+
+  for element in "${array[@]}"
+  do
+
+    IFS=',' read -a el <<< "$element"
+    local_branch=${el[0]}
+    remote_url=${el[1]}
+    remote=${el[2]}
+    remote_branch=${el[2]}
+    remote_branch_origin=${el[3]}
+    info=${el[4]}
+
+    echo -e $GREEN$BOLD"================================================================================================="$NOBOLD$NOCOLOR
+    echo -e $GREEN$BOLD"$remote:"$NOBOLD$NOCOLOR
+    echo -e $GREEN$BOLD"  UPSTREAM [$remote_url#$remote_branch]"$NOBOLD$NOCOLOR
+    echo -e $GREEN$BOLD"  >>> ORIGIN [$remote_branch_origin]"$NOBOLD$NOCOLOR
+    echo -e $GREEN$BOLD"  <<<>>> LOCAL [$local_branch]"$NOBOLD$NOCOLOR
+    echo -e $GREEN$BOLD"         INFO [$info]"$NOBOLD$NOCOLOR
+    echo -e $GREEN$BOLD"================================================================================================="$NOBOLD$NOCOLOR
+    echo
+
+    echo -e $YELLOW$BOLD">>> Checking out $local_branch"$NOBOLD$NOCOLOR
+    echo
+    git checkout master
+    git branch $local_branch > /dev/null 2>&1
+    git checkout $local_branch
+    if [ $? -eq 0 ]
+    then
+      git branch -v | grep $local_branch
+      echo
+    else
+        echo
+        echo -e $BOLD$RED"git checkout $local_branch failed..."$NOCOLOR$NOBOLD
+        echo
+        exit
+    fi
+
+    echo -e $YELLOW$BOLD">>> Adding remote $remote"$NOBOLD$NOCOLOR
+    echo
+    git remote rm $remote > /dev/null 2>&1
+    git remote add $remote $remote_url > /dev/null 2>&1
+    git remote -v | grep $remote
+
+    echo
+    echo -e $YELLOW$BOLD">>> Fetching remote branch $remote/$remote_branch $local_branch"$NOBOLD$NOCOLOR
+    echo
+    git fetch $remote $remote_branch
+    if [ $? -eq 0 ]
+    then
+      echo
+    else
+        echo
+        echo -e $BOLD$RED"git fetch $remote $remote_branch failed..."$NOCOLOR$NOBOLD
+        echo
+        exit
+    fi
+
+    echo -e $YELLOW$BOLD">>> Setting tracking information set-upstream-to=$remote/$remote_branch $local_branch"$NOBOLD$NOCOLOR
+    echo
+    git branch --set-upstream-to=$remote/$remote_branch $local_branch
+    if [ $? -eq 0 ]
+    then
+      echo
+    else
+        echo
+        echo -e $BOLD$RED"git branch --set-upstream-to=$remote/$remote_branch $local_branch failed..."$NOCOLOR$NOBOLD
+        echo
+        exit
+    fi
+
+    if [ "$do_pull" = true ] ; then
+        echo -e $YELLOW$BOLD">>> Pulling from $remote_url:$remote_branch to $local_branch"$NOBOLD$NOCOLOR
+        echo
+        git pull --no-edit $remote_branch $local_branch
+        if [ $? -eq 0 ]
+        then
+        echo
+        else
+            echo
+            echo -e $BOLD$RED"git pull --no-edit $remote_branch $local_branch failed..."$NOCOLOR$NOBOLD
+            echo
+            exit
+        fi
+    fi
+
+    echo -e $YELLOW$BOLD">>> Merge from master to $local_branch"$NOBOLD$NOCOLOR
+    echo
+    git merge master
+    if [ $? -eq 0 ]
+    then
+      echo
+    else
+        echo
+        echo -e $BOLD$RED"git merge master failed..."$NOCOLOR$NOBOLD
+        echo
+        exit
+    fi
+
+    echo -e $YELLOW$BOLD">>> Pushing $local_branch to origin"$NOBOLD$NOCOLOR
+    echo
+    git push -f origin $local_branch
+#    echo -e $BLUE$BOLD"==> Skipping git push -f $remote_branch $local_branch <=="$NOBOLD$NOCOLOR
+    if [ $? -eq 0 ]
+    then
+      echo
+    else
+        echo
+        echo -e $BOLD$RED"git push -f $remote_branch $local_branch failed..."$NOCOLOR$NOBOLD
+        echo
+        exit
+    fi
+    echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+    echo
+
+    echo -e $YELLOW$BOLD">>> Merging $local_branch to spitfire"$NOBOLD$NOCOLOR
+    echo
+    git checkout spitfire
+    if [ $? -eq 0 ]
+    then
+      echo
+    else
+        echo
+        echo -e $BOLD$RED"git checkout spitfire failed..."$NOCOLOR$NOBOLD
+        echo
+        exit
+    fi
+    git merge $local_branch -m "Merge branch '"$local_branch"' into spitfire"
+    if [ $? -eq 0 ]
+    then
+      echo
+    else
+        echo
+        echo -e $BOLD$RED"git merge $local_branch into spitfire failed..."$NOCOLOR$NOBOLD
+        echo
+        exit
+    fi
+  done
+
+}
+
+echo -e $YELLOW$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+echo -e $YELLOW$BOLD"Run git pull upstream master if you want to merge upstream before hand."$NOBOLD$NOCOLOR
+echo -e $YELLOW$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+echo
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"cd $DLAHOME/repos/spitfire"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+cd $DLAHOME/repos/spitfire
+if [ $? -eq 0 ]
+then
+    pwd
+    echo
+else
+    echo
+    echo -e $BOLD$RED"Check $DLAHOME/repos/spitfire contains https://github.com/apache/zeppelin.git clone ..."$NOCOLOR$NOBOLD
+    echo
+    exit
+fi
+
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"git checkout master"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+git checkout master
+if [ $? -eq 0 ]
+then
+  echo
+else
+    echo
+    echo -e $BOLD$RED"git checkout master failed..."$NOCOLOR$NOBOLD
+    echo
+    exit
+fi
+
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"git branch -D spitfire"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+git branch -D spitfire
+# echo -e $YELLOW$BOLD"==> git branch -D spitfire skipped <=="$NOBOLD$NOCOLOR
+if [ $? -eq 0 ]
+then
+  echo
+else
+    echo
+fi
+
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"git branch spitfire"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+git branch spitfire
+# echo -e $YELLOW$BOLD"==> git branch spitfire skipped <=="$NOBOLD$NOCOLOR
+echo
+
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+if [ $? -eq 0 ]
+then
+    git branch
+    echo
+else
+    echo
+    echo -e $BOLD$RED"git branch spitfire failed..."$NOCOLOR$NOBOLD
+    echo
+    exit
+fi
+
+# -----------------------------------------------------------------------------
+
+print_branches
+
+merge_branches
+
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+echo
+echo
+echo -e $GREEN$BOLD"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"$NOBOLD$NOCOLOR
+echo
+echo -e $GREEN$BOLD"Check you are on 'spitfire' branch and 'git push -f origin spitfire'"$NOBOLD$NOCOLOR
+echo
+echo -e $GREEN$BOLD"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"$NOBOLD$NOCOLOR
+echo
+echo
+echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
+git branch
+echo

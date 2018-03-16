@@ -17,16 +17,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-if [ "$DATALAYER_SHOW_HEADER" == "false" ]
-then
-  exit 0
-fi
+echo -e $YELLOW$BOLD"Starting Apache Zeppelin Master"$NOBOLD$NOCOLOR
+echo
 
-echo -e $GREEN$BOLD"""            ___       __       __
-  ───────  / _ \___ _/ /____ _/ /__ ___ _____ ____
- ───────  / // / _ \`/ __/ _ \`/ / _ \`/ // / -_) __/
-───────  /____/\_,_/\__/\_,_/_/\_,_/\_, /\__/_/
-                                  /___/
-
-(c) 2017 http://datalayer.io v-$DATALAYER_VERSION"""
-echo -e $NOBOLD$NOCOLOR
+ZEPPELIN_HOME=$DLAHOME/repos/spitfire-master datalayer zeppelin-start "$@"

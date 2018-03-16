@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+echo -e $BOLD$YELLOW"Building Apache Spark K8S Distribution"$NOCOLOR$NOBOLD
+echo
+
+# Install netlib-java on Ubuntu
+# sudo apt-get install libatlas3-base libopenblas-base
+# sudo update-alternatives --config libblas.so
+# sudo update-alternatives --config libblas.so.3
+# sudo update-alternatives --config liblapack.so
+# sudo update-alternatives --config liblapack.so.3
+
+export HADOOP_VERSION=2.9.0
+
+export SPARK_2_2_0_K8S=/opt/spark-2.2.0-k8s-0.5.0-bin-k8s-0.5.0-hadoop-2.9.0
+
+cd $DLAHOME/repos/spark-k8s
+
+rm spark*.tgz
+rm -fr dist
+
+# mvn clean
+
+datalayer spark-k8s-mvn install -DskipTests=true
+
+#  -Dspark.shade.packageName=org.eclipse \
+./dev/make-distribution.sh \
+  --tgz \
+  --name k8s-0.5.0-hadoop-$HADOOP_VERSION \
+  -Pkubernetes \
+  -Pbigtop-dist \
+  -Pnetlib-lgpl \
+  -Phadoop-2.7 \
+  -Dhadoop.version=$HADOOP_VERSION \
+  -Pyarn \
+  -Dyarn.version=$HADOOP_VERSION \
+  -Psparkr \
+  -Phive \
+  -Phive-thriftserver \
+  -Dmaven.javadoc.skip=true \
+  -Dcheckstyle.skip=true \
+  -Dscalastyle.skip=true \
+  -Drat.skip=true \
+  -Dcobertura.skip=true \
+  -DskipTests \
+   "$@"
+
+rm -fr $SPARK_2_2_0_K8S
+mkdir $SPARK_2_2_0_K8S
+rm /opt/spark-*.tgz
+cp spark-2.2.0-k8s-0.5.0-bin-k8s-0.5.0-hadoop-2.9.0.tgz /opt
+cd /opt
+tar xvfz spark-2.2.0-k8s-0.5.0-bin-k8s-0.5.0-hadoop-2.9.0.tgz
+# ln -s SPARK_2_2_0_K8S /opt/spark
+# cd /opt/spark/bin
+
+datalayer spark-k8s-docker-build-push

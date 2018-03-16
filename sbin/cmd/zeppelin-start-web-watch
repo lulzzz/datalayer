@@ -17,16 +17,14 @@
 # specific language governing permissions and limitations
 # under the License.
 
-if [ "$DATALAYER_SHOW_HEADER" == "false" ]
-then
-  exit 0
-fi
+echo -e $YELLOW$BOLD"Starting Apache Zeppelin WEB Watch..."$NOBOLD$NOCOLOR
+echo
 
-echo -e $GREEN$BOLD"""            ___       __       __
-  ───────  / _ \___ _/ /____ _/ /__ ___ _____ ____
- ───────  / // / _ \`/ __/ _ \`/ / _ \`/ // / -_) __/
-───────  /____/\_,_/\__/\_,_/_/\_,_/\_, /\__/_/
-                                  /___/
+echo -e $YELLOW"Browse "$BOLD"http://localhost:8082"$NOBOLD$NOCOLOR
+echo
 
-(c) 2017 http://datalayer.io v-$DATALAYER_VERSION"""
-echo -e $NOBOLD$NOCOLOR
+export ZEPPELIN_HOME=$DLAHOME/repos/spitfire-master
+
+cd $ZEPPELIN_HOME/zeppelin-web
+
+WEB_PORT=8082 SERVER_PORT=8091 yarn run dev:helium "$@"

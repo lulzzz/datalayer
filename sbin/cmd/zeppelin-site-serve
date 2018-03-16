@@ -17,16 +17,14 @@
 # specific language governing permissions and limitations
 # under the License.
 
-if [ "$DATALAYER_SHOW_HEADER" == "false" ]
-then
-  exit 0
-fi
+$DLAHOME/sbin/datalayer-header "$@"
+$DATALAYER_LAB_BIN_DIR/datalayer-env-echo
 
-echo -e $GREEN$BOLD"""            ___       __       __
-  ───────  / _ \___ _/ /____ _/ /__ ___ _____ ____
- ───────  / // / _ \`/ __/ _ \`/ / _ \`/ // / -_) __/
-───────  /____/\_,_/\__/\_,_/_/\_,_/\_, /\__/_/
-                                  /___/
+echo -e $YELLOW$BOLD"Serving Apache Zeppelin WEB Site on http://localhost:4000"$NOBOLD$NOCOLOR
+echo
 
-(c) 2017 http://datalayer.io v-$DATALAYER_VERSION"""
-echo -e $NOBOLD$NOCOLOR
+export ZEPPELIN_HOME=$DLAHOME/repos/spitfire
+cd $ZEPPELIN_HOME/docs
+
+bundle install
+bundle exec jekyll serve --watch

@@ -17,16 +17,22 @@
 # specific language governing permissions and limitations
 # under the License.
 
-if [ "$DATALAYER_SHOW_HEADER" == "false" ]
-then
-  exit 0
-fi
+echo -e $BOLD$YELLOW"Datalayer Zeppelin Help"$NOCOLOR$NOBOLD
 
-echo -e $GREEN$BOLD"""            ___       __       __
-  ───────  / _ \___ _/ /____ _/ /__ ___ _____ ____
- ───────  / // / _ \`/ __/ _ \`/ / _ \`/ // / -_) __/
-───────  /____/\_,_/\__/\_,_/_/\_,_/\_, /\__/_/
-                                  /___/
+echo -e $GREEN"""
+$ cd $ZEPPELIN_HOME/zeppelin-web
+$ SERVER_PORT=9000 yarn run dev:helium
+$ firefox http://localhost:9000
 
-(c) 2017 http://datalayer.io v-$DATALAYER_VERSION"""
-echo -e $NOBOLD$NOCOLOR
+$ cd $ZEPPELIN_HOME/local-repo/helium-bundle
+$ node/node node_modules/webpack/bin/webpack.js --display-error-details --json
+
+$ webpack --profile --json > stats.json
+    (node.js API: { profile: true } and stats.toJson())
+    Go to http://webpack.github.io/analyse/#modules
+    Load your stats file (It's not uploaded, the analyse tools is a client only tool).
+    Wait a bit until the graph has been stabilized.
+    Screenshot and cut the graph area.
+
+$ cd helium-bundle; npm run bundle --registry=http://registry.npmjs.org/'
+"""$NOCOLOR

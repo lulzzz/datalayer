@@ -17,16 +17,11 @@
 # specific language governing permissions and limitations
 # under the License.
 
-if [ "$DATALAYER_SHOW_HEADER" == "false" ]
-then
-  exit 0
-fi
+echo -e $BOLD$YELLOW"Starting Datalayer Spitfire..."$NOCOLOR$NOBOLD
+echo
 
-echo -e $GREEN$BOLD"""            ___       __       __
-  ───────  / _ \___ _/ /____ _/ /__ ___ _____ ____
- ───────  / // / _ \`/ __/ _ \`/ / _ \`/ // / -_) __/
-───────  /____/\_,_/\__/\_,_/_/\_,_/\_, /\__/_/
-                                  /___/
+# export ZEPPELIN_SERVER_CONTEXT_PATH=spitfire
 
-(c) 2017 http://datalayer.io v-$DATALAYER_VERSION"""
-echo -e $NOBOLD$NOCOLOR
+export PATH=/opt/firefox-58.0a1:$PATH
+
+DATALAYER_LAB_SHOW_HEADER=false datalayer zeppelin-start "$@"

@@ -17,16 +17,16 @@
 # specific language governing permissions and limitations
 # under the License.
 
-if [ "$DATALAYER_SHOW_HEADER" == "false" ]
-then
-  exit 0
+if [ -z "$1" ]; then
+    datalayer spitfire-start "$@"
+elif [ "$1" == "start" ]; then
+    datalayer spitfire-start "${@:2}"
+elif [ "$1" == "stop" ]; then
+   datalayer spitfire-stop "${@:2}"
+elif [ "$1" == "restart" ]; then
+   datalayer spitfire-restart "${@:2}"
+else 
+  echo
+  echo "Usage: datalayer spitfire [start|stop|restart]"
+  echo
 fi
-
-echo -e $GREEN$BOLD"""            ___       __       __
-  ───────  / _ \___ _/ /____ _/ /__ ___ _____ ____
- ───────  / // / _ \`/ __/ _ \`/ / _ \`/ // / -_) __/
-───────  /____/\_,_/\__/\_,_/_/\_,_/\_, /\__/_/
-                                  /___/
-
-(c) 2017 http://datalayer.io v-$DATALAYER_VERSION"""
-echo -e $NOBOLD$NOCOLOR
