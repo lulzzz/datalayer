@@ -34,11 +34,8 @@ ssh -i ~/.ssh/id_rsa ubuntu@<master>
 sudo su
 cat /var/lib/cloud/instance/scripts/part-001
 cat /etc/kubicorn/cluster.json
-```
-
-```
 cat /etc/kubicorn/kubeadm-config.yaml
-cat /root/kubeadm-aws-join.conf
+cat /run/cloud-init/result.json 
 ```
 
 ```
@@ -67,6 +64,30 @@ export AWS_ACCESS_KEY_ID=xxx
 export AWS_SECRET_ACCESS_KEY=xxxx
 cd ~/.datalayer/kubicorn
 kubicorn delete kuber -v 4 --purge
+```
+
+# AWS IAM Cleanup
+
+```
+aws iam list-roles | grep Kubicorn
+aws iam list-instance-profiles | grep Kubicorn
+```
+
+```
+# Delete Master defined IAM objects
+aws iam list-instance-profiles-for-role --role-name kuber-KubicornMasterRole
+aws iam list-role-policies --role-name kuber-KubicornMasterRole
+aws iam remove-role-from-instance-profile --instance-profile-name kuber-KubicornMasterInstanceProfile --role-name kuber-KubicornMasterRole
+aws iam delete-role-policy --role-name kuber-KubicornMasterRole --policy-name MasterPolicy
+aws iam delete-role --role-name kuber-KubicornMasterRole
+aws iam delete-instance-profile --instance-profile-name kuber-KubicornMasterInstanceProfile
+# Delete Worker defined IAM objects
+aws iam list-instance-profiles-for-role --role-name kuber-KubicornNodeRole
+aws iam list-role-policies --role-name kuber-KubicornNodeRole
+aws iam remove-role-from-instance-profile --instance-profile-name kuber-KubicornNodeInstanceProfile --role-name kuber-KubicornNodeRole
+aws iam delete-role-policy --role-name kuber-KubicornNodeRole --policy-name NodePolicy
+aws iam delete-role --role-name kuber-KubicornNodeRole
+aws iam delete-instance-profile --instance-profile-name kuber-KubicornNodeInstanceProfile
 ```
 
 # Issues
@@ -128,7 +149,6 @@ github.com/kris-nova/kubicorn/cmd.Execute()
 main.main()
 	/home/datalayer/src/k8s/kubicorn/main.go:22 +0x20
 ```
-
 <!--
 ## Deprecated
 

@@ -21,7 +21,7 @@ export DATALAYER_BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export DATALAYER_SBIN_DIR=$DATALAYER_BIN_DIR/../sbin
 
 INITIAL_PATH=$PATH
-export PATH=$DATALAYER_BIN_DIR:$DATALAYER_BIN_DIR/../sbin:$DATALAYER_BIN_DIR/../sbin/cmd:$PATH
+export PATH=$DATALAYER_BIN_DIR:$DATALAYER_BIN_DIR/../sbin/util:$DATALAYER_BIN_DIR/../sbin/cmd:$PATH
 
 source $DATALAYER_SBIN_DIR/util/datalayer-env
 source $DATALAYER_SBIN_DIR/util/datalayer-cli-control

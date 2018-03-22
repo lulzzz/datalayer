@@ -2,7 +2,7 @@
 
 # Amazon AWS
 
-## Install SDK
+## Install
 
 ```
 apk add --no-cache curl
@@ -16,6 +16,7 @@ pip install awscli
 
 ```
 aws configure
+aws configure list
 ```
 
 ```
@@ -55,33 +56,6 @@ explorer arn:aws:acm:eu-central-1:345579675507:certificate/c920c5dd-184f-47a6-a6
 
 ```
 aws acm import-certificate --certificate file://server.crt --private-key file://privatekey.pem --region eu-central-1
-```
-
-# IAM Roles
-
-```
-aws iam list-roles | grep Kubicorn
-aws iam list-instance-profiles | grep Kubicorn
-```
-
-```
-aws iam list-instance-profiles-for-role --role-name kuber-KubicornMasterRole
-aws iam list-role-policies --role-name kuber-KubicornMasterRole
-
-aws iam remove-role-from-instance-profile --instance-profile-name kuber-KubicornMasterInstanceProfile --role-name kuber-KubicornMasterRole
-aws iam delete-role-policy --role-name kuber-KubicornMasterRole --policy-name MasterPolicy
-aws iam delete-role --role-name kuber-KubicornMasterRole
-aws iam delete-instance-profile --instance-profile-name kuber-KubicornMasterInstanceProfile
-```
-
-```
-aws iam list-instance-profiles-for-role --role-name kuber-KubicornNodeRole
-aws iam list-role-policies --role-name kuber-KubicornNodeRole
-
-aws iam remove-role-from-instance-profile --instance-profile-name kuber-KubicornNodeInstanceProfile --role-name kuber-KubicornNodeRole
-aws iam delete-role-policy --role-name kuber-KubicornNodeRole --policy-name NodePolicy
-aws iam delete-role --role-name kuber-KubicornNodeRole
-aws iam delete-instance-profile --instance-profile-name kuber-KubicornNodeInstanceProfile
 ```
 
 ## EC2

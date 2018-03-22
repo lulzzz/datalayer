@@ -50,6 +50,20 @@ mvn -T 1C clean package -DskipTests -DzincPort=3427 -Phadoop-2.7 -Pkubernetes -P
 mvn -T 1C clean install -DskipTests -Phadoop-2.7 -Dhadoop.version=2.9.0 -Pkubernetes
 ```
 
+## Build Grid
+
+```
+https://k8s-testgrid.appspot.com/sig-big-data
+https://k8s-testgrid.appspot.com/sig-big-data#spark-periodic-default-gke
+```
+
+## Pods Refactoring
+
+```
+https://docs.google.com/document/d/1XPLh3E2JJ7yeJSDLZWXh_lUcjZ1P0dy9QeUEyxIlfak/edit
+
+```
+
 ## Build
 
 ```
@@ -147,7 +161,7 @@ export POD_NAME=$(kubectl get pods -n default -l spark-k8s-base=base -o jsonpath
 kubectl exec -it $POD_NAME bash
 ```
 
-## Base Pod 2 (quicker)
+## Base Pod 2 - Quicker
 
 ```
 kubectl delete pod spark-k8s-pod --grace-period 0 --force; kubectl run --image-pull-policy=Always -it spark-k8s-pod --image-pull-policy=Always --image=localhost:5000/spark-k8s-driver:2.2.0 --restart=Never -- bash

@@ -12,9 +12,7 @@ We ship some very simple datasets (tiny data) you can play with in the notebook.
 + Miserables
 + Wine
 
-
 https://www.springboard.com/blog/free-public-data-sets-data-science-project/
-
 
 ## Sources
 

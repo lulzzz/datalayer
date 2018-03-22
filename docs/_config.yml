@@ -1,7 +1,7 @@
 name: Datalayer
 title: Datalayer
 url: http://datalayer.io
-description: Documentation
+description: Big Data Science Platform
 markdown: kramdown
 # theme: jekyll-theme-minimal
 kramdown:

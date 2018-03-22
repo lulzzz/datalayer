@@ -4,7 +4,9 @@
 
 Here are the settings that can be configured in the `datalayer-site.xml` located in `$SPITFIRE_HOME/conf` folder.
 
-<table border="1"><tbody><tr><td>name</td><td>value</td><td>description</td></tr><tr><td><a name="datalayer.home">datalayer.home</a></td><td>/opt/datalayer-spitfire</td><td>
+<table border="1">
+  <tbody>
+    <tr><td>name</td><td>value</td><td>description</td></tr><tr><td><a name="datalayer.home">datalayer.home</a></td><td>/opt/datalayer-spitfire</td><td>
       The home folder of the Datalayer Spitfire distribution.
       ${datalayer.home}/bin should contain the executable scripts.
     </td></tr><tr><td><a name="datalayer.http.authentication.type">datalayer.http.authentication.type</a></td><td>simple</td><td>
@@ -55,5 +57,7 @@ Here are the settings that can be configured in the `datalayer-site.xml` located
       The type of storage to use: derby | hbase
     </td></tr><tr><td><a name="datalayer.solr.conf.path">datalayer.solr.conf.path</a></td><td>/sdk/conf/solr/conf</td><td>
       The absolute directory path that contains the solr config to be uploaded to zookeeper.
-    </td></tr></tbody></table>
-    
+    </td></tr>
+  </tbody>
+</table>
+  

@@ -1,13 +1,5 @@
 [![Datalayer](http://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
 
-
-SSL
-
-    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "tcp"
-    service.beta.kubernetes.io/aws-load-balancer-proxy-protocol: "*"
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "01:27:ae:27:54:fc:02:a3:1c:38:08:ba:61:95:8a:fa"
-    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: 3600
-
 # Kubernetes
 
 ## Config
@@ -325,7 +317,7 @@ kubectl auth can-i list configmap
 kubectl auth can-i list secrets 
 ```
 
-# CRD
+# Custom Resources Definition
 
 ```
 kubectl get customresourcedefinitions
@@ -549,12 +541,18 @@ helm delete k8s-dashboard --purge
 ```
 
 ```
-# aws ssl
 metadata:
   name: xxx-lb
   annotations:
     "service.beta.kubernetes.io/aws-load-balancer-ssl-ports": "443"
     "service.beta.kubernetes.io/aws-load-balancer-ssl-cert": "arn:aws:acm:us-west-2:345579675507:certificate/ce5a63ee-e9e0-472b-a5d6-a28303fe1d6a"
+```
+
+```
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "tcp"
+    service.beta.kubernetes.io/aws-load-balancer-proxy-protocol: "*"
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "01:27:ae:27:54:fc:02:a3:1c:38:08:ba:61:95:8a:fa"
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: 3600
 ```
 
 ```
@@ -590,6 +588,64 @@ EOF
 
 ```
 kubectl describe services spitfire-lb | grep Ingress
+```
+
+```
+  cat << EOF | kubectl apply -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: spitfire-lb
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: spitfire
+    release: spitfire
+EOF
+```
+
+```
+echo http://localhost:8001/api/v1/namespaces/default/services/http:explorer-explorer:9091/proxy/#/
+```
+
+```
+#    service.beta.kubernetes.io/aws-load-balancer-internal: "0.0.0.0/0"
+  cat << EOF | kubectl apply -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: explorer-lb
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: 3600
+    service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "kuber-role=explorer"
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 9091
+  selector:
+    app: explorer
+    release: explorer
+EOF
+```
+
+```
+  cat << EOF | kubectl apply -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: wabco-spark-ui-lb
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 4040
+  selector:
+    spark-role: driver
+EOF
 ```
 
 # Ingress
@@ -767,6 +823,38 @@ spec:
 " | kubectl create -f -
 
 Using http://www.websocket.org/echo.html set ws://websocket.uswest2-01.rocket-science.io as test Location
+```
+
+```
+kuber-app ingress
+helm install --name kube-lego stable/kube-lego --set config.LEGO_EMAIL=eric@datalayer.io
+```
+
+```
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: example
+  namespace: foo
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    # Add to generate certificates for this ingress
+    kubernetes.io/tls-acme: 'true'
+spec:
+  rules:
+    - host: www.example.com
+      http:
+        paths:
+          - backend:
+              serviceName: exampleService
+              servicePort: 80
+            path: /
+  tls:
+    # With this configuration kube-lego will generate a secret in namespace foo called `example-tls`
+    # for the URL `www.example.com`
+    - hosts:
+        - "www.example.com"
+      secretName: example-tls
 ```
 
 # Dashboard

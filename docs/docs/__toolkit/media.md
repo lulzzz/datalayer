@@ -3,7 +3,7 @@
 + http://www.flashinsider.com/2006/07/26/how-to-create-your-own-youtube-site/
 + http://blog.go4teams.com/?p=56
 
-## ImageMagick
+## Image Magick
 
 apt-get install imagemagick
 
