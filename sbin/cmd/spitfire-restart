@@ -17,5 +17,5 @@
 # specific language governing permissions and limitations
 # under the License.
 
-DATALAYER_LAB_SHOW_HEADER=false datalayer spitfire-stop "$@"
-DATALAYER_LAB_SHOW_HEADER=false datalayer spitfire-start "$@"
+DATALAYER_SHOW_HEADER=false datalayer spitfire-stop "$@"
+DATALAYER_SHOW_HEADER=false datalayer spitfire-start "$@"

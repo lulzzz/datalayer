@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zeppelin-k8s
+  labels:
+    app: zeppelin-k8s
+    spark-version: 2.2.0
+spec:
+  containers:
+  - name: zeppelin-k8s
+    image: datalayer/zeppelin-k8s:2.2.0-0.5.0
+    ports:
+    - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zeppelin-k8-svc
+  labels:
+    app: zeppelin-k8s
+    spark-version: 2.2.0
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app: zeppelin-k8s
+  type: NodePort

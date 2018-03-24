@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dla-hello-helm
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dla-hello-helm
+    spec:
+      containers:
+        - name: dla-hello-helm
+          image: gcr.io/google-samples/node-hello:1.0
+          ports:
+            - containerPort: 8080
+              protocol: TCP

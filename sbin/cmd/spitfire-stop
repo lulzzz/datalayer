@@ -19,4 +19,4 @@
 
 echo -e $BOLD$YELLOW"Stopping Datalayer Spitfire..."$NOCOLOR$NOBOLD
 
-DATALAYER_LAB_SHOW_HEADER=false datalayer zeppelin-stop "$@"
+DATALAYER_SHOW_HEADER=false datalayer zeppelin-stop "$@"

@@ -1,3 +1,0 @@
-# Datalayer Docs WIP
-
-This is Work In Progress...

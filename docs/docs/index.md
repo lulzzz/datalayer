@@ -23,3 +23,11 @@ If you have to start from scratch, just follow our [quick start install guide](/
 We are looking forward to your feedbacks on the current version and inputs on our [release plan](/docs/releases) to fit your needs, especially in terms of applications, storage systems and cloud support you want to use.
 
 **Send feedback or question to our Twitter account [@datalayerio](https://twitter.com/datalayerio).**
+
+## Support
+
+As a company, you need a fully supported solution. Datalayer provides subscriptions based support.
+
+## Verticals
+
+We encourage you to build Verticals into our current Horizontal offering. Contact us for help on this.

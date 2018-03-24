@@ -21,9 +21,9 @@ echo -e $YELLOW$BOLD"Building Datalayer Spitfire K8S [$PWD]"$NOBOLD$NOCOLOR
 echo
 
 HADOOP_VERSION=2.9.0
-SPARK_VERSION=2.2.0-k8s-0.5.0
+SPARK_VERSION=2.2.0-0.5.0
 
-DATALAYER_LAB_SHOW_HEADER=false
+DATALAYER_SHOW_HEADER=false
 
 datalayer zeppelin-build \
   -Dspark.src.download.url=http://d3kbcqa49mib13.cloudfront.net/spark-2.2.0.tgz \

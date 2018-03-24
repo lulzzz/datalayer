@@ -22,19 +22,17 @@
 # config-load-from-file,https://github.com/datalayer/spitfire.git,config-load-from-file,config-load-from-file,pull_request,Load configuration from file|\
 # hortonworks-repo,https://github.com/datalayer/spitfire.git,hortonworks-repo,hortonworks-repo,pull_request,Add Hortonworks Maven repository|\
 # hdinsight,https://github.com/datalayer/spitfire.git,hdinsight,hdinsight,pull_request,Support HDInsight|\
-
 # ZEPPELIN-1320,https://github.com/prabhjyotsingh/zeppelin.git,ZEPPELIN-1320,[ZEPPELIN-1320]] Run zeppelin interpreter process as web front end user|\
 # remote-interpreter-config,https://github.com/datalayer/spitfire.git,remote-interpreter-config,remote-interpreter-config,[ZEPPELIN-1395] Local or Remote Interpreter by Configuration|\
 # ZEPPELIN-1210,https://github.com/jongyoul/zeppelin.git,ZEPPELIN-1210,ZEPPELIN-1210,[ZEPPELIN-1210] Run interpreter per user|\
 # multiuser,https://github.com/datalayer/spitfire.git,multiuser,multiuser|[ZEPPELIN-1339] Note management per user - [ZEPPELIN-1000] Multiple simultaneous users on a single WEB server - [ZEPPELIN-1338] User level interpreter setting\
-
 # cloud-storage,https://github.com/datalayer/spitfire.git,cloud-storage,cloud-storage,pull_request,Add cloud storage|\
 
 BRANCHES="""master,https://github.com/datalayer/spitfire.git,master,master,pull_request,Branch tracking the official Apache master branch|\
 disable-eslint,https://github.com/datalayer/spitfire.git,disable-eslint,disable-eslint,pull_request,Disable javascript eslint|\
+datalayer-shiro-realm,https://github.com/datalayer/spitfire.git,datalayer-shiro-realm,datalayer-shiro-realm,pull_request,Datalayer Shiro Realm|\
 note-layout,https://github.com/datalayer/spitfire.git,note-layout,note-layout,pull_request,Store note layout|\
 flows,https://github.com/datalayer/spitfire.git,flows,flows,pull_request,Flows Editor|\
-datalayer-shiro-realm,https://github.com/datalayer/spitfire.git,datalayer-shiro-realm,datalayer-shiro-realm,pull_request,Datalayer Shiro Realm|\
 README,https://github.com/datalayer/spitfire.git,README,README,pull_request,Change README|\
 skin-datalayer,https://github.com/datalayer/spitfire.git,skin-datalayer,skin-datalayer,pull_request,Datalayer Skin|\
 mathjax,https://github.com/datalayer/spitfire.git,mathjax,mathjax,pull_request,Add mathjax interpreter|\
@@ -47,10 +45,12 @@ kerberos-rest,https://github.com/datalayer/spitfire.git,kerberos-rest,kerberos-r
 spark-driver-memory,https://github.com/datalayer/spitfire.git,spark-driver-memory,spark-driver-memory,pull_request,Give more memory to spark driver|\
 commons-lang,https://github.com/datalayer/spitfire.git,commons-lang,commons-lang,pull_request,Force commons-lang versions|\
 spark-interpreter-k8s,https://github.com/banzaicloud/zeppelin.git,spark-interpreter-k8s,spark-interpreter-k8s,pull_request,Spark interpreter on k8s|\
+per-user-isolation,https://github.com/datalayer/spitfire.git,per-user-isolation,per-user-isolation,pull_request,per-user-isolation|\
+k8s-pods-shorter-names,https://github.com/datalayer/spitfire.git,k8s-pods-shorter-names,k8s-pods-shorter-names,pull_request,k8s-pods-shorter-names|\
 !
 """;
 
-do_pull=false
+DO_PULL=false
 
 function print_branches() {
   IFS='|' read -d '!' -a array <<< "$BRANCHES"
@@ -141,7 +141,7 @@ function merge_branches() {
         exit
     fi
 
-    if [ "$do_pull" = true ] ; then
+    if [ "$DO_PULL" = true ] ; then
         echo -e $YELLOW$BOLD">>> Pulling from $remote_url:$remote_branch to $local_branch"$NOBOLD$NOCOLOR
         echo
         git pull --no-edit $remote_branch $local_branch

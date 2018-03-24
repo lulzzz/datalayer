@@ -1,7 +1,7 @@
-bigheader: "Open Source"
-abstract: "Datalayer Open Source."
+bigheader: "Develop"
+abstract: "Develop Datalayer."
 toc:
-- docs/open-source/index.md
-- docs/open-source/hdfs.md
-- docs/open-source/spark.md
-- docs/open-source/zeppelin.md
+- docs/develop/index.md
+- docs/develop/hdfs.md
+- docs/develop/spark.md
+- docs/develop/zeppelin.md

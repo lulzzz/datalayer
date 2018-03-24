@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+if [ -z "$DLA_HADOOP" ]
+then
+  export DLA_HADOOP=yarn
+fi
+
+export DLA_HADOOP_STATUS=starting
+
+export DLABIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $DLABIN/util/datalayer-env
+
+datalayer header
+datalayer env-echo
+
+echo -e $BOLD$YELLOW"Starting Datalayer Spark Shell..."$NOCOLOR$NOBOLD
+echo
+
+scala_file=$1
+
+shift 1
+
+arguments=$@
+
+# set +o posix  # to enable process substitution when not running on bash
+
+# spark-shell --master yarn --deploy-mode client \
+#             --queue default \
+#             --driver-memory 2G --executor-memory 4G \
+#             --num-executors 10 \
+#             -i <(echo 'val args = "'$arguments'".split("\\s+")' ; cat $scala_file)
+
+spark-shell -i <(echo 'val args = "'$arguments'".split("\\s+")'; cat $scala_file)

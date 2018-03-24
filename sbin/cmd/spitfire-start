@@ -24,4 +24,4 @@ echo
 
 export PATH=/opt/firefox-58.0a1:$PATH
 
-DATALAYER_LAB_SHOW_HEADER=false datalayer zeppelin-start "$@"
+DATALAYER_SHOW_HEADER=false datalayer zeppelin-start "$@"

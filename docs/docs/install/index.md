@@ -4,15 +4,55 @@ redirect_from:
 - "/docs/quick-start"
 ---
 
+{% capture overview %}
+
 **Quick Start the Datalayer Science Platform on AWS in 10 minutes.**
 
-From your Linux laptop (with [Git](https://git-scm.com/downloads), [Golang](https://golang.org/dl), [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl) and [Helm](https://github.com/kubernetes/helm/releases) available), run the following.
+{% endcapture %}
+
+{% capture prerequisites %}
+
+Check that you understand and have the following requirements.
+
+* AWS or Azure account with credentials.
+* A Linux platform connected to the Internet (This can be your laptop or a server in the cloud) with the following software:
+  * [Git](https://git-scm.com/downloads) installed and configured.
+  * [Golang](https://golang.org/dl) installed and configured.
+  * [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl) installed and configured.
+  * [Helm](https://github.com/kubernetes/helm/releases) installed and configured.
+
+{% endcapture %}
+
+{% capture steps %}
+
+## Deploy K8S
+
+From your Linux laptop run the following.
+
+{% capture cloud_aws %}
 
 ```shell
 # Define your valid AWS Credentials
 export AWS_ACCESS_KEY_ID=<your-aws-key-id>
 export AWS_SECRET_ACCESS_KEY=<your-aws-key-secret>
 ```
+
+{% endcapture %}
+
+{% capture cloud_azure %}
+
+```shell
+# Define your valid Azure Credentials
+export ...
+```
+
+{% endcapture %}
+
+{% assign tab_set_name = "cloud" %}
+{% assign tab_names = "AWS;Azure" | split: ';' | compact %}
+{% assign tab_contents = site.emptyArray | push: cloud_aws | push: cloud_azure %}
+
+{% include tabs.md %}
 
 ```shell
 git clone https://github.com/datalayer/kuber
@@ -58,6 +98,8 @@ kube-system   kube-scheduler-ip-10-0-0-62.us-west-2.compute.internal            
 kube-system   tiller-deploy-546cf9696c-9k9bk                                    1/1       Running   0          58m
 ```
 
+## Deploy Monitoring Applications
+
 Deploy the dashboard (ensure you have the [Helm client available](https://github.com/kubernetes/helm/releases)).
 
 ```shell
@@ -75,7 +117,7 @@ kubectl proxy
 
 Check the [Dashboard](http://localhost:8001/api/v1/namespaces/kube-system/services/http:k8s-dashboard-kubernetes-dashboard:/proxy/#!/overview?namespace=_all).
 
-Deploy more applications.
+## Add User Applications
 
 ```shell
 ./kuber.sh hdfs
@@ -92,8 +134,14 @@ For example [browse the Spitfire Notebook](http://localhost:8001/api/v1/namespac
 kubectl describe services spitfire-lb | grep Ingress
 ```
 
-Delete the cluster.
+## Terminate
+
+To teminate the Cluster, run the following command.
 
 ```shell
 kuber delete kuber -v 4 --purge
 ```
+
+{% endcapture %}
+
+{% include templates/task.md %}

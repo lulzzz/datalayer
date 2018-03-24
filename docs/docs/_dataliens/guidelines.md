@@ -1,6 +1,6 @@
 # Guidelines
 
-# Repositories
+## Repositories
 
 We use the following public repositories:
 
@@ -42,7 +42,7 @@ Finish by a nice invitation such as:
 Looking for help? Sure there are plenty of things to do, get in touch with @datalayerio
 ```
 
-## Open Source is Favorite
+## Open Source is Preferred
 
 Try to restrict to pure opensource software.
 
