@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+echo -e $BOLD$YELLOW"Running Apache Spark K8S Integration Tests $BLUE[$@]"$NOCOLOR$NOBOLD
+echo
+
+export HADOOP_VERSION=2.9.0
+
+# In order to prepare the environment for running the integration tests, the pre-integration-test step 
+# must be run in Maven on the resource-managers/kubernetes/integration-tests module.
+
+#  -Psparkr \
+#  -Phive \
+#  -Phive-thriftserver \
+#  -Pnetlib-lgpl \
+#  -Pyarn \
+#  -Dyarn.version=$HADOOP_VERSION \
+#  -Dspark.shade.packageName=org.eclipse \
+#  -pl resource-managers/kubernetes/integration-tests \
+
+# mvn \
+#   -Pkubernetes \
+#   -Pbigtop-dist \
+#   -Pkubernetes-integration-tests \
+#   -Phadoop-2.7 \
+#   -Dhadoop.version=$HADOOP_VERSION \
+#   -Dmaven.javadoc.skip=true \
+#   -Dcheckstyle.skip=true \
+#   -Dscalastyle.skip=true \
+#   -Drat.skip=true \
+#   -Dcobertura.skip=true \
+#   -DskipTests \
+#   pre-integration-test \
+#   "$@"
+
+# build/mvn -Pkubernetes \
+#   -Pkubernetes-integration-tests  \
+#   -pl resource-managers/kubernetes/integration-tests  \
+#   -am \
+#   -DskipTests \
+# pre-integration-test
+
+datalayer spark-mvn \
+  pre-integration-test \
+  -Pkubernetes-integration-tests \
+  -DskipTests \
+  "$@"

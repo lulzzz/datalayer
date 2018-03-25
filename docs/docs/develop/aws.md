@@ -105,6 +105,16 @@ c4.8xlarge	36	132	60	EBS Only	$1.591 per Hour
 ```
 
 ```
+Model 	vCPU 	Memory (GiB) 	Storage 	EBS Bandwidth
+c5.large 	2 	4 	EBS Optimized 	Up to 2,250 Mbps
+c5.xlarge 	4 	8 	EBS Optmized 	Up to 2,250 Mbps
+c5.2xlarge 	8 	16 	EBS Optimized 	Up to 2,250 Mbps
+c5.4xlarge 	16 	32 	EBS Optimized 	2,250 Mbps
+c5.9xlarge 	36 	72 	EBS Optimized 	4,500 Mbps
+c5.18xlarge 	72 	144 	EBS Optimized 	9,000 Mbps
+```
+
+```
 INSTANCEID=`/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-id`
 echo $INSTANCEID
 REGION=`curl http://169.254.169.254/latest/dynamic/instance-identity/document | grep region | awk -F\" '{print $4}'`

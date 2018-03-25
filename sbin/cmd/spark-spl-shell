@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+echo """
+(1 to 1000).toDS.map(i => {
+  println(org.apache.hadoop.hbase.HConstants.DEFAULT_MASTER_PORT)
+  org.apache.hadoop.hbase.HConstants.DEFAULT_MASTER_PORT
+  }).collect
+(1 to 100).toDS.map(_*2).collect
+List(1,2,3).toDS.map(i => {
+  import org.apache.hadoop.hbase.FAKE
+  i*2
+  }).collect
+"""
+
+/opt/spark/bin/spark-shell \
+  --conf spark.master=k8s://"$APISERVER" \
+  --conf spark.kubernetes.resourceStagingServer.uri=http://"$RESOURCESTAGINGSERVER":10000 \
+  --conf spark.submit.deployMode=client \
+  --conf spark.executor.instances=2 \
+  --conf spark.sql.catalogImplementation=in-memory \
+  --conf spark.kubernetes.driver.pod.name="$HOSTNAME" \
+  --conf spark.kubernetes.namespace=default \
+  --conf spark.kubernetes.initcontainer.docker.image=localhost:5000/spark-init:2.2.0 \
+  --conf spark.kubernetes.driver.docker.image=localhost:5000/spark-driver:2.2.0 \
+  --conf spark.kubernetes.executor.docker.image=localhost:5000/spark-executor:2.2.0 \
+  --conf spark.kubernetes.docker.image.pullPolicy=Always \
+  --conf spark.dynamicAllocation.enabled=false \
+  --conf spark.shuffle.service.enabled=false \
+  --conf spark.kubernetes.shuffle.namespace=default \
+  --conf spark.kubernetes.shuffle.labels="app=spark-shuffle-service,spark-version=2.2.0" \
+  --conf spark.local.dir=/tmp/spark-local \
+  --jars http://central.maven.org/maven2/org/apache/hbase/hbase-common/1.4.0/hbase-common-1.4.0.jar
