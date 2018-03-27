@@ -4,5 +4,5 @@ toc:
 - docs/what/index.md
 - docs/what/kuber.md
 - docs/what/explorer.md
-- docs/what/studio.md
+# - docs/what/studio.md
 - docs/what/library.md

@@ -148,15 +148,14 @@ cd /opt/spark; ./bin/docker-image-tool.sh -r localhost:5000 -t 2.4.0 push
 ## Integration Tests
 
 ```
-datalayer spark-integration-test-pre
-datalayer spark-integration-test-run
-```
-
-```
+# 2.2.0-fork
 datalayer spark-integration-test
+# datalayer spark-integration-test-pre
+# datalayer spark-integration-test-run
 ```
 
 ```
+# 2.4.0
 cd $DLAHOME/repos/spark-integration
 ./dev/dev-run-integration-tests.sh \
   --spark-tgz $DLAHOME/packages/spark-2.4.0-SNAPSHOT-bin-hdfs-2.9.0.tgz
