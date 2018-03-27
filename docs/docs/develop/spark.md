@@ -49,6 +49,9 @@ git push -f origin datalayer
 
 ```
 datalayer spark-build-dist
+```
+
+```
 datalayer spark-build-dist-fork
 ```
 
@@ -157,10 +160,10 @@ datalayer spark-integration-test
 cd $DLAHOME/repos/spark-integration
 ./dev/dev-run-integration-tests.sh \
   --spark-tgz $DLAHOME/packages/spark-2.4.0-SNAPSHOT-bin-hdfs-2.9.0.tgz
-./dev/dev-run-integration-tests.sh \
-  --spark-tgz $DLAHOME/packages/spark-2.2.0-k8s-0.5.0.tgz \
-  --image-repo localhost:5000 \
-  --image-tag 2.2.0
+# ./dev/dev-run-integration-tests.sh \
+#   --spark-tgz $DLAHOME/packages/spark-2.2.0-k8s-0.5.0.tgz \
+#   --image-repo localhost:5000 \
+#   --image-tag 2.2.0
 ```
 
 ## Test Grid
@@ -286,7 +289,7 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
 
   <tr class="a">
     <td style="text-align: center;"><b>DESCRIPTION</b></td>
-    <td style="text-align: center;"><b>JIRA</b></td>
+    <td style="text-align: center;"><b>ISSUE</b></td>
     <td style="text-align: center;"><b>REPOSITORY</b></td>
     <td style="text-align: center;"><b>DOC</b></td>
     <td style="text-align: center;"><b>PR</b></td>
@@ -299,9 +302,11 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
     <td>Client Mode</td>
     <td><a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a></td>
     <td>
-      Apache Repo: <a href="https://github.com/datalayer-contrib/spark/tree/k8s-client-mode dev">datalayer-contrib:k8s-client-mode</a>
+      Apache: <a href="https://github.com/datalayer-contrib/spark/tree/k8s-client-mode dev">datalayer-contrib:k8s-client-mode</a>
       <br/>
-      Apache Fork Repo: <a href="https://github.com/datalayer-contrib/spark/tree/client-mode-datalayer-dev">datalayer-contrib:client-mode-datalayer-dev</a>
+      Integration Tests: <a href="https://github.com/datalayer-contrib/spark-integration/tree/client-mode dev">datalayer-contrib:client-mode</a>
+      <br/>
+      Apache Fork: <a href="https://github.com/datalayer-contrib/spark/tree/client-mode-datalayer-dev">datalayer-contrib:client-mode-datalayer-dev</a>
     </td>
     <td>
       <a href="https://github.com/apache-spark-on-k8s/userdocs/pull/25">[WIP] Describe Spark submit in relation with client-mode (+ hadoop and dependencies)</a></td>
@@ -318,20 +323,21 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   <tr class="a">
     <td>
       Refactor Kubernetes code for configuring driver/executor pods to use consistent and cleaner abstraction
-      <br/>
+    </td>
+    <td>
       https://issues.apache.org/jira/browse/SPARK-22839
-      <br/>
+    </td>
+    <td>
+    </td>
+    <td>
       https://docs.google.com/document/d/1XPLh3E2JJ7yeJSDLZWXh_lUcjZ1P0dy9QeUEyxIlfak/edit
+    </td>
+    <td>
+      Initial framework for pod construction architecture refactor
       <br/>
-      Initial framework for pod construction architecture refactor. https://github.com/mccheah/spark/pull/1
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
+      https://github.com/apache/spark/pull/20910
+      <br/>
+      https://github.com/mccheah/spark/tree/spark-22839-incremental
     </td>
     <td>
     </td>
@@ -342,14 +348,12 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   <tr class="a">
     <td>
       Refactor Steps Orchestrator based on the Chain Pattern
-      <br/>
+    </td>
+    <td>
       https://github.com/apache-spark-on-k8s/spark/issues/604
-      <br/>
+    </td>
+    <td>
       Example: Include and exclude driver and executor steps (with etcd example)
-    </td>
-    <td>
-    </td>
-    <td>
     </td>
     <td>
     </td>
@@ -364,10 +368,9 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   <tr class="a">
     <td>
       [INTEGRATION_TESTS] Random failure of tests (java.net.ConnectException)
-      <br/>
-      https://github.com/apache-spark-on-k8s/spark/issues/571
     </td>
     <td>
+      https://github.com/apache-spark-on-k8s/spark/issues/571
     </td>
     <td>
     </td>
@@ -384,16 +387,15 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   <tr class="a">
     <td>
       Use a pre-installed Minikube instance for integration tests.
-      <br/>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
       https://github.com/apache-spark-on-k8s/spark/pull/521
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
     </td>
     <td>
     </td>
@@ -404,10 +406,9 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   <tr class="a">
     <td>
       Application names should support whitespaces and special characters
-      <br/>
-      https://github.com/apache-spark-on-k8s/spark/issues/551
     </td>
     <td>
+      https://github.com/apache-spark-on-k8s/spark/issues/551
     </td>
     <td>
     </td>
@@ -424,10 +425,9 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   <tr class="a">
     <td>
       [ShuffleService] Need for spark.local.dir?
-      <br/>
-      https://github.com/apache-spark-on-k8s/spark/issues/549
     </td>
     <td>
+      https://github.com/apache-spark-on-k8s/spark/issues/549
     </td>
     <td>
     </td>
@@ -444,16 +444,15 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   <tr class="a">
     <td>
       Spark UI
-      <br/>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
       When Spark runs, it gives you a useful user interface to manage and monitor your jobs and configuration (` echo http://localhost:4040`).
       <br/>
       This can be enhanced with a specific tab for Kubernetes
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
     </td>
     <td>
     </td>

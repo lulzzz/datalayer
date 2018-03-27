@@ -6,7 +6,7 @@ title: Apache HDFS
   <tbody>
   <tr class="a">
     <td style="text-align: center;"><b>DESCRIPTION</b></td>
-    <td style="text-align: center;"><b>JIRA</b></td>
+    <td style="text-align: center;"><b>ISSUE</b></td>
     <td style="text-align: center;"><b>REPOSITORY</b></td>
     <td style="text-align: center;"><b>DOC</b></td>
     <td style="text-align: center;"><b>PR</b></td>
