@@ -311,7 +311,7 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
       <a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a>
     </td>
     <td>
-      Apache: <a href="https://github.com/datalayer-contrib/spark/tree/k8s-client-mode dev">datalayer-contrib:k8s-client-mode</a>
+      Apache: <a href="https://github.com/datalayer-contrib/spark/tree/k8s-client-mode">datalayer-contrib:k8s-client-mode</a>
       <br/>
       <br/>
       Apache Fork: <a href="https://github.com/datalayer-contrib/spark/tree/client-mode-datalayer-dev">datalayer-contrib:client-mode-datalayer-dev</a>
