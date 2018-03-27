@@ -155,14 +155,22 @@ datalayer spark-integration-test
 ```
 
 ```
+kubectl apply -f $DLAHOME/repos/spark-integration/dev/spark-rbac.yaml
+```
+
+```
 # 2.4.0
 cd $DLAHOME/repos/spark-integration
 ./dev/dev-run-integration-tests.sh \
   --spark-tgz $DLAHOME/packages/spark-2.4.0-SNAPSHOT-bin-hdfs-2.9.0.tgz
-# ./dev/dev-run-integration-tests.sh \
-#   --spark-tgz $DLAHOME/packages/spark-2.2.0-k8s-0.5.0.tgz \
-#   --image-repo localhost:5000 \
-#   --image-tag 2.2.0
+```
+
+```
+cd $DLAHOME/repos/spark-integration
+./dev/dev-run-integration-tests.sh \
+  --spark-tgz $DLAHOME/packages/spark-2.4.0-SNAPSHOT-bin-hdfs-2.9.0.tgz \
+  --image-repo localhost:5000 \
+  --image-tag 2.4.0
 ```
 
 ## Test Grid
@@ -303,8 +311,6 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
     <td>
       Apache: <a href="https://github.com/datalayer-contrib/spark/tree/k8s-client-mode dev">datalayer-contrib:k8s-client-mode</a>
       <br/>
-      Integration Tests: <a href="https://github.com/datalayer-contrib/spark-integration/tree/client-mode dev">datalayer-contrib:client-mode</a>
-      <br/>
       Apache Fork: <a href="https://github.com/datalayer-contrib/spark/tree/client-mode-datalayer-dev">datalayer-contrib:client-mode-datalayer-dev</a>
     </td>
     <td>
@@ -313,6 +319,21 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
       <a href="https://github.com/apache/spark/pull/20451">datalayer-contrib:k8s-client-mode</a>
       <br/>
       <a href="https://github.com/apache-spark-on-k8s/spark/pull/456">#456</a>
+    </td>
+    <td>OPEN</td>
+  </tr>
+
+  <!-- -->
+
+  <tr class="a">
+    <td>Integration Tests for Client Mode</td>
+    <td><a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a></td>
+    <td>
+      Integration Tests: <a href="https://github.com/datalayer-contrib/spark-integration/tree/client-mode dev">datalayer-contrib:client-mode</a>
+    </td>
+    <td>
+    <td>
+      https://github.com/apache-spark-on-k8s/spark-integration/pull/45
     </td>
     <td>OPEN</td>
   </tr>
