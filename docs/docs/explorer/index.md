@@ -1,5 +1,5 @@
 ---
-title: Studio
+title: Explorer
 ---
 
 `Data Explorer` is an innovative WEB Notebook for Data Scientists to better collaborate with Business.
