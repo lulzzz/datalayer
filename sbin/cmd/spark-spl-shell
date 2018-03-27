@@ -30,16 +30,21 @@ List(1,2,3).toDS.map(i => {
 """
 
 /opt/spark/bin/spark-shell \
+  --name $APP_NAME \
+  --conf spark.app.name=$APP_NAME \
   --conf spark.master=k8s://"$APISERVER" \
-  --conf spark.kubernetes.resourceStagingServer.uri=http://"$RESOURCESTAGINGSERVER":10000 \
-  --conf spark.submit.deployMode=client \
+  --conf spark.submit.deployMode="$DEPLOY_MODE" \
   --conf spark.executor.instances=2 \
+  --conf spark.kubernetes.resourceStagingServer.uri=http://"$RESOURCESTAGINGSERVER":10000 \
   --conf spark.sql.catalogImplementation=in-memory \
-  --conf spark.kubernetes.driver.pod.name="$HOSTNAME" \
   --conf spark.kubernetes.namespace=default \
+  --conf spark.kubernetes.driver.pod.name="$DRIVER_POD_NAME" \
   --conf spark.kubernetes.initcontainer.docker.image=localhost:5000/spark-init:2.2.0 \
   --conf spark.kubernetes.driver.docker.image=localhost:5000/spark-driver:2.2.0 \
   --conf spark.kubernetes.executor.docker.image=localhost:5000/spark-executor:2.2.0 \
+  --conf spark.kubernetes.driver.container.image=localhost:5000/spark:2.4.0 \
+  --conf spark.kubernetes.executor.container.image=localhost:5000/spark:2.4.0 \
+  --conf spark.kubernetes.container.image.pullPolicy=Always \
   --conf spark.kubernetes.docker.image.pullPolicy=Always \
   --conf spark.dynamicAllocation.enabled=false \
   --conf spark.shuffle.service.enabled=false \

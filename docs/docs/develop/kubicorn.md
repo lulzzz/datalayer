@@ -1,17 +1,17 @@
-[![Datalayer](http://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
+[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
 
 # Build and Install
 
 ```
-go get github.com/kris-nova/kubicorn
+go get github.com/kubicorn/kubicorn
 ```
 
 ```
-cd $GOPATH/src/github.com/kris-nova/kubicorn
+cd $GOPATH/src/github.com/kubicorn/kubicorn
 make clean
 make
 make install
-# go install github.com/kris-nova/kubicorn
+# go install github.com/kubicorn/kubicorn
 kubicorn version
 kubicorn
 ```

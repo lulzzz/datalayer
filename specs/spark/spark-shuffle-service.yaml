@@ -35,8 +35,8 @@ spec:
             path: '/tmp/spark-local' # change this path according to your cluster configuration.
       containers:
         - name: shuffle
-          image: datalayer/spark-shuffle-service:2.2.0
-          imagePullPolicy: IfNotPresent
+          image: localhost:5000/spark-shuffle-service:2.2.0
+          imagePullPolicy: Always
           volumeMounts:
             - mountPath: '/tmp/spark-local'
               name: temp-volume

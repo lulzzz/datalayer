@@ -25,7 +25,11 @@ $DLABIN/util/datalayer-env-echo
 echo -e $BOLD$YELLOW"Starting Datalayer Spark Shell..."$NOCOLOR$NOBOLD
 echo
 
-# export MASTER=yarn-client
 # export HADOOP_CONF_DIR=/sdk/conf/hadoop/
 
-$SPARK_HOME/bin/spark-shell --conf spark.sql.catalogImplementation=in-memory --conf spark.sql.warehouse.dir=/tmp/spark-warehouse --driver-memory 3g --executor-memory 3G "$@"
+$SPARK_HOME/bin/spark-shell \
+  --conf spark.sql.catalogImplementation=in-memory \
+  --conf spark.sql.warehouse.dir=/tmp/spark-warehouse \
+  --driver-memory 3g \
+  --executor-memory 3g \
+  "$@"

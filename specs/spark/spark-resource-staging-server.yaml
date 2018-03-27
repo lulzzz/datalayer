@@ -32,7 +32,8 @@ spec:
             name: spark-resource-staging-server-config
       containers:
         - name: spark-resource-staging-server
-          image: datalayer/spark-resource-staging-server:2.2.0
+          image: localhost:5000/spark-resource-staging-server:2.2.0
+          imagePullPolicy: Always
           resources:
             requests:
               cpu: 100m

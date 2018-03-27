@@ -1,4 +1,4 @@
-[![Datalayer](http://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
+[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
 
 We are building a `Simple`, `Collaborative` and `Multi Cloud` platform for Big Data Scientists.
 

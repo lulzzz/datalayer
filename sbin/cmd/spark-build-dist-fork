@@ -17,7 +17,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-echo -e $BOLD$YELLOW"Building Apache Spark Distribution"$NOCOLOR$NOBOLD
+echo -e $BOLD$YELLOW"Building Apache Spark Fork Distribution"$NOCOLOR$NOBOLD
 echo
 
 # Install netlib-java on Ubuntu
@@ -29,7 +29,7 @@ echo
 
 export HADOOP_VERSION=2.9.0
 
-export SPARK=spark-2.4.0-SNAPSHOT-bin-hdfs-2.9.0
+export SPARK_FORK=spark-2.2.0-k8s-0.5.0-bin-0.5.0-hadoop-2.9.0
 
 cd $DLAHOME/repos/spark
 
@@ -42,7 +42,7 @@ datalayer spark-mvn clean -DskipTests=true
 #  -Dspark.shade.packageName=org.eclipse \
 ./dev/make-distribution.sh \
   --tgz \
-  --name hdfs-$HADOOP_VERSION \
+  --name 0.5.0-hadoop-$HADOOP_VERSION \
   -Pkubernetes \
   -Pbigtop-dist \
   -Pnetlib-lgpl \
@@ -61,15 +61,15 @@ datalayer spark-mvn clean -DskipTests=true
   -DskipTests \
    "$@"
 
-rm -fr /opt/$SPARK
-cp $DLAHOME/repos/spark/$SPARK.tgz /opt
+rm -fr /opt/$SPARK_FORK
+cp $DLAHOME/repos/spark/$SPARK_FORK.tgz /opt
 
 cd /opt
-tar xvfz $SPARK.tgz
+tar xvfz $SPARK_FORK.tgz
 rm /opt/spark
-ln -s /opt/$SPARK /opt/spark
+ln -s /opt/$SPARK_FORK /opt/spark
 cd /opt/spark/bin
 
-cp $DLAHOME/repos/spark/$SPARK.tgz $DLAHOME/packages/$SPARK.tgz
+cp $DLAHOME/repos/spark/$SPARK_FORK.tgz $DLAHOME/packages/spark-2.2.0-k8s-0.5.0.tgz
 
 # datalayer spark-docker-build-push

@@ -1,6 +1,6 @@
-[![Datalayer](http://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
-
-# Minikube
+---
+title: Minikube
+---
 
 ```
 minikube stop
@@ -38,17 +38,21 @@ CHANGE_MINIKUBE_NONE_USER=true minikube start --kubernetes-version v1.8.0 --cpus
 eval $(minikube docker-env)
 minikube status
 minikube dashboard
+minikube ssh
+```
+
+```
+kubectl create -f $DLAHOME/specs/registry/kube-registry.yaml
+```
+
+```
+kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | grep kube-registry-v0 | awk '{print $1;}') 5000:5000
 ```
 
 ```
 kubectl apply -f $DLAHOME/specs/echoheaders/echoheaders.yaml
 curl $(minikube service echoheaders --url)
 kubectl delete -f $DLAHOME/specs/echoheaders/echoheaders.yaml
-```
-
-```
-kubectl create -f $DLAHOME/specs/registry/kube-registry.yaml
-kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | grep kube-registry-v0 | awk '{print $1;}') 5000:5000
 ```
 
 ```
@@ -62,8 +66,4 @@ helm init --service-account tiller --upgrade
 ```
 minikube logs -f
 journalctl -fu localkube
-```
-
-```
-minikube ssh
 ```

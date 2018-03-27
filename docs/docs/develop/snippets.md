@@ -1,6 +1,4 @@
-## Snippets
-
-# Sugar
+## Sugar
 
 scala> rdd.map(x=>x+1).reduce(x=>x+x)
 scala> rdd.map(_+1).reduce((acc,x)=>acc+x)

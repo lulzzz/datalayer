@@ -1,4 +1,4 @@
-[![Datalayer](http://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
+[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
 
 [![](https://images.microbadger.com/badges/image/datalayer/spitfire.svg)](https://microbadger.com/images/datalayer/spitfire "Get your own image badge on microbadger.com")
 

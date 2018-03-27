@@ -17,36 +17,5 @@
 # specific language governing permissions and limitations
 # under the License.
 
-if [ -z "$DLA_HADOOP" ]
-then
-  export DLA_HADOOP=yarn
-fi
-
-export DLA_HADOOP_STATUS=starting
-
-export DLABIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $DLABIN/util/datalayer-env
-
-datalayer header
-datalayer env-echo
-
-echo -e $BOLD$YELLOW"Starting Datalayer Spark Shell..."$NOCOLOR$NOBOLD
-echo
-
-scala_file=$1
-
-shift 1
-
-arguments=$@
-
-# set +o posix  # to enable process substitution when not running on bash
-
-# spark-shell --master yarn \
-#             --deploy-mode client \
-#             --queue default \
-#             --driver-memory 2g \
-#             --executor-memory 4g \
-#             --num-executors 10 \
-#             -i <(echo 'val args = "'$arguments'".split("\\s+")' ; cat $scala_file)
-
-spark-shell -i <(echo 'val args = "'$arguments'".split("\\s+")'; cat $scala_file)
+datalayer spark-docker-build "$@"
+datalayer spark-docker-push-local "$@"

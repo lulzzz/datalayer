@@ -17,7 +17,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-echo -e $BOLD$YELLOW"Building Apache Spark k8S with Maven ["$BLUE"$@"$YELLOW"]"$NOCOLOR$NOBOLD
+echo -e $BOLD$YELLOW"Building Apache Spark with Maven ["$BLUE"$@"$YELLOW"]"$NOCOLOR$NOBOLD
 echo
 
 export HADOOP_VERSION=2.9.0

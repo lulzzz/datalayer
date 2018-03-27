@@ -20,11 +20,23 @@
 docker tag datalayer/spark-base:2.2.0 localhost:5000/spark-base:2.2.0
 docker push localhost:5000/spark-base:2.2.0
 
+docker tag datalayer/spark-resource-staging-server:2.2.0 localhost:5000/spark-resource-staging-server:2.2.0
+docker push localhost:5000/spark-resource-staging-server:2.2.0
+
+docker tag datalayer/spark-shuffle-service:2.2.0 localhost:5000/spark-shuffle-service:2.2.0
+docker push localhost:5000/spark-shuffle-service:2.2.0
+
 docker tag datalayer/spark-init:2.2.0 localhost:5000/spark-init:2.2.0
 docker push localhost:5000/spark-init:2.2.0
 
 docker tag datalayer/spark-driver:2.2.0 localhost:5000/spark-driver:2.2.0
 docker push localhost:5000/spark-driver:2.2.0
 
+docker tag datalayer/spark-driver-py:2.2.0 localhost:5000/spark-driver-py:2.2.0
+docker push localhost:5000/spark-driver-py:2.2.0
+
 docker tag datalayer/spark-executor:2.2.0 localhost:5000/spark-executor:2.2.0
 docker push localhost:5000/spark-executor:2.2.0
+
+docker tag datalayer/spark-executor-py:2.2.0 localhost:5000/spark-executor-py:2.2.0
+docker push localhost:5000/spark-executor-py:2.2.0
