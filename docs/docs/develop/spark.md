@@ -307,9 +307,12 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
 
   <tr class="a">
     <td>Client Mode</td>
-    <td><a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a></td>
+    <td>
+      <a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a>
+    </td>
     <td>
       Apache: <a href="https://github.com/datalayer-contrib/spark/tree/k8s-client-mode dev">datalayer-contrib:k8s-client-mode</a>
+      <br/>
       <br/>
       Apache Fork: <a href="https://github.com/datalayer-contrib/spark/tree/client-mode-datalayer-dev">datalayer-contrib:client-mode-datalayer-dev</a>
     </td>
@@ -317,6 +320,7 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
       <a href="https://github.com/apache-spark-on-k8s/userdocs/pull/25">[WIP] Describe Spark submit in relation with client-mode (+ hadoop and dependencies)</a></td>
     <td>
       <a href="https://github.com/apache/spark/pull/20451">datalayer-contrib:k8s-client-mode</a>
+      <br/>
       <br/>
       <a href="https://github.com/apache-spark-on-k8s/spark/pull/456">#456</a>
     </td>
@@ -329,11 +333,12 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
     <td>Integration Tests for Client Mode</td>
     <td><a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a></td>
     <td>
-      Integration Tests: <a href="https://github.com/datalayer-contrib/spark-integration/tree/client-mode dev">datalayer-contrib:client-mode</a>
+      <a href="https://github.com/datalayer-contrib/spark-integration/tree/client-mode dev">datalayer-contrib:client-mode</a>
     </td>
     <td>
+    </td>
     <td>
-      https://github.com/apache-spark-on-k8s/spark-integration/pull/45
+      <a href="https://github.com/apache-spark-on-k8s/spark-integration/pull/45">#45</a>
     </td>
     <td>OPEN</td>
   </tr>
@@ -345,19 +350,16 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
       Refactor Kubernetes code for configuring driver/executor pods to use consistent and cleaner abstraction
     </td>
     <td>
-      https://issues.apache.org/jira/browse/SPARK-22839
+      <a href="https://issues.apache.org/jira/browse/SPARK-22839">SPARK-22839</a>
     </td>
     <td>
+      <a href="https://github.com/mccheah/spark/tree/spark-22839-incremental">mccheah:spark-22839-incremental</a>
     </td>
     <td>
-      https://docs.google.com/document/d/1XPLh3E2JJ7yeJSDLZWXh_lUcjZ1P0dy9QeUEyxIlfak/edit
+      <a href="https://docs.google.com/document/d/1XPLh3E2JJ7yeJSDLZWXh_lUcjZ1P0dy9QeUEyxIlfak/edit">Initial framework for pod construction architecture refactor</a>
     </td>
     <td>
-      Initial framework for pod construction architecture refactor
-      <br/>
-      https://github.com/apache/spark/pull/20910
-      <br/>
-      https://github.com/mccheah/spark/tree/spark-22839-incremental
+      <a href="https://github.com/apache/spark/pull/20910">#20910</a>
     </td>
     <td>
     </td>
@@ -370,12 +372,12 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
       Refactor Steps Orchestrator based on the Chain Pattern
     </td>
     <td>
-      https://github.com/apache-spark-on-k8s/spark/issues/604
+      <a href="https://github.com/apache-spark-on-k8s/spark/issues/604">#604</a>
+    </td>
+    <td>
     </td>
     <td>
       Example: Include and exclude driver and executor steps (with etcd example)
-    </td>
-    <td>
     </td>
     <td>
     </td>
@@ -415,7 +417,7 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
     <td>
     </td>
     <td>
-      https://github.com/apache-spark-on-k8s/spark/pull/521
+      <a href="https://github.com/apache-spark-on-k8s/spark/pull/521">#521</a>
     </td>
     <td>
     </td>
@@ -537,11 +539,12 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   
   <tr class="a">
     <td>
-      [WIP] [SPARK-19552] [BUILD] Upgrade Netty version to 4.1.8 final https://github.com/apache/spark/pull/16888
+      [WIP] [SPARK-19552] [BUILD] Upgrade Netty version to 4.1.8 final 
     </td>
     <td>
     </td>
     <td>
+      https://github.com/apache/spark/pull/16888
     </td>
     <td>
     </td>
