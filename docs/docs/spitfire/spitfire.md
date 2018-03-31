@@ -17,8 +17,10 @@ Data Scientists :heart: Datalayer.
 
 # Datalayer Notebook for Data Science
 
-//    "@types/react-test-renderer": "15.5.0",
-    "@microsoft/load-themed-styles": "1.4.0",
+```
+"@types/react-test-renderer": "15.5.0",
+"@microsoft/load-themed-styles": "1.4.0",
+```
 
 ## Menu
 

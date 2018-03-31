@@ -1,9 +1,11 @@
-# VI
+---
+title: VI
+---
 
 vi +36 foo.c
 :36
 SHIFT+g     Goto line number
----
+
 /string     Search forward for occurrence of string in text
 ?string     Search backward for occurrence of string in text
 n           Search for next instance of string
@@ -117,8 +119,9 @@ These commands permit you to input and output files other than the named file wi
      :w newfile<Return>     write current contents to a new file named newfile
      :12,35w smallfile<Return>     write the contents of the lines numbered 12 through 35 to a new file named smallfile
      :w! prevfile<Return>     write current contents over a pre-existing file named prevfile
--------------------------------------------------------------------------------
-Basic movement
+
+## Basic movement
+
 h l k j  : : : character left, right; line up, down
 b w  : : : : word/token left, right
 ge e   : : : end of word/token left, right
@@ -131,8 +134,9 @@ nj  : : : column n of current line
 %match of next brace, bracket, comment, #define
 nH nL  : : : line n from start, bottom of window
 M   : middle line of window
--------------------------------------------------------------------------------
-Insertion & replace ! insert mode
+
+## Insertion & replace ! insert mode
+
 i a  insert before, after cursor
 I A   : : insert at beginning, end of line
 gI  : insert text in rst column
@@ -150,8 +154,9 @@ g~m  : : : switch case of movement command m
 gum gUm: : : lowercase, uppercase text of movement m
 <m >m  : shift left, right text of movement m
 n<< n>>   shift n lines left, right
--------------------------------------------------------------------------------
-Deletion
+
+## Deletion
+
 x X   delete character under, before cursor
 dm  delete text of movement command m
 dd D  : : : : delete current line, to the end of line
@@ -171,8 +176,9 @@ Insert mode
 ^Oc  : : : execute c in temporary command mode
 ^X^E ^X^Y  : : : : scroll up, down
 hesci or ^[  abandon edition ! command mode
--------------------------------------------------------------------------------
-Copying
+
+## Copying
+
 "x  : : : use register x for next delete, yank, put
 :reg -   : show the content of all registers
 :reg x -   show the content of registers x
@@ -181,8 +187,9 @@ yy or Y  :yank current line into register
 p P  : : put register after, before cursor position
 ]p [p   : like p, P with indent adjusted
 gp gP  : : like p, P leaving cursor after new text
--------------------------------------------------------------------------------
-Advanced insertion
+
+## Advanced insertion
+
 g?m : perform rot13 encoding on movement m
 n^A n^X   +n, n to number under cursor
 gqm  : : format lines of movement m to xed width
@@ -209,8 +216,9 @@ q   stop recording
 :@c -  : : execute register c as an Ex command
 :rg/p/c -  :execute Ex command c on range r
 b where pattern p matches
--------------------------------------------------------------------------------
-Complex movement
+
+## Complex movement
+
 + +  line up, down on rst non-blank character
 B W   : space-separated word left, right
 gE E  : : end of space-separated word left, right
@@ -228,8 +236,9 @@ tc Tc  : : : : before next, previous occurence of c
 [m ]m  : : : start of backward, forward Java method
 [# ]#:unclosed #if, #else, #endif backward, forward
 [* ]*  : start, end of /* */ backward, forward
--------------------------------------------------------------------------------
-Search & substitution
+
+## Search & substitution
+
 /s - ?s -  : : : : search forward, backward for s
 /s/o - ?s?o -  search fwd, bwd for s with o
 set o
@@ -252,4 +261,3 @@ You can use the number column for the text of wrapped lines:
 :set cpoptions+=n
 Finally, you can change the color used for the line numbers. For example:
 :highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
--------------------------------------------------------------------------------

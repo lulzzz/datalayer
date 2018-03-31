@@ -25,6 +25,7 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Scrollable Paragraph List on Note Editor
 + Chat Room with Connected Users
 + Comment on Note View
++ Paragraph Spark Job Tasks and Logs
 + Activity View
 
 ## 1.3.0 Atlas

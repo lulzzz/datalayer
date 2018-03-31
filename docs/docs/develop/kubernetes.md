@@ -317,6 +317,10 @@ kubectl auth can-i list configmap
 kubectl auth can-i list secrets 
 ```
 
+```
+kubectl create clusterrolebinding default-admin --clusterrole=cluster-admin --user=user@gmail.com
+```
+
 # Custom Resources Definition
 
 ```

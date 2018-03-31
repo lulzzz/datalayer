@@ -2,6 +2,6 @@ bigheader: "Develop"
 abstract: "Develop Datalayer."
 toc:
 - docs/develop/index.md
-- docs/develop/hdfs.md
+- docs/develop/hadoop-hdfs.md
 - docs/develop/spark.md
 - docs/develop/zeppelin.md
