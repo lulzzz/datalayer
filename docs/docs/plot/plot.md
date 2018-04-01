@@ -1,4 +1,6 @@
-# Datalayer Plot
+---
+title: Plot
+---
 
 ## Javascript
 
@@ -252,9 +254,11 @@ gnuplot> exit
 + bokeh
  + https://github.com/bokeh/bokeh-scala
 
-## Misc
+# R
 
-+ Wisp
++ googleVis
++ rCharts
++ htmlwidgets
 
 # Java2D
 
