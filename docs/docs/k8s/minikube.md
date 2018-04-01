@@ -2,10 +2,7 @@
 title: Minikube
 ---
 
-```
-minikube stop
-minikube delete
-```
+## Install Minikube
 
 ```
 docker rm -f $(docker ps -a -q)
@@ -20,6 +17,13 @@ systemctl disable localkube
 systemctl stop localkube
 ```
 
+## Create Local Cluster
+
+```
+minikube stop
+minikube delete
+```
+
 ```
 minikube get-k8s-versions
 minikube help
@@ -31,7 +35,7 @@ minikube help
 # --cluster-cidr=10.244.0.0/16
 # --pod-network-cidr=10.244.0.0/16
 # --vm-driver none
-CHANGE_MINIKUBE_NONE_USER=true minikube start --kubernetes-version v1.8.0 --cpus 8 --memory 8192 --insecure-registry localhost:5000
+CHANGE_MINIKUBE_NONE_USER=true minikube start --kubernetes-version v1.9.4 --cpus 8 --memory 8192 --insecure-registry localhost:5000
 ```
 
 ```
@@ -42,6 +46,13 @@ minikube ssh
 ```
 
 ```
+minikube logs -f
+journalctl -fu localkube
+```
+
+## Local Registry
+
+```
 kubectl create -f $DLAHOME/specs/registry/kube-registry.yaml
 ```
 
@@ -49,11 +60,15 @@ kubectl create -f $DLAHOME/specs/registry/kube-registry.yaml
 kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | grep kube-registry-v0 | awk '{print $1;}') 5000:5000
 ```
 
+## Echo Header
+
 ```
 kubectl apply -f $DLAHOME/specs/echoheaders/echoheaders.yaml
 curl $(minikube service echoheaders --url)
 kubectl delete -f $DLAHOME/specs/echoheaders/echoheaders.yaml
 ```
+
+## Helm
 
 ```
 helm init --canary-image --upgrade
@@ -64,6 +79,5 @@ helm init --service-account tiller --upgrade
 ```
 
 ```
-minikube logs -f
-journalctl -fu localkube
+helm ls
 ```

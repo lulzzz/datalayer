@@ -47,4 +47,4 @@ sudo $ZOOKEEPER_HOME/bin/zkServer.sh stop
 
 ## Configure Zookeeper
 
-conf/zoo.cfg:
+conf/zoo.cfg

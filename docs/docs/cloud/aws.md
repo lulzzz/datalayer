@@ -1,6 +1,6 @@
-[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
-
-# Amazon AWS
+---
+title: Amazon AWS
+---
 
 ## Install
 
