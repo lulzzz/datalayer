@@ -18,9 +18,7 @@
 # under the License.
 
 (xscreensaver -nosplash &) &>/dev/null
-
-# export DOCKER_API_VERSION=1.24
-export DOCKER_API_VERSION=1.25
+# xscreensaver -nosplash & > /dev/null
 
 export PATH=$PATH:.
 
@@ -32,6 +30,9 @@ export DLA_REPOSITORY=$HOME/.m2/repository
 export JAVA_HOME=/opt/jdk
 export PATH=$JAVA_HOME/bin:$PATH
 unset JAVA_TOOL_OPTIONS
+
+# export DOCKER_API_VERSION=1.24
+export DOCKER_API_VERSION=1.25
 
 export KUBERNETES_HOME=/opt/kubernetes
 export PATH=$KUBERNETES_HOME/client/bin:$KUBERNETES_HOME/server/kubernetes/server/bin:$PATH
@@ -91,15 +92,6 @@ export PATH=$SCALA_HOME/bin:$PATH
 export SBT_HOME=/opt/sbt-0.13.2
 export PATH=$SBT_HOME/bin:$PATH
 
-export MESOS_HOME=/opt/dcos/mesos-0.26.0/build
-export PATH=$MESOS_HOME/bin:$PATH
-
-export MARATHON_HOME=/opt/dcos/marathon-0.13.0
-export PATH=$MARATHON_HOME/bin:$PATH
-
-export CHRONOS_HOME=/opt/dcos/chronos-2.4.0
-export PATH=$CHRONOS_HOME/bin:$PATH
-
 export ANT_HOME=/opt/apache-ant-1.9.6
 export PATH=$ANT_HOME/bin:$PATH
 
@@ -115,24 +107,14 @@ export PATH=$GRADLE_HOME/bin:$PATH
 
 export ANDROID_HOME=/opt/android-sdk-linux
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
-
 export ANDROID_STUDIO_HOME=/opt/android-studio
 export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
 
 # export AZURE_CLI_HOME=/opt/azure-cli.0.9.2
 # export PATH=$AZURE_CLI_HOME/bin:$PATH
 
-export FORREST_HOME=/opt/apache-forrest-0.9
-export PATH=$FORREST_HOME/bin:$PATH
-
 export JYTHON_HOME=/opt/jython2.2.1
 export PATH=$JYTHON_HOME:$PATH
-
-export NEXUS_HOME=/opt/nexus-2.9.0-04-bundle/nexus-2.9.0-04
-export PATH=$NEXUS_HOME/bin:$PATH
-
-export ATLASSIAN_SDK_HOME=/opt/atlassian-plugin-sdk-5.0.3
-export PATH=$ATLASSIAN_SDK_HOME/bin:$PATH
 
 export GIT_LFS_HOME=/opt/git-lfs-1.5.2
 export PATH=$GIT_LFS_HOME:$PATH
@@ -201,9 +183,9 @@ export PATH=$RESTER_HOME/bin:$PATH
 export PATH=$PATH:/usr/local/pkg-config-0.23/bin
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
-export PATH=/src/packt-dss/Docker:$PATH
-
 # source $DLA_HOME/bin/datalayer git-completion 
+
+DATALAYER_SHOW_HEADER=false datalayer zinc-start
 
 alias c='datalayer cls'
 alias cls='datalayer cls'
@@ -225,15 +207,10 @@ alias sbt='datalayer sbt'
 
 # datalayer mouse-fix
 
-# xscreensaver -nosplash & > /dev/null
-
 # 2880 2600 2400 2200 2000 1800
 # datalayer screen-resolution 1600 
 
 # rm ~/hs_err_pid* > /dev/null
 # rm ~/ajcore.*.txt > /dev/null
 
-datalayer zinc-start
-
 # d
-
