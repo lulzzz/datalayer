@@ -17,6 +17,9 @@
 # specific language governing permissions and limitations
 # under the License.
 
+# CUR_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+# echo $CUR_DIR
+
 # #############################################################################
 
 # [0m  reset; clears all colors and styles (to white on black)

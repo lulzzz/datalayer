@@ -94,15 +94,15 @@ cd /opt/spark; ./bin/docker-image-tool.sh -r localhost:5000 -t 2.4.0 push
 ## Shuffle Service
 
 ```
-kubectl delete -f $DLAHOME/specs/spark/spark-shuffle-service.yaml
-kubectl create -f $DLAHOME/specs/spark/spark-shuffle-service.yaml
+kubectl delete -f $DLAHOME/manifests/spark/spark-shuffle-service.yaml
+kubectl create -f $DLAHOME/manifests/spark/spark-shuffle-service.yaml
 ```
 
 ## Resource Staging Server
 
 ```
-kubectl delete -f $DLAHOME/specs/spark/spark-resource-staging-server.yaml
-kubectl create -f $DLAHOME/specs/spark/spark-resource-staging-server.yaml
+kubectl delete -f $DLAHOME/manifests/spark/spark-resource-staging-server.yaml
+kubectl create -f $DLAHOME/manifests/spark/spark-resource-staging-server.yaml
 ```
 
 ```
@@ -266,10 +266,10 @@ datalayer spark-spl-submit
 
 ```
 # option-1
-kubectl delete -f $DLAHOME/specs/spark/spark-base.yaml
+kubectl delete -f $DLAHOME/manifests/spark/spark-base.yaml
 export POD_NAME=$(kubectl get pods -n default -l spark-base=base -o jsonpath="{.items[0].metadata.name}")
 kubectl delete pod $POD_NAME --grace-period 0 --force
-kubectl apply -f $DLAHOME/specs/spark/spark-base.yaml
+kubectl apply -f $DLAHOME/manifests/spark/spark-base.yaml
 export POD_NAME=$(kubectl get pods -n default -l spark-base=base -o jsonpath="{.items[0].metadata.name}")
 kubectl exec -it $POD_NAME bash
 ```

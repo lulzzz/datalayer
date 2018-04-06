@@ -1,4 +1,17 @@
-# SSL
+---
+title: SSL
+---
+
+## Let's Encrypt
+
+```bash
+# Need python2
+git clone https://github.com/letsencrypt/letsencrypt
+cd letsencrypt
+./letsencrypt-auto certonly --standalone -d test.datalayer.io
+# key: /etc/letsencrypt/live/test.datalayer.io/privkey.pem
+# cert: /etc/letsencrypt/live/test.datalayer.io/fullchain.pem
+```
 
 ## Self-signed Certificate
 

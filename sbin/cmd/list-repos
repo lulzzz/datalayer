@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Licensed to Datalayer (http://datalayer.io) under one or more
 # contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -15,11 +17,10 @@
 # specific language governing permissions and limitations
 # under the License.
 
-[Unit]
-After=network.target
-
-[Service]
-ExecStart=/usr/local/bin/kuber-aws-join
-
-[Install]
-WantedBy=default.target
+for rep in $DLAHOME/repos/*/
+do
+#    dir=${dir%*/}
+#    echo ${dir##*/}
+  cd $rep
+  git remote get-url --push origin
+done

@@ -27,19 +27,20 @@ Kuber is the Datalayer offering to manage the stack.
 |    R    |   |          UI | CLI | JSApps | Widgets             |
 |   CLI   |------------------------------------------------------|
 |   SDK   | 5 |                  SPITIFIRE                       |
-|   LIB   |   |         Spark | TensorFlow | ... | Markdown      |
+|   LIB   |   |         Spark | TensorFlow | Markdown | ...      |
 |         |------------------------------------------------------|
 |   OPS   | 4 |                    UTILS                         |
 |         |   |       Kubeless | Batch | Kafka | Kubeflow        |
 |  MONIT  |------------------------------------------------------|
 |         | 3 |                   STORE                          |
-| BACK/RES|   |           HBase | Solr | JanusGraph              |
+| BACK/RES|   |       HBase | Solr | JanusGraph | Etcd           |
 |         |------------------------------------------------------|
 |  DIAG   | 2 |                 FILE-SYSTEM                      |
 |         |   |             HDFS | IFPS | Minio                  |
 |  IAM    |------------------------------------------------------|
 |         | 1 |                K8S-CLUSTER                       |
 |  RBAC   |   | Kubeadm | Kubicorn/Kubespray | Reshifter/ARK     |
+|         |   |            Gitkube | Kubed-sh                    |
 +----------------------------------------------------------------+
 ```
 

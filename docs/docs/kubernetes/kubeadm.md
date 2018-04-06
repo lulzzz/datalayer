@@ -1,6 +1,6 @@
-[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
-
-# Kubeadm
+---
+title: Kubeadm
+---
 
 ```
 sudo su

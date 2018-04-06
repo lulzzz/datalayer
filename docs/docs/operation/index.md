@@ -1,4 +1,4 @@
-# Nagios on Ubuntu
+## Nagios on Ubuntu
 
 sudo apt-get install nagios3 nagios-nrpe-plugin
 

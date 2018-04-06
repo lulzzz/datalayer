@@ -12,6 +12,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 
 ```
 kubectl config view
+kubectl config view minikube --flatten=true
 ```
 
 ## API
@@ -78,7 +79,7 @@ Two important things I needed (my bad), I was using a kubectl-proxy sidecar cont
 minikube stop
 minikube delete
 CHANGE_MINIKUBE_NONE_USER=true minikube start --kubernetes-version v1.8.0 --cpus 8 --memory 8192 --insecure-registry localhost:5000
-cd /sdk/specs/k8s
+cd /sdk/manifests/k8s
 kubectl create -f registry/kube-registry.yaml
 minikube ssh
 curl http://localhost:5000

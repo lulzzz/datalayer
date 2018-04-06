@@ -20,13 +20,18 @@ systemctl stop localkube
 ## Create Local Cluster
 
 ```
-minikube stop
-minikube delete
+minikube version
+minikube get-k8s-versions
+minikube help
 ```
 
 ```
-minikube get-k8s-versions
-minikube help
+minikube addons list
+```
+
+```
+minikube stop
+minikube delete
 ```
 
 ```
@@ -35,13 +40,28 @@ minikube help
 # --cluster-cidr=10.244.0.0/16
 # --pod-network-cidr=10.244.0.0/16
 # --vm-driver none
-CHANGE_MINIKUBE_NONE_USER=true minikube start --kubernetes-version v1.9.4 --cpus 8 --memory 8192 --insecure-registry localhost:5000
+# apiserver.EnableInsecureLogin.Mode=false
+CHANGE_MINIKUBE_NONE_USER=true minikube start --kubernetes-version v1.9.4 --cpus 8 --memory 8192 --insecure-registry localhost:5000 --extra-config=apiserver.Authorization.Mode=RBAC
+kubectl create clusterrolebinding add-on-cluster-admin --clusterrole=cluster-admin --serviceaccount=kube-system:default
+```
+
+```
+minikube addons enable heapster
+minikube addons open heapster
+minikube addons disable heapster
+```
+
+```
+minikube addons enable ingress
+```
+
+```
+k get pods --all-namespaces
 ```
 
 ```
 eval $(minikube docker-env)
 minikube status
-minikube dashboard
 minikube ssh
 ```
 
@@ -50,10 +70,26 @@ minikube logs -f
 journalctl -fu localkube
 ```
 
+## Dashboard
+
+```
+minikube addons disable dashboard
+minikube addons enable dashboard
+minikube dashboard
+k get deploy --all-namespaces
+k get svc --all-namespaces
+open http://192.168.99.100:30000
+```
+
+```
+kubectl create -f $DLAHOME/manifests/k8s-dashboard/k8s-dashboard-minikube.yaml
+open http://192.168.99.100:30000
+```
+
 ## Local Registry
 
 ```
-kubectl create -f $DLAHOME/specs/registry/kube-registry.yaml
+kubectl create -f $DLAHOME/manifests/registry/kube-registry.yaml
 ```
 
 ```
@@ -63,12 +99,18 @@ kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | g
 ## Echo Header
 
 ```
-kubectl apply -f $DLAHOME/specs/echoheaders/echoheaders.yaml
+kubectl apply -f $DLAHOME/manifests/echoheaders/echoheaders.yaml
 curl $(minikube service echoheaders --url)
-kubectl delete -f $DLAHOME/specs/echoheaders/echoheaders.yaml
+kubectl delete -f $DLAHOME/manifests/echoheaders/echoheaders.yaml
 ```
 
 ## Helm
+
+```
+kubectl -n kube-system create sa tiller
+kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+helm init --service-account tiller
+```
 
 ```
 helm init --canary-image --upgrade

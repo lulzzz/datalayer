@@ -1,8 +1,8 @@
-[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
+---
+title: Docker
+---
 
 [![](https://images.microbadger.com/badges/image/datalayer/spitfire.svg)](https://microbadger.com/images/datalayer/spitfire "Get your own image badge on microbadger.com")
-
-# Docker
 
 ## Install
 
@@ -113,7 +113,34 @@ docker exec -d spitfire_bash /bin/bash
 ```
 # -v /sys/fs/cgroup:/sys/fs/cgroup \
 # --dns-search datalayer.io.local \
-docker \
+docker \nx: 1.13.3 - lua: 10008
+Request Information:
+	client_address=10.2.2.0
+	method=GET
+	real path=/
+	query=
+	request_version=1.1
+	request_uri=http://52.168.164.165:8080/
+Request Headers:
+	accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+	accept-encoding=gzip, deflate
+	accept-language=en-US,en;q=0.7,fr;q=0.3
+	connection=keep-alive
+	host=52.168.164.165:8080
+	upgrade-insecure-requests=1
+	user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0
+Request Body:
+	-no body in request-
+```
+
+# Dind for Kubernetes
+
+```
+dind-cluster.sh up
+dind-cluster.sh down
+```
+
+```
   run \
   --name spitfire-scrap \
   --hostname spitfire-scrap.datalayer.io.local \
@@ -142,10 +169,10 @@ docker attach spitfire
 ## Squash
 
 ```
-# Squash
 docker save datalayer/bash:centos-7 -o img.tar
 docker history datalayer/bash:centos-7
 docker inspect datalayer/bash:centos-7 | grep -A 6 Layers
+```
 
 ## Clean
 

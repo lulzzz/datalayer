@@ -1,7 +1,5 @@
 ## Stackpoint
 
-+ Azure `spceastus` resource group
-
 ```
 Inbound security rules
 Priority	Name	Port	Protocol	Source	Destination	Action	
@@ -28,78 +26,10 @@ Priority	Name	Port	Protocol	Source	Destination	Action
 ```
 
 Outbound security rules
-Priority
-	
-Name
-	
-Port
-	
-Protocol
-	
-Source
-	
-Destination
-	
-Action
-	
-1120
-	
-any-outbound
-	
-Any
-	
-Any
-	
-Any
-	
-Any
-	
-Allow
-	…
-65000
-	
-AllowVnetOutBound
-	
-Any
-	
-Any
-	
-VirtualNetwork
-	
-VirtualNetwork
-	
-Allow
-	…
-65001
-	
-AllowInternetOutBound
-	
-Any
-	
-Any
-	
-Any
-	
-Internet
-	
-Allow
-	…
-65500
-	
-DenyAllOutBound
-	
-Any
-	
-Any
-	
-Any
-	
-Any
-	
-Deny
-	…
+Priority Name Port Protocol Source Destination Action
+1120 any-outbound Any Any Any Any Allow 65000 Allow
+VnetOutBound Any Any VirtualNetwork VirtualNetwork Allow 65001 AllowInternetOutBound Any Any Any Internet Allow 65500 DenyAllOutBound Any Any Any Any Deny
 
 ```
 https://api.stackpoint.io/cluster/7768/kubeui/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard/#!/role?namespace=_all
 ```
-

@@ -18,7 +18,6 @@
 # under the License.
 
 (xscreensaver -nosplash &) &>/dev/null
-# xscreensaver -nosplash & > /dev/null
 
 export PATH=$PATH:.
 
@@ -44,8 +43,6 @@ export KUBECONFIG=~/.kube/config
 export HELM_HOME=/opt/helm
 export PATH=$HELM_HOME:$PATH
 
-# export PATH=$HOME/miniconda/bin:$PATH
-
 export GRE_HOME=/opt/mozilla-1.9.1/mozilla-1-9-1-920bcf17a9e1/obj-xulrunner/dist/bin
 export PATH=$GRE_HOME:$PATH
 
@@ -64,69 +61,18 @@ export PATH=$GOROOT/bin:$PATH
 export GOPATH=/src/go
 export PATH=$GOPATH/bin:$PATH
 
-export GEPHI_HOME=/opt/gephi-0.9.1
-export PATH=$GEPHI_HOME/bin:$PATH
-
-# export H20_HOME=/opt/h2o
-
-export DYLD_LIBRARY_PATH=/usr/lib
-
-export LUKE_HOME=/opt/luke-6.1.0
-export PATH=$LUKE_HOME/bin:$PATH
-
-export GROOVY_HOME=/opt/groovy-2.2.1
-export PATH=$PATH:$GROOVY_HOME/bin
-
-export GRAILS_HOME=/opt/grails-2.2.0
-export PATH=$PATH:$GRAILS_HOME/bin
-
-# export CLOJURE_HOME=/opt/clojure-1.6.0
-# export CLASSPATH=$CLOJURE_HOME/clojure-1.6.0.jar:$CLASSPATH
-
-# export LEININGEN_HOME=/opt/leiningen-2.3.4
-# export PATH=$LEININGEN_HOME/bin:$PATH
-
-export SCALA_HOME=/opt/scala-2.11.8
-export PATH=$SCALA_HOME/bin:$PATH
-
 export SBT_HOME=/opt/sbt-0.13.2
 export PATH=$SBT_HOME/bin:$PATH
-
-export ANT_HOME=/opt/apache-ant-1.9.6
-export PATH=$ANT_HOME/bin:$PATH
-
-# export IVY_HOME=/opt/apache-ivy-2.4.0
-# export CLASSPATH=$IVY_HOME/ivy-2.3.0-rc1.jar:$CLASSPATH
 
 export MAVEN_HOME=/opt/apache-maven-3.3.9
 export PATH=$MAVEN_HOME/bin:$PATH
 export MAVEN_OPTS="-Xmx8g -Xms2g -XX:ReservedCodeCacheSize=2g"
 
-export GRADLE_HOME=/opt/gradle-3.3
-export PATH=$GRADLE_HOME/bin:$PATH
-
-export ANDROID_HOME=/opt/android-sdk-linux
-export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
-export ANDROID_STUDIO_HOME=/opt/android-studio
-export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
-
 # export AZURE_CLI_HOME=/opt/azure-cli.0.9.2
 # export PATH=$AZURE_CLI_HOME/bin:$PATH
 
-export JYTHON_HOME=/opt/jython2.2.1
-export PATH=$JYTHON_HOME:$PATH
-
 export GIT_LFS_HOME=/opt/git-lfs-1.5.2
 export PATH=$GIT_LFS_HOME:$PATH
-
-# export DATAIKU_HOME=/opt/dataiku
-# export PATH=$DATAIKU_HOME/bin:$PATH
-
-# export MONGODB_HOME=/opt/mongodb
-# export PATH=$MONGODB_HOME/bin:$PATH
-
-# export ELASTICSEARCH_HOME=/opt/elasticsearch-1.7.0
-# export PATH=$ELASTICSEARCH_HOME/bin:$PATH
 
 # export ZOOKEEPER_HOME=/opt/zookeeper-3.5.0
 # export ZOOKEEPER_CONF_DIR=/etc/zookeeper/conf
@@ -146,17 +92,20 @@ export PATH=$GIT_LFS_HOME:$PATH
 # export PATH=$HBASE_HOME/bin:$PATH
 # export HBASE_CONF_DIR=/etc/hbase/conf
 
-# export PIG_HOME=/opt/pig-0.12.0
-# export PATH=$PIG_HOME/bin:$PATH
-
 # export HIVE_HOME=/opt/hive-0.7.1
 # export PATH=$HIVE_HOME/bin:$PATH
 
-# export CASSANDRA_HOME=/opt/apache-cassandra-2.0.5
-# export PATH=$CASSANDRA_HOME/bin:$PATH
+export SPARK_HOME=/opt/spark
+export PATH=$SPARK_HOME/bin:$PATH
+export SPARK_OPTS="--master=local[4] --conf spark.driver.memory=2g --conf spark.executor.memory=1g --conf spark.sql.catalogImplementation=in-memory --conf spark.sql.warehouse.dir=/tmp/spark-warehouse"
+export SPARK_DAEMON_MEMORY=1g
+export SPARK_JAVA_OPTS="-Xms1g -Xmx3g"
 
-export GATE_HOME=/opt/src/gate
+export GATE_HOME=/src/gate
 export PATH=$GATE_HOME/bin:$PATH
+
+# export KAFKA_HOME=/opt/kafka-0.7.2-incubating-src
+# export PATH=$KAFKA_HOME/bin:$PATH
 
 # export OPENNLP_HOME=/opt/apache-opennlp-1.5.3
 # export PATH=$OPENNLP_HOME/bin:$PATH
@@ -164,24 +113,24 @@ export PATH=$GATE_HOME/bin:$PATH
 # export MAHOUT_HOME=/s/mahout
 # export PATH=$MAHOUT_HOME/bin:$PATH
 
-# export KAFKA_HOME=/opt/kafka-0.7.2-incubating-src
-# export PATH=$KAFKA_HOME/bin:$PATH
-
-# export AKKA_HOME=/opt/akka-2.3.3
-# export PATH=$AKKA_HOME/bin:$PATH
-
-# export SPARK_HOME=/opt/spark-2.0.0
-# export PATH=$SPARK_HOME/bin:$PATH
-# export SPARK_DAEMON_MEMORY=1g
-# export SPARK_JAVA_OPTS="-Xms512m -Xmx2g -Dspark.executor.memory=512m -Dspark.yarn.executor.memoryOverhead=100 -Dspark.executor.memory=256m"
-
 export PYTHONIOENCODING="UTF-8"
-
-export RESTER_HOME=/opt/rester
-export PATH=$RESTER_HOME/bin:$PATH
 
 export PATH=$PATH:/usr/local/pkg-config-0.23/bin
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+export GEPHI_HOME=/opt/gephi-0.9.1
+export PATH=$GEPHI_HOME/bin:$PATH
+
+export DYLD_LIBRARY_PATH=/usr/lib
+
+export LUKE_HOME=/opt/luke-6.1.0
+export PATH=$LUKE_HOME/bin:$PATH
+
+export SCALA_HOME=/opt/scala-2.11.8
+export PATH=$SCALA_HOME/bin:$PATH
+
+export RESTER_HOME=/opt/rester
+export PATH=$RESTER_HOME/bin:$PATH
 
 # source $DLA_HOME/bin/datalayer git-completion 
 
