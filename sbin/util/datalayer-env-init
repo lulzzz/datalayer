@@ -115,6 +115,8 @@ export PATH=$GATE_HOME/bin:$PATH
 
 export PYTHONIOENCODING="UTF-8"
 
+export PATH=/opt/miniconda3/bin:$PATH
+
 export PATH=$PATH:/usr/local/pkg-config-0.23/bin
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 

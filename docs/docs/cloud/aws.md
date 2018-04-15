@@ -81,8 +81,7 @@ t2.2xlarge	8	81	32	EBS-Only
 ```
 worker: Memory Optimized
 r4.2xlarge
-Instance Type	vCPU	Memory (GiB)	 Storage (GB)	Networking Performance Physical Processor	Clock Speed (GHz)	Intel AVX†	Intel AVX2†	Intel Turbo	EBS OPT  Enhanced Networking
-8 61 - Up to 10 Gigabit Intel Xeon E5-2686 v4 2.3 Yes Yes Yes Yes Yes
+Instance Type	vCPU	Memory (GiB)	 Storage (GB)	Networking Performance Physical Processor	Clock Speed (GHz)	Intel AVX†	Intel AVX2†	Intel Turbo	EBS OPT  Enhanced Networking 8 61 - Up to 10 Gigabit Intel Xeon E5-2686 v4 2.3 Yes Yes Yes Yes Yes
 ```
 
 ```

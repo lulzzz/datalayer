@@ -5,30 +5,30 @@ title: K8S Dashboard
 ## Install
 
 ```bash
-openssl genrsa -out ca.key 2048
-openssl req -x509 -new -nodes -key ca.key -subj "/CN=${COMMON_NAME}" -days 3650 -out ca.crt
-kubectl create secret tls issuer-key --cert=ca.crt --key=ca.key --namespace default
-kubectl create secret generic kubernetes-dashboard-certs --from-file=$HOME/certs -n kube-system
-```
-
-```bash
-# Install with HTTPS
+# Install with HTTPS.
 kubectl create -f $DLAHOME/manifests/k8s-dashboard/k8s-dashboard-ssl.yaml
-k proxy
+kubectl proxy
 open http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 ```
 
 ```bash
-# Get a Token
-kubectl get secret -n kube-system 
-kubectl describe secret kubernetes-dashboard-token-rqfht -n kube-system
+# Install with HTTP and Authorization Header.
+kubectl create -f $DLAHOME/manifests/k8s-dashboard/k8s-dashboard-auth-header.yaml
+kubectl proxy
+open http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/#!/login
 ```
 
 ```bash
-# Install with HTTP and Authorization Header
-kubectl create -f $DLAHOME/manifests/k8s-dashboard/k8s-dashboard-auth-header.yaml
-k proxy
-open http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/#!/login
+# Get a Token to Authenticate.
+kubectl get secret -n kube-system 
+kubectl describe secret default-token-frx5g -n kube-system
+```
+
+```bash
+openssl genrsa -out ca.key 2048
+openssl req -x509 -new -nodes -key ca.key -subj "/CN=${COMMON_NAME}" -days 3650 -out ca.crt
+kubectl create secret tls issuer-key --cert=ca.crt --key=ca.key --namespace default
+kubectl create secret generic kubernetes-dashboard-certs --from-file=$HOME/certs -n kube-system
 ```
 
 ## K8S Proxy

@@ -1,6 +1,10 @@
 # Helm
 
+```bash
+curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
 ```
+
+```bash
 wget https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-linux-amd64.tar.gz
 tar xvfz helm-v2.7.2-linux-amd64.tar.gz
 mv linux-amd64/helm /usr/local/bin
@@ -8,7 +12,7 @@ mv linux-amd64/helm /usr/local/bin
 
 ```bash
 # Set up a ServiceAccount for use by Tiller, the server side component of helm.
-kubectl --namespace kube-system create serviceaccount tiller
+kubectl -n kube-system create serviceaccount tiller
 # Azure AKS: If you’re on Azure AKS, you should now skip directly to step 3.**
 # Give the ServiceAccount RBAC full permissions to manage the cluster.
 # While most clusters have RBAC enabled and you need this line, you must skip this step if your kubernetes cluster does not have RBAC enabled (for example, if you are using Azure AKS).
@@ -18,7 +22,7 @@ helm init --service-account tiller
 # You can verify that you have the correct version and that it installed properly by running:
 helm version
 # Ensure that tiller is secure from access inside the cluster:
-kubectl --namespace=kube-system patch deployment tiller-deploy --type=json --patch='[{"op": "add", "path": "/spec/template/spec/containers/0/command", "value": ["/tiller", "--listen=localhost:44134"]}]'
+kubectl -n kube-system patch deployment tiller-deploy --type=json --patch='[{"op": "add", "path": "/spec/template/spec/containers/0/command", "value": ["/tiller", "--listen=localhost:44134"]}]'
 ```
 
 ```bash
@@ -34,29 +38,36 @@ helm ls -a
 ```
 
 ```bash
-helm install charts/hello-dla -n hello-dla
+# Ensure that tiller is secure from access inside the cluster.
+kubectl --namespace=kube-system patch deployment tiller-deploy --type=json --patch='[{"op": "add", "path": "/spec/template/spec/containers/0/command", "value": ["/tiller", "--listen=localhost:44134"]}]'
+```
+
+Docker pull timeout...: use --timeout=
+
+```bash
+helm install $DLAHOME/repos/helm-charts/hello -n hello
 kubectl get po
 kubectl get svc
 helm ls
-helm status hello-dla
-helm delete hello-dla --purge
+helm status hello
+helm delete hello --purge
 ```
 
-```
+```bash
 helm install --dry-run
 helm template
 ```
 
-```
+```bash
 helm package .
 helm serve --repo-path .
 ```
 
-```
+```bash
 helm repo rm datalayer
 helm repo add datalayer http://helm-charts.datalayer.io
 ```
 
-```
+```bash
 helm reset
 ```

@@ -51,42 +51,6 @@ kubectl cordon $NODENAME
 kubectl uncordon $NODENAME
 ```
 
-# Proxy
-
-```
-kubectl proxy --port=8080
-http://localhost:8080/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default
-```
-
-```
-echo $KUBERNETES_SERVICE_HOST
-echo $KUBERNETES_SERVICE_PORT
-```
-
-```
-https://github.com/liyinan926/spark-operator
-+ Spark Operator is typically deployed and run using manifest/spark-operator.yaml through a Kubernetes Deployment.
-+ However, users can still run it outside a Kubernetes cluster and make it talk to the Kubernetes API server of a cluster by specifying path to kubeconfig, which can be done using the --kubeconfig flag.
-```
-
-```
-Two important things I needed (my bad), I was using a kubectl-proxy sidecar container and using --master=k8s://http://127.0.0.beta.kubernetes.io.1:8001, now I have no sidecar and I am using --master k8s://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_PORT.
-```
-
-## Registy
-
-```
-minikube stop
-minikube delete
-CHANGE_MINIKUBE_NONE_USER=true minikube start --kubernetes-version v1.8.0 --cpus 8 --memory 8192 --insecure-registry localhost:5000
-cd /sdk/manifests/k8s
-kubectl create -f registry/kube-registry.yaml
-minikube ssh
-curl http://localhost:5000
-kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | grep kube-registry-v0 | awk '{print $1;}') 5000:5000
-curl http://localhost:5000
-```
-
 ## Kubectl
 
 ```
@@ -156,6 +120,48 @@ kubectl rollout status -w deployment/tiller-deploy --namespace=kube-system
 ```
 kubectl get pods -a --all-namespaces -o json  | jq -r '.items[] | select(.status.phase != "Running" or ([ .status.conditions[] | select(.type == "Ready" and .status == "False") ] | length ) == 1 ) | .metadata.namespace + "/" + .metadata.name'
 kubectl get po --field-selector=status.phase==Running -l app=k8s-watcher
+```
+
+# Proxy
+
+```
+kubectl proxy --port=8080
+http://localhost:8080/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default
+```
+
+```
+echo $KUBERNETES_SERVICE_HOST
+echo $KUBERNETES_SERVICE_PORT
+```
+
+```
+https://github.com/liyinan926/spark-operator
++ Spark Operator is typically deployed and run using manifest/spark-operator.yaml through a Kubernetes Deployment.
++ However, users can still run it outside a Kubernetes cluster and make it talk to the Kubernetes API server of a cluster by specifying path to kubeconfig, which can be done using the --kubeconfig flag.
+```
+
+```
+Two important things I needed (my bad), I was using a kubectl-proxy sidecar container and using --master=k8s://http://127.0.0.beta.kubernetes.io.1:8001, now I have no sidecar and I am using --master k8s://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_PORT.
+```
+
+## Service Account
+
+```
+kubectl get serviceAccounts --all-namespaces
+```
+
+## Registy
+
+```
+minikube stop
+minikube delete
+CHANGE_MINIKUBE_NONE_USER=true minikube start --kubernetes-version v1.8.0 --cpus 8 --memory 8192 --insecure-registry localhost:5000
+cd /sdk/manifests/k8s
+kubectl create -f registry/kube-registry.yaml
+minikube ssh
+curl http://localhost:5000
+kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | grep kube-registry-v0 | awk '{print $1;}') 5000:5000
+curl http://localhost:5000
 ```
 
 # Execute
@@ -391,6 +397,26 @@ kubectl describe secrets dla-secret
 
 ```
 kubectl create secret generic dla-secret --type="kubernetes.io/dla" --from-literal=apiAddress=tcp://localhost:5705 --from-literal=apiUsername=dla --from-literal=apiPassword=dla --namespace=default
+```
+
+## Storage
+
+```
+cat << EOF | kubectl apply -f -
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+     storageclass.beta.kubernetes.io/is-default-class: "true"
+  name: gp2
+provisioner: kubernetes.io/aws-ebs
+parameters:
+  type: gp2
+EOF
+```
+
+```
+kubectl get storageclass
 ```
 
 ## Volume
