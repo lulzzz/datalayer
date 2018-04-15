@@ -360,7 +360,6 @@ Example response:
   "average_price" : 74.25
 }
 
- 
 # Range Facet
 
 The range facet produces multiple range buckets over numeric fields or date fields.
@@ -651,4 +650,3 @@ All the reporting and sorting was done using document count (i.e. number of book
 Try it out
 
 Facet functions and Subfacets are in Solr 5.1 and later. Download the latest release and give it a spin!
- 

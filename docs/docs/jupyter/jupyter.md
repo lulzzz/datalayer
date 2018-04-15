@@ -2,17 +2,9 @@
 title: Jupyter
 ---
 
-+ jupyterlab plugin
-+ jupyterlab react.js plugin
-+ jupyterhub google auth
-+ jupyterhub custom auth
-+ jupyterhub custom pages
-+ minikube etcd ark
-+ aws kubespray etcd ark
-
 ## Notebook
 
-[Docs](https://jupyter-notebook.readthedocs.io).
+[Notebook Docs](https://jupyter-notebook.readthedocs.io).
 
 ```bash
 npm install -g configurable-http-proxy
@@ -44,26 +36,15 @@ docker run -it --rm -p 8888:8888 jupyter/scipy-notebook:8a1b90cbcba5
 # Kernels
 
 ```bash
+# ./home/datalayer/.local/share/jupyter/runtime/kernel-53354a78-bde7-4986-9acb-fc94191d5d16.json
+# ./home/datalayer/.local/share/jupyter/runtime/kernel-d785bbc8-c058-49d0-861c-97a39089c91e.json
+# ./run/user/1000/jupyter/kernel-5332.json
+# ./run/user/1000/jupyter/kernel-772af73b-185b-4960-b0fb-a0532dc59e49.json
 jupyter kernelspec list
-# Available kernels:
-#  apache_toree_pyspark    /usr/local/share/jupyter/kernels/apache_toree_pyspark
-#  apache_toree_scala      /usr/local/share/jupyter/kernels/apache_toree_scala
-#  apache_toree_sparkr     /usr/local/share/jupyter/kernels/apache_toree_sparkr
-#  apache_toree_sql        /usr/local/share/jupyter/kernels/apache_toree_sql
-
-# rm -fr /usr/local/share/jupyter/kernels/apache_toree_sparkr
 ```
 
-```
-./home/datalayer/.local/share/jupyter/runtime/kernel-53354a78-bde7-4986-9acb-fc94191d5d16.json
-./home/datalayer/.local/share/jupyter/runtime/kernel-d785bbc8-c058-49d0-861c-97a39089c91e.json
-./run/user/1000/jupyter/kernel-5332.json
-./run/user/1000/jupyter/kernel-772af73b-185b-4960-b0fb-a0532dc59e49.json
-```
-
+```bash
 # Magic
-
-```
 %lsmagic
 %env
 %run
@@ -96,17 +77,19 @@ jupyter bundlerextension list
 [JupyterLab Docs](https://jupyterlab.readthedocs.io).
 
 ```bash
-jupyter serverextension enable --py jupyterlab --sys-prefix
-jupyter notebook
-open http://localhost:8888/lab
-```
-
-```bash
 pip install --upgrade jupyterlab
 jupyter lab
 jupyter lab --log-level DEBUG --port 8080 --notebook-dir /d
 jupyter lab paths
 ```
+
+```bash
+jupyter serverextension enable --py jupyterlab --sys-prefix
+jupyter notebook
+open http://localhost:8888/lab
+```
+
+Modes
 
 + Core mode (`--core-mode`): in this mode JupyterLab will run using the JavaScript
   assets contained in the installed `jupyterlab` Python package. In core mode, no
@@ -124,7 +107,7 @@ jupyter lab paths
 
 [JupyterLab Docs for Dev](https://jupyterlab.readthedocs.io/en/latest/developer/repo.html).
 
-[TS Doc](http://jupyterlab.github.io/jupyterlab/index.html).
+[TypeScript Doc](http://jupyterlab.github.io/jupyterlab/index.html).
 
 [Phosphor.js Datagrid](http://phosphorjs.github.io/examples/datagrid).
 
@@ -132,25 +115,35 @@ jupyter lab paths
 git clone https://github.com/jupyterlab/jupyterlab.git
 cd jupyterlab
 pip install -e .
+# Use `jlpm` or globally installed `yarn`
+yarn install
 ```
 
 ```bash
-# Use `jlpm` or globally installed `yarn`
-# Builds the source files into javascript files in lib/.
-yarn run build 
 # Build the core mode assets (optional)
 yarn run build:core
+# Builds the source files into javascript files in lib folder.
+yarn run build
 jupyter lab build
-yarn install
 jupyter lab --dev-mode --watch
 ```
 
+Building consists of:
+
++ Populating the staging/ directory using template files
++ Handling any locally installed packages
++ Ensuring all installed assets are available
++ Bundling the assets
++ Copying the bundled assets to the static directory
+
+Note that building will always use the latest JavaScript packages that meet the dependency requirements of JupyterLab itself and any installed extensions. If you wish to run JupyterLab with the set of pinned requirements that was shipped with the Python package, you can launch as jupyter lab –core-mode.
+
 ```bash
-# Deletes the lib/ directory.
-yarn run clean 
-yarn clean
-# At times, it may be necessary to clean your local repo with the command jlpm run clean:slate. This will clean the repository, and re-install and rebuild.
+# At times, it may be necessary to clean your local repo with the command yarn run clean:slate.
+# This will clean the repository, and re-install and rebuild.
 yarn run clean:slate
+# Deletes the lib directory.
+yarn run clean 
 ```
 
 ```bash
@@ -159,7 +152,8 @@ yarn test
 ```
 
 ```bash
-# You can run jlpm run build:dev:prod to build more accurate sourcemaps that show the original Typescript code when debugging. However, it takes a bit longer to build the sources, so is used only to build for production by default.
+# Build more accurate sourcemaps that show the original Typescript code when debugging.
+# However, it takes a bit longer to build the sources, so is used only to build for production by default.
 yarn run build:dev:prod
 ```
 
@@ -171,14 +165,14 @@ open ./docs/index.html
 
 ## JupyterLab Examples
 
-[JupyterLab Docs for Dev](https://jupyterlab.readthedocs.io/en/latest/developer/examples.html).
+[JupyterLab Examples Docs](https://jupyterlab.readthedocs.io/en/latest/developer/examples.html).
 
 ```bash
 yarn run build:examples
 ```
 
 ```bash
-# Navigate to the example’s subdirectory in the examples directory.
+cd examples/cell
 python main.py
 ```
 
@@ -195,15 +189,15 @@ jupyter labextension install @jupyterlab/vega2-extension
 ```bash
 git clone https://github.com/jupyterlab/jupyter-renderers.git
 cd jupyter-renderers
-yarn
-yarn build
+yarn install
+yarn run build
 ```
 
 ```bash
-# Link geojson-extension.
-jupyter labextension link packages/geojson-extension
 # Link all extensions in packages.
 yarn run link
+# Link geojson-extension only.
+jupyter labextension link packages/geojson-extension
 ```
 
 ```bash
@@ -222,47 +216,63 @@ yarn watch
 jupyter lab --watch
 ```
 
-```bash
-# Publishing packages.
-yarn publish
-# If publishing a package for the first time.
-npm access public @jupyterlab/<extension name>
-```
-
 ## JupyterLab Extensions
 
-[JupyterLab Extensions](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
+[JupyterLab Extensions](https://jupyterlab.readthedocs.io/en/latest/user/extensions.html).
 
 [JupyterLab Extensions on Github](https://github.com/topics/jupyterlab-extension).
 
-[JupyterLab Extensions on Github](https://github.com/search?utf8=%E2%9C%93&q=topic%3Ajupyterlab-extension&type=Repositories).
+[JupyterLab Extensions on Github (2)](https://github.com/search?utf8=%E2%9C%93&q=topic%3Ajupyterlab-extension&type=Repositories).
 
 ```bash
 jupyter labextension list
+# The jupyter labextension install command builds the application, so you do not need to call build.
 jupyter labextension install @jupyterlab/xkcd-extension
+jupyter labextension disable @jupyterlab/xkcd-extension
+jupyter labextension enable @jupyterlab/xkcd-extension
 jupyter labextension uninstall @jupyterlab/xkcd-extension
 ```
 
 ```bash
+pip install jupyterlab_github
 jupyter labextension install @jupyterlab/github --no-build
 jupyter labextension install @jupyterlab/github@0.5.1
 # You can also install an extension that is not uploaded to npm, i.e., my-extension can be a local directory containing the extension, a gzipped tarball, or a URL to a gzipped tarball.
 jupyter labextension install $DLAHOME/repos/jupyterlab-git
 # Installing and uninstalling extensions can take some time, as they are downloaded, bundled with the core extensions, and the whole application is rebuilt. You can install/uninstall more than one extension in the same command by listing their names after the install command. If you are installing/uninstalling several extensions in several stages, you may want to defer rebuilding the application by including the flag --no-build in the install/uninstall step. Once you are ready to rebuild, you can run the command:
 jupyter lab build
-pip install jupyterlab_github
 jupyter labextension uninstall @jupyterlab/github
 ```
 
 ```bash
+pip install jupyterlab_latex
 jupyter labextension install @jupyterlab/latex
 jupyter labextension install $DLAHOME/repos/jupyterlab-latex
-pip install jupyterlab_latex
 ```
 
 ## JupyterLab Extensions Dev
 
 [JupyterLab Extensions Dev](https://jupyterlab.readthedocs.io/en/latest/developer/extension_dev.html).
+
+```bash
+cookiecutter https://github.com/jupyterlab/extension-cookiecutter-ts
+# In extension repo.
+yarn install
+yarn run build
+jupyter labextension link .
+yarn watch
+# In jupyterlab repo.
+jupyter lab --watch
+jupyter lab --dev-mode
+jupyter lab --dev-mode --watch
+```
+
+```bash
+# If you must install a extension into a development branch of JupyterLab, you have to graft it into the source tree of JupyterLab itself. This may be done using the command
+yarn run add:sibling $DLAHOME/repos/jupyterlab-xkcd
+# In the JupyterLab root directory, where <path-or-url> refers either to an extension npm package on the local filesystem, or a URL to a git repository for an extension npm package. This operation may be subsequently reversed by running
+yarn run remove:sibling $DLAHOME/repos/jupyterlab-xkcd
+```
 
 ```bash
 # For a development install.
@@ -272,9 +282,17 @@ yarn run build
 jupyter labextension install
 # This causes the builder to re-install the source folder before building the application files.
 # You can re-build at any time using jupyter lab build and it will reinstall these packages.
+```
+
+```bash
 # You can also link other local npm packages that you are working on simultaneously using jupyter labextension link; they will be re-installed but not considered as extensions.
 # Local extensions and linked packages are included in jupyter labextension list.
 jupyter labextension link .
+```
+
+```bash
+ls /home/datalayer/opt/miniconda3/share/jupyter/lab
+extensions  schemas  settings  staging  static  themes
 ```
 
 ```bash
@@ -287,13 +305,6 @@ jupyter lab build
 # When using local extensions and linked packages, you can run the following command.
 # This will cause the application to incrementally rebuild when one of the linked packages changes. Note that only compiled JavaScript files (and the CSS files) are watched by the WebPack process.
 jupyter lab --watch
-```
-
-```bash
-# If you must install a extension into a development branch of JupyterLab, you have to graft it into the source tree of JupyterLab itself. This may be done using the command
-yarn run add:sibling <path-or-url>
-# In the JupyterLab root directory, where <path-or-url> refers either to an extension npm package on the local filesystem, or a URL to a git repository for an extension npm package. This operation may be subsequently reversed by running
-yarn run remove:sibling <path-or-url>
 ```
 
 ```bash
@@ -310,7 +321,7 @@ jupyter serverextension enable --py jupyterlab_git
 # Launch JupyterLab & you will see the new Git buttons on the left side of the window.
 ```
 
-## VDom
+## JupyterLab VDOM
 
 ```bash
 pip install vdom
@@ -320,6 +331,15 @@ pip install vdom
 git clone https://github.com/nteract/vdom
 cd vdom
 pip install -e .
+```
+
+## JupyterLab Extensions Publish
+
+```bash
+npm login
+npm config set scope datalayer
+# Publishing extensions.
+npm publish --access=public
 ```
 
 ## JupyterHub
@@ -401,9 +421,21 @@ open http://localhost:8000
 docker exec -it jupyterhub bash
 ```
 
+## JupyterHub Single Server
+
+[Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
+
+[Repo](https://github.com/jupyterhub/jupyterhub-deploy-teaching).
+
+## JupyterHub Teaching
+
+[Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
+
+[Repo](https://github.com/jupyterhub/jupyterhub-deploy-teaching).
+
 ## JupyterLab Hub Plugin
 
-[JupyterLab Hub Repository Plugin](https://github.com/jupyterhub/jupyterlab-hub).
+[JupyterLab Hub Repository Extension](https://github.com/jupyterhub/jupyterlab-hub).
 
 ```bash
 # This adds a "Hub" menu to JupyterLab that allows a user to log out of JupyterHub or access their JupyterHub control panel. This follows the JupyterLab extension system where an extension is just an npm package, not wrapped in a Python package.
@@ -576,6 +608,12 @@ CMD ["jupyter", "kernelgateway", "--KernelGatewayApp.ip=0.0.0.0", "--KernelGatew
 docker build -t datalayer/kernel-gateway .
 docker run -it --rm -p 8888:8888 datalayer/kernel-gateway
 ```
+
+## Enterprise Gateway
+
+[Enterprise Gateway Docs](https://jupyter-enterprise-gateway.readthedocs.io/en/latest).
+
+[Enterprise Gateway Repo](https://github.com/jupyter-incubator/enterprise_gateway).
 
 ## Repo2Docker
 
