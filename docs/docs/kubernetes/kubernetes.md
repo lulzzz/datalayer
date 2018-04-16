@@ -1,51 +1,52 @@
-[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
-
-# Kubernetes
+---
+title: Kubernetes
+---
 
 ## Config
 
-```
+```bash
 export KUBECONFIG=~/.kube/config
 export KUBECONFIG=~/.kube/admin.conf
 export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
 
-```
+```bash
 kubectl config view
 kubectl config view minikube --flatten=true
 ```
 
 ## API
 
-```
+```bash
 kubectl proxy
-echo http://localhost:8001/swagger-ui
 curl http://localhost:8001/api
+open http://localhost:8001/swagger-ui
 curl -s http://localhost:8001/api/v1/nodes
 curl -s http://kuberenetes:8001/api/v1/nodes
 curl -s http://localhost:8001/api/v1/nodes | jq '.items[] .metadata.labels'
 ```
 
-```
+```bash
 APISERVER=$(kubectl config view | grep server | cut -f 2- -d ":" | tr -d " ")
 ```
 
 ## InCluster
 
-```
+```bash
 /var/run/secrets/kubernetes.io/serviceaccount/token
+/var/run/secrets/kubernetes.io/serviceaccount/namespace
+/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
 ```
 
 # Node
 
-```
+```bash
 # Taint master to host pods.
-# This will remove the node-role.kubernetes.io/master taint from any nodes that have it, including the master node, 
-# meaning that the scheduler will then be able to schedule pods everywhere
+# This will remove the node-role.kubernetes.io/master taint from any nodes that have it, including the master node, meaning that the scheduler will then be able to schedule pods everywhere
 kubectl taint nodes --all node-role.kubernetes.io/master-
 ```
 
-```
+```bash
 # Marking a node as unschedulable will prevent new pods from being scheduled to that node, but will not affect any existing pods on the node. This is useful as a preparatory step before a node reboot, etc. For example, to mark a node unschedulable, run this command:
 kubectl cordon $NODENAME
 kubectl uncordon $NODENAME
@@ -53,11 +54,11 @@ kubectl uncordon $NODENAME
 
 ## Kubectl
 
-```
+```bash
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 ```
 
-```
+```bash
 kubectl get pods
 kubectl get pods --all-namespaces
 kubectl get pods -o wide
@@ -67,11 +68,11 @@ watch kubectl get pods --all-namespaces
 kubectl delete pods <pod> --grace-period=0 --force
 ```
 
-```
+```bash 
 kubectl apply -f pod.yaml
 ```
 
-```
+```bash
 cat << EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
@@ -90,7 +91,7 @@ roleRef:
 EOF
 ```
 
-```
+```bash
 echo "
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding

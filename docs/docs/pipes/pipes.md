@@ -2,6 +2,8 @@
 title: Pipes
 ---
 
+## About
+
 Pipe the models and route the data between them.
 
 See
