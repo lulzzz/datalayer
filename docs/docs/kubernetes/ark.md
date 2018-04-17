@@ -1,5 +1,5 @@
 ---
-title: Heptio ARK
+title: ARK by Heptio
 ---
 
 ```bash

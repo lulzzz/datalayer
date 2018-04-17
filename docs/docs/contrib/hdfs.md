@@ -39,9 +39,9 @@ helm install --repo http://helm.datalayer.io \
   --set persistence.dataNode.enabled=false \
   hadoop-k8s \
   -n hadoop-k8s
-kubectl exec -n default -it hadoop-k8s-hadoop-k8s-hdfs-nn-0 -- hdfs dfsadmin -report
-kubectl exec -n default -it hadoop-k8s-hadoop-k8s-hdfs-nn-0 -- hdfs dfs -mdkir /tmp
-kubectl exec -n default -it hadoop-k8s-hadoop-k8s-hdfs-nn-0 -- hdfs dfs -ls /
+kubectl exec -n default -it hdfs-hdfs-hdfs-nn-0 -- hdfs dfsadmin -report
+kubectl exec -n default -it hdfs-hdfs-hdfs-nn-0 -- hdfs dfs -mdkir /tmp
+kubectl exec -n default -it hdfs-hdfs-hdfs-nn-0 -- hdfs dfs -ls /
 ```
 
 # HDFS K8S Local + Kerberos

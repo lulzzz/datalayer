@@ -23,4 +23,4 @@ do
 #    echo ${dir##*/}
   cd $rep
   git remote get-url --push origin
-done
+done | sort

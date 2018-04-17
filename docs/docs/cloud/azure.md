@@ -51,7 +51,7 @@ Principal                                             Role         Scope
 ----------------------------------------------------  -----------  ---------------------------------------------------
 eric_datalayer.io#EXT#@ericdat...  Owner        /subscriptions/47981fb0-....
 http://stackpoint-eric-echarles                       Contributor  /subscriptions/47981fb0-d,,,,
-http://azure-cli-2017-12-30-07-30-39                  Contributor  /subscriptions/47981fb0-d82a-....
+http://azure-cli-2017-12-3                  Contributor  /subscriptions/47981fb0-d82a-....
 ```
 
 ```
@@ -120,7 +120,7 @@ Here you should also think about using a password or not for the generated key.
 ## Blob Storage
 
 ```
-+ export AZURE_STORAGE_ACCOUNT=datalayer
++ export AZURE_STORAGE_ACCOUNT=dat..
 + export AZURE_STORAGE_ACCESS_KEY=ybTIHrSB...
 + azure storage blob upload test.txt abi test.txt
 ```

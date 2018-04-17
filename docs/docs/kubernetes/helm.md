@@ -1,4 +1,6 @@
-# Helm
+---
+title: Helm
+---
 
 ```bash
 curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
@@ -42,7 +44,7 @@ helm ls -a
 kubectl --namespace=kube-system patch deployment tiller-deploy --type=json --patch='[{"op": "add", "path": "/spec/template/spec/containers/0/command", "value": ["/tiller", "--listen=localhost:44134"]}]'
 ```
 
-Docker pull timeout...: use --timeout=
+In case of docker pull timeout, use `--timeout=`.
 
 ```bash
 helm install $DLAHOME/repos/helm-charts/hello -n hello

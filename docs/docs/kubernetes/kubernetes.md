@@ -15,6 +15,14 @@ kubectl config view
 kubectl config view minikube --flatten=true
 ```
 
+## Authentication
+
+```bash
+# Creates a kubeconfig file in $HOME folder.
+kubectl config set-credentials eric --username eric --password eric123
+kubectl config set-credentials eric --token erictoken
+```
+
 ## API
 
 ```bash

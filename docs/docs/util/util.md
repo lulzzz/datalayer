@@ -1224,7 +1224,7 @@ metadata
 + hcatalog
 
 data
-+ hadoop-hdfs
++ hdfs
 + hadoop-yarn
 + hadoop-mapreduce
 + tez

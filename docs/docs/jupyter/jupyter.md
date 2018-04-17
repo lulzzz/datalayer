@@ -350,6 +350,8 @@ npm publish --access=public
 
 [JupyterHub Repository](https://github.com/jupyterhub/jupyterhub).
 
+[JupyterHub Gitter](https://gitter.im/jupyterhub/jupyterhub).
+
 ```bash
 pip3 install --upgrade jupyterhub
 configurable-http-proxy -h
@@ -423,15 +425,15 @@ docker exec -it jupyterhub bash
 
 ## JupyterHub Single Server
 
-[Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
+[JupyterHub Single Server Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
 
-[Repo](https://github.com/jupyterhub/jupyterhub-deploy-teaching).
+[JupyterHub Single Server Repo](https://github.com/jupyterhub/jupyterhub-deploy-teaching).
 
 ## JupyterHub Teaching
 
-[Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
+[JupyterHub Teaching Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
 
-[Repo](https://github.com/jupyterhub/jupyterhub-deploy-teaching).
+[JupyterHub Teaching Repo](https://github.com/jupyterhub/jupyterhub-deploy-teaching).
 
 ## JupyterLab Hub Plugin
 
