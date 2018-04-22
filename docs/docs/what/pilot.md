@@ -8,7 +8,7 @@ title: Pilot
 
 If you prefer an User Interface, we also ship `Pilot UI` which bring the next level of control and monitoring. You can also further analyses with the same power usage and metrics collected from the K8S resources to optimize your costs and enhance the performance for your end users.
 
-![Pilot](/images/datalayer/datalayer-pilot.svg "Pilot")
+![Pilot](/images/datalayer/pilot.svg "Pilot")
 
 We also enable the usage of low cost cluster resources such as Spot Instances that can even span multiple `Virtual Private Clouds`.
 
