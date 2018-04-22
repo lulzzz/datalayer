@@ -61,9 +61,8 @@ tocs:
  - why
  - who
  - install
- - kuber
+ - pilot
  - explorer
- - studio
  - library
  - releases
  - contrib

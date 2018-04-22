@@ -1,4 +1,6 @@
-# OpenLDAP
+---
+title: OpenLDAP
+---
 
 ## Install
 

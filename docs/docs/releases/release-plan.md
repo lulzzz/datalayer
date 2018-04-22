@@ -53,8 +53,8 @@ You can track the progress on our [Twitter account](https://twitter.com/datalaye
 + Budget View
 + Fine Grained Permissions View
 + Golang check for SSL on HTTP request
-+ Integrate `kuber.sh` into Kuber binary with Commands (seed, join, scale, pause, hibernate, delete)
-  + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps [hdfs,spark,spitfire,explorer] (parameter description http://datalayer.io/docs/kuber)
++ Integrate `kuber.sh` into Pilot binary with Commands (seed, join, scale, pause, hibernate, delete)
+  + kuber create --name my-kuber --num-workers 3 --cloud aws --auth twitter - apps [hdfs,spark,spitfire,explorer] (parameter description http://datalayer.io/docs/pilot)
 
 ## 2.1.0 Sylvidra
 
@@ -134,7 +134,7 @@ vendor/github.com/kris-nova/kubicorn/cloud/amazon/public/resources/launchconfigu
 
 + Kerberos HDFS
 + Note Pull Request View
-+ Kuber UI Secrets
++ Pilot UI Secrets
 + Finer Grained Notes Permissions
 + HDFS Treemap View
 

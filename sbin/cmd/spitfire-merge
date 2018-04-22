@@ -185,25 +185,25 @@ function merge_branches() {
     echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
     echo
 
-    echo -e $YELLOW$BOLD">>> Merging $local_branch to spitfire"$NOBOLD$NOCOLOR
+    echo -e $YELLOW$BOLD">>> Merging $local_branch to datalayer"$NOBOLD$NOCOLOR
     echo
-    git checkout spitfire
+    git checkout datalayer
     if [ $? -eq 0 ]
     then
       echo
     else
         echo
-        echo -e $BOLD$RED"git checkout spitfire failed..."$NOCOLOR$NOBOLD
+        echo -e $BOLD$RED"git checkout datalayer failed..."$NOCOLOR$NOBOLD
         echo
         exit
     fi
-    git merge $local_branch -m "Merge branch '"$local_branch"' into spitfire"
+    git merge $local_branch -m "Merge branch '"$local_branch"' into datalayer"
     if [ $? -eq 0 ]
     then
       echo
     else
         echo
-        echo -e $BOLD$RED"git merge $local_branch into spitfire failed..."$NOCOLOR$NOBOLD
+        echo -e $BOLD$RED"git merge $local_branch into datalayer failed..."$NOCOLOR$NOBOLD
         echo
         exit
     fi
@@ -245,10 +245,10 @@ else
 fi
 
 echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
-echo -e $GREEN$BOLD"git branch -D spitfire"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"git branch -D datalayer"$NOBOLD$NOCOLOR
 echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
-git branch -D spitfire
-# echo -e $YELLOW$BOLD"==> git branch -D spitfire skipped <=="$NOBOLD$NOCOLOR
+git branch -D datalayer
+# echo -e $YELLOW$BOLD"==> git branch -D datalayer skipped <=="$NOBOLD$NOCOLOR
 if [ $? -eq 0 ]
 then
   echo
@@ -257,10 +257,10 @@ else
 fi
 
 echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
-echo -e $GREEN$BOLD"git branch spitfire"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"git branch datalayer"$NOBOLD$NOCOLOR
 echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
-git branch spitfire
-# echo -e $YELLOW$BOLD"==> git branch spitfire skipped <=="$NOBOLD$NOCOLOR
+git branch datalayer
+# echo -e $YELLOW$BOLD"==> git branch datalayer skipped <=="$NOBOLD$NOCOLOR
 echo
 
 echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
@@ -270,7 +270,7 @@ then
     echo
 else
     echo
-    echo -e $BOLD$RED"git branch spitfire failed..."$NOCOLOR$NOBOLD
+    echo -e $BOLD$RED"git branch datalayer failed..."$NOCOLOR$NOBOLD
     echo
     exit
 fi
@@ -286,7 +286,7 @@ echo
 echo
 echo -e $GREEN$BOLD"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"$NOBOLD$NOCOLOR
 echo
-echo -e $GREEN$BOLD"Check you are on 'spitfire' branch and 'git push -f origin spitfire'"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"Check you are on 'datalayer' branch and 'git push -f origin datalayer'"$NOBOLD$NOCOLOR
 echo
 echo -e $GREEN$BOLD"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"$NOBOLD$NOCOLOR
 echo

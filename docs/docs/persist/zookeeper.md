@@ -1,4 +1,6 @@
-# Zookeeper
+---
+title: Zookeeper
+---
 
 Apache Zookeeper usage examples.
 

@@ -1,4 +1,10 @@
-## Nagios on Ubuntu
+---
+title: Operations
+---
+
+## Nagios
+
+### Ubuntu
 
 sudo apt-get install nagios3 nagios-nrpe-plugin
 
@@ -8,18 +14,21 @@ For example, to change the password for the nagiosadmin user enter:
 sudo htpasswd /etc/nagios3/htpasswd.users nagiosadmin
 
 To add a user:
+
 sudo htpasswd /etc/nagios3/htpasswd.users steve
 
 Next, on server02 install the nagios-nrpe-server package. From a terminal on server02 enter:
 sudo apt-get install nagios-nrpe-server
 
-# Nagios on Centos
+## Nagios
+
+## Nagios on Centos
 
 Don't forget to stop httpd on your machine `sudo /etc/init.d/apache2 stop`.
 
 Connect to the Docker container with `datalayer-emulator-start secured centos centos6` and run:
 
-```
+```bash
 htpasswd /etc/nagios/passwd nagiosadmin
 service httpd start
 service nagios start
@@ -27,14 +36,14 @@ service nagios start
 
 Add services:
 
-```
+```bash
 mkdir /etc/nagios/servers
 vi /etc/nagios/servers/clients.cfg
 ```
 
 and add the following:
 
-```
+```bash
 define service {
         use                             generic-service
         host_name                       client
@@ -44,22 +53,22 @@ define service {
         }
 ```
 
-```
+```bash
 chown -R root:nagios /etc/nagios/servers
 ```
 
 Restart nagios with `service nagios restart`.
 
-# Rsyslog
+## Rsyslog
 
-## /etc/rsyslog.conf
+/etc/rsyslog.conf
 
 ```
 $IncludeConfig /etc/rsyslog.d/*.conf
 *.info;mail.none;authpriv.none;cron.none;local5.none;local4.none;local3.none    /var/log/messages
 ```
 
-## /etc/rsyslog.d/arcsight-10-sys.conf
+/etc/rsyslog.d/arcsight-10-sys.conf
 
 ```
 $SystemLogRateLimitBurst        0
@@ -68,27 +77,27 @@ syslog.info;auth.info;daemon.info;authpriv.info;cron.info;kern.info             
 local5.info                                                                     @ServerSysIpAddress
 ```
 
-## /etc/rsyslog.d/arcsight-20-db.conf
+/etc/rsyslog.d/arcsight-20-db.conf
 
 ```
 local4.info                    @ServerDbIpAddress
 ```
 
-## /etc/rsyslog.d/arcsight-30-ap.conf
+/etc/rsyslog.d/arcsight-30-ap.conf
 
 ```
 local3.info                    @ServerAppIpAddress
 ```
 
-## Start rsyslog
+Start rsyslog
 
 ```
 /etc/init.d/rsyslog restart
 ```
 
-# Audit
+## Audit
 
-## /etc/audisp/plugins.d/syslog.conf
+/etc/audisp/plugins.d/syslog.conf
 
 ```
 active = yes
@@ -99,19 +108,19 @@ args = LOG_INFO LOG_LOCAL5
 format = string
 ```
 
-## /etc/audit/auditd.conf
+/etc/audit/auditd.conf
 
 ```
 dispatcher = /sbin/audispd
 ```
 
-## /etc/audisp/audispd.conf
+/etc/audisp/audispd.conf
 
 ```
 q_depth = 120
 ```
 
-## /etc/audit/audit.rules
+/etc/audit/audit.rules
 
 ```
 -D
@@ -120,6 +129,7 @@ q_depth = 120
 -a always, exit -F arch=b64 -S kill -F a1=9 -k KILL9
 ```
 
+```
 # This file contains the auditctl rules that are loaded
 # whenever the audit daemon is started via the initscripts.
 # The rules are simply the parameters that would be passed
@@ -132,8 +142,9 @@ q_depth = 120
 -b 1024 -a always,exit -S adjtimex -S settimeofday -S stime -k time-change
 -a always,exit -S clock_settime -k time-change 
 -a always,exit -S sethostname -S setdomainname -k system-locale 
+```
 
-## Start auditd
+Start auditd
 
 ```
 /etc/init.d/auditd restart

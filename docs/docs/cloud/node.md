@@ -174,25 +174,25 @@ datalayer-protoc-2-5-0
 
 ```
 cd /dla
-git clone https://echarles:qslkZ4EDdfj@bitbucket.org/datalayer/datalayer-git datalayer
+git clone https://bitbucket.org/datalayer/datalayer-git datalayer
 datalayer-build
 ```
 
 ```
 cd /dla
-git clone https://echarles:qslkZ4EDdfj@bitbucket.org/datalayer/phoenix-datalayer.git phoenix-datalayer
+git clone https://bitbucket.org/datalayer/phoenix-datalayer.git phoenix-datalayer
 datalayer-phoenix-build
 ```
 
 ```
 cd /dla
-git clone https://echarles:qslkZ4EDdfj@bitbucket.org/datalayer/datalayer-spitfire datalayer-spitfire
+git clone https://bitbucket.org/datalayer/datalayer-spitfire datalayer-spitfire
 datalayer-spitfire-build
 ```
 
 ```
 cd /dla
-git clone https://echarles:qslkZ4EDdfj@bitbucket.org/datalayer/datalayer-web datalayer-web
+git clone https://bitbucket.org/datalayer/datalayer-web datalayer-web
 datalayer-web-build
 ```
 

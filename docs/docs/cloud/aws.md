@@ -25,7 +25,7 @@ aws configure list
 aws_access_key_id=xxx
 aws_secret_access_key=xxxxxx
 
-[kuber]
+[datalayer]
 aws_access_key_id=xxx
 aws_secret_access_key=xxxxxx
 ```

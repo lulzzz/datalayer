@@ -2,9 +2,9 @@
 title: Datalayer Hub on Minikube
 ---
 
-This is a `Howto` develop the Datalayer Hub on Ubuntu with Minikube.
+This is a `How To` develop the Datalayer Hub from source on Ubuntu with Minikube.
 
-For other platforms (Centos...), replace the `apt` commands with their equivalents.
+For other platforms (Centos...), replace the `apt` commands with their equivalents (or better, contribute to this doc with a PR).
 
 ## Repos and Env
 
@@ -15,7 +15,7 @@ export DLAHOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd repos
 git clone https://github.com/datalayer/docker-files.git
 git clone https://github.com/datalayer/helm-charts.git
-git clone https://github.com/datalayer-contrib/data-8-nbgitpuller.git
+git clone https://github.com/datalayer-contrib/data8-nbgitpuller.git
 git clone https://github.com/datalayer-contrib/jupyterhub.git
 git clone https://github.com/datalayer-contrib/jupyterhub-http-proxy.git
 git clone https://github.com/datalayer-contrib/jupyterhub-k8s.git
@@ -75,17 +75,6 @@ kubectl create -f $DLAHOME/manifests/registry/kube-registry.yaml
 kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | grep kube-registry-v0 | awk '{print $1;}') 5000:5000
 ```
 
-## Build and Publish Packages
-
-```bash
-cd $DLAHOME/repos/jupyterhub
-git checkout datalayer
-python setup.py sdist
-python setup.py bdist
-cp dist/datalayerhub-0.9.1.dev0.tar.gz $DLAHOME/repos/jupyterhub-k8s/images/hub
-python setup.py sdist upload -r pypi
-```
-
 ## Docker Images
 
 ```bash
@@ -107,27 +96,27 @@ docker pull datalayer/hub-http-proxy:0.0.1
 docker pull datalayer/hub-jupyterlab:0.0.1
 ```
 
-Optionally, if you want to build your own custom Docker images and push them.
+Tag and push the Docker images to the Minikube registry.
+
+```bash
+$DLAHOME/repos/docker-files/tag-push-images-to-minikube-registry.sh
+```
+
+Optionally, you can build your own custom Docker images and push them.
 
 ```bash
 cd $DLAHOME/repos/docker-files/hdfs && ./build.sh \
   && cd $DLAHOME/repos/docker-files/hdfs-nn && ./build-push.sh \
   && cd $DLAHOME/repos/docker-files/hdfs-dn && ./build-push.sh
 datalayer spark-docker-build-push
-cd $DLAHOME/repos/docker-files/hub-jupyterlab && ./build-push.sh
-cd $DLAHOME/repos/jupyterhub-k8s/images && git checkout datalayer && ./build-push.sh
 cd $DLAHOME/repos/jupyterhub-http-proxy \
   && git checkout datalayer \
   && docker build \
     -t datalayer/hub-http-proxy:0.0.1 \
     . \
   && docker push datalayer/hub-http-proxy:0.0.1
-```
-
-Push the Docker images to the Minikube registry.
-
-```bash
-$DLAHOME/repos/docker-files/push-images-to-minikube-registry.sh
+cd $DLAHOME/repos/jupyterhub-k8s/images && git checkout datalayer && ./build-push.sh
+cd $DLAHOME/repos/docker-files/hub-jupyterlab && ./build-push.sh
 ```
 
 ## Deploy HDFS and Spark
@@ -239,6 +228,50 @@ open $(minikube -n datalayerhub service proxy-public --url)
 ## Iterative Development
 
 ```bash
+cd $DLAHOME/repos/jupyterhub
+python setup.py sdist upload -r pypi
+```
+
+```bash
+cd $DLAHOME/repos/jupyterhub
+python setup.py sdist && cp dist/datalayerhub-0.9.1.dev0.tar.gz $DLAHOME/repos/jupyterhub-k8s/images/hub
+```
+
+```bash
+cd $DLAHOME/repos/jupyterlab-hub
+yarn install && yarn build
+npm login
+npm publish --access=public
+```
+
+```bash
 cd $DLAHOME/repos/jupyterhub-k8s/images/hub
 docker build -t datalayer/hub:0.0.1 . && docker tag datalayer/hub:0.0.1 localhost:5000/hub:0.0.1 && docker push localhost:5000/hub:0.0.1
+```
+
+```bash
+cd $DLAHOME/repos
+tar cvfz $DLAHOME/repos/docker-files/hub-jupyterlab/jupyterlab-datalayer.tgz jupyterlab-datalayer
+cd $DLAHOME/repos/docker-files/hub-jupyterlab
+docker build -t datalayer/hub-jupyterlab:0.0.1 . && docker tag datalayer/hub-jupyterlab:0.0.1 localhost:5000/hub-jupyterlab:0.0.1 && docker push localhost:5000/hub-jupyterlab:0.0.1
+minikube ssh docker pull localhost:5000/hub-jupyterlab:0.0.1
+```
+
+```bash
+cd $DLAHOME/repos/jupyterhub-k8s
+helm delete datalayerhub --purge
+helm install ./jupyterhub \
+  --name=datalayerhub \
+  --namespace=datalayerhub \
+  --timeout=99999 \
+  -f datalayerhub-config.yaml
+open $(minikube -n datalayerhub service proxy-public --url)
+```
+
+```bash
+cd $DLAHOME/repos/jupyterlab-datalayer
+yarn watch
+cd $DLAHOME/repos/jupyterlab
+jupyter lab --watch
+jupyter lab --dev-mode --watch
 ```

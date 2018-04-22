@@ -1,14 +1,14 @@
 ---
-title: Kuber
+title: Pilot
 ---
 
-Kuber is plain Kubernetes, simple. It will help you create and manage your K8S cluster in the cloud and deploy applications for your Big Data Science projects.
+Pilot is plain Kubernetes, simple. It will help you create and manage your K8S cluster in the cloud and deploy applications for your Big Data Science projects.
 
 We support for now [https://aws.amazon.com](Amazon Cloud). Read our [Release Plan](/docs/releases) to know more on other cloud support.
 
-The [Kuber](https://github.com/datalayer/kuber) repository contains the source code to run the REST server endpoints.
+The [Pilot](https://github.com/datalayer/datalayer-pilot) repository contains the source code to run the REST server endpoints.
 
-We distinguish `Kuber CLI` which is the command line interface to operate the K8S cluster and its applications from `Kuber UI` is the WEB user interface to operate the K8S cluster and its applications.
+We distinguish `Pilot CLI` which is the command line interface to operate the K8S cluster and its applications from `Pilot UI` is the WEB user interface to operate the K8S cluster and its applications.
 
 Before using `Kuber`, setup your `AWS` environment with the needed AWS credentials via environement variables.
 
@@ -35,7 +35,7 @@ region = us-west-2
 From your Linux laptop (with [Git](https://git-scm.com/downloads), [Golang](https://golang.org/dl), [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl) and [Helm](https://github.com/kubernetes/helm/releases) available), run the following.
 
 ```shell
-git clone https://github.com/datalayer/kuber
+git clone https://github.com/datalayer/datalayer-pilot
 cd kuber
 go build
 kuber create kuber -p aws -z us-west-2 # eu-central-1 is also supported.
@@ -117,7 +117,7 @@ Deploy more applications.
 ./kuber.sh kuber-ui
 ```
 
-For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber/apps).
+For more control on the deployed applications, read the [Application section of Pilot documentation](/docs/pilot/apps).
 
 For example [browse the Spitfire Notebook](http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy). Optionally, to connect without proxy, you can get the URL of the Notebook from the AWS Load Balancer.
 
@@ -131,4 +131,4 @@ Delete the cluster.
 kuber delete kuber -v 4 --purge
 ```
 
-![Kub](/images/datalayer/kuber.svg "Kuber")
+![Pilot](/images/datalayer/datalayer-pilot.svg "Kuber")

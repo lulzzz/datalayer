@@ -2,7 +2,7 @@
 title: Datalayer Offering
 ---
 
-We ship [Kuber](/docs/what/kuber) to create a Kubernetes cluster on Amazon AWS from scratch.
+We ship [Pilot](/docs/what/kuber) to create a Kubernetes cluster on Amazon AWS from scratch.
 
 We also ship a [Data Explorer](/docs/what/explorer) for Data Scientists who are willing to get the best from Apache Spark and Hadoop.
 
@@ -14,7 +14,7 @@ This is the overall architecture that sustain those goals is depicted here after
 
 Like building a house, we need strong foundations and well organized layers that are secured (`IAM`, `RBAC`) and managed (`OPS`).
 
-Kuber is the Datalayer offering to manage the stack.
+Pilot is the Datalayer offering to manage the stack.
 
 ```
 +----------------------------------------------------------------+

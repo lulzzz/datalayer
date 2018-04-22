@@ -51,9 +51,9 @@ spec:
     - sleep
     - "10000"
     env:
-    - name: KUBERNETES_SERVICE_HOST
+    - name: PILOTNETES_SERVICE_HOST
       value: 127.0.0.1
-    - name: KUBERNETES_SERVICE_PORT
+    - name: PILOTNETES_SERVICE_PORT
       value: "8001"
     volumeMounts:
     - name: test-volume
@@ -66,6 +66,6 @@ EOF
 
 ```shell
 kubectl exec -it kubectl-sidecar -c bb -- sh
-wget -O - ${KUBERNETES_SERVICE_HOST}:${KUBERNETES_SERVICE_PORT}/api/v1/pods
+wget -O - ${PILOTNETES_SERVICE_HOST}:${PILOTNETES_SERVICE_PORT}/api/v1/pods
 wget -O - 127.0.01:8001/api/v1/pods
 ```

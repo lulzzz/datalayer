@@ -139,8 +139,8 @@ http://localhost:8080/api/v1/namespaces/kube-system/services/https:kubernetes-da
 ```
 
 ```
-echo $KUBERNETES_SERVICE_HOST
-echo $KUBERNETES_SERVICE_PORT
+echo $PILOTNETES_SERVICE_HOST
+echo $PILOTNETES_SERVICE_PORT
 ```
 
 ```
@@ -150,7 +150,7 @@ https://github.com/liyinan926/spark-operator
 ```
 
 ```
-Two important things I needed (my bad), I was using a kubectl-proxy sidecar container and using --master=k8s://http://127.0.0.beta.kubernetes.io.1:8001, now I have no sidecar and I am using --master k8s://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_PORT.
+Two important things I needed (my bad), I was using a kubectl-proxy sidecar container and using --master=k8s://http://127.0.0.beta.kubernetes.io.1:8001, now I have no sidecar and I am using --master k8s://$PILOTNETES_SERVICE_HOST:$PILOTNETES_SERVICE_PORT.
 ```
 
 ## Service Account

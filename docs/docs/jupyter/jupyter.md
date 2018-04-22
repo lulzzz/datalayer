@@ -111,6 +111,8 @@ Modes
 
 [Phosphor.js Datagrid](http://phosphorjs.github.io/examples/datagrid).
 
+[Implement Watch Mode](https://github.com/jupyterlab/jupyterlab/pull/3077).
+
 ```bash
 git clone https://github.com/jupyterlab/jupyterlab.git
 cd jupyterlab
@@ -120,12 +122,12 @@ yarn install
 ```
 
 ```bash
-# Build the core mode assets (optional)
+# Build the core mode assets (optional).
 yarn run build:core
 # Builds the source files into javascript files in lib folder.
 yarn run build
 jupyter lab build
-jupyter lab --dev-mode --watch
+jupyter lab --dev-mode --watch --browser chromium-browser
 ```
 
 Building consists of:
@@ -158,9 +160,15 @@ yarn run build:dev:prod
 ```
 
 ```bash
-cd docs
+# cd docs
 yarn run docs
 open ./docs/index.html
+open ./docs/api/index.html
+```
+
+```bash
+ls /home/datalayer/opt/miniconda3/share/jupyter/lab
+extensions  schemas  settings  staging  static  themes
 ```
 
 ## JupyterLab Examples
@@ -198,11 +206,9 @@ yarn run build
 yarn run link
 # Link geojson-extension only.
 jupyter labextension link packages/geojson-extension
-```
-
-```bash
-# After making changes to the source packages, the packages must be rebuilt.
+# After making changes to the source packages, the jupyter packages must be rebuilt.
 # Rebuild the source.
+cd $DLAHOME/repos/jupyterlab
 yarn build
 # Rebuild the JupyterLab staging directory.
 jupyter lab build
@@ -234,17 +240,15 @@ jupyter labextension uninstall @jupyterlab/xkcd-extension
 ```
 
 ```bash
+# Installing and uninstalling extensions can take some time, as they are downloaded, bundled with the core extensions, and the whole application is rebuilt. You can install/uninstall more than one extension in the same command by listing their names after the install command. If you are installing/uninstalling several extensions in several stages, you may want to defer rebuilding the application by including the flag --no-build in the install/uninstall step. Once you are ready to rebuild, you can run the command:
 pip install jupyterlab_github
 jupyter labextension install @jupyterlab/github --no-build
-jupyter labextension install @jupyterlab/github@0.5.1
+jupyter labextension install @jupyterlab/github@0.5.1 --no-build
 # You can also install an extension that is not uploaded to npm, i.e., my-extension can be a local directory containing the extension, a gzipped tarball, or a URL to a gzipped tarball.
-jupyter labextension install $DLAHOME/repos/jupyterlab-git
-# Installing and uninstalling extensions can take some time, as they are downloaded, bundled with the core extensions, and the whole application is rebuilt. You can install/uninstall more than one extension in the same command by listing their names after the install command. If you are installing/uninstalling several extensions in several stages, you may want to defer rebuilding the application by including the flag --no-build in the install/uninstall step. Once you are ready to rebuild, you can run the command:
+jupyter labextension install $DLAHOME/repos/jupyterlab-xkcd-extension --no-build
 jupyter lab build
-jupyter labextension uninstall @jupyterlab/github
-```
-
-```bash
+jupyter labextension uninstall @datalayer/jupyterlab-xkcd-extension
+# Sometimes you need also server extensions.
 pip install jupyterlab_latex
 jupyter labextension install @jupyterlab/latex
 jupyter labextension install $DLAHOME/repos/jupyterlab-latex
@@ -262,63 +266,44 @@ yarn run build
 jupyter labextension link .
 yarn watch
 # In jupyterlab repo.
+cd $DLAHOME/repos/jupyterlab
 jupyter lab --watch
 jupyter lab --dev-mode
 jupyter lab --dev-mode --watch
+jupyter lab --core-mode
+```
+
+```bash
+cd jupyterlab-xkcd-extension
+yarn install
+yarn run build
+# The following will cause the builder to re-install the source folder before building the application files. You can re-build at any time using jupyter lab build and it will reinstall these packages.
+jupyter labextension install
+# You can also link other local npm packages that you are working on simultaneously using jupyter labextension link; they will be re-installed but not considered as extensions. Local extensions and linked packages are included in jupyter labextension list.
+jupyter labextension link
+yarn watch
+# Rebuild the package and the JupyterLab app.
+cd $DLAHOME/repos/jupyterlab
+yarn run build
+jupyter lab build
+# When using local extensions and linked packages, you can run the following command. This will cause the application to incrementally rebuild when one of the linked packages changes. Note that only compiled JavaScript files (and the CSS files) are watched by the WebPack process.
+jupyter lab --watch
+```
+
+```bash
+# Installation and activation of Git handler
+# Installation and activation for jupyterlab_git python handler package:
+cd $DLAHOME/repos/jupyterlab-git
+pip install .
+jupyter serverextension enable --py jupyterlab_git
+# Launch JupyterLab & you will see the new Git buttons on the left side of the window.
 ```
 
 ```bash
 # If you must install a extension into a development branch of JupyterLab, you have to graft it into the source tree of JupyterLab itself. This may be done using the command
-yarn run add:sibling $DLAHOME/repos/jupyterlab-xkcd
+yarn run add:sibling $DLAHOME/repos/datalayer-jupyterlab
 # In the JupyterLab root directory, where <path-or-url> refers either to an extension npm package on the local filesystem, or a URL to a git repository for an extension npm package. This operation may be subsequently reversed by running
-yarn run remove:sibling $DLAHOME/repos/jupyterlab-xkcd
-```
-
-```bash
-# For a development install.
-cd jupyterlab-xkcd
-yarn install
-yarn run build
-jupyter labextension install
-# This causes the builder to re-install the source folder before building the application files.
-# You can re-build at any time using jupyter lab build and it will reinstall these packages.
-```
-
-```bash
-# You can also link other local npm packages that you are working on simultaneously using jupyter labextension link; they will be re-installed but not considered as extensions.
-# Local extensions and linked packages are included in jupyter labextension list.
-jupyter labextension link .
-```
-
-```bash
-ls /home/datalayer/opt/miniconda3/share/jupyter/lab
-extensions  schemas  settings  staging  static  themes
-```
-
-```bash
-# Rebuild the package and the JupyterLab app.
-yarn run build
-jupyter lab build
-```
-
-```bash
-# When using local extensions and linked packages, you can run the following command.
-# This will cause the application to incrementally rebuild when one of the linked packages changes. Note that only compiled JavaScript files (and the CSS files) are watched by the WebPack process.
-jupyter lab --watch
-```
-
-```bash
-# For a development install.
-npm install
-jupyter labextension link .
-# To rebuild the package and the JupyterLab app.
-npm run build
-jupyter lab build
-# Installation and activation of Git handler
-# Installation and activation for jupyterlab_git python handler package:
-pip install .
-jupyter serverextension enable --py jupyterlab_git
-# Launch JupyterLab & you will see the new Git buttons on the left side of the window.
+yarn run remove:sibling $DLAHOME/repos/datalayer-jupyterlab
 ```
 
 ## JupyterLab VDOM

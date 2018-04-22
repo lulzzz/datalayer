@@ -2,7 +2,6 @@ bigheader: "What"
 abstract: "What is Datalayer."
 toc:
 - docs/what/index.md
-- docs/what/kuber.md
+- docs/what/pilot.md
 - docs/what/explorer.md
-# - docs/what/studio.md
 - docs/what/library.md

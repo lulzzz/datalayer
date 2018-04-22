@@ -55,7 +55,7 @@ export ...
 {% include tabs.md %}
 
 ```shell
-git clone https://github.com/datalayer/kuber
+git clone https://github.com/datalayer/datalayer-pilot
 cd kuber
 go build
 kuber create kuber -p aws -z us-west-2 # eu-central-1 also supported.
@@ -126,7 +126,7 @@ Check the [Dashboard](http://localhost:8001/api/v1/namespaces/kube-system/servic
 ./kuber.sh explorer
 ```
 
-For more control on the deployed applications, read the [Application section of Kuber documentation](/docs/kuber/apps).
+For more control on the deployed applications, read the [Application section of Pilot documentation](/docs/pilot/apps).
 
 For example [browse the Spitfire Notebook](http://localhost:8001/api/v1/namespaces/default/services/http:spitfire-spitfire:8080/proxy). Optionally, to connect without proxy, you can get the URL of the Notebook from the AWS Load Balancer.
 

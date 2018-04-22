@@ -1,0 +1,19 @@
+bigheader: "Pilot"
+abstract: "Kubernetes, made Simple."
+toc:
+- docs/pilot/index.md
+- docs/pilot/apps.md
+- title: Apps
+  section:
+  - docs/pilot/heapster.md
+  - docs/pilot/k8s-dashboard.md
+  - docs/pilot/hdfs.md
+  - docs/pilot/spark.md
+  - docs/pilot/spitfire.md
+  - docs/pilot/explorer.md
+- title: Storage
+  section:
+  - docs/pilot/s3.md
+- title: Docker Files
+  section:
+  - docs/pilot/docker-files.md
