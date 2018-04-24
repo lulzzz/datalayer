@@ -47,7 +47,7 @@ export HADOOP_HOME=/sdk/conf/hadoop
 
 if [ -z "$ZEPPELIN_HOME" ]
 then
-  export ZEPPELIN_HOME=$DLAHOME/repos/spitfire
+  export ZEPPELIN_HOME=$DLAHOME/repos/datalayer-spitfire
 else
   export ZEPPELIN_HOME=$ZEPPELIN_HOME
 fi
@@ -68,7 +68,7 @@ echo -e $YELLOW"+ ZEPPELIN_CONF_DIR=$ZEPPELIN_CONF_DIR"$NOCOLOR
 echo -e $YELLOW"+ ZEPPELIN_NOTEBOOK_DIR=$ZEPPELIN_NOTEBOOK_DIR"$NOCOLOR
 echo
 echo -e $YELLOW"+ users: [admin/password1] [user1/password2] [user2/password3] [user3/password4]"$NOCOLOR
-echo -e $YELLOW"+ tail -f $DLAHOME/repos/spitfire/logs/zeppelin-datalayer-datalayer-001.log"$NOCOLOR
+echo -e $YELLOW"+ tail -f $DLAHOME/repos/datalayer-spitfire/logs/zeppelin-datalayer-datalayer-001.log"$NOCOLOR
 echo
 
 # ZEPPELIN_MEM - the Xmx for Zeppelin server and possibly additional GC settings (default: -Xmx1024m -XX:MaxPermSize=512m)

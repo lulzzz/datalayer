@@ -23,7 +23,7 @@ echo
 echo -e $YELLOW"Browse "$BOLD"http://localhost:8082"$NOBOLD$NOCOLOR
 echo
 
-export ZEPPELIN_HOME=$DLAHOME/repos/spitfire-master
+export ZEPPELIN_HOME=$DLAHOME/repos/datalayer-spitfire-master
 
 cd $ZEPPELIN_HOME/zeppelin-web
 

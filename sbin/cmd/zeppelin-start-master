@@ -20,4 +20,4 @@
 echo -e $YELLOW$BOLD"Starting Apache Zeppelin Master"$NOBOLD$NOCOLOR
 echo
 
-ZEPPELIN_HOME=$DLAHOME/repos/spitfire-master datalayer zeppelin-start "$@"
+ZEPPELIN_HOME=$DLAHOME/repos/datalayer-spitfire-master datalayer zeppelin-start "$@"

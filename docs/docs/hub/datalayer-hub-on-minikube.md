@@ -99,15 +99,15 @@ docker pull datalayer/hub-jupyterlab:0.0.1
 Tag and push the Docker images to the Minikube registry.
 
 ```bash
-$DLAHOME/repos/docker-files/tag-push-images-to-minikube-registry.sh
+$DLAHOME/repos/datalayer-docker/tag-push-images-to-minikube-registry.sh
 ```
 
-Optionally, you can build your own custom Docker images and push them.
+*Option*: you can build your own custom Docker images and push them.
 
 ```bash
-cd $DLAHOME/repos/docker-files/hdfs && ./build.sh \
-  && cd $DLAHOME/repos/docker-files/hdfs-nn && ./build-push.sh \
-  && cd $DLAHOME/repos/docker-files/hdfs-dn && ./build-push.sh
+cd $DLAHOME/repos/datalayer-docker/hdfs && ./build.sh \
+  && cd $DLAHOME/repos/datalayer-docker/hdfs-nn && ./build-push.sh \
+  && cd $DLAHOME/repos/datalayer-docker/hdfs-dn && ./build-push.sh
 datalayer spark-docker-build-push
 cd $DLAHOME/repos/jupyterhub-http-proxy \
   && git checkout datalayer \
@@ -116,13 +116,13 @@ cd $DLAHOME/repos/jupyterhub-http-proxy \
     . \
   && docker push datalayer/hub-http-proxy:0.0.1
 cd $DLAHOME/repos/jupyterhub-k8s/images && git checkout datalayer && ./build-push.sh
-cd $DLAHOME/repos/docker-files/hub-jupyterlab && ./build-push.sh
+cd $DLAHOME/repos/datalayer-docker/hub-jupyterlab && ./build-push.sh
 ```
 
-## Deploy HDFS and Spark
+## Deploy HDFS
 
 ```bash
-cd $DLAHOME/repos/helm-charts
+cd $DLAHOME/repos/datalayer-helm
 # Deploy HDFS Helm Chart.
 helm install \
   hdfs \
@@ -140,6 +140,12 @@ helm install \
   --set hdfs.dataNode.replicas=2 \
   -n hdfs
 kubectl exec -n default -it hdfs-hdfs-hdfs-nn-0 -- hdfs dfsadmin -report
+```
+
+## Deploy Spark
+
+```bash
+cd $DLAHOME/repos/datalayer-helm
 # Deploy Spark Helm Chart.
 helm install \
   spark \
@@ -251,8 +257,8 @@ docker build -t datalayer/hub:0.0.1 . && docker tag datalayer/hub:0.0.1 localhos
 
 ```bash
 cd $DLAHOME/repos
-tar cvfz $DLAHOME/repos/docker-files/hub-jupyterlab/jupyterlab-datalayer.tgz jupyterlab-datalayer
-cd $DLAHOME/repos/docker-files/hub-jupyterlab
+tar cvfz $DLAHOME/repos/datalayer-docker/hub-jupyterlab/jupyterlab-datalayer.tgz jupyterlab-datalayer
+cd $DLAHOME/repos/datalayer-docker/hub-jupyterlab
 docker build -t datalayer/hub-jupyterlab:0.0.1 . && docker tag datalayer/hub-jupyterlab:0.0.1 localhost:5000/hub-jupyterlab:0.0.1 && docker push localhost:5000/hub-jupyterlab:0.0.1
 minikube ssh docker pull localhost:5000/hub-jupyterlab:0.0.1
 ```

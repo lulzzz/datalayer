@@ -23,7 +23,7 @@ $DATALAYER_LAB_BIN_DIR/datalayer-env-echo
 echo -e $YELLOW$BOLD"Serving Apache Zeppelin WEB Site on http://localhost:4000"$NOBOLD$NOCOLOR
 echo
 
-export ZEPPELIN_HOME=$DLAHOME/repos/spitfire
+export ZEPPELIN_HOME=$DLAHOME/repos/datalayer-spitfire
 cd $ZEPPELIN_HOME/docs
 
 bundle install

@@ -20,7 +20,7 @@
 echo -e $YELLOW$BOLD"Building Apache Zeppelin"$NOBOLD$NOCOLOR
 echo
 
-export ZEPPELIN_HOME=$DLAHOME/repos/spitfire
+export ZEPPELIN_HOME=$DLAHOME/repos/datalayer-spitfire
 cd $ZEPPELIN_HOME
 
 ./dev/change_scala_version.sh 2.11

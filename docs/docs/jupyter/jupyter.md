@@ -300,9 +300,10 @@ jupyter serverextension enable --py jupyterlab_git
 ```
 
 ```bash
-# If you must install a extension into a development branch of JupyterLab, you have to graft it into the source tree of JupyterLab itself. This may be done using the command
+# If you must install a extension into a development branch of JupyterLab, you have to graft it into the source tree of JupyterLab itself. This may be done using the command.
 yarn run add:sibling $DLAHOME/repos/datalayer-jupyterlab
-# In the JupyterLab root directory, where <path-or-url> refers either to an extension npm package on the local filesystem, or a URL to a git repository for an extension npm package. This operation may be subsequently reversed by running
+jupyter lab --dev-mode --watch
+# In the JupyterLab root directory, where <path-or-url> refers either to an extension npm package on the local filesystem, or a URL to a git repository for an extension npm package. This operation may be subsequently reversed by running.
 yarn run remove:sibling $DLAHOME/repos/datalayer-jupyterlab
 ```
 
@@ -341,7 +342,7 @@ npm publish --access=public
 pip3 install --upgrade jupyterhub
 configurable-http-proxy -h
 # netifaces
-pip3 install --upgrade oauthenticator dockerspawner
+pip3 install --upgrade ldapauthenticator oauthenticator dockerspawner
 jupyterhub --version
 jupyterhub --help
 jupyterhub --help-all
@@ -582,11 +583,11 @@ jupyter notebook \
 ```
 
 ```bash
-# start from the jupyter image with R, Python, and Scala (Apache Toree) kernels pre-installed
+# Start from the jupyter image with R, Python, and Scala (Apache Toree) kernels pre-installed
 FROM jupyter/all-spark-notebook
-# install the kernel gateway
+# Install the kernel gateway
 RUN pip install jupyter_kernel_gateway
-# run kernel gateway on container start, not notebook server
+# Run kernel gateway on container start, not notebook server
 EXPOSE 8888
 CMD ["jupyter", "kernelgateway", "--KernelGatewayApp.ip=0.0.0.0", "--KernelGatewayApp.port=8888"]
 ```

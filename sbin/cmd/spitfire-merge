@@ -216,16 +216,16 @@ echo -e $YELLOW$BOLD"Run git pull upstream master if you want to merge upstream 
 echo -e $YELLOW$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
 echo
 echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
-echo -e $GREEN$BOLD"cd $DLAHOME/repos/spitfire"$NOBOLD$NOCOLOR
+echo -e $GREEN$BOLD"cd $DLAHOME/repos/datalayer-spitfire"$NOBOLD$NOCOLOR
 echo -e $GREEN$BOLD"-------------------------------------------------------------------------------------------------"$NOBOLD$NOCOLOR
-cd $DLAHOME/repos/spitfire
+cd $DLAHOME/repos/datalayer-spitfire
 if [ $? -eq 0 ]
 then
     pwd
     echo
 else
     echo
-    echo -e $BOLD$RED"Check $DLAHOME/repos/spitfire contains https://github.com/apache/zeppelin.git clone ..."$NOCOLOR$NOBOLD
+    echo -e $BOLD$RED"Check $DLAHOME/repos/datalayer-spitfire contains https://github.com/apache/zeppelin.git clone ..."$NOCOLOR$NOBOLD
     echo
     exit
 fi

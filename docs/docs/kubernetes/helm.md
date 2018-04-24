@@ -47,7 +47,7 @@ kubectl --namespace=kube-system patch deployment tiller-deploy --type=json --pat
 In case of docker pull timeout, use `--timeout=`.
 
 ```bash
-helm install $DLAHOME/repos/helm-charts/hello -n hello
+helm install $DLAHOME/repos/datalayer-helm/hello -n hello
 kubectl get po
 kubectl get svc
 helm ls

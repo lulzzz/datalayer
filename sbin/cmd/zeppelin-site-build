@@ -26,7 +26,7 @@ echo
 # ruby --version >= 2.0.0
 # gem install bundler
 
-export ZEPPELIN_HOME=$DLAHOME/repos/spitfire
+export ZEPPELIN_HOME=$DLAHOME/repos/datalayer-spitfire
 cd $ZEPPELIN_HOME/docs
 
 bundle install
