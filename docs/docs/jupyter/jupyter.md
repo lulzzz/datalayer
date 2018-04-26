@@ -209,8 +209,6 @@ jupyter labextension link packages/geojson-extension
 # After making changes to the source packages, the jupyter packages must be rebuilt.
 # Rebuild the source.
 cd $DLAHOME/repos/jupyterlab
-yarn build
-# Rebuild the JupyterLab staging directory.
 jupyter lab build
 ```
 
@@ -267,6 +265,7 @@ jupyter labextension link .
 yarn watch
 # In jupyterlab repo.
 cd $DLAHOME/repos/jupyterlab
+jupyter lab build
 jupyter lab --watch
 jupyter lab --dev-mode
 jupyter lab --dev-mode --watch
@@ -274,19 +273,17 @@ jupyter lab --core-mode
 ```
 
 ```bash
-cd jupyterlab-xkcd-extension
+cd $DLAHOME/repos/datalayer-cluster
 yarn install
 yarn run build
-# The following will cause the builder to re-install the source folder before building the application files. You can re-build at any time using jupyter lab build and it will reinstall these packages.
 jupyter labextension install
-# You can also link other local npm packages that you are working on simultaneously using jupyter labextension link; they will be re-installed but not considered as extensions. Local extensions and linked packages are included in jupyter labextension list.
+```
+
+```bash
+cd $DLAHOME/repos/datalayer-cluster
 jupyter labextension link
 yarn watch
-# Rebuild the package and the JupyterLab app.
 cd $DLAHOME/repos/jupyterlab
-yarn run build
-jupyter lab build
-# When using local extensions and linked packages, you can run the following command. This will cause the application to incrementally rebuild when one of the linked packages changes. Note that only compiled JavaScript files (and the CSS files) are watched by the WebPack process.
 jupyter lab --watch
 ```
 
@@ -296,7 +293,11 @@ jupyter lab --watch
 cd $DLAHOME/repos/jupyterlab-git
 pip install .
 jupyter serverextension enable --py jupyterlab_git
+yarn install
+yarn run build
+jupyter labextension install
 # Launch JupyterLab & you will see the new Git buttons on the left side of the window.
+jupyter lab
 ```
 
 ```bash

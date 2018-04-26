@@ -31,5 +31,5 @@ Priority Name Port Protocol Source Destination Action
 VnetOutBound Any Any VirtualNetwork VirtualNetwork Allow 65001 AllowInternetOutBound Any Any Any Internet Allow 65500 DenyAllOutBound Any Any Any Any Deny
 
 ```
-https://api.stackpoint.io/cluster/7768/kubeui/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard/#!/role?namespace=_all
+https://api.stackpoint.io/cluster/778/kubeui/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard/#!/role?namespace=_all
 ```
