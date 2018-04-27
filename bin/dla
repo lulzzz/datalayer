@@ -17,6 +17,4 @@
 # specific language governing permissions and limitations
 # under the License.
 
-export DATALAYER_BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-$DATALAYER_BIN_DIR/datalayer "$@"
+$DLAHOME/repos/datalayer-api/dla "$@"
