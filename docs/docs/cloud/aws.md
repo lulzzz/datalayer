@@ -161,19 +161,19 @@ Now check the partition file again. You can see a new device being added.
 cat /proc/partitions
 major minor  #blocks  name
 202        1    8388608 xvda1
-202      128   26214400 xvdf
+202      128   26214400 xvdb
 ```
 
 The volume attached is not ready for use. It is like a new hard disk. You need to partition and format the same.  In our case we am going to use the full disk as one partition. So I am going to skip the fdisk setup and jumping right into formatting the volume.
 
 ```bash
-sudo mkfs.ext4 /dev/xvdf
+sudo mkfs.ext4 /dev/xvdb
 ```
 
 The format process can take few seconds just be patient. The drive is ready to use, and to do the same we need mount it.
 
 ```bash
-sudo mkdir -m 000 /vol
-echo "/dev/xvdf /vol auto noatime 0 0" | sudo tee -a /etc/fstab
-sudo mount /vol
+sudo mkdir -m 000 /opt
+echo "/dev/xvdb /opt auto noatime 0 0" | sudo tee -a /etc/fstab
+sudo mount /opt
 ```
