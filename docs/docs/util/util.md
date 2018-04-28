@@ -314,10 +314,12 @@ mysql -u $username
 CTRL^R: go back in history
 CTRL^...: go forward in history
 
-screen -ls // list all the screens
-screen -S aq // Create a new screen
-screen -r aq // Join an existing screen
+```bash
+screen -ls   # list all the screens
+screen -S aq # Create a new screen
+screen -r aq # Join an existing screen
 screen -D -r '1234.somescreensession'
+```
 
 dmesg
 
