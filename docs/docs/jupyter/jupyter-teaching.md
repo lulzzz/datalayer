@@ -6,6 +6,10 @@ title: Jupyter Teaching
 
 [NbGrader Docs](https://nbgrader.readthedocs.io).
 
-[JupyterHub Teaching Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
+[Jupyter NBGrader](https://github.com/jupyter/nbgrader).
 
-[JupyterHub Teaching Repo](https://github.com/jupyterhub/jupyterhub-deploy-teaching).
+## Deploy Teaching
+
+[JupyterHub Deploy Teaching Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
+
+[JupyterHub Deploy Teaching Repository](https://github.com/jupyterhub/jupyterhub-deploy-teaching).

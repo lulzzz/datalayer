@@ -6,7 +6,7 @@ title: Jupyter
 
 ```
 jupyterhub binderhub nbgrader nbviewer dashboards
-jupyer_console qtconsole notebook nbconvert
+jupyter_console qtconsole notebook nbconvert
 jupyter_core jupyter_client nbformat
 ipykernel ipywidgets
 ipython
@@ -17,7 +17,7 @@ traitlets
 
 [Notebook Docs](https://jupyter-notebook.readthedocs.io).
 
-[Notebook Repo](https://github.com/jupyter/notebook).
+[Notebook Repository](https://github.com/jupyter/notebook).
 
 ```bash
 pip3 install --upgrade notebook

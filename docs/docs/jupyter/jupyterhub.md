@@ -6,9 +6,11 @@ title: JupyterHub
 
 [JupyterHub Docs](https://jupyterhub.readthedocs.io).
 
-[JupyterHub Tutorial](https://jupyterhub-tutorial.readthedocs.io).
-
 [JupyterHub Repository](https://github.com/jupyterhub/jupyterhub).
+
+[JupyterHub Tutorial Docs](https://jupyterhub-tutorial.readthedocs.io).
+
+[JupyterHub Tutorial Repository](https://github.com/jupyterhub/jupyterhub-tutorial).
 
 [JupyterHub Gitter](https://gitter.im/jupyterhub/jupyterhub).
 
@@ -77,9 +79,11 @@ jupyter kernelspec list
 jupyterhub --debug
 ```
 
+## Docker
+
 ```bash
 docker pull jupyterhub/singleuser
-docker run -d --name jupyterhub jupyterhub/jupyterhub jupyterhub
+docker run -p 8000:8000 -d --name jupyterhub jupyterhub/jupyterhub jupyterhub
 open http://localhost:8000
 docker exec -it jupyterhub bash
 ```
@@ -122,6 +126,14 @@ jupyter labextension link .
 # To rebuild the package and the JupyterLab app after making changes.
 npm run build
 jupyter lab build
+```
+
+## NbGitPuller
+
+[NbPuller Repository](https://github.com/data-8/nbgitpuller).
+
+```bash
+pip install git+https://github.com/data-8/nbgitpuller
 ```
 
 ## JupyterHub on Kubernetes
@@ -223,12 +235,4 @@ helm upgrade jupyterhub \
 ```bash
 helm delete jupyterhub --purge
 kubectl delete namespace jupyterhub
-```
-
-## NbGitPuller
-
-[NbPuller Repo](https://github.com/data-8/nbgitpuller).
-
-```bash
-pip install git+https://github.com/data-8/nbgitpuller
 ```

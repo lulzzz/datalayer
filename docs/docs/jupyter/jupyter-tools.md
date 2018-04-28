@@ -6,16 +6,18 @@ title: Jupyter Tools
 
 [NbConvert Docs](https://nbconvert.readthedocs.io).
 
+[NbConvert Repository](https://github.com/jupyter/nbconvert.git).
+
 ## Dashboard
 
-[Repository](https://github.com/jupyter/dashboards).
+[Dashboard Docs](http://jupyter-dashboards-layout.readthedocs.io/en/latest).
 
-[Docs](http://jupyter-dashboards-layout.readthedocs.io/en/latest).
+[Dashboard Repository](https://github.com/jupyter/dashboards).
 
 ```bash
-pip install jupyter_dashboards
 # jupyter nbextension install --py jupyter_dashboards --sys-prefix
 # jupyter nbextension enable --py jupyter_dashboards --sys-prefix
+pip install jupyter_dashboards
 jupyter dashboards quick-setup --sys-prefix
 ```
 

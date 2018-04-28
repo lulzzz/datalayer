@@ -24,7 +24,7 @@ jupyter kernelspec list
 
 [Kernel Gateway Docs](https://jupyter-kernel-gateway.readthedocs.io).
 
-[Kernel Gateway Repo](https://github.com/jupyter/kernel_gateway).
+[Kernel Gateway Repository](https://github.com/jupyter/kernel_gateway).
 
 [Notebook to Kernel Gateway](https://github.com/jupyter-incubator/nb2kg).
 
@@ -59,7 +59,7 @@ docker run -it --rm -p 8888:8888 datalayer/kernel-gateway
 
 [Enterprise Gateway Docs](https://jupyter-enterprise-gateway.readthedocs.io/en/latest).
 
-[Enterprise Gateway Repo](https://github.com/jupyter-incubator/enterprise_gateway).
+[Enterprise Gateway Repository](https://github.com/jupyter-incubator/enterprise_gateway).
 
 ## Spark Toree Kernel
 
