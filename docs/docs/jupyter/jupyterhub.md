@@ -8,9 +8,13 @@ title: JupyterHub
 
 [JupyterHub Docs](https://jupyterhub.readthedocs.io).
 
+## Tutorial
+
 [JupyterHub Tutorial Docs](https://jupyterhub-tutorial.readthedocs.io).
 
 [JupyterHub Tutorial Repository](https://github.com/jupyterhub/jupyterhub-tutorial).
+
+## Community
 
 [JupyterHub Gitter](https://gitter.im/jupyterhub/jupyterhub).
 
