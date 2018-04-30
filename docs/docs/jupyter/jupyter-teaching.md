@@ -4,12 +4,12 @@ title: Jupyter Teaching
 
 ## NbGrader
 
-[NbGrader Docs](https://nbgrader.readthedocs.io).
+[Jupyter NbGrader Repository](https://github.com/jupyter/nbgrader).
 
-[Jupyter NBGrader](https://github.com/jupyter/nbgrader).
+[Jupyter NbGrader Docs](https://nbgrader.readthedocs.io).
 
 ## Deploy Teaching
 
-[JupyterHub Deploy Teaching Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).
-
 [JupyterHub Deploy Teaching Repository](https://github.com/jupyterhub/jupyterhub-deploy-teaching).
+
+[JupyterHub Deploy Teaching Docs](http://jupyterhub-deploy-teaching.readthedocs.io/en/latest).

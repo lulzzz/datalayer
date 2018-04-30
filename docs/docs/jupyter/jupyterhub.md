@@ -4,9 +4,9 @@ title: JupyterHub
 
 ## JupyterHub
 
-[JupyterHub Docs](https://jupyterhub.readthedocs.io).
-
 [JupyterHub Repository](https://github.com/jupyterhub/jupyterhub).
+
+[JupyterHub Docs](https://jupyterhub.readthedocs.io).
 
 [JupyterHub Tutorial Docs](https://jupyterhub-tutorial.readthedocs.io).
 

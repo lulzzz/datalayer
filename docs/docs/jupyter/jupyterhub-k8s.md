@@ -4,9 +4,9 @@ title: JupyterHub on Kubernetes
 
 ## JupyterHub on Kubernetes
 
-[JupyterHub-K8S Docs](https://zero-to-jupyterhub.readthedocs.io).
-
 [JupyterHub-K8S Repository](https://github.com/jupyterhub/zero-to-jupyterhub-k8s).
+
+[JupyterHub-K8S Docs](https://zero-to-jupyterhub.readthedocs.io).
 
 [JupyterHub-K8S Helm Charts Repository](https://github.com/jupyterhub/helm-chart).
 

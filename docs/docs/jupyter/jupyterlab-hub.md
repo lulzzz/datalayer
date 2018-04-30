@@ -1,10 +1,10 @@
 ---
-title: JupyterHub Tools
+title: JupyterLab Hub
 ---
 
-## JupyterLab Hub Plugin
+## JupyterLab Hub Extension
 
-[JupyterLab Hub Repository Extension](https://github.com/jupyterhub/jupyterlab-hub).
+[JupyterLab Hub Extension Repository](https://github.com/jupyterhub/jupyterlab-hub).
 
 ```bash
 # This adds a "Hub" menu to JupyterLab that allows a user to log out of JupyterHub or access their JupyterHub control panel. This follows the JupyterLab extension system where an extension is just an npm package, not wrapped in a Python package.
@@ -41,12 +41,3 @@ jupyter labextension link .
 npm run build
 jupyter lab build
 ```
-
-## NbGitPuller
-
-[NbPuller Repository](https://github.com/data-8/nbgitpuller).
-
-```bash
-pip install git+https://github.com/data-8/nbgitpuller
-```
-
