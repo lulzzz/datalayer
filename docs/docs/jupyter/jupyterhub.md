@@ -33,9 +33,9 @@ jupyterhub --help-all
 
 It is recommended to put all of the files used by JupyterHub into standard UNIX filesystem locations.
 
-+ `/srv/jupyterhub` for all security and runtime files
-+ `/etc/jupyterhub` for all configuration files
-+ `/var/log` for log files
++ `/srv/jupyterhub`: All security and runtime files
++ `/etc/jupyterhub`: All configuration files
++ `/var/log`: Log files
 
 ```bash
 sudo jupyterhub
@@ -49,6 +49,9 @@ open http://localhost:8000/user/datalayer/lab
 jupyterhub --generate-config
 mv ./jupyterhub_config.py /etc/jupyterhub/jupyterhub_config.py
 jupyterhub -f /etc/jupyterhub/jupyterhub_config.py
+```
+
+```bash
 jupyterhub --Spawner.notebook_dir='~/assignments'
 ```
 
@@ -57,7 +60,7 @@ jupyterhub --Spawner.notebook_dir='~/assignments'
 The cookie secret should be 32 random bytes, encoded as hex, and is typically stored in a `jupyterhub_cookie_secret` file. 
 
 ```bash
-# Generate the jupyterhub_cookie_secret file is:
+# Generate the jupyterhub_cookie_secret.
 openssl rand -hex 32 > /srv/jupyterhub/jupyterhub_cookie_secret
 # If you would like to avoid the need for files, the value can be loaded in the Hub process from the JPY_COOKIE_SECRET environment variable, which is a hex-encoded string. For security reasons, this environment variable should only be visible to the Hub. If you set it dynamically, all users will be logged out each time the Hub starts.
 export JPY_COOKIE_SECRET=`openssl rand -hex 32`
@@ -75,7 +78,7 @@ The Hub authenticates its requests to the Proxy using a secret token that the Hu
 Default if token is not set: If you don’t set the Proxy authentication token, the Hub will generate a random key itself, which means that any time you restart the Hub you must also restart the Proxy. If the proxy is a subprocess of the Hub, this should happen automatically (this is the default configuration).
 
 ```bash
-# Generating and storing token in the configuration file
+# Generate and store token in the configuration file
 openssl rand -hex 32 > /srv/jupyterhub/jupyterhub_config_secret
 # Or you can set the value in the configuration file, jupyterhub_config.py:
 c.JupyterHub.proxy_auth_token = '0bc02bede919e99a26de1e2a7a5aadfaf6228de836ec39a05a6c6942831d8fe5'
@@ -97,7 +100,32 @@ jupyterhub --ip localhost --port 443 --ssl-key jupyterhub.key --ssl-cert jupyter
 open https://localhost/user/datalayer/tree
 ```
 
-## Authentication
+## Docker
+
+```bash
+docker pull jupyterhub/singleuser
+docker run -p 8000:8000 --rm -d --name jupyterhub jupyterhub/jupyterhub jupyterhub
+open http://localhost:8000
+docker exec -it jupyterhub bash; adduser datalayer
+docker stop jupyterhub
+```
+
+## Spawners
+
+```bash
+pip install dockerspawner
+# jupyterhub_config.py
+c.JupyterHub.spawner_class = 'dockerspawner.DockerSpawner'
+```
+
+## Users
+
+```bash
+# jupyterhub_config.py
+c.Authenticator.whitelist = {'foo', 'bar'}
+```
+
+## Auth
 
 ```bash
 sudo usermod -a -G shadow $USER
@@ -118,25 +146,13 @@ else:
     print("success!")
 ```
 
-## Docker
-
 ```bash
-docker pull jupyterhub/singleuser
-docker run -p 8000:8000 --rm -d --name jupyterhub jupyterhub/jupyterhub jupyterhub
-open http://localhost:8000
-docker exec -it jupyterhub bash; adduser datalayer
-docker stop jupyterhub
+# Create local users if needed by the Authenticator.
+export NEW_USER=foo@gmail.com
+# --home /home/$NEW_USER
+# --force-badname
+adduser -q --gecos "" --disabled-password $NEW_USER
 ```
-
-## Docker Spawner
-
-```bash
-pip install dockerspawner
-# jupyterhub_config.py
-c.JupyterHub.spawner_class = 'dockerspawner.DockerSpawner'
-```
-
-## Google OAuth
 
 ```bash
 pip3 install oauthenticator
@@ -154,11 +170,10 @@ jupyterhub -f /etc/jupyterhub/jupyterhub_config.py
 open http://localhost:8000
 ```
 
-## Users
+## Token
 
 ```bash
-# jupyterhub_config.py
-c.Authenticator.whitelist = {'foo', 'bar'}
+jupyterhub token
 ```
 
 ## Services
@@ -168,12 +183,134 @@ export JUPYTERHUB_API_TOKEN=`jupyterhub token`
 python3 cull_idle_servers.py [--timeout=900] [--url=http://127.0.0.1:8081/hub/api]
 ```
 
-## Troubleshooting
+## Troubleshoot
+
+```bash
+jupyterhub --debug -f /etc/jupyterhub/jupyterhub_config.py --Application.log_level=30 &>> /var/log/jupyterhub.log
+```
 
 ```bash
 jupyter kernelspec list
-jupyterhub --debug
-jupyterhub -f /etc/jupyterhub/jupyterhub_config.py --Application.log_level=30 &>> /var/log/jupyterhub.log
+```
+
+# Database
+
+```bash
+cd /srv/jupyterhub/
+sqlite3 ./jupyterhub.sqlite 
+```
+
+```bash
+SQLite version 3.22.0 2018-01-22 18:45:57
+Enter ".help" for usage hints.
+sqlite> .schema
+CREATE TABLE alembic_version (
+	version_num VARCHAR(32) NOT NULL, 
+	CONSTRAINT alembic_version_pkc PRIMARY KEY (version_num)
+);
+CREATE TABLE oauth_clients (
+	id INTEGER NOT NULL, 
+	identifier VARCHAR(255), 
+	secret VARCHAR(255), 
+	redirect_uri VARCHAR(1023), 
+	PRIMARY KEY (id), 
+	UNIQUE (identifier)
+);
+CREATE TABLE groups (
+	id INTEGER NOT NULL, 
+	name VARCHAR(255), 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+);
+CREATE TABLE servers (
+	id INTEGER NOT NULL, 
+	proto VARCHAR(15), 
+	ip VARCHAR(255), 
+	port INTEGER, 
+	base_url VARCHAR(255), 
+	cookie_name VARCHAR(255), 
+	PRIMARY KEY (id)
+);
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	name VARCHAR(255), 
+	admin BOOLEAN, 
+	last_activity DATETIME, 
+	cookie_id VARCHAR(255) NOT NULL, 
+	state TEXT, 
+	encrypted_auth_state BLOB, 
+	PRIMARY KEY (id), 
+	UNIQUE (name), 
+	CHECK (admin IN (0, 1)), 
+	UNIQUE (cookie_id)
+);
+CREATE TABLE services (
+	id INTEGER NOT NULL, 
+	name VARCHAR(255), 
+	admin BOOLEAN, 
+	_server_id INTEGER, 
+	pid INTEGER, 
+	PRIMARY KEY (id), 
+	UNIQUE (name), 
+	CHECK (admin IN (0, 1)), 
+	FOREIGN KEY(_server_id) REFERENCES servers (id) ON DELETE SET NULL
+);
+CREATE TABLE spawners (
+	id INTEGER NOT NULL, 
+	user_id INTEGER, 
+	server_id INTEGER, 
+	state TEXT, 
+	name VARCHAR(255), 
+	last_activity DATETIME, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE, 
+	FOREIGN KEY(server_id) REFERENCES servers (id) ON DELETE SET NULL
+);
+CREATE TABLE oauth_access_tokens (
+	id INTEGER NOT NULL, 
+	client_id VARCHAR(255), 
+	grant_type VARCHAR(18) NOT NULL, 
+	expires_at INTEGER, 
+	refresh_token VARCHAR(255), 
+	refresh_expires_at INTEGER, 
+	user_id INTEGER, 
+	hashed VARCHAR(255), 
+	prefix VARCHAR(16), 
+	PRIMARY KEY (id), 
+	CONSTRAINT granttype CHECK (grant_type IN ('authorization_code', 'implicit', 'password', 'client_credentials', 'refresh_token')), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE, 
+	UNIQUE (hashed)
+);
+CREATE INDEX ix_oauth_access_tokens_prefix ON oauth_access_tokens (prefix);
+CREATE TABLE oauth_codes (
+	id INTEGER NOT NULL, 
+	client_id VARCHAR(255), 
+	code VARCHAR(36), 
+	expires_at INTEGER, 
+	redirect_uri VARCHAR(1023), 
+	user_id INTEGER, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+);
+CREATE TABLE user_group_map (
+	user_id INTEGER NOT NULL, 
+	group_id INTEGER NOT NULL, 
+	PRIMARY KEY (user_id, group_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id), 
+	FOREIGN KEY(group_id) REFERENCES groups (id)
+);
+CREATE TABLE api_tokens (
+	id INTEGER NOT NULL, 
+	hashed VARCHAR(255), 
+	prefix VARCHAR(16), 
+	service_id INTEGER, 
+	user_id INTEGER, 
+	PRIMARY KEY (id), 
+	UNIQUE (hashed), 
+	FOREIGN KEY(service_id) REFERENCES services (id) ON DELETE CASCADE, 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+);
+CREATE INDEX ix_api_tokens_prefix ON api_tokens (prefix);
 ```
 
 ## Upgrade

@@ -57,3 +57,13 @@ jupyter serverextension enable --py jupyterlab_latex --sys-prefix
 jupyter labextension install @jupyterlab/latex
 jupyter labextension install $DLAHOME/repos/jupyterlab-latex
 ```
+
+## JupyterLab Renderers
+
+```bash
+jupyter labextension install @jupyterlab/fasta-extension
+jupyter labextension install @jupyterlab/geojson-extension
+jupyter labextension install @jupyterlab/katex-extension
+jupyter labextension install @jupyterlab/plotly-extension
+jupyter labextension install @jupyterlab/vega2-extension
+``

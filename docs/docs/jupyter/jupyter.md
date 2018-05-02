@@ -20,9 +20,9 @@ traitlets
 [Notebook Repository](https://github.com/jupyter/notebook).
 
 ```bash
-pip3 install --upgrade notebook
-pip3 install --upgrade jupyter
-pip3 install --upgrade pyqt5
+pip3 install --upgrade --pre notebook
+pip3 install --upgrade --pre jupyter
+pip3 install --upgrade --pre pyqt5
 ```
 
 ```bash
@@ -53,4 +53,10 @@ jupyter qtconsole
 ```bash
 docker run -it --rm -p 8888:8888 jupyter/scipy-notebook:8a1b90cbcba5
 open http://localhost:8888
+```
+
+## Troubleshoot
+
+```bash
+jupyter troubleshoot
 ```

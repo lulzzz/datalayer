@@ -17,7 +17,9 @@ mkdir jupyter
 cd jupyter
 helm repo add jupyterhub https://jupyterhub.github.io/helm-chart
 helm repo update
+```
 
+```bash
 # singleuser:
 #   image:
 #     name: jupyter/scipy-notebook
@@ -30,12 +32,13 @@ helm repo update
 #     dynamic:
 #       storageClass: <storageclass-name>
 
-# ingress:
-#     enabled: true
-#     hosts:
-#      - <hostname>
+# rbac:
+#    enabled: false
 
 # ingress:
+#   enabled: true
+#   hosts:
+#     - <hostname>
 #   annotations:
 #     kubernetes.io/tls-acme: "true"
 #   tls:

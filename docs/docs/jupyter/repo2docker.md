@@ -10,6 +10,6 @@ title: Repo2Docker
 
 ```bash
 pip install jupyter-repo2docker
-jupyter-repo2docker <YOUR-GITHUB-REPOSITORY> --image=gcr.io/<PROJECT-NAME>/<IMAGE-NAME>:<TAG> --no-run
+jupyter-repo2docker <YOUR-GITHUB-REPOSITORY> --image=dockerhub.io/<PROJECT-NAME>/<IMAGE-NAME>:<TAG> --no-run
 docker push...
 ```
