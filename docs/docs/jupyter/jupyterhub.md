@@ -21,11 +21,20 @@ title: JupyterHub
 ## Setup
 
 ```bash
+source deactivate
+conda remove --name jupyterhub --all
+conda create --name jupyterhub python=3.6 notebook=5.4.1 jupyter pip
+source activate jupyterhub
+pip install pyqt5
+```
+
+```bash
 npm install -g configurable-http-proxy
-pip3 install --upgrade jupyterhub
 configurable-http-proxy -h
-# netifaces
-pip3 install --upgrade ldapauthenticator oauthenticator dockerspawner
+```
+
+```bash
+pip install --upgrade --pre jupyterhub jupyterhub-ldapauthenticator oauthenticator dockerspawner
 jupyterhub --version
 jupyterhub --help
 jupyterhub --help-all
