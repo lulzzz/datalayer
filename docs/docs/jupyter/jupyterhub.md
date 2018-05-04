@@ -134,11 +134,13 @@ c.JupyterHub.spawner_class = 'dockerspawner.DockerSpawner'
 c.Authenticator.whitelist = {'foo', 'bar'}
 ```
 
-## Auth
+## Authentication
 
 ```bash
+# See also https://github.com/jupyterhub/jupyterhub/wiki/Using-sudo-to-run-JupyterHub-without-root-privileges
+sudo chmod +r /etc/shadow
 sudo usermod -a -G shadow $USER
-sudo -u jupyterhub python3 -c "import pamela, getpass; print(pamela.authenticate('$USER', getpass.getpass()))"
+sudo -u $USER python3 -c "import pamela, getpass; print(pamela.authenticate('$USER', getpass.getpass()))"
 ```
 
 ```python
@@ -200,6 +202,15 @@ jupyterhub --debug -f /etc/jupyterhub/jupyterhub_config.py --Application.log_lev
 
 ```bash
 jupyter kernelspec list
+```
+
+```bash
+# Set the log level by value or name.
+c.JupyterHub.log_level = 'DEBUG'
+# Enable debug-logging of the single-user server
+c.Spawner.debug = True
+# Enable debug-logging of the single-user server
+c.LocalProcessSpawner.debug = True
 ```
 
 # Database

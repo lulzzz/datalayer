@@ -52,11 +52,10 @@ git push -f origin datalayer
 
 ## Build Distribution
 
-```
+```bash
+# Apache
 datalayer spark-build-dist
-```
-
-```
+# Fork
 datalayer spark-build-dist-fork
 ```
 
@@ -81,19 +80,28 @@ export RESOURCESTAGINGSERVER=10.103.210.58
 ## Docker Images
 
 ```bash
-# 2.2.0-fork Build and push to Docker Hub
-datalayer spark-docker-build-push
-```
-
-```bash
-# 2.2.0-fork Build and push to local registry
-datalayer spark-docker-build-push-local
-```
-
-```bash
-# 2.4.0 Build and push to local registry
+# Apache
+# Build and push to Local Registry.
+# Add in opt/spark/kubernetes/dockerfiles/spark/entrypoint.sh
+# case "$SPARK_K8S_CMD" in
+#  sh)
+#    CMD=(
+#      "bash"
+#      "$@"
+#    )
+#    ;;
 cd /opt/spark; ./bin/docker-image-tool.sh -r localhost:5000 -t 2.4.0 build
 cd /opt/spark; ./bin/docker-image-tool.sh -r localhost:5000 -t 2.4.0 push
+```
+
+```bash
+# Fork
+# Build and push to Local Registry.
+datalayer spark-docker-build-local
+datalayer spark-docker-push-local
+# Fork
+# Build and push to Docker Hub.
+datalayer spark-docker-build-push
 ```
 
 ## Shuffle Service
@@ -111,6 +119,10 @@ kubectl create -f $DLAHOME/manifests/spark/spark-resource-staging-server.yaml
 ```
 
 ```bash
+minikube service spark-resource-staging-service
+```
+
+```bash
 kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}'
 ```
 
@@ -118,30 +130,15 @@ kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}'
 RSS_POD=$(kubectl get pods -n default -l "spark-resource-staging-server-instance=default" -o jsonpath="{.items[0].metadata.name}")
 echo $RSS_POD
 kubectl exec -it $RSS_POD -- bash
-```
-
-```bash
-minikube service spark-resource-staging-service
-```
-
-```bash
 kubectl port-forward $RSS_POD 10000:10000
 curl http://localhost:10000
+open http://localhost:10000
 ```
 
 ## Incremental Build
 
 ```bash
-# 2.2.0-fork
-cd $DLAHOME/repos/spark/resource-managers/kubernetes/core
-datalayer spark-mvn clean -DskipTests
-datalayer spark-mvn install -DskipTests
-cp $DLAHOME/repos/spark/resource-managers/kubernetes/core/target/spark-kubernetes_*.jar /opt/spark/jars
-# datalayer spark-docker-build-push-local
-```
-
-```bash
-# 2.4.0
+# Apache
 cd $DLAHOME/repos/spark/resource-managers/kubernetes/core
 datalayer spark-mvn clean -DskipTests
 datalayer spark-mvn install -DskipTests
@@ -150,10 +147,19 @@ cd /opt/spark; ./bin/docker-image-tool.sh -r localhost:5000 -t 2.4.0 build
 cd /opt/spark; ./bin/docker-image-tool.sh -r localhost:5000 -t 2.4.0 push
 ```
 
+```bash
+# Fork
+cd $DLAHOME/repos/spark/resource-managers/kubernetes/core
+datalayer spark-mvn clean -DskipTests
+datalayer spark-mvn install -DskipTests
+cp $DLAHOME/repos/spark/resource-managers/kubernetes/core/target/spark-kubernetes_*.jar /opt/spark/jars
+datalayer spark-docker-build-push-local
+```
+
 ## Integration Tests
 
 ```bash
-# 2.2.0-fork
+# Fork
 datalayer spark-integration-test
 # datalayer spark-integration-test-pre
 # datalayer spark-integration-test-run
@@ -164,7 +170,7 @@ kubectl apply -f $DLAHOME/repos/spark-integration/dev/spark-rbac.yaml
 ```
 
 ```bash
-# 2.4.0
+# Apache
 cd $DLAHOME/repos/spark-integration
 ./dev/dev-run-integration-tests.sh \
   --spark-tgz $DLAHOME/packages/spark-2.4.0-SNAPSHOT-bin-hdfs-2.9.0.tgz
@@ -188,17 +194,14 @@ https://k8s-testgrid.appspot.com/sig-big-data#spark-periodic-default-gke
 ## IDE
 
 ```bash
--Dscala.usejavacp=true
-```
-
-```bash
-# shell - use -D for additional properties
-org.apache.spark.repl.Main
-```
-
-```bash
-# submit - use --conf for additional properties
-org.apache.spark.deploy.SparkSubmit
+# VM Options
+-Dscala.usejavacp=true -Xmx1g \
+# Main Class
+org.apache.spark.deploy.SparkSubmit \
+# Program Arguments
+--conf spark.kubernetes.container.image.pullPolicy=Always --conf spark.master=k8s://https://192.168.99.100:8443 --conf spark.local.dir=/tmp/spark-local --conf spark.kubernetes.driver.container.image=localhost:5000/spark:2.4.0 --conf spark.kubernetes.docker.image.pullPolicy=Always --conf spark.sql.catalogImplementation=in-memory --conf spark.app.name=shell-client-mode-out-cluster --conf spark.submit.deployMode=client --conf spark.kubernetes.shuffle.namespace=default --conf spark.kubernetes.initcontainer.docker.image=localhost:5000/spark-init:2.2.0 --conf spark.kubernetes.executor.docker.image=localhost:5000/spark-executor:2.2.0 --conf spark.kubernetes.namespace=default --conf spark.kubernetes.resourceStagingServer.uri=http://10.110.168.204:10000 --conf spark.kubernetes.shuffle.labels=app=spark-shuffle-service,spark-version=2.2.0 --conf spark.shuffle.service.enabled=false --conf spark.executor.instances=1 --conf spark.kubernetes.executor.container.image=localhost:5000/spark:2.4.0 --conf spark.kubernetes.driver.docker.image=localhost:5000/spark-driver:2.2.0 --conf spark.dynamicAllocation.enabled=false --conf spark.sql.warehouse.dir=/tmp/spark-warehouse --name dla-spark --class org.apache.spark.repl.Main spark-shell
+# --class org.apache.spark.examples.SparkPi 10 local:///opt/spark/examples/jars/spark-examples_2.11-*.jar 
+# Use classpath of module spark-repl_2.11
 ```
 
 ## Out-Cluster
@@ -207,7 +210,8 @@ org.apache.spark.deploy.SparkSubmit
 APP_NAME=spark-shell-client-mode-out-cluster \
 APISERVER=https://192.168.99.100:8443 \
 DEPLOY_MODE=client \
-RESOURCESTAGINGSERVER=$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}') \
+# RESOURCESTAGINGSERVER_URI=http://$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}'):10000 \
+RESOURCESTAGINGSERVER_URI=http://192.168.99.100:31000 \
 DRIVER_POD_NAME=spark-driver \
 datalayer spark-spl-shell
 ```
@@ -217,7 +221,8 @@ APP_NAME=submit-cluster-mode-out-cluster \
 APISERVER=https://192.168.99.100:8443 \
 DEPLOY_MODE=cluster \
 DRIVER_POD_NAME=spark-driver \
-RESOURCESTAGINGSERVER=$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}') \
+# RESOURCESTAGINGSERVER_URI=http://$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}'):10000 \
+RESOURCESTAGINGSERVER_URI=http://192.168.99.100:31000 \
 datalayer spark-spl-submit
 ```
 
@@ -226,20 +231,21 @@ APP_NAME=submit-client-mode-out-cluster \
 APISERVER=https://192.168.99.100:8443 \
 DEPLOY_MODE=client \
 DRIVER_POD_NAME=$HOSTNAME \
-RESOURCESTAGINGSERVER=$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}') \
+# RESOURCESTAGINGSERVER_URI=http://$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}'):10000 \
+RESOURCESTAGINGSERVER_URI=http://192.168.99.100:31000 \
 datalayer spark-spl-submit
 ```
 
 ## In-Cluster
 
 ```bash
-# 2.2.0-fork
-kubectl delete pod spark-pod --grace-period 0 --force; kubectl run -it spark-pod --image-pull-policy=Always --image=localhost:5000/spark-driver:2.2.0 --restart=Never -- bash
+# Apache
+kubectl delete pod spark-pod --grace-period 0 --force; kubectl run -it spark-pod --image-pull-policy=Always --image=localhost:5000/spark:2.4.0 --restart=Never -- sh
 ```
 
 ```bash
-# 2.4.0
-kubectl delete pod spark-pod --grace-period 0 --force; kubectl run -it spark-pod --image-pull-policy=Always --image=localhost:5000/spark:2.4.0 --restart=Never -- sh
+# Fork
+kubectl delete pod spark-pod --grace-period 0 --force; kubectl run -it spark-pod --image-pull-policy=Always --image=localhost:5000/spark-driver:2.2.0 --restart=Never -- bash
 ```
 
 ```bash
@@ -247,7 +253,8 @@ APP_NAME=shell-client-mode-in-cluster \
 APISERVER=https://kubernetes:443 \
 DEPLOY_MODE=client \
 DRIVER_POD_NAME=$HOSTNAME \
-RESOURCESTAGINGSERVER=10.102.217.130 \
+# RESOURCESTAGINGSERVER_URI=http://$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}'):10000 \
+RESOURCESTAGINGSERVER_URI=http://192.168.99.100:31000 \
 datalayer spark-spl-shell
 ```
 
@@ -256,7 +263,8 @@ APP_NAME=submit-cluster-mode-in-cluster \
 APISERVER=https://kubernetes:443 \
 DEPLOY_MODE=cluster \
 DRIVER_POD_NAME=spark-driver \
-RESOURCESTAGINGSERVER=10.102.217.130 \
+# RESOURCESTAGINGSERVER_URI=http://$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}'):10000 \
+RESOURCESTAGINGSERVER_URI=http://192.168.99.100:31000 \
 datalayer spark-spl-submit
 ```
 
@@ -265,12 +273,13 @@ APP_NAME=submit-client-mode-in-cluster \
 APISERVER=https://kubernetes:443 \
 DEPLOY_MODE=client \
 DRIVER_POD_NAME=$HOSTNAME \
-RESOURCESTAGINGSERVER=10.102.217.130 \
+# RESOURCESTAGINGSERVER_URI=http://$(kubectl get svc spark-resource-staging-service -o jsonpath='{.spec.clusterIP}'):10000 \
+RESOURCESTAGINGSERVER_URI=http://192.168.99.100:31000 \
 datalayer spark-spl-submit
 ```
 
 ```bash
-# option-1
+# Option 1
 kubectl delete -f $DLAHOME/manifests/spark/spark-base.yaml
 export POD_NAME=$(kubectl get pods -n default -l spark-base=base -o jsonpath="{.items[0].metadata.name}")
 kubectl delete pod $POD_NAME --grace-period 0 --force
@@ -280,7 +289,7 @@ kubectl exec -it $POD_NAME bash
 ```
 
 ```bash
-# option-2
+# Option 2
 kubectl attach -it spark-pod
 kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spark-exec-2 --grace-period 0 --force
 ```
@@ -311,6 +320,33 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
   <!-- -->
 
   <tr class="a">
+    <td>History Server for Kubernetes</td>
+    <td><a href="https://issues.apache.org/jira/browse/SPARK-24179">SPARK-24179</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OPEN</td>
+  </tr>
+
+  <!-- -->
+
+  <tr class="a">
+    <td>Integration Tests for Client Mode</td>
+    <td><a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a></td>
+    <td>
+      <a href="https://github.com/datalayer-contrib/spark-integration/tree/client-mode dev">datalayer-contrib:client-mode</a>
+    </td>
+    <td>
+    </td>
+    <td>
+      <a href="https://github.com/apache-spark-on-k8s/spark-integration/pull/45">#45</a>
+    </td>
+    <td>OPEN</td>
+  </tr>
+
+  <!-- -->
+
+  <tr class="a">
     <td>Client Mode</td>
     <td>
       <a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a>
@@ -328,22 +364,6 @@ kubectl delete pod spark-exec-1 --grace-period 0 --force; kubectl delete pod spa
       <br/>
       <br/>
       <a href="https://github.com/apache-spark-on-k8s/spark/pull/456">#456</a>
-    </td>
-    <td>OPEN</td>
-  </tr>
-
-  <!-- -->
-
-  <tr class="a">
-    <td>Integration Tests for Client Mode</td>
-    <td><a href="https://issues.apache.org/jira/browse/SPARK-23146">SPARK-23146</a></td>
-    <td>
-      <a href="https://github.com/datalayer-contrib/spark-integration/tree/client-mode dev">datalayer-contrib:client-mode</a>
-    </td>
-    <td>
-    </td>
-    <td>
-      <a href="https://github.com/apache-spark-on-k8s/spark-integration/pull/45">#45</a>
     </td>
     <td>OPEN</td>
   </tr>

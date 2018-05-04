@@ -18,11 +18,11 @@
 # under the License.
 
 echo """
+(1 to 100).toDS.map(_*2).collect
 (1 to 1000).toDS.map(i => {
   println(org.apache.hadoop.hbase.HConstants.DEFAULT_MASTER_PORT)
   org.apache.hadoop.hbase.HConstants.DEFAULT_MASTER_PORT
   }).collect
-(1 to 100).toDS.map(_*2).collect
 List(1,2,3).toDS.map(i => {
   import org.apache.hadoop.hbase.FAKE
   i*2
@@ -30,14 +30,14 @@ List(1,2,3).toDS.map(i => {
 """
 
 /opt/spark/bin/spark-shell \
-  --name $APP_NAME \
+  --name "$APP_NAME" \
   --conf spark.app.name=$APP_NAME \
   --conf spark.master=k8s://"$APISERVER" \
   --conf spark.submit.deployMode="$DEPLOY_MODE" \
   --conf spark.executor.instances=2 \
   --conf spark.sql.catalogImplementation=in-memory \
   --conf spark.sql.warehouse.dir=/tmp/spark-warehouse \
-  --conf spark.kubernetes.resourceStagingServer.uri=http://"$RESOURCESTAGINGSERVER":10000 \
+  --conf spark.kubernetes.resourceStagingServer.uri="$RESOURCESTAGINGSERVER_URI" \
   --conf spark.kubernetes.namespace=default \
   --conf spark.kubernetes.driver.pod.name="$DRIVER_POD_NAME" \
   --conf spark.kubernetes.initcontainer.docker.image=localhost:5000/spark-init:2.2.0 \

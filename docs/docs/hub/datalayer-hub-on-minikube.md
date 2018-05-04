@@ -71,6 +71,7 @@ kubectl --namespace=kube-system patch deployment tiller-deploy --type=json --pat
 
 ```bash
 # Registry.
+minikube addons enable registry
 kubectl create -f $DLAHOME/manifests/registry/kube-registry.yaml
 kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | grep kube-registry-v0 | awk '{print $1;}') 5000:5000
 ```

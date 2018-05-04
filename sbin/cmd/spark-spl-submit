@@ -26,7 +26,7 @@
   --conf spark.sql.warehouse.dir=/tmp/spark-warehouse \
   --conf spark.kubernetes.driver.pod.name="$DRIVER_POD_NAME" \
   --conf spark.kubernetes.namespace=default \
-  --conf spark.kubernetes.resourceStagingServer.uri=http://"$RESOURCESTAGINGSERVER":10000 \
+  --conf spark.kubernetes.resourceStagingServer.uri="$RESOURCESTAGINGSERVER_URI" \
   --conf spark.executor.instances=2 \
   --conf spark.kubernetes.initcontainer.docker.image=localhost:5000/spark-init:2.2.0 \
   --conf spark.kubernetes.driver.docker.image=localhost:5000/spark-driver:2.2.0 \

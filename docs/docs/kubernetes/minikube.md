@@ -26,9 +26,9 @@ minikube help
 ```
 
 ```bash
-minikube start
 minikube stop
 minikube delete
+minikube start
 ```
 
 ```bash
@@ -127,6 +127,7 @@ open http://192.168.99.100:30000
 ## Local Registry
 
 ```bash
+minikube addons enable registry
 kubectl create -f $DLAHOME/manifests/registry/kube-registry.yaml
 ```
 
