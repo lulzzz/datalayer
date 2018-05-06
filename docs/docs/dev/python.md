@@ -9,6 +9,15 @@ title: Python
 [Packages](https://repo.continuum.io/pkgs/main/linux-64).
 
 ```bash
+conda info
+conda info --envs
+```
+
+```bash
+conda config --add channels conda-forge
+```
+
+```bash
 conda create --name datalayer
 conda create -n datalayer python=3.6
 conda create -n datalayer scipy
@@ -18,7 +27,6 @@ conda install -n datalayer pip
 
 ```bash
 source activate datalayer
-conda info --envs
 source deactivate
 ```
 
@@ -47,10 +55,10 @@ dependencies:
   - notebook >= 5.0
   - ipykernel >= 4.3
   - jupyterlab = 0.26
+  - netifaces
   - pip:
     - oauthenticator
     - dockerspawner
-- netifaces
 ```
 
 ```bash
@@ -61,10 +69,6 @@ conda env create -f environment.yml
 
 ```bash
 pip3 install --upgrade --pre pyqt5
-```
-
-```bash
-python setup.py sdist
 ```
 
 ```bash
@@ -82,9 +86,19 @@ root-dir
 ```
 
 ```bash
+python setup.py sdist
+python setup.py bdist_wheel
+```
+
+```bash
 # Upload to PyPI Test.
 python setup.py register -r pypitest
 python setup.py sdist upload -r pypitest
+```
+
+```bash
+# See http://jupyter-notebook.readthedocs.io/en/stable/development_release.html
+twine upload dist/*
 ```
 
 ```bash

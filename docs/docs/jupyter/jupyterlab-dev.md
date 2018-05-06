@@ -16,6 +16,7 @@ cd jupyterlab
 pip install -e .
 # Use `jlpm` or globally installed `yarn`
 yarn install
+jupyter lab build
 ```
 
 ```bash

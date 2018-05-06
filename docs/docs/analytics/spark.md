@@ -107,15 +107,15 @@ datalayer spark-docker-build-push
 ## Shuffle Service
 
 ```bash
-kubectl delete -f $DLAHOME/manifests/spark/spark-shuffle-service.yaml
-kubectl create -f $DLAHOME/manifests/spark/spark-shuffle-service.yaml
+kubectl delete -f $DLAHOME/k8s-manifests/spark/spark-shuffle-service.yaml
+kubectl create -f $DLAHOME/k8s-manifests/spark/spark-shuffle-service.yaml
 ```
 
 ## Resource Staging Server
 
 ```bash
-kubectl delete -f $DLAHOME/manifests/spark/spark-resource-staging-server.yaml
-kubectl create -f $DLAHOME/manifests/spark/spark-resource-staging-server.yaml
+kubectl delete -f $DLAHOME/k8s-manifests/spark/spark-resource-staging-server.yaml
+kubectl create -f $DLAHOME/k8s-manifests/spark/spark-resource-staging-server.yaml
 ```
 
 ```bash
@@ -280,10 +280,10 @@ datalayer spark-spl-submit
 
 ```bash
 # Option 1
-kubectl delete -f $DLAHOME/manifests/spark/spark-base.yaml
+kubectl delete -f $DLAHOME/k8s-manifests/spark/spark-base.yaml
 export POD_NAME=$(kubectl get pods -n default -l spark-base=base -o jsonpath="{.items[0].metadata.name}")
 kubectl delete pod $POD_NAME --grace-period 0 --force
-kubectl apply -f $DLAHOME/manifests/spark/spark-base.yaml
+kubectl apply -f $DLAHOME/k8s-manifests/spark/spark-base.yaml
 export POD_NAME=$(kubectl get pods -n default -l spark-base=base -o jsonpath="{.items[0].metadata.name}")
 kubectl exec -it $POD_NAME bash
 ```

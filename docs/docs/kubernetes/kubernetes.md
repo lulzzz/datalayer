@@ -262,11 +262,11 @@ kubectl exec -it dla-dns-test-2 -- nslookup kubernetes.default
   Address 1: 10.0.0.1
 ```
 
-```
+```bash
 kubectl exec -it dla-dns-test-2 -- nslookup dla-dns-test
 ```
 
-```
+```bash
 vi /etc/kubernetes/addons/kube-dns-cm.yaml
 apiVersion: v1
 kind: ConfigMap 
@@ -305,7 +305,7 @@ metadata:
 EOF
 ```
 
-```
+```bash
 cat << EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
@@ -345,14 +345,14 @@ kubectl get customresourcedefinitions
 
 ## Namespace
 
-```
+```bash
 kubectl get ns
 kubectl describe ns default
 ```
 
 # Environment
 
-```
+```bash
 cat << EOF | kubectl apply -f -
 apiVersion: v1
 kind: Pod
@@ -410,7 +410,7 @@ kubectl create secret generic dla-secret --type="kubernetes.io/dla" --from-liter
 
 ## Storage
 
-```
+```bash
 cat << EOF | kubectl apply -f -
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -457,7 +457,7 @@ aws ec2 create-volume --region=us-west-2 --availability-zone=us-west-2a --size=1
 aws ec2 describe-volumes --region=us-west-2 --profile=kuber
 ```
 
-```
+```bash
 cat << EOF | kubectl apply -f -
 kind: PersistentVolume
 apiVersion: v1

@@ -37,4 +37,3 @@ open http://localhost:8888/lab
   created by the user with different combinations of extensions. The `--app-dir` can
   be used to set a directory for different applications. The default application
   path can be found using `jupyter lab path`.
-

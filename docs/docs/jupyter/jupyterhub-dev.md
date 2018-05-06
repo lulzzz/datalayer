@@ -5,6 +5,10 @@ title: JupyterHub Dev
 ## JupyterHub Dev
 
 ```bash
+pip install -r dev-requirements.txt -e .
+```
+
+```bash
 python setup.py clen
 rm -fr build dist *.egg-info
 python setup.py sdist

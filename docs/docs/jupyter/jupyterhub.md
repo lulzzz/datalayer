@@ -80,6 +80,10 @@ export JPY_COOKIE_SECRET=`openssl rand -hex 32`
 c.JupyterHub.cookie_secret_file = '/srv/jupyterhub/jupyterhub_cookie_secret'
 ```
 
+```bash
+c.JupyterHub.cookie_secret = bytes.fromhex('VERY LONG SECRET HEX STRING')
+```
+
 ## Proxy Authentication Token
 
 The Hub authenticates its requests to the Proxy using a secret token that the Hub and Proxy agree upon. The value of this string should be a random string.

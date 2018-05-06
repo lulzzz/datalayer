@@ -29,3 +29,7 @@ docs/Gemfile.lock
 
 repos
 packages
+
+conf/jupyter/*/env
+conf/jupyter/*/start.sh
+
