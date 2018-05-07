@@ -6,14 +6,14 @@ title: K8S Dashboard
 
 ```bash
 # Install with HTTPS.
-kubectl create -f $DLAHOME/k8s-manifests/k8s-dashboard/k8s-dashboard-ssl.yaml
+kubectl create -f $DLAHOME/manifests/k8s/k8s-dashboard/k8s-dashboard-ssl.yaml
 kubectl proxy
 open http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 ```
 
 ```bash
 # Install with HTTP and Authorization Header.
-kubectl create -f $DLAHOME/k8s-manifests/k8s-dashboard/k8s-dashboard-auth-header.yaml
+kubectl create -f $DLAHOME/manifests/k8s/k8s-dashboard/k8s-dashboard-auth-header.yaml
 kubectl proxy
 open http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/#!/login
 ```

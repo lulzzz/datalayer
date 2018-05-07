@@ -11,4 +11,3 @@ By default, this REST API listens on port 8081 of localhost only. The Hub servic
 [REST API Swagger](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/jupyterhub/jupyterhub/master/docs/rest-api.yml#/default)
 
 [REST API Static](https://jupyterhub.readthedocs.io/en/latest/_static/rest-api/index.html).
-

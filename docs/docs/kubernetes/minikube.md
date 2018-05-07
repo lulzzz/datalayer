@@ -110,7 +110,7 @@ helm delete hello --purge
 ```bash
 # Option 1
 minikube addons disable dashboard
-kubectl create -f $DLAHOME/k8s-manifests/k8s-dashboard/k8s-dashboard-auth-header.yaml
+kubectl create -f $DLAHOME/manifests/k8s/k8s-dashboard/k8s-dashboard-auth-header.yaml
 kubectl proxy
 open http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/#!/login
 ```
@@ -128,7 +128,7 @@ open http://192.168.99.100:30000
 
 ```bash
 minikube addons enable registry
-kubectl create -f $DLAHOME/k8s-manifests/registry/kube-registry.yaml
+kubectl create -f $DLAHOME/manifests/k8s/registry/kube-registry.yaml
 ```
 
 ```bash
@@ -138,7 +138,7 @@ kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | g
 ## Echo Header
 
 ```bash
-kubectl apply -f $DLAHOME/k8s-manifests/echo/echo.yaml
+kubectl apply -f $DLAHOME/manifests/k8s/echo/echo.yaml
 curl $(minikube service echoheaders --url)
-kubectl delete -f $DLAHOME/k8s-manifests/echoheaders/echoheaders.yaml
+kubectl delete -f $DLAHOME/manifests/k8s/echoheaders/echoheaders.yaml
 ```
