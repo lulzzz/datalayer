@@ -24,12 +24,13 @@ https://github.com/datalayer-contrib/jupyterhub.git
 https://github.com/datalayer-contrib/jupyterhub-helm-chart.git
 https://github.com/datalayer-contrib/jupyterhub-http-proxy.git
 https://github.com/datalayer-contrib/jupyterhub-k8s.git
-https://github.com/datalayer-contrib/jupyterhub-nbrsessionproxy.git
 https://github.com/datalayer-contrib/jupyterhub-spawner-docker.git
 https://github.com/datalayer-contrib/jupyterhub-spawner-sudo.git
 https://github.com/datalayer-contrib/jupyterhub-tutorial.git
 https://github.com/datalayer-contrib/jupyter-ipywidgets.git
 https://github.com/datalayer-contrib/jupyter-kernel-gateway.git
+https://github.com/datalayer-contrib/jupyter-kernel-rproxy.git
+https://github.com/datalayer-contrib/jupyter-kernel-toree.git
 https://github.com/datalayer-contrib/jupyterlab-cookiecutter-extension.git
 https://github.com/datalayer-contrib/jupyterlab-cookiecutter-mimerender.git
 https://github.com/datalayer-contrib/jupyterlab-demo.git
@@ -50,7 +51,6 @@ https://github.com/datalayer-contrib/jupyter-nbviewer.git
 https://github.com/datalayer-contrib/jupyter-notebook.git
 https://github.com/datalayer-contrib/jupyter-pizzabutton.git
 https://github.com/datalayer-contrib/jupyter-sparkmagic.git
-https://github.com/datalayer-contrib/jupyter-toree.git
 https://github.com/datalayer-contrib/k8s-aws-authenticator.git
 https://github.com/datalayer-contrib/k8s-dashboard.git
 https://github.com/datalayer-contrib/kubeflow-examples.git
@@ -69,8 +69,6 @@ https://github.com/datalayer/datalayer-go-snippets.git
 https://github.com/datalayer/datalayer-helm.git
 https://github.com/datalayer/datalayer-hub.git
 https://github.com/datalayer/datalayer-jupyterhub.git
-https://github.com/datalayer/datalayer-jupyterlab.git
-https://github.com/datalayer/datalayer-jupyterlab.git
 https://github.com/datalayer/datalayer-jupyterlab.git
 https://github.com/datalayer/datalayer-jvm.git
 https://github.com/datalayer/datalayer-notes-init.git

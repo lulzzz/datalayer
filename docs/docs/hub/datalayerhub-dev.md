@@ -14,7 +14,7 @@ conda remove --name datalayerhub --all
 conda config --add channels conda-forge
 conda create --name datalayerhub python=3.6 pip=10.0.1 notebook jupyter jupyterhub
 source activate datalayerhub
-pip install oauthenticator sudospawner dockerspawner jupyterlab pyqt5 psycopg2
+pip install oauthenticator jupyterhub-ldapauthenticator sudospawner dockerspawner jupyterlab pyqt5 pycurl psycopg2
 ```
 
 ```bash
@@ -22,14 +22,21 @@ source deactivate
 conda remove --name datalayerhub --all
 conda create --name datalayerhub python=3.6 pip=10.0.1
 source activate datalayerhub
-pip install pyqt5 psycopg2
+pip install pyqt5 pycurl psycopg2
+source activate datalayerhub
 cd $DLAHOME/repos/jupyter-notebook
 pip install -e .
 cd $DLAHOME/repos/jupyterhub
 git checkout datalayer
-python setup.py sdist
+python setup.py clean sdist
 pip install -e .
 cd $DLAHOME/repos/jupyterhub-auth-oauth
+pip install -e .
+cd $DLAHOME/repos/jupyterhub-auth-ldap
+pip install -e .
+cd $DLAHOME/repos/jupyterhub-spawner-batch
+pip install -e .
+cd $DLAHOME/repos/jupyterhub-spawner-wrap
 pip install -e .
 cd $DLAHOME/repos/jupyterhub-spawner-sudo
 pip install -e .

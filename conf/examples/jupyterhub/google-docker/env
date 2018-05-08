@@ -1,0 +1,11 @@
+# env
+#
+# add your github oauth config to this file
+# and launch the server with `sh run.sh`
+#
+# Note: Be careful to keep the client secret private. Use caution
+#       with version control to prevent publicly exposing the secret.
+
+export OAUTH_CLIENT_ID=448379464054-3a3oeofpsvin51988i9m90u79kej4a9k.apps.googleusercontent.com
+export OAUTH_CLIENT_SECRET=hb9gex2oV4xgnMGexjYct6dq
+export OAUTH_CALLBACK_URL=http://localhost:8000/hub/oauth_callback

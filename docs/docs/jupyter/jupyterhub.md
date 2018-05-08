@@ -185,19 +185,6 @@ jupyterhub -f /etc/jupyterhub/jupyterhub_config.py
 open http://localhost:8000
 ```
 
-## Token
-
-```bash
-jupyterhub token
-```
-
-## Services
-
-```bash
-export JUPYTERHUB_API_TOKEN=`jupyterhub token`
-python3 cull_idle_servers.py [--timeout=900] [--url=http://127.0.0.1:8081/hub/api]
-```
-
 ## Troubleshoot
 
 ```bash

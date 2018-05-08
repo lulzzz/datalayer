@@ -11,6 +11,7 @@ sudo chown postgres:postgres  /etc/ssl/private/ssl-cert-snakeoil.key
 sudo chmod 0600 /etc/ssl/private/ssl-cert-snakeoil.key
 update-rc.d postgresql enable
 sudo service postgresql start
+sudo systemctl status postgresql
 tail -f /var/log/postgresql
 # su - postgres
 sudo -i -u postgres

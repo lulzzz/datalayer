@@ -44,3 +44,11 @@ open http://localhost:8888
 ```bash
 jupyter troubleshoot
 ```
+
+## Build
+
+```bash
+pip install -e .
+npm run build
+npm run build:watch
+```

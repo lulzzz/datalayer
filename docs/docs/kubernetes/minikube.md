@@ -37,6 +37,7 @@ minikube start
 # --cluster-cidr 10.244.0.0/16
 # --pod-network-cidr 10.244.0.0/16
 # --vm-driver none
+# --disk-size 20g
 # apiserver.EnableInsecureLogin.Mode=false
 CHANGE_MINIKUBE_NONE_USER=true minikube start \
   --kubernetes-version v1.9.4 \
@@ -80,6 +81,7 @@ minikube addons disable heapster
 kubectl -n kube-system create sa tiller
 kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
 helm init --service-account tiller
+# Secure Helm
 kubectl --namespace=kube-system patch deployment tiller-deploy --type=json --patch='[{"op": "add", "path": "/spec/template/spec/containers/0/command", "value": ["/tiller", "--listen=localhost:44134"]}]'
 ```
 
@@ -125,6 +127,14 @@ open http://192.168.99.100:30000
 ```
 
 ## Local Registry
+
+```bash
+# This command sets up docker to use the same docker daemon as your minikube cluster does.
+# This means images you build are directly available to the cluster.
+eval $(minikube docker-env)
+# When you no longer wish to use the minikube host, you can undo this change by running.
+eval $(minikube docker-env -u)
+```
 
 ```bash
 minikube addons enable registry

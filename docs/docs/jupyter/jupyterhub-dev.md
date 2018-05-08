@@ -2,8 +2,6 @@
 title: JupyterHub Dev
 ---
 
-## JupyterHub Dev
-
 ```bash
 pip install -r dev-requirements.txt -e .
 ```

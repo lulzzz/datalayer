@@ -69,28 +69,6 @@ ls /home/datalayer/opt/miniconda3/share/jupyter/lab
 extensions  schemas  settings  staging  static  themes
 ```
 
-## JupyterLab Examples
-
-[JupyterLab Examples Docs](https://jupyterlab.readthedocs.io/en/latest/developer/examples.html).
-
-```bash
-yarn run build:examples
-```
-
-```bash
-cd examples/cell
-python main.py
-```
-
-## JupyterLab Renderers
-
-```bash
-git clone https://github.com/jupyterlab/jupyter-renderers.git
-cd jupyter-renderers
-yarn install
-yarn run build
-```
-
 ```bash
 # Link all extensions in packages.
 yarn run link
