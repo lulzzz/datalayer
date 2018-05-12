@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+source $DLAHOME/sbin/util/datalayer-cli-control
+
+cd $SOLR_HOME
+
+echo -e $BOLD$YELLOW"Datalayer Solr Cloud Help"$NOCOLOR$NOBOLD
+echo -e """
+bin/solr start -e cloud -noprompt
+bin/solr start -e techproducts
+
+bin/post -c gettingstarted docs/
+bin/post -c gettingstarted example/exampledocs/*.xml
+bin/post -c gettingstarted example/exampledocs/books.json
+bin/post -c gettingstarted example/exampledocs/books.csv
+bin/post -c gettingstarted -d \"<delete><id>SP2514N</id></delete>\"
+
+$ curl http://localhost:8983/solr/demo/update?commit=true -H 'Content-type:application/json' -d '
+[
+ {"id" : "book1",
+  "title" : "American Gods",
+  "author" : "Neil Gaiman"
+ }
+]'
+"""
+echo
+echo -e "Check Solr Cloud    "$YELLOW"$SOLR_HOME/bin/solr status"$NOCOLOR
+echo
+echo -e "View Solr Cloud     "$YELLOW"http://localhost:8983/solr"$NOCOLOR
+echo -e "                    "$YELLOW"http://localhost:8983/solr/admin/info/system"$NOCOLOR
+echo
+echo -e "Create a collection "$YELLOW"$SOLR_HOME/bin/solr create -c demo -d $DLALAB_HOME/conf/solr/conf"$NOCOLOR
+echo -e "                    "$YELLOW"$SOLR_HOME/bin/solr create_collection -c test1 -shards 2 -replicationFactor 2 -d $DLALAB_HOME/conf/solr/conf"$NOCOLOR
+echo
+echo -e "Delete a collection "$YELLOW"$SOLR_HOME/bin/solr delete -c test1"$NOCOLOR
+echo 
+echo -e "Add documents       "$YELLOW"$SOLR_HOME/bin/post -c demo $SOLR_HOME/example/exampledocs/*.xml"$NOCOLOR
+echo
+echo -e "Query documents     "$YELLOW"http://localhost:8983/solr/demo/select?q=video"$NOCOLOR
+echo
+echo -e "View documents      "$YELLOW"http://localhost:8983/solr/#/demo_shard1_replica1"$NOCOLOR
+echo -e "                    "$YELLOW"http://localhost:8983/solr/demo_shard1_replica1/browse"$NOCOLOR
+echo
+echo -e "View logs           "$YELLOW"tail -f $SOLR_HOME/server/logs/solr.log"$NOCOLOR
+echo

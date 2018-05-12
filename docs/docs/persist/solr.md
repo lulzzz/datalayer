@@ -1,5 +1,5 @@
 ---
-title: Solr
+title: Apache Solr
 ---
 
 # API
@@ -8,7 +8,7 @@ title: Solr
 http://localhost:8983/solr/datalayer-social-post/schema/fields
 ```
 
-# Indexing and Retrieving a Document
+# Index
 
 curl http://localhost:8983/solr/demo/update -d '
 [
@@ -18,6 +18,8 @@ curl http://localhost:8983/solr/demo/update -d '
  }
 ]'
 {"responseHeader":{"status":0,"QTime":40}}
+
+# Get
 
 curl http://localhost:8983/solr/demo/get?id=book1
 {
@@ -64,7 +66,7 @@ _b  _bs   boolean   true or false
 _dt   _dts  date  A date in Solr’s date format
 _p    location  A lattitude and longitude pair for geo-spatial search
 
-# Updating a Document
+# Update
 
 Let’s update book1 and add cat_s, a category field, a publication year, and an ISBN. Via dynamic fields, a field name ending with _i tells Solr to treat the value as an integer, while a field name ending with _s is treated as a string.
 $ curl http://localhost:8983/solr/demo/update -d '
@@ -81,7 +83,7 @@ $ curl http://localhost:8983/solr/demo/get?id=book1
 
 See Atomic Updates for more document update options.
  
-# Solr Search Requests
+# Requests
 
 First, lets add a few more documents so we have something to search for. This time we’ll demonstrate indexing documents in CSV (comma separated values) format:
 
@@ -162,11 +164,12 @@ Parameter Explanation:
 // WORK IN PROGRESS, MORE TO FOLLOW SOON
 
 JSON Facet API
+
 Facet Functions & Analytics
 Sub-Facets / Nested Facets
 
-
 JSON Facet API
+
 17 Apr, 2015  in analytics / facets / json / solr / solr search  tagged facet aggregations / facet functions / facet statistics / Faceted Search / JSON facet API / JSON facets / nested aggregations / nested facets / query facet / range facet / solr aggregations / solr facet / solr facet example / subfacets / terms facet by yonik (updated on April 29, 2015)
 
     Introduction
@@ -242,6 +245,7 @@ A number of JSON extensions have been implemented to further increase the clarit
   x : "avg(price)" , // Simple strings can occur unquoted
   y : 'unique(manu)' // Strings can also use single quotes (easier to embed in another String)
 }
+
 Debugging JSON
 
 Nicely indented JSON is very easy to understand. If you get a large piece of non-indented JSON somehow, and are trying to make sense of it, you can cut and paste into one of the online validators:
@@ -255,6 +259,7 @@ Facet Types
 There are two types of facets, one that breaks up the domain into multiple buckets, and aggregations / facet functions that provide information about the set of documents belonging to each bucket.
 
 Faceting can be nested! Any bucket produced by faceting can further be broken down into multiple buckets by a sub-facet.
+
 Statistics are facets
 
 Statistics are now fully integrated into faceting. Since we start off with a single facet bucket with a domain defined by the main query and filters, we can even ask for statistics for this top level bucket, before breaking up into further buckets via faceting. Example:
@@ -293,7 +298,6 @@ $ curl http://localhost:8983/solr/query -d 'q=*:*&rows=0&
  }
 '
 
- 
 Terms Facet
 
 The terms facet, or field facet, produces buckets from the unique values of a field. The field needs to be indexed or have docValues.
@@ -423,16 +427,15 @@ Parameters:
         "outer" the “before” and “after” ranges will be inclusive of their bounds, even if the first or last ranges already include those boundaries.
         "all" shorthand for lower, upper, edge, outer
 
-
-
-
 Solr Facet Functions and Analytics
+
 17 Apr, 2015  in analytics / facets / grouping / solr  tagged facet analytics / facet by function / facet statistics / Faceted Search / histogram facet / JSON facets / realtime analytics / solr analytics / solr facet / solr facet example / solr facets / solr statistics by yonik (updated on April 29, 2015)
 
 NOTE: Some examples use syntax only supported in Solr 5.2!
 Download a Solr 5.2 snapshot to try them out.
 
 Traditional faceted search (also called guided navigation) involves counting search results that belong to categories (also called facet constraints). The new facet functions in Solr extends normal faceting by allowing additional aggregations on document fields themselves. Combined with the new Sub-facet feature, this provides powerful new realtime analytics capabilities. Also see the page about the new JSON Facet API.
+
 Aggregation Functions
 
 Faceting involves breaking up the domain into multiple buckets and providing information about each bucket.
@@ -449,7 +452,6 @@ percentile  percentile(salary,50,75,99,99.9)  calculates percentiles
  
 Numeric aggregation functions such as avg can be on any numeric field, or on another function of multiple numeric fields.
 
- 
 # Simple Example
 
 The faceting domain starts with the set of documents that match the main query and filters.
@@ -519,12 +521,10 @@ $ curl http://localhost:8983/solr/query -d 'q=*:*&
    }
  }
 '
-
  
 # Try it out
 
 Facet functions and Subfacets are currently only in Solr 5.1. Download the latest release and give it a spin!
-
 
 # Solr Subfacets
 
@@ -650,7 +650,6 @@ All the reporting and sorting was done using document count (i.e. number of book
         }
       }
 
- 
 Try it out
 
 Facet functions and Subfacets are in Solr 5.1 and later. Download the latest release and give it a spin!

@@ -12,6 +12,8 @@
 
 *.jar
 
+*.sqlite
+
 __tmp
 
 bower_components
@@ -30,6 +32,4 @@ docs/Gemfile.lock
 repos
 packages
 
-conf/jupyter/*/env
-conf/jupyter/*/start.sh
-
+conf/examples/jupyterlab/*/build

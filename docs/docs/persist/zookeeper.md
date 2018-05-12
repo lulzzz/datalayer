@@ -20,7 +20,7 @@ tar xvfz zookeeper-3.5.0.tar.gz
 rm zookeeper-3.5.0.tar.gz
 cd zookeeper-3.5.0
 mkdir logs 
-rm -fr /var/data/zookeeper-3.5.0
+rm -fr /var/datalayer/zookeeper-3.5.0
 cp /t/t4f-data.git/coordination/zookeeper/src/main/resources/zoo-local.cfg conf/zoo.cfg
 $ZOOKEEPER_HOME/bin/zkServer.sh start
 # $ZOOKEEPER_HOME/bin/zkServer.sh start-foreground

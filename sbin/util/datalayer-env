@@ -55,7 +55,7 @@ export DLA_OPT=/opt
 
 # export DLA_ECHO_SEPARATOR="""---------------------------------------------------------------------"""
 export DLA_ECHO_SEPARATOR="""─────────────────────────────────────────────────────────────────────"""
-export DLA_SRC_DIR=$DLA_HOME/..
+export DLA_SRC_DIR=$DLAHOME/..
 
 if [ -z "$DLA_SRC" ]
 then
@@ -76,23 +76,23 @@ fi
 
 # ------------------------------------
 
-export DLA_CLASSPATH=$DLA_HOME/lib/*:$DLA_CLASSPATH
+export DLA_CLASSPATH=$DLAHOME/lib/*:$DLA_CLASSPATH
 
-export DLA_CLASSPATH_FILE=$DLA_HOME/gen/datalayer-classpath.sh
+export DLA_CLASSPATH_FILE=$DLAHOME/gen/datalayer-classpath.sh
 
 # ------------------------------------
 
-if [ -z "$DLA_HOME" ]
+if [ -z "$DLAHOME" ]
 then
-  export DLA_HOME=DLABIN/..
+  export DLAHOME=DLABIN/..
 fi
-export PATH=$DLA_HOME/bin:$PATH
+export PATH=$DLAHOME/bin:$PATH
 
 # ------------------------------------
 
 if [ -z "$DLA_REPOSITORY" ]
 then
-  export DLA_REPOSITORY=$DLA_HOME/mvn/repository
+  export DLA_REPOSITORY=$DLAHOME/mvn/repository
 fi
 
 # ------------------------------------
@@ -189,17 +189,11 @@ export ZOOKEEPER_HOME=$DLA_OPT_FOLDER/zookeeper-3.4.6
 export PATH=$ZOOKEEPER_HOME/bin:$PATH
 
 if [ -z "$ZOOKEEPER_CONF_FILE" ]; then
-  export ZOOKEEPER_CONF_FILE=$DLA_HOME/conf/zookeeper/zoo.cfg
+  export ZOOKEEPER_CONF_FILE=$DLAHOME/conf/zookeeper/zoo.cfg
 fi
 
 if [ ! -f $ZOOKEEPER_HOME/bin/zkServer.sh ]; then
   datalayer install-ext -c zookeeper
-fi
-
-# ------------------------------------
-
-if [ -z "$SLIDER_HOME" ]; then
-  export SLIDER_HOME=/opt/slider-0.92.0-incubating-SNAPSHOT
 fi
 
 # ------------------------------------
@@ -256,26 +250,8 @@ fi
 
 # ------------------------------------
 
-# export ELASTICSEARCH_HOME=$DLA_OPT_FOLDER/elasticsearch-2.1.1
-# export PATH=$ELASTICSEARCH_HOME/bin:$PATH
-
-# if [ ! -f $ELASTICSEARCH_HOME/bin/elasticsearch ]; then
-#   datalayer install-ext -c elasticsearch
-# fi
-
-# ------------------------------------
-
-export SOLR_HOME=$DLA_OPT_FOLDER/solr-6.4.1
+export SOLR_HOME=$DLA_OPT_FOLDER/solr-7.3.0
 export PATH=$SOLR_HOME/bin:$PATH
-
-# if [ ! -f $SOLR_HOME/bin/solr ]; then
-#   datalayer install-ext -c solr
-# fi
-
-# ------------------------------------
-
-export SOLR_CLOUD_HOME=$DLA_OPT_FOLDER/solr-6.4.1-cloud
-export PATH=$SOLR_CLOUD_HOME/bin:$PATH
 
 # if [ ! -f $SOLR_HOME/bin/solr ]; then
 #   datalayer install-ext -c solr
@@ -314,7 +290,7 @@ if [ -z "$HBASE_HOME" ]; then
 fi
 export PATH=$HBASE_HOME/bin:$PATH
 if [ -z "$HBASE_CONF_DIR" ]; then
-  export HBASE_CONF_DIR=$DLA_HOME/conf/hbase
+  export HBASE_CONF_DIR=$DLAHOME/conf/hbase
 fi
 
 # Tell HBase whether it should manage its own instance of Zookeeper or not.
@@ -329,7 +305,7 @@ fi
 
 if [ -z "$DLA_NOTEBOOK_DIR" ]
 then
-  export ZEPPELIN_NOTEBOOK_DIR=$DLA_HOME/notebooks/school
+  export ZEPPELIN_NOTEBOOK_DIR=$DLAHOME/notebooks/school
 else
   export ZEPPELIN_NOTEBOOK_DIR=$DLA_NOTEBOOK_DIR
 fi
@@ -353,16 +329,16 @@ then
   then
     if [ -z "$DLA_HADOOP_DATA_DIR" ]
     then
-      export DLA_HADOOP_DATA_DIR=$DLA_HOME/var/data/hadoop
+      export DLA_HADOOP_DATA_DIR=$DLAHOME/var/datalayer/hadoop
     fi
     if [ -z "$HADOOP_CONF_DIR" ]
     then
-      export HADOOP_CONF_DIR=$DLA_HOME/conf/hadoop
+      export HADOOP_CONF_DIR=$DLAHOME/conf/hadoop
       if [ "$DLA_SECURITY" == "kerberos" ]
       then
-        export DLA_HADOOP_CONF_TEMPLATE_DIR=$DLA_HOME/conf/hadoop-kerberos
+        export DLA_HADOOP_CONF_TEMPLATE_DIR=$DLAHOME/conf/hadoop-kerberos
       else
-        export DLA_HADOOP_CONF_TEMPLATE_DIR=$DLA_HOME/conf-template/hadoop-simple
+        export DLA_HADOOP_CONF_TEMPLATE_DIR=$DLAHOME/conf-template/hadoop-simple
       fi
       datalayer hadoop-conf-generate
     fi
@@ -380,7 +356,7 @@ then
     if [ ! -d $DLA_HADOOP_DATA_DIR ]; then
       mkdir -p $DLA_HADOOP_DATA_DIR
       export DLA_HADOOP_STATUS=init
-      $DLA_HOME/bin/datalayer hadoop-init
+      $DLAHOME/bin/datalayer hadoop-init
       export DLA_HADOOP_STATUS=stopped
     fi
     if [ "$DLA_HADOOP_STATUS" != "stopped" ]
@@ -394,7 +370,7 @@ then
             if [ "$DLA_HADOOP_STATUS" != "starting" ]
             then
               export DLA_HADOOP_STATUS=starting
-              $DLA_HOME/bin/datalayer hadoop-start
+              $DLAHOME/bin/datalayer hadoop-start
               export DLA_HADOOP_STATUS=started
             fi
           fi

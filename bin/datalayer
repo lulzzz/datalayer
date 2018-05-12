@@ -33,7 +33,8 @@ if [ $# == 0 ] ; then
   exit 0;
 fi
 
-DATALAYER_SHOW_HEADER=false FLAG=/bin/bash $1 "${@:2}"
+DATALAYER_SHOW_HEADER=false /bin/bash $1 "${@:2}"
+FLAG=$?
 
 PATH=$INITIAL_PATH
 

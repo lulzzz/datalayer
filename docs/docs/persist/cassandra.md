@@ -243,7 +243,7 @@ firefox http://localhost:8888
 
 # OPS
 
-+ sstable2json /var/data/cassandra/data/mykeyspace/users/mykeyspace-users-jb-1-Data.db
++ sstable2json /var/datalayer/cassandra/data/mykeyspace/users/mykeyspace-users-jb-1-Data.db
 
 # CLI
 

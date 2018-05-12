@@ -2,8 +2,6 @@
 title: JupyterHub
 ---
 
-## JupyterHub
-
 [JupyterHub Repository](https://github.com/jupyterhub/jupyterhub).
 
 [JupyterHub Docs](https://jupyterhub.readthedocs.io).

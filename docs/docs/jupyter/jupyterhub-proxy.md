@@ -7,6 +7,56 @@ title: JupyterHub Proxy
 c.JupyterHub.ip = '127.0.0.1'
 ```
 
+## Nginx
+
+```bash
+# vi /etc/nginx/sites-enabled/default 
+# top-level http config for websocket headers
+# If Upgrade is defined, Connection = upgrade
+# If Upgrade is empty, Connection = close
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    ''      close;
+}
+
+server {
+    listen 80;
+    ssl off;
+
+    server_name hub.datalayer.io.local;
+
+    location /api-browser {
+        proxy_pass http://127.0.0.1:10000/services/api-browser;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+        # websocket headers
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+    }
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+        # websocket headers
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+    }
+
+    # Managing requests to verify letsencrypt host
+    location ~ /.well-known {
+        allow all;
+    }
+
+}
+```
+
+## Apache2
+
 ```bash
 apt install apache2
 a2enmod ssl rewrite proxy proxy_http proxy_wstunnel
@@ -24,9 +74,9 @@ service apache2 start
   RewriteRule /(.*) ws://127.0.0.1:8000/$1 [P,L]
   # preserve Host header to avoid cross-origin problems
   ProxyPreserveHost on
-  # proxy to Signup
-  ProxyPass        /signup http://127.0.0.1:10000/
-  ProxyPassReverse /signup http://127.0.0.1:10000/
+  # proxy to api-browser
+  ProxyPass        /api-browser http://127.0.0.1:10000/services/api-browser
+  ProxyPassReverse /api-browser http://127.0.0.1:10000/services/api-browser
   # proxy to JupyterHub
   ProxyPass        / http://127.0.0.1:8000/
   ProxyPassReverse / http://127.0.0.1:8000/

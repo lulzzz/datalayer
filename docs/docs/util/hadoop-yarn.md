@@ -52,7 +52,7 @@ start-all.sh
 
 FORMAT NAMENODE
 
-rm -fr /var/data/hadoop-3.0.0-*
+rm -fr /var/datalayer/hadoop-3.0.0-*
 hadoop namenode -format AosCluster
 
 START HADOOP
