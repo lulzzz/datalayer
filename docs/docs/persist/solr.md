@@ -2,12 +2,6 @@
 title: Apache Solr
 ---
 
-# API
-
-```
-http://localhost:8983/solr/datalayer-social-post/schema/fields
-```
-
 # Index
 
 curl http://localhost:8983/solr/demo/update -d '
@@ -36,6 +30,12 @@ Of course for queries, you can always just use your browser and click on the lin
 http://localhost:8983/solr/demo/get?id=book1
 
 or cut’n’paste the URL into your browser and modify the query directly in the address bar to try out different requests.
+
+# Fields
+
+```
+http://localhost:8983/solr/datalayer-social-post/schema/fields
+```
 
 # Dynamic Fields
 
@@ -126,11 +126,15 @@ See Solr Query for more solr query examples and syntax.
 Solr Search Request in JSON
 
 If you prefer using JSON to search the index, you can use the JSON Request API:
-$ curl http://localhost:8983/solr/demo/query -d '
+
+```bash
+curl http://localhost:8983/solr/demo/query -d '
 {
   "query" : "title_t:black",
   "fields" : ["title_t", "author_s"]
 }'
+```
+
 Sorting and Paging Search Results
 
 By default, Solr will return the top 10 documents ordered by highest score (relevance) first. Let’s change things up and return the top 3 search results, limiting them to books published by Bantam, and sorting by publication year descending:
@@ -609,6 +613,7 @@ json.facet=
 '
 
 An example response would look like the following:
+
 [...]
   "facets":{
     "top_genres":{

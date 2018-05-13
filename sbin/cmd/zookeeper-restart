@@ -20,5 +20,5 @@
 export DLALAB_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DLAHOME/sbin/util/datalayer-env
 
-$DLALAB_HOME/bin/datalayer zookeeper-stop
-DLALAB_SHOW_HEADER=false $DLALAB_HOME/bin/datalayer zookeeper-start
+datalayer zookeeper-stop
+DLALAB_SHOW_HEADER=false datalayer zookeeper-start

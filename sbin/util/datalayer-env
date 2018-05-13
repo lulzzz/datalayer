@@ -250,7 +250,16 @@ fi
 
 # ------------------------------------
 
-export SOLR_HOME=$DLA_OPT_FOLDER/solr-7.3.0
+export ELASTICSEARCH_HOME=$DLA_OPT_FOLDER/elasticsearch
+export PATH=$ELASTICSEARCH_HOME/bin:$PATH
+
+# if [ ! -f $ELASTICSEARCH_HOME/bin/elasticsearch ]; then
+#   datalayer install-ext -c elasticsearch
+# fi
+
+# ------------------------------------
+
+export SOLR_HOME=$DLA_OPT_FOLDER/solr
 export PATH=$SOLR_HOME/bin:$PATH
 
 # if [ ! -f $SOLR_HOME/bin/solr ]; then

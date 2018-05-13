@@ -19,22 +19,40 @@
 
 export DLALAB_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DLAHOME/sbin/util/datalayer-env
-
 $DLAHOME/sbin/util/datalayer-header "$@"
 $DLAHOME/sbin/util/datalayer-env-echo
 
-echo -e $RED$BOLD"Existing Solr data will be lost forever!!!"$NOBOLD$NOCOLOR
+echo -e $BOLD$YELLOW"Datalayer Elasticsearch Help"$NOCOLOR$NOBOLD
 echo
-echo -e $YELLOW"Are you sure you want to remove $BOLD'/var/datalayer/solr'$NOBOLD (y/N)?"$NOCOLOR
-read REPLY
+echo """
+cd /opt
+curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.4.tar.gz
+tar -xvf elasticsearch-6.2.4.tar.gz
+mv elasticsearch-6.2.4 elasticsearch
+"""
 
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    echo
-    echo "Removing Solr files /var/datalayer/solr..."
-    rm -fr /var/datalayer/solr
-    echo "Solr Shards and Replicas removed."
-    mkdir /var/datalayer/solr
-fi
+echo -e $GREEN$BOLD"Elasticsearch API"$NOBOLD$NOCOLOR
+echo
+echo """
+curl -X GET localhost:9200/_cat/health?v
+curl -X GET localhost:9200/_cat/nodes?v
+curl -X GET localhost:9200/_cat/indices?v
+curl -X PUT localhost:9200/customer?pretty
+curl -X GET localhost:9200/_cat/indices?v
+curl -X PUT localhost:9200/customer/_doc/1?pretty -H 'Content-Type: application/json' -d'
+{
+  "name": "John Doe"
+}
+'
+curl -X GET "localhost:9200/customer/_doc/1?pretty"
+"""
 
 echo
+echo -e "Elasticsearch WEB Interface "$YELLOW"http://localhost:9100"$NOCOLOR" (Default username/password: xxx/xxx)"
+echo """
+git clone https://github.com/mobz/elasticsearch-head.git
+cd elasticsearch-head
+npm install
+npm run start
+open http://localhost:9100
+"""

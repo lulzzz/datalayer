@@ -23,7 +23,7 @@ source $DLAHOME/sbin/util/datalayer-env
 $DLAHOME/sbin/util/datalayer-header "$@"
 $DLAHOME/sbin/util/datalayer-env-echo
 
-echo -e $YELLOW$BOLD"Stopping Datalayer Solr Cloud..."$NOBOLD$NOCOLOR
+echo -e $YELLOW$BOLD"Stopping Datalayer Solr..."$NOBOLD$NOCOLOR
 echo
 
 $SOLR_HOME/bin/solr stop -all

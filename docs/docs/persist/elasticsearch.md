@@ -1,7 +1,6 @@
-
-# Elasticsearch
-
-## Why
+---
+title: Elasticsearch
+---
 
 + I kept running into cases where I needed full text search capabilities
   in my key-value based models only to discover key-value has none. 
@@ -14,12 +13,6 @@
 + Lazilly change/enrich the datamodel without reindexing everything
 
 ## Install
-
-```
-wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.2.tar.gz
-tar xvfz elasticsearch-0.90.1.tar.gz
-cd elasticsearch-0.90.1
-```
 
 git clone https://github.com/elasticsearch/elasticsearch-servicewrapper.git elasticsearch-servicewrapper.git
 
@@ -270,7 +263,7 @@ http://www.elasticsearch.org/guide/reference/api/admin-cluster-nodes-info
 curl -XGET 'http://localhost:9200/_cluster/nodes?pretty'
 
 http://www.elasticsearch.org/guide/reference/api/admin-cluster-nodes-stats
---------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 curl -XGET 'http://localhost:9200/_cluster/nodes/stats?pretty'
 
 http://www.elasticsearch.org/guide/reference/api/admin-indices-segments

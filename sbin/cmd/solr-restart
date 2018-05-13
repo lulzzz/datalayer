@@ -20,5 +20,5 @@
 export DLALAB_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DLAHOME/sbin/util/datalayer-env
 
-$DLALAB_HOME/bin/datalayer solr-cloud-stop
-DLALAB_SHOW_HEADER=false $DLALAB_HOME/bin/datalayer solr-cloud-start
+datalayer solr-stop
+DLALAB_SHOW_HEADER=false datalayer solr-start
