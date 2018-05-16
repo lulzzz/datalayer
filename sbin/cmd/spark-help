@@ -23,7 +23,7 @@
 export DLABIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DLABIN/util/datalayer-env
 
-source $DLAHOME/sbin/util/datalayer-cli-control
+source $DLAHOME/sbin/datalayer-cli-control
 
 echo
 echo "Check Spark Application      http://localhost:4040"

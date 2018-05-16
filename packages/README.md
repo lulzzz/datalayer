@@ -1,5 +1,5 @@
-[![Datalayer](http://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
+[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
 
 This folder aims to contain the needed package to build the `Datalayer Science Platform`.
 
-The packages aer not committed in the github repository and can be found here.
+The packages are not committed in the Github repository and should be placed here.

@@ -1,5 +1,5 @@
 bigheader: "Install"
 abstract: "Install the Datalayer Platform."
 toc:
-- docs/install/index.md
+- docs/install.md
 - title: Install

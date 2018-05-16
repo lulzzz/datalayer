@@ -18,10 +18,10 @@
 # under the License.
 
 export DLALAB_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $DLAHOME/sbin/util/datalayer-env
+source $DLAHOME/sbin/datalayer-env
 
-$DLAHOME/sbin/util/datalayer-header "$@"
-$DLAHOME/sbin/util/datalayer-env-echo
+$DLAHOME/sbin/datalayer-header "$@"
+$DLAHOME/sbin/datalayer-env-echo
 
 echo -e $YELLOW$BOLD"Stopping Datalayer Solr..."$NOBOLD$NOCOLOR
 echo

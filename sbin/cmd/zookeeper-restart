@@ -18,7 +18,7 @@
 # under the License.
 
 export DLALAB_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $DLAHOME/sbin/util/datalayer-env
+source $DLAHOME/sbin/datalayer-env
 
 datalayer zookeeper-stop
 DLALAB_SHOW_HEADER=false datalayer zookeeper-start

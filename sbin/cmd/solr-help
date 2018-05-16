@@ -17,7 +17,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-source $DLAHOME/sbin/util/datalayer-cli-control
+source $DLAHOME/sbin/datalayer-cli-control
 
 cd $SOLR_HOME
 

@@ -19,4 +19,4 @@
 
 export DLABIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-$DLAHOME/sbin/util/datalayer-header "$@"
+$DLAHOME/sbin/datalayer-header "$@"

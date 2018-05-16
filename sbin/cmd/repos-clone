@@ -1,0 +1,105 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+export DLALAB_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $DLAHOME/sbin/datalayer-env
+$DLAHOME/sbin/datalayer-header "$@"
+$DLAHOME/sbin/datalayer-env-echo
+
+echo -e $BOLD$YELLOW"Cloning the Datalayer Science Platform Repositories..."$NOCOLOR$NOBOLD
+echo
+
+cd $DLAHOME/repos
+
+git clone https://github.com/datalayer-contrib/ark.git
+git clone https://github.com/datalayer-contrib/ark-plugin-example.git
+git clone https://github.com/datalayer-contrib/data8-datascience.git
+git clone https://github.com/datalayer-contrib/data8-nbgitpuller.git
+git clone https://github.com/datalayer-contrib/hadoop.git
+git clone https://github.com/datalayer-contrib/hbase.git
+git clone https://github.com/datalayer-contrib/hdfs-chart.git
+git clone https://github.com/datalayer-contrib/hdfs-kerberos-chart.git
+git clone https://github.com/datalayer-contrib/janusgraph.git
+git clone https://github.com/datalayer-contrib/jupyter-binderhub.git
+git clone https://github.com/datalayer-contrib/jupyter-cookiecutter.git
+git clone https://github.com/datalayer-contrib/jupyter-dashboards.git
+git clone https://github.com/datalayer-contrib/jupyter-docker.git
+git clone https://github.com/datalayer-contrib/jupyter-nbdime.git
+git clone https://github.com/datalayer-contrib/jupyterhub-auth-ldap.git
+git clone https://github.com/datalayer-contrib/jupyterhub-auth-oauth.git
+git clone https://github.com/datalayer-contrib/jupyterhub-deploy-docker.git
+git clone https://github.com/datalayer-contrib/jupyterhub-deploy-teaching.git
+git clone https://github.com/datalayer-contrib/jupyterhub.git
+git clone https://github.com/datalayer-contrib/jupyterhub-helm-chart.git
+git clone https://github.com/datalayer-contrib/jupyterhub-http-proxy.git
+git clone https://github.com/datalayer-contrib/jupyterhub-k8s.git
+git clone https://github.com/datalayer-contrib/jupyterhub-kerberos-example.git
+git clone https://github.com/datalayer-contrib/jupyterhub-spawner-batch.git
+git clone https://github.com/datalayer-contrib/jupyterhub-spawner-docker.git
+git clone https://github.com/datalayer-contrib/jupyterhub-spawner-sudo.git
+git clone https://github.com/datalayer-contrib/jupyterhub-spawner-wrap.git
+git clone https://github.com/datalayer-contrib/jupyterhub-tutorial.git
+git clone https://github.com/datalayer-contrib/jupyter-ipywidgets.git
+git clone https://github.com/datalayer-contrib/jupyter-ipywidgets-tutorial.git
+git clone https://github.com/datalayer-contrib/jupyter-kernel-gateway.git
+git clone https://github.com/datalayer-contrib/jupyter-kernel-rproxy.git
+git clone https://github.com/datalayer-contrib/jupyter-kernel-toree.git
+git clone https://github.com/datalayer-contrib/jupyterlab-cookiecutter-extension.git
+git clone https://github.com/datalayer-contrib/jupyterlab-cookiecutter-mimerender.git
+git clone https://github.com/datalayer-contrib/jupyterlab-demo.git
+git clone https://github.com/datalayer-contrib/jupyterlab-drawio.git
+git clone https://github.com/datalayer-contrib/jupyterlab.git
+git clone https://github.com/datalayer-contrib/jupyterlab-git.git
+git clone https://github.com/datalayer-contrib/jupyterlab-github.git
+git clone https://github.com/datalayer-contrib/jupyterlab-google-drive.git
+git clone https://github.com/datalayer-contrib/jupyterlab-hub.git
+git clone https://github.com/datalayer-contrib/jupyterlab-latex.git
+git clone https://github.com/datalayer-contrib/jupyterlab-launcher.git
+git clone https://github.com/datalayer-contrib/jupyterlab-renderers.git
+git clone https://github.com/datalayer-contrib/jupyterlab-voyager.git
+git clone https://github.com/datalayer-contrib/jupyterlab-xkcd.git
+git clone https://github.com/datalayer-contrib/jupyter-nbformat.git
+git clone https://github.com/datalayer-contrib/jupyter-nbgrader.git
+git clone https://github.com/datalayer-contrib/jupyter-nbviewer.git
+git clone https://github.com/datalayer-contrib/jupyter-notebook.git
+git clone https://github.com/datalayer-contrib/jupyter-pizzabutton.git
+git clone https://github.com/datalayer-contrib/jupyter-sparkmagic.git
+git clone https://github.com/datalayer-contrib/k8s-aws-authenticator.git
+git clone https://github.com/datalayer-contrib/k8s-dashboard.git
+git clone https://github.com/datalayer-contrib/kubeflow-examples.git
+git clone https://github.com/datalayer-contrib/kubeflow.git
+git clone https://github.com/datalayer-contrib/kubeflow-kvc.git
+git clone https://github.com/datalayer-contrib/kubeflow-tf-operator.git
+git clone https://github.com/datalayer-contrib/kubespray.git
+git clone https://github.com/datalayer-contrib/kubicorn.git
+git clone https://github.com/datalayer-contrib/spark-docs.git
+git clone https://github.com/datalayer-contrib/spark.git
+git clone https://github.com/datalayer-contrib/spark-integration.git
+git clone https://github.com/datalayer-contrib/spark-operator.git
+git clone https://github.com/datalayer/datalayer-api.git
+git clone https://github.com/datalayer/datalayer-docker.git
+git clone https://github.com/datalayer/datalayer-go-snippets.git
+git clone https://github.com/datalayer/datalayer-helm.git
+git clone https://github.com/datalayer/datalayer-jupyterlab.git
+git clone https://github.com/datalayer/datalayer-jvm.git
+git clone https://github.com/datalayer/datalayer-notes-init.git
+git clone https://github.com/datalayer/datalayer-pilot.git
+git clone https://github.com/datalayer/datalayer-spitfire.git
+git clone https://github.com/datalayer/datalayer-stencils.git
+git clone https://github.com/datalayer/jupyterhub-api-browser.git

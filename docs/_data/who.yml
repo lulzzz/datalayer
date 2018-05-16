@@ -1,7 +1,7 @@
 bigheader: "Who"
 abstract: "For who is Datalayer."
 toc:
-- docs/who/index.md
-- docs/who/devops.md
-- docs/who/data-scientists.md
-- docs/who/business.md
+- docs/who.md
+- docs/devops.md
+- docs/data-scientists.md
+- docs/business.md

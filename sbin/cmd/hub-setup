@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+# Licensed to Datalayer (http://datalayer.io) under one or more
+# contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. Datalayer licenses this file
+# to you under the Apache License, Version 2.0 (the 
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+sudo mkdir -p /srv/datalayerhub
+sudo chown -R $USER:$USER /srv/datalayerhub
+
+openssl rand -hex 32 > /srv/datalayerhub/datalayerhub_auth_token
+chmod 600 /srv/datalayerhub/datalayerhub_auth_token
+openssl rand -hex 32 > /srv/datalayerhub/datalayerhub_cookie_secret
+chmod 600 /srv/datalayerhub/datalayerhub_cookie_secret
+
+sudo touch /var/log/datalayerhub.log
+sudo chown -R $USER:$USER /var/log/datalayerhub.log
+
+sudo npm install -g configurable-http-proxy
+
+source deactivate
+
+conda remove --name datalayerhub --all
+conda config --add channels conda-forge
+conda create --name datalayerhub python=3.6 pip=10.0.1
+
+source activate datalayerhub
+
+pip install pyqt5 pycurl oauthenticator psycopg2
+
+cd $DLAHOME/repos/jupyter-notebook
+pip install -e .
+
+cd $DLAHOME/repos/jupyterhub
+git checkout datalayer
+python setup.py clean sdist
+pip install -e .
+
+cd $DLAHOME/repos/jupyterhub-auth-oauth
+pip install -e .
+cd $DLAHOME/repos/jupyterhub-auth-ldap
+pip install -e .
+
+cd $DLAHOME/repos/jupyterhub-spawner-batch
+pip install -e .
+cd $DLAHOME/repos/jupyterhub-spawner-wrap
+pip install -e .
+cd $DLAHOME/repos/jupyterhub-spawner-sudo
+pip install -e .
+cd $DLAHOME/repos/jupyterhub-spawner-docker
+pip install -e .
+
+cd $DLAHOME/repos/jupyterlab
+pip install -e .
+jupyter serverextension enable --py jupyterlab --sys-prefix
+yarn install
+jupyter lab build

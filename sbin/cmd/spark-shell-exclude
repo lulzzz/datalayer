@@ -19,7 +19,7 @@
 
 export DLABIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DLABIN/util/datalayer-env
-$DLAHOME/sbin/util/datalayer-header "$@"
+$DLAHOME/sbin/datalayer-header "$@"
 $DLABIN/util/datalayer-env-echo
 
 sed '/SHELL_EXCLUDE/d' "$@" | datalayer spark-shell --executor-memory 14G --driver-memory 4G

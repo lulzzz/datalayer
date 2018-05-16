@@ -18,9 +18,9 @@
 # under the License.
 
 export DLALAB_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $DLAHOME/sbin/util/datalayer-env
-$DLAHOME/sbin/util/datalayer-header "$@"
-$DLAHOME/sbin/util/datalayer-env-echo
+source $DLAHOME/sbin/datalayer-env
+$DLAHOME/sbin/datalayer-header "$@"
+$DLAHOME/sbin/datalayer-env-echo
 
 DLALAB_SHOW_HEADER=false $DLALAB_HOME/bin/datalayer elasticsearch-stop "$@"
 DLALAB_SHOW_HEADER=false $DLALAB_HOME/bin/datalayer elasticsearch-start "$@"
