@@ -20,4 +20,4 @@ We are currently developing the `1.0.0` release. Follow us on [Twitter](https://
 + Home View: Latest Paragraph + Reservations + Cluster Status
 + Note and Paragraph Title
 
-![Arcadia](/images/releases-arcadia.jpg "Arcadia")
+![Arcadia](/images/releases/arcadia.jpg "Arcadia")

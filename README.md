@@ -1,6 +1,6 @@
 [![Join the chat at https://gitter.im/datalayer/datalayer](https://badges.gitter.im/datalayer/datalayer.svg)](https://gitter.im/datalayer/datalayer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
+[![Datalayer](https://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
 
 We are building a `Simple`, `Collaborative` and `Multi Cloud` platform for Big Data Scientists.
 

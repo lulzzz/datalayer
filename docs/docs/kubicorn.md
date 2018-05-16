@@ -1,4 +1,4 @@
-[![Datalayer](http://datalayer.io/enterprise/img/logo-datalayer-horizontal.png)](http://datalayer.io)
+[![Datalayer](https://datalayer.io/img/logo-datalayer-horizontal.png)](http://datalayer.io)
 
 # Build and Install
 

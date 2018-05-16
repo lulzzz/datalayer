@@ -1,8 +1,6 @@
 ---
-title: Develop
+title: Contrib
 ---
-
-## Open Source
 
 Datalayer source code is released under the [ASL2](https://www.apache.org/licenses/LICENSE-2.0) Apache Licence and uses as its core component open-source software.
 

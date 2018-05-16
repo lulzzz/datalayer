@@ -2,9 +2,9 @@ bigheader: "Why"
 abstract: "Why you should use Datalayer."
 toc:
 - docs/why.md
-- docs/cost-less.md
-- docs/it-less.md
-- docs/serverless.md
-- docs/no-lock-in.md
-- docs/collaborative-story-telling.md
-- docs/exploration-to-alpha.md
+- docs/why-cost-less.md
+- docs/why-it-less.md
+- docs/why-serverless.md
+- docs/why-no-lock-in.md
+- docs/why-collaborative-story-telling.md
+- docs//why-exploration-to-alpha.md

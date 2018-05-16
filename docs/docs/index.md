@@ -12,9 +12,9 @@ You will also get a K8S Dashboard with Heapster to monitor resources usage. Last
 
 Datalayer solutions make life easier, more productive, cheaper and bring more business value.
 
-+ [Devops](/docs/devops) use the Pilot CLI to create the Kubernetes cluster and deploy the needed Applications. You also get the Pilot UI WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Alpha` environments.
-+ [Data Scientists](/docs/data-scientists) use the Data Studio to explore and share insights in a visual way, in private or in public (e.g. on Twitter).
-+ [Business](/docs/business) review the Data Scientist insights in their favorite environement like Microsoft Office 365, Twitter or Google.
++ [Devops](/docs/who-devops) use the Pilot CLI to create the Kubernetes cluster and deploy the needed Applications. You also get the Pilot UI WEB user interface if you prefer fancy screens. This is achieved in `Exploration` and `Alpha` environments.
++ [Data Scientists](/docs/who-data-scientist) use the Data Studio to explore and share insights in a visual way, in private or in public (e.g. on Twitter).
++ [Business](/docs/who-business) review the Data Scientist insights in their favorite environement like Microsoft Office 365, Twitter or Google.
 
 **You are welcome to contribute on this project as a User or as a Developer hacking on the base source code available in our [Github repositories](https://github.com/datalayer).**
 

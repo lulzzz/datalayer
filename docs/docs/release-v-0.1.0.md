@@ -16,4 +16,4 @@ The release `0.1.0` of the `Datalayer Science Platform` contains the following f
 + Ensure fixed IP address for K8S Master
 + Manage HDFS with cluster-id
 
-![OMalley](/images/releases-omalley.png "OMalley")
+![OMalley](/images/releases/omalley.png "OMalley")
